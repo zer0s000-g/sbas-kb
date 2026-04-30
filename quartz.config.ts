@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "yourname.github.io",  // change this to your GitHub username for GitHub Pages
+    baseUrl: "zer0s000-g.github.io/sbas-kb",  // change this to your GitHub username for GitHub Pages
     ignorePatterns: ["private", "templates", ".obsidian", "node_modules", "*.bak"],
     defaultDateType: "modified",
     theme: {
