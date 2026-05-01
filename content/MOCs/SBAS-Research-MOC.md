@@ -1,4 +1,4 @@
---
+---
 title: SBAS Research MOC
 description: Top-level map of SBAS research knowledge base for civil aviation applications
 tags: [MOC, research, sbas, navigation, aviation]
@@ -7,7 +7,7 @@ created: 2026-04-19
 modified: 2026-05-01
 version: 1.0
 status: research
---
+---
 
 # 🗺️ SBAS Research Map of Consciousness
 

@@ -1,4 +1,4 @@
---
+---
 title: SBAS in Civil Aviation MOC
 description: Operational use cases, approach procedures, and safety implications for SBAS in civil aviation
 tags: [MOC, civil-aviation, sbas, approach, operations]
@@ -7,7 +7,7 @@ created: 2026-04-19
 modified: 2026-04-23
 version: 1.0
 status: research
---
+---
 
 # 🛡️ SBAS in Civil Aviation MOC
 

@@ -1,4 +1,4 @@
---
+---
 title: RNP Approach Procedure and SBAS Integration
 description: Detailed procedure for Required Navigation Performance approaches using SBAS augmentation
 tags: [aviation, approach, rnp, sbas, cdm, performance]
@@ -6,7 +6,7 @@ category: aviation-operations
 created: 2026-04-19
 modified: 2026-04-19
 version: 1.0
---
+---
 
 # ✈️ RNP Approach Procedure and SBAS Integration
 

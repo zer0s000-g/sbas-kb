@@ -1,4 +1,4 @@
---
+---
 title: SBAS vs Other Augmentation Methods
 description: Comparative analysis of satellite-based augmentation vs ground-based and airborne augmentation
 tags: [comparison, augmentation-methods, sbas, gbas, abas, raim]
@@ -6,7 +6,7 @@ category: concepts
 created: 2026-04-19
 modified: 2026-04-23
 version: 1.0
---
+---
 
 # 🔄 SBAS vs Other Augmentation Methods
 

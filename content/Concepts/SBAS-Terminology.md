@@ -1,4 +1,4 @@
---
+---
 title: Satellite-Based Augmentation System (SBAS) Terminology
 description: Core SBAS concepts, definitions, and technical specifications
 tags: [terminology, sbas, gnss, corrections, integrity]
@@ -6,7 +6,7 @@ category: core-terminology
 created: 2026-04-19
 modified: 2026-04-19
 version: 2.0
---
+---
 
 # 📖 Satellite-Based Augmentation System (SBAS) Terminology
 

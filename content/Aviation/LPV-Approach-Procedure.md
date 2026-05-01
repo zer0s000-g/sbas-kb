@@ -1,4 +1,4 @@
---
+---
 title: LPV Approach Procedure and SBAS Integration
 description: Detailed procedure for Localizer Performance with Vertical guidance using SBAS
 tags: [aviation, approach, lpv, sbas, cdm, performance]
@@ -6,7 +6,7 @@ category: aviation-operations
 created: 2026-04-19
 modified: 2026-04-19
 version: 1.0
---
+---
 
 # ✈️ LPV Approach Procedure and SBAS Integration
 

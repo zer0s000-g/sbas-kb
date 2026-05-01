@@ -1,4 +1,4 @@
---
+---
 title: LNAV/VNAV Approach Procedure and SBAS Integration
 description: Detailed procedure for Lateral Navigation / Vertical Navigation approaches using SBAS augmentation
 tags: [aviation, approach, lnav-vnav, sbas, cdm, performance]
@@ -6,7 +6,7 @@ category: aviation-operations
 created: 2026-04-19
 modified: 2026-04-19
 version: 1.0
---
+---
 
 # ✈️ LNAV/VNAV Approach Procedure and SBAS Integration
 

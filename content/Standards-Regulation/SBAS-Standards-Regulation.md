@@ -1,4 +1,4 @@
---
+---
 title: SBAS Standards and Regulation
 description: ICAO, RTCA, EUROCAE standards and certification requirements for SBAS
 tags: [standards, regulation, icao, rtca, eurocae, certification]
@@ -7,7 +7,7 @@ created: 2026-04-19
 modified: 2026-04-23
 version: 1.0
 status: draft
---
+---
 
 # 📜 SBAS Standards and Regulation
 

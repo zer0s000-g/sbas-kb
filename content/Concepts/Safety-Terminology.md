@@ -1,4 +1,4 @@
---
+---
 title: Safety Terminology
 description: Safety-related terms and integrity requirements for aviation systems
 tags: [safety, terminology, integrity, sbas]
@@ -6,7 +6,7 @@ category: core-terminology
 created: 2026-04-19
 modified: 2026-04-23
 version: 1.0
---
+---
 
 # 🛡️ Safety Terminology
 

@@ -1,4 +1,4 @@
---
+---
 title: Communication Terminology
 description: Communication protocols and data formats for aviation systems
 tags: [communication, terminology, protocols, data]
@@ -6,7 +6,7 @@ category: core-terminology
 created: 2026-04-19
 modified: 2026-04-19
 version: 1.0
---
+---
 
 # 📡 Communication Terminology
 

@@ -1,4 +1,4 @@
---
+---
 title: GBAS Approach Procedure and SBAS Integration
 description: Detailed procedure for Ground-Based Augmentation System approaches using local ground stations
 tags: [aviation, approach, gbas, sbas, cdm, performance]
@@ -6,7 +6,7 @@ category: aviation-operations
 created: 2026-04-19
 modified: 2026-04-19
 version: 1.0
---
+---
 
 # ✈️ GBAS Approach Procedure and SBAS Integration
 
