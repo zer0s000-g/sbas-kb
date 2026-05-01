@@ -3,7 +3,7 @@ title: ASEAN SBAS Source Backlog
 description: Prioritized backlog of source notes needed to move the ASEAN SBAS branch from heuristic synthesis toward source-backed regional research
 tags: [sources, backlog, asean, sbas, provenance, research]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: active
 verification_status: internal-backlog-only
 ---
@@ -28,6 +28,22 @@ The ASEAN branch now contains:
 - country child notes
 
 What it still lacks is a dedicated source backbone specific to Southeast Asia and the ICAO APAC institutional layer.
+
+## Completed local GIPTA source-backbone pass — 2026-05-01
+The GIPTA local document stack has now been converted into source scaffolds and linked concept/synthesis notes.
+
+Highest-value GIPTA source anchors now available:
+- [[Source - GIPTA 2.0 Timor-Leste Site Workshop]]
+- [[Source - GIPTA 2.0 Project Introduction]]
+- [[Source - ADB ASEAN SBAS Technical Assistance]]
+- [[Source - ASEAN SBAS Implementation Roadmap GIPTA]]
+- [[Source - ASEAN SBAS Testbed Development Proposal]]
+- [[Source - GIPTA GNSS RFI Discussion]]
+- [[Source - GIPTA WRC-27 Aeronautical Agenda]]
+- [[Source - Indonesia InaCORS PBN GIPTA Presentation]]
+- [[Source - Philippines GNSS Status GIPTA]]
+
+Use [[GIPTA 2.0 MOC]] as the navigation hub for this source stack.
 
 ## Priority 1 — governance and regional-institution sources
 

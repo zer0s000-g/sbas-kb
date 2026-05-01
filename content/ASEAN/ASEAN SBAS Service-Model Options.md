@@ -3,7 +3,7 @@ title: ASEAN SBAS Service-Model Options
 description: Draft comparison note on plausible implementation pathways for ASEAN SBAS
 tags: [asean, sbas, service-model, governance, comparison, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -21,6 +21,16 @@ Boundary:
 ## Why this note exists
 The central ASEAN question is not only whether SBAS would be useful.
 It is also which institutional model could realistically deliver it.
+
+## GIPTA 2.0 service-model update
+GIPTA / JRANSA discussion material identifies three implementation models under discussion:
+- expansion of Japan's MSAS service area into ASEAN;
+- establishment of a unique ASEAN SBAS;
+- phased introduction led by selected ASEAN countries.
+
+The source stack does not select one model. It supports keeping this note comparative and evidence-aware rather than collapsing the pathway into a single assumed architecture.
+
+Source anchors: [[Source - ASEAN SBAS Implementation Roadmap GIPTA]], [[Source - JRANSA Tokyo ASEAN SBAS Discussion]], [[Japan MSAS GBAS Lessons for ASEAN SBAS]].
 
 ## Option set
 

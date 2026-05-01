@@ -3,7 +3,7 @@ title: SBAS MOC
 description: Top-level navigation map for the SBAS research knowledge base
 tags: [MOC, SBAS, GNSS, aviation, research]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: active
 ---
 
@@ -35,6 +35,14 @@ It links research navigation, civil aviation applications, regional systems, sta
 - [[BDSBAS]]
 - [[Asia-Pacific SBAS Implementation Patterns]]
 - [[MSAS vs GAGAN]]
+
+### GIPTA 2.0 source-linked branch
+- [[GIPTA 2.0 MOC]]
+- [[GIPTA 2.0]]
+- [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]]
+- [[ASEAN SBAS Testbed]]
+- [[GNSS RFI and Spoofing in ASEAN SBAS Deployment]]
+- [[WRC-27 and GNSS-SBAS Spectrum Protection]]
 
 ### ASEAN expansion branch
 - [[ASEAN SBAS Adoption Landscape]]

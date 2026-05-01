@@ -3,7 +3,7 @@ title: Thailand
 description: Draft country note for Thailand as a mainland connector-state and implementation-shaping case in the ASEAN SBAS storyline
 tags: [asean, sbas, thailand, country-note, connector-state, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -45,6 +45,14 @@ Evidence-aware refinement:
 - country-specific implementation posture still requires direct evidence
 - this note does not confirm any national SBAS program direction
 - current live evidence supports PBN-modernization activity more than direct SBAS adoption or operational-service conclusions
+
+## GIPTA 2.0 source-linked update
+GIPTA material adds a narrow testbed/readiness signal for Thailand:
+- Thailand is one of the countries associated with GNSS data-analysis equipment for low-latitude ionospheric survey and ASEAN data sharing;
+- Bangkok/KMITL appears as an analyzer location in the GIPTA testbed proposal;
+- Thailand appears in the ADB ASEAN-SBAS baseline/on-site survey target schedule.
+
+Source anchors: [[Source - ASEAN SBAS Testbed Development Proposal]], [[Source - ADB ASEAN SBAS Technical Assistance]].
 
 ## Best comparison links
 - [[Viet Nam]]

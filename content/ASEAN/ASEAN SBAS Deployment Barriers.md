@@ -3,7 +3,7 @@ title: ASEAN SBAS Deployment Barriers
 description: Draft note on the ASEAN-specific constraints that make SBAS implementation difficult
 tags: [asean, sbas, barriers, deployment, governance, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -107,6 +107,17 @@ That combination is why ASEAN deserves its own branch rather than being folded i
 - Which barrier has historically been most decisive in comparable regional augmentation programs?
 - How much of the ASEAN challenge is truly technical versus institutional?
 - Which member-state combinations could reduce coordination complexity enough to support a phased launch?
+
+## GIPTA 2.0 barrier update
+GIPTA material adds source-linked barriers to the ASEAN branch:
+- high investment cost and advanced technical requirements;
+- budget and human-resource readiness;
+- legal/institutional design and service-model selection;
+- low-latitude ionospheric monitoring gaps;
+- GNSS RFI, jamming, spoofing, and spectrum-protection concerns;
+- aircraft equipage, procedure rollout, and operational approval uncertainty.
+
+Source anchors: [[Source - ASEAN SBAS Implementation Roadmap GIPTA]], [[Source - GIPTA GNSS RFI Discussion]], [[Source - GIPTA WRC-27 Aeronautical Agenda]], [[ASEAN SBAS Testbed to Operational Service]].
 
 ## See also
 - [[ASEAN SBAS Adoption Landscape]]

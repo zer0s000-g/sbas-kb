@@ -3,7 +3,7 @@ title: SBAS Knowledge Base
 description: Satellite-Based Augmentation System research, standards, and empirical ionospheric evidence for civil aviation and ASEAN deployment
 tags: [sbas, gnss, aviation, knowledge-base, asean, ionosphere]
 created: 2026-04-19
-modified: 2026-04-30
+modified: 2026-05-01
 ---
 
 # SBAS Knowledge Base
@@ -20,13 +20,14 @@ Welcome to a structured, source-scaffolded research knowledge base on **Satellit
 | **ASEAN expansion** | Governance, barriers, demand drivers, readiness heuristic | [[ASEAN/ASEAN SBAS Adoption Landscape\|ASEAN Adoption Landscape]] |
 | **Standards & sources** | ICAO Docs, RTCA DO-229/242/289, EUROCAE | [[Sources/SBAS Source Backlog\|Source Backlog]] |
 | **Empirical ionospheric research** | GNSS-RO validation, IRI-2020 comparison, threat screening | [[Syntheses/IRI-2020 vs GNSS-RO Indonesia\|IRI-2020 vs GNSS-RO Indonesia]] |
+| **GIPTA 2.0 / ASEAN implementation** | Local GIPTA document stack, source notes, testbed, RFI, WRC-27, and ASEAN implementation pathway | [[MOCs/GIPTA 2.0 MOC|GIPTA 2.0 MOC]] |
 
 ## Navigate by map
 
 - [[MOCs/SBAS MOC\|SBAS MOC]] — top-level vault map
 - [[MOCs/SBAS-Research-MOC\|SBAS Research MOC]] — research portfolio tracker
 - [[Sources/SBAS Source Backlog\|SBAS Source Backlog]] — provenance gaps queue
-- [[ASEAN/ASEAN SBAS Source Backlog\|ASEAN Source Backlog]] — regional source priorities
+- [[Sources/ASEAN SBAS Source Backlog\|ASEAN Source Backlog]] — regional source priorities
 
 ## Empirical research highlight
 
@@ -54,7 +55,8 @@ Built with the [obsidian-knowledge-management](obsidian-knowledge-management.md)
 |-----------|----------|
 | Conceptual foundation | 85% |
 | Source documentation | 60% + new empirical stack |
-| ASEAN regional branch | 50% |
+| ASEAN regional branch | 65% + GIPTA source stack |
+| GIPTA 2.0 local source expansion | Source scaffolds added |
 | Empirical ionospheric evidence | Published as internal stack |
 
-*Last updated: 2026-04-30*
+*Last updated: 2026-05-01*

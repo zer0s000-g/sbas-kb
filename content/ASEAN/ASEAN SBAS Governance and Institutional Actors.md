@@ -3,7 +3,7 @@ title: ASEAN SBAS Governance and Institutional Actors
 description: Draft note on the institutional decision layer for SBAS adoption in ASEAN
 tags: [asean, sbas, governance, institutional, aviation, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -40,6 +40,18 @@ The current research trail points especially toward:
 
 This does not mean ASEAN political institutions are irrelevant.
 It means the technical-regulatory pathway presently appears more legible through ICAO APAC aviation governance.
+
+## GIPTA 2.0 actor update
+GIPTA source material adds a concrete implementation-learning actor stack:
+- JRANSA as GIPTA 2.0 implementing/training agency in the local source set;
+- Japan/JAIF as the support channel referenced across workshop material;
+- ADB as proposed technical-assistance actor for ASEAN-SBAS study, guideline, feasibility, master-plan, and capacity-building work;
+- national civil aviation / ANSP / geospatial stakeholders such as CAAP Philippines, AirNav Indonesia, BIG, and Timor-Leste aviation actors;
+- ASEAN Secretariat / ASEAN transport context as a regional coordination layer.
+
+This strengthens the actor map but still does not assign formal ASEAN SBAS service-provider ownership.
+
+Source anchors: [[Source - GIPTA 2.0 Project Introduction]], [[Source - ADB ASEAN SBAS Technical Assistance]], [[Source - JRANSA Tokyo ASEAN SBAS Discussion]].
 
 ## Actor map
 

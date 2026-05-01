@@ -3,7 +3,7 @@ title: Cambodia
 description: Draft country note for Cambodia as an access-benefit and selective-adoption case in the ASEAN SBAS storyline
 tags: [asean, sbas, cambodia, country-note, access, mainland, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -40,6 +40,14 @@ Cambodia currently functions as an access-benefit and selective-adoption case in
 - evidence base remains thin
 - the note should not be read as a deployment claim
 - country-specific modernization posture still needs direct review
+
+## GIPTA 2.0 source-linked update
+GIPTA material adds a limited planning signal for Cambodia:
+- Cambodia is included in the proposed ADB ASEAN-SBAS baseline/on-site survey target group;
+- GIPTA project-introduction material places Cambodia in the Hanoi workshop grouping;
+- no country-specific operational SBAS readiness details were found in the extracted GIPTA material beyond survey/workshop inclusion.
+
+Source anchors: [[Source - ADB ASEAN SBAS Technical Assistance]], [[Source - GIPTA 2.0 Project Introduction]].
 
 ## Best comparison links
 - [[Lao PDR]]

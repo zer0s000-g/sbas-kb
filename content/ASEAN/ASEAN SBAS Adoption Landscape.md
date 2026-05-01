@@ -3,7 +3,7 @@ title: ASEAN SBAS Adoption Landscape
 description: Draft synthesis note mapping how SBAS adoption questions appear across ASEAN without repeating generic SBAS definitions
 tags: [asean, sbas, adoption, regional, synthesis, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -80,6 +80,13 @@ This note is narrower and more practical:
 - it isolates Southeast Asia
 - it focuses on adoption conditions instead of system descriptions
 - it treats ASEAN as a missing implementation branch rather than another global comparison note
+
+## GIPTA 2.0 evidence update
+GIPTA 2.0 changes this branch from purely heuristic ASEAN synthesis toward source-linked implementation planning evidence.
+
+The GIPTA document stack supports a staged ASEAN pathway: capacity-building workshops, guideline/feasibility work, GNSS environment analysis, SBAS testbed/simulation, and selected-country or regional service-model comparison. This still does not prove that ASEAN has selected or operates a common SBAS.
+
+Source anchors: [[GIPTA 2.0]], [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[Source - ASEAN SBAS Implementation Roadmap GIPTA]].
 
 ## Priority downstream questions
 - Which ASEAN member states are best understood as first movers, fast followers, or long-horizon beneficiaries?

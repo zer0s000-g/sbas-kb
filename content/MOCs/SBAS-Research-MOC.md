@@ -4,7 +4,7 @@ description: Top-level map of SBAS research knowledge base for civil aviation ap
 tags: [MOC, research, sbas, navigation, aviation]
 category: mocs
 created: 2026-04-19
-modified: 2026-04-23
+modified: 2026-05-01
 version: 1.0
 status: research
 --
@@ -198,3 +198,10 @@ sources: [[Source1], [Source2], ...]
 - [ ] Establish open questions
 
 *MOC Version: 1.0 | Status: Research Planning | Next Update: 2026-04-30*
+
+## GIPTA 2.0 research expansion — 2026-05-01
+- [[GIPTA 2.0 MOC]]
+- [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]]
+- [[ASEAN SBAS Testbed to Operational Service]]
+- [[Source - ASEAN SBAS Testbed Development Proposal]]
+- [[Source - ADB ASEAN SBAS Technical Assistance]]

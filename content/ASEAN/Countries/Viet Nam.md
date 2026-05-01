@@ -3,7 +3,7 @@ title: Viet Nam
 description: Draft country note for Viet Nam as a growing connector-state in the ASEAN SBAS storyline
 tags: [asean, sbas, viet-nam, country-note, connector-state, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -40,6 +40,14 @@ Viet Nam currently functions as a growing connector-state with medium-term strat
 - actual SBAS posture still needs direct validation
 - the note does not establish certified implementation status
 - current role is an interpretive heuristic rather than a sourced policy conclusion
+
+## GIPTA 2.0 source-linked update
+GIPTA material adds a narrow testbed/readiness signal for Viet Nam:
+- Viet Nam is one of the countries associated with GNSS data-analysis equipment for low-latitude ionospheric survey and ASEAN data sharing;
+- Hanoi appears as an analyzer location in the GIPTA testbed proposal;
+- Viet Nam appears in the ADB ASEAN-SBAS baseline/on-site survey target schedule.
+
+Source anchors: [[Source - ASEAN SBAS Testbed Development Proposal]], [[Source - ADB ASEAN SBAS Technical Assistance]].
 
 ## Best comparison links
 - [[Thailand]]

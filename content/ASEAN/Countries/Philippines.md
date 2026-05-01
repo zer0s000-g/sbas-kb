@@ -3,7 +3,7 @@ title: Philippines
 description: Draft country note for the Philippines as an archipelagic access and resilience case in the ASEAN SBAS storyline
 tags: [asean, sbas, philippines, country-note, archipelagic, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -47,6 +47,15 @@ Evidence-aware refinement:
 - country-specific regulatory and operational posture still needs source-backed review
 - current live evidence strengthens the distributed-airport context more than it proves a full archipelagic-demand argument or any SBAS-specific direction
 - the strongest current support is for a nationwide commercial-airport-network framing rather than a fully sourced archipelagic-aviation argument
+
+## GIPTA 2.0 source-linked update
+GIPTA material now strengthens the Philippines as an active GNSS-monitoring and SBAS-preparation case:
+- the Philippines presentation reports a GNSS Signal Monitoring System at the Philippine ATM Center to calculate service levels, monitor RFI, and track GNSS signal quality;
+- it states that air operators and ATS personnel were directed to report GNSS RFI events encountered within Manila FIR;
+- it describes active SBAS testing without full mandatory operational implementation, CAAP commitment to SBAS/GBAS, and a GNSS data analyzer at CAAP Technical Center Manila;
+- GIPTA testbed material treats Manila/CAAP as a central analyzer/simulator location.
+
+Source anchors: [[Source - Philippines GNSS Status GIPTA]], [[Source - GIPTA GNSS RFI Discussion]], [[Source - ASEAN SBAS Testbed Development Proposal]].
 
 ## Best comparison links
 - [[Indonesia]]

@@ -3,7 +3,7 @@ title: Indonesia
 description: Draft country note for Indonesia as an archipelagic demand anchor in the ASEAN SBAS storyline
 tags: [asean, sbas, indonesia, country-note, archipelagic, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -45,6 +45,15 @@ Evidence-aware refinement:
 - program status, PBN maturity, and approval posture still need direct source support
 - this note should not be read as evidence that Indonesia already anchors an SBAS program
 - current live evidence is stronger for archipelagic context than for airport-network metrics or SBAS-specific planning
+
+## GIPTA 2.0 source-linked update
+GIPTA material now strengthens Indonesia beyond the earlier archipelagic-demand heuristic:
+- AirNav Indonesia / BIG material identifies BIG as Indonesia's national geospatial authority and national-scale Ina-CORS infrastructure manager.
+- The presentation reports 476 active Ina-CORS stations by end-2025, 24/7 operation, uneven regional coverage, and major coverage gaps in Kalimantan and Papua.
+- It also reports Indonesian PBN/GNSS procedure counts and states needs around spectrum protection/RFI monitoring, regional cooperation for ASEAN SBAS, and ATC/pilot capacity building.
+- GIPTA testbed material identifies Jakarta DGCA Data Center as an existing analyzer location and discusses possible Kalimantan expansion.
+
+Source anchors: [[Source - Indonesia InaCORS PBN GIPTA Presentation]], [[Source - ASEAN SBAS Testbed Development Proposal]].
 
 ## Best comparison links
 - [[Philippines]]

@@ -3,7 +3,7 @@ title: ASEAN SBAS Operational Demand Drivers
 description: Draft note on the ASEAN-specific operational reasons that could make SBAS adoption valuable
 tags: [asean, sbas, operations, demand, aviation, provisional]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-01
 status: draft
 verification_status: mixed-external-scouting-and-synthesis
 ---
@@ -101,6 +101,13 @@ In this vault, the most useful operational reading is:
 - Which ASEAN airport classes and traffic patterns would benefit most from SBAS-enabled access?
 - Which demand drivers are strongest for Indonesia and the Philippines versus Singapore, Malaysia, Thailand, and Viet Nam?
 - Which policy documents treat access resilience, not just modernization, as the key value proposition?
+
+## GIPTA 2.0 demand update
+GIPTA material strengthens two demand arguments without duplicating generic SBAS benefits:
+- aviation demand: LPV-like vertical guidance, stabilized continuous descent, and access/resilience benefits for states with limited ground infrastructure;
+- multi-sector demand: non-aviation SBAS use can support public-infrastructure value and cost-effectiveness across maritime, logistics, agriculture, smart-city, and drone/AAM-like use cases.
+
+Source anchors: [[Source - GIPTA SBAS Operation]], [[Source - GIPTA Non-Aviation SBAS]], [[SBAS Non-Aviation Applications]].
 
 ## See also
 - [[ASEAN SBAS Adoption Landscape]]

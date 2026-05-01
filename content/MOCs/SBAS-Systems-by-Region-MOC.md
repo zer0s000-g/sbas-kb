@@ -4,7 +4,7 @@ description: Regional SBAS implementations, performance, and interoperability
 tags: [MOC, regional, sbas, comparison]
 category: mocs
 created: 2026-04-19
-modified: 2026-04-23
+modified: 2026-05-01
 version: 1.0
 status: research
 --
@@ -176,3 +176,7 @@ status: research
 - Type approval processes
 - Continuing airworthiness requirements
 - Maintenance program standards
+
+## GIPTA 2.0 ASEAN planning layer
+- [[GIPTA 2.0 MOC]] adds source-linked material for ASEAN implementation planning, testbed development, and service-model comparison.
+- [[Japan MSAS GBAS Lessons for ASEAN SBAS]] connects Japan comparator evidence to ASEAN service-model options without treating MSAS expansion as already selected.
