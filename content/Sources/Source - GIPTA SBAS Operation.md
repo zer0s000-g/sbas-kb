@@ -11,8 +11,7 @@ verification_status: extracted-local-document
 # GIPTA SBAS Operation
 
 ## Scope of this source note
-This source note captures a local GIPTA document or closely related document cluster from:
-`/Users/ahqmb-tn001/Documents/SBAS/GIPTA`
+This source note captures a GIPTA document or closely related document cluster for provenance and downstream claim control.
 
 Primary document or cluster:
 - Download-20260414152729/Day 2_1000 GIPTA2.0 SBAS Operation.pdf

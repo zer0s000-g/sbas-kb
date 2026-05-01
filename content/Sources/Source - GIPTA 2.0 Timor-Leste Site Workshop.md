@@ -11,8 +11,7 @@ verification_status: extracted-local-document
 # GIPTA 2.0 Timor-Leste Site Workshop
 
 ## Scope of this source note
-This source note captures a local GIPTA document or closely related document cluster from:
-`/Users/ahqmb-tn001/Documents/SBAS/GIPTA`
+This source note captures a GIPTA document or closely related document cluster for provenance and downstream claim control.
 
 Primary document or cluster:
 - Revised agenda, invitation, general information, and Indonesian workshop-report variants for the Dili workshop.

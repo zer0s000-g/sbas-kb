@@ -11,8 +11,7 @@ verification_status: extracted-local-document
 # ADB ASEAN SBAS Technical Assistance
 
 ## Scope of this source note
-This source note captures a local GIPTA document or closely related document cluster from:
-`/Users/ahqmb-tn001/Documents/SBAS/GIPTA`
+This source note captures a GIPTA document or closely related document cluster for provenance and downstream claim control.
 
 Primary document or cluster:
 - ADB_251016 SBAS FF Mission.pdf; Toward The Implementation of ASEAN_SBAS_20260413.pdf

@@ -2,8 +2,8 @@
 title: Research Log - GNSS-RO Indonesia Merge
 date: 2026-04-30
 type: merge
-source_vault: /Users/ahqmb-tn001/gnss_ro_indonesia
-target_vault: /Users/ahqmb-tn001/Desktop/SBAS_h
+source_vault: private GNSS-RO research workspace
+target_vault: retired SBAS vault
 ---
 
 # Research Log - GNSS-RO Indonesia Merge
@@ -13,8 +13,8 @@ target_vault: /Users/ahqmb-tn001/Desktop/SBAS_h
 Merged the GNSS-RO Indonesia empirical research vault into the main SBAS knowledge base.
 
 ### Merge scope
-- Source vault: `/Users/ahqmb-tn001/gnss_ro_indonesia/obsidian_notes/` (6 markdown notes + 1 project summary)
-- Target vault: `/Users/ahqmb-tn001/Desktop/SBAS_h/`
+- Source vault: private GNSS-RO research notes (6 markdown notes + 1 project summary)
+- Target vault: retired SBAS vault
 - Merge date: 2026-04-30
 - Performed by: Hermes Agent with `obsidian-knowledge-management` skill
 

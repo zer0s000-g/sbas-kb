@@ -11,8 +11,7 @@ verification_status: extracted-local-document
 # Indonesia InaCORS PBN GIPTA Presentation
 
 ## Scope of this source note
-This source note captures a local GIPTA document or closely related document cluster from:
-`/Users/ahqmb-tn001/Documents/SBAS/GIPTA`
+This source note captures a GIPTA document or closely related document cluster for provenance and downstream claim control.
 
 Primary document or cluster:
 - AirNav-BIG_GIPTA2_Presentation_Indonesia_updated.pdf; duplicate copy under Download-20260414152729/Day1_InaCORS-PBN_GIPTA2_Presentation_Indonesia_updated.pdf

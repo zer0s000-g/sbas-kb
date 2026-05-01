@@ -11,15 +11,13 @@ verification_status: implementation-log
 # ResearchLog 2026-05-01 GIPTA Expansion
 
 ## Scope
-Expanded the canonical Quartz content root using local documents from:
-`/Users/ahqmb-tn001/Documents/SBAS/GIPTA`
+Expanded the canonical Quartz content root using the GIPTA source document collection.
 
 ## Backup
-Backup created before implementation:
-`/Users/ahqmb-tn001/quartz-backups/content.bak-20260501-175921`
+A private pre-change backup was created before implementation.
 
 ## Implementation boundary
-`/Users/ahqmb-tn001/quartz/content/` is the active canonical content root. The retired `/Users/ahqmb-tn001/Desktop/SBAS_h/` vault was not used as an implementation target.
+The published Quartz content root is the active canonical content root. The retired SBAS vault was not used as an implementation target.
 
 ## Non-overlap decisions
 - GIPTA was added as a program/source/testbed/governance layer, not as a duplicate SBAS explainer.

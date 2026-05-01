@@ -11,8 +11,7 @@ verification_status: extracted-local-document
 # JRANSA Tokyo ASEAN SBAS Discussion
 
 ## Scope of this source note
-This source note captures a local GIPTA document or closely related document cluster from:
-`/Users/ahqmb-tn001/Documents/SBAS/GIPTA`
+This source note captures a GIPTA document or closely related document cluster for provenance and downstream claim control.
 
 Primary document or cluster:
 - JRANSA_Result of Discussion on ASEAN SBAS in Tokyo WS‗20251013.pdf
