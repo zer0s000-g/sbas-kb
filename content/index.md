@@ -20,11 +20,15 @@ Welcome to a structured, source-scaffolded research knowledge base on **Satellit
 | **ASEAN expansion** | Governance, barriers, demand drivers, readiness heuristic | [[ASEAN/ASEAN SBAS Adoption Landscape\|ASEAN Adoption Landscape]] |
 | **Standards & sources** | ICAO Docs, RTCA DO-229/242/289, EUROCAE | [[Sources/SBAS Source Backlog\|Source Backlog]] |
 | **Empirical ionospheric research** | GNSS-RO validation, IRI-2020 comparison, threat screening | [[Syntheses/IRI-2020 vs GNSS-RO Indonesia\|IRI-2020 vs GNSS-RO Indonesia]] |
-| **GIPTA 2.0 / ASEAN implementation** | Local GIPTA document stack, source notes, testbed, RFI, WRC-27, and ASEAN implementation pathway | [[MOCs/GIPTA 2.0 MOC|GIPTA 2.0 MOC]] |
+| **GIPTA 2.0 / ASEAN implementation** | GIPTA document stack, source notes, testbed, RFI, WRC-27, and ASEAN implementation pathway | [[MOCs/GIPTA 2.0 MOC|GIPTA 2.0 MOC]] |
+| **Institutional upgrade** | Editorial policy, maturity audit, and roadmap toward reference-grade public use | [[Institutional SBAS Knowledge Base Upgrade Roadmap]] |
 
 ## Navigate by map
 
 - [[MOCs/SBAS MOC\|SBAS MOC]] — top-level vault map
+- [[Institutional SBAS Knowledge Base Upgrade Roadmap]] — institutional-grade expansion plan
+- [[Institutional Upgrade Audit 2026-05-01]] — current maturity and quality audit
+- [[SBAS Knowledge Base Editorial and Source Policy]] — publication and source rules
 - [[MOCs/SBAS-Research-MOC\|SBAS Research MOC]] — research portfolio tracker
 - [[Sources/SBAS Source Backlog\|SBAS Source Backlog]] — provenance gaps queue
 - [[Sources/ASEAN SBAS Source Backlog\|ASEAN Source Backlog]] — regional source priorities
@@ -56,7 +60,8 @@ Built with the [obsidian-knowledge-management](obsidian-knowledge-management.md)
 | Conceptual foundation | 85% |
 | Source documentation | 60% + new empirical stack |
 | ASEAN regional branch | 65% + GIPTA source stack |
-| GIPTA 2.0 local source expansion | Source scaffolds added |
+| GIPTA 2.0 source expansion | Source scaffolds added |
+| Institutional-grade upgrade | Audit, roadmap, and editorial policy started |
 | Empirical ionospheric evidence | Published as internal stack |
 
 *Last updated: 2026-05-01*

@@ -22,6 +22,9 @@ It links research navigation, civil aviation applications, regional systems, sta
 ## Navigate the knowledge base
 
 ### Core research maps
+- [[Institutional SBAS Knowledge Base Upgrade Roadmap]]
+- [[Institutional Upgrade Audit 2026-05-01]]
+- [[SBAS Knowledge Base Editorial and Source Policy]]
 - [[SBAS Research MOC]]
 - [[SBAS in Civil Aviation MOC]]
 - [[SBAS-Systems-by-Region-MOC]]
@@ -76,11 +79,12 @@ It links research navigation, civil aviation applications, regional systems, sta
 - [[GBAS-Approach-Procedure]]
 
 ## Highest-value research gaps
-1. Dedicated source notes for foundational SBAS standards, guidance, and implementation documents.
-2. Atomic concept notes for integrity-related concepts such as protection levels, alert limits, continuity, availability, and ionospheric correction.
-3. Individual system notes for [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[SDCM]], [[BDSBAS]], [[KASS]], and [[A-SBAS]].
-4. Better distinction between verified statements, synthesis, and open questions in civil-aviation notes.
-5. ASEAN-specific source notes and country-level implementation notes to move the new ASEAN branch from heuristic synthesis toward verified regional research.
+1. Repair broken wikilinks in the homepage, MOCs, and older concept notes so institutional readers can navigate reliably.
+2. Dedicated source notes for foundational SBAS standards, guidance, and implementation documents.
+3. Atomic concept notes for integrity-related concepts such as protection levels, alert limits, continuity, availability, and ionospheric correction.
+4. Individual system notes for [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[SDCM]], [[BDSBAS]], [[KASS]], and [[A-SBAS]].
+5. Better distinction between verified statements, synthesis, and open questions in civil-aviation notes.
+6. ASEAN-specific source notes and country-level implementation notes to move the ASEAN branch from heuristic synthesis toward verified regional research.
 
 ## Provenance backlog
 Claims most in need of source support:
