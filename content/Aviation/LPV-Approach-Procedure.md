@@ -1,184 +1,147 @@
 ---
 title: LPV Approach Procedure and SBAS Integration
-description: Detailed procedure for Localizer Performance with Vertical guidance using SBAS
-tags: [aviation, approach, lpv, sbas, cdm, performance]
+description: Institutional learning page explaining Localizer Performance with Vertical guidance as an SBAS-supported aviation operation, with explicit source and approval caveats
+tags: [aviation, approach, lpv, sbas, integrity, procedure]
 category: aviation-operations
 created: 2026-04-19
-modified: 2026-04-19
-version: 1.0
+modified: 2026-05-02
+version: 2.0
+status: reviewed
+verification_status: source-scaffold-linked
 ---
 
-# ✈️ LPV Approach Procedure and SBAS Integration
+# LPV Approach Procedure and SBAS Integration
 
-## 📋 **Procedure Overview**
+## Scope and reader profile
 
-**LPV (Localizer Performance with Vertical)** is a Category A approach that combines:
-- Lateral guidance equivalent to Localizer
-- Vertical guidance with Glideslope equivalent
-- SBAS-provided integrity monitoring
-- Precision approach capability without traditional ILS
+This page explains LPV as an SBAS-supported aviation concept and connects it to the integrity learning path. It is written for technical readers, researchers, aviation specialists, regulators, ANSP staff, and implementation teams who need a disciplined overview before consulting operational sources.
 
-## 📊 **Technical Specifications**
+This page is not an approach chart, flight manual, regulator approval, avionics manual, or procedure-design standard. Do not use it to determine minima, aircraft eligibility, crew authorization, or whether a specific airport/runway supports LPV. Those determinations require official AIP/AIS data, procedure charts, regulator material, service-provider status, approved avionics documentation, and operator procedures.
 
-### **Performance Requirements**
-```
-LATERAL GUIDANCE:
-  Accuracy: ±10m (95%)
-  Alert Limit: ±20m
-  Detection Time: <2 seconds
+## Executive summary
 
-VERTICAL GUIDANCE:
-  Accuracy: ±15m (95%)
-  Alert Limit: ±30m  
-  Glideslope: 3° nominal
+**LPV** means **Localizer Performance with Vertical guidance**. In this knowledge base, LPV is treated as the clearest aviation example of why SBAS integrity matters: the operation depends not merely on improved GNSS accuracy, but on bounded-error information, alerting, approved receiver behavior, published procedure design, and operational authorization.
 
-INTEGRITY:
-  Protection Level: CAT I equivalent
-  False Alarm Rate: <0.001% per approach
-  Detection Time: <6 seconds
-  Availability: 99.9% during approach
+A simplified learning statement is:
+
+```text
+LPV is an SBAS-enabled vertically guided approach concept where the receiver and operation must satisfy integrity, availability, procedure, equipment, and approval conditions.
 ```
 
-### **SBAS Requirements for LPV**
-- **Correction Update Rate**: 1-6 seconds
-- **Position Accuracy**: 0.8m horizontal (95%)
-- **Integrity Monitoring**: Continuous fault detection
-- **Signal Processing**: Dual-frequency (L1+L5) recommended
+## What LPV depends on
 
-## 🔧 **Procedure Phases**
+An LPV operation depends on multiple layers working together:
 
-### **1. Initial Approach**
-- **Entry Point**: SBAS-defined initial approach fix
-- **Speed Management**: Target Vref + wind correction
-- **Configuration**: Landing gear down, flaps 15-20°
-- **SBAS Monitoring**: Verify correction lock
+| Layer | Required question |
+|---|---|
+| SBAS service | Is an approved SBAS service available and suitable for the operation? |
+| Receiver and avionics | Is the aircraft equipped and approved for the required mode? |
+| Procedure publication | Is an LPV procedure published for the runway and current cycle? |
+| Integrity checks | Are the relevant [[Protection Levels]] acceptable against the relevant [[Alert Limits]]? |
+| Crew/operator approval | Is the operator and crew authorized to conduct the operation? |
+| Contingency logic | Is the required response defined if service, receiver mode, or integrity conditions degrade? |
 
-### **2. Intermediate Approach**
-- **Altitude**: 1,500 feet AGL minimum
-- **Track**: Follow SBAS lateral path
-- **Configuration**: Flaps 30-40°, speed reduction
-- **Monitoring**: Vertical deviation ±100 feet
+A technical SBAS signal alone does not establish LPV operational availability.
 
-### **3. Final Approach**
-- **Decision Height**: Minimum 200 feet AGL (LPV minimum)
-- **Track**: Final course alignment
-- **Configuration**: Full flaps, landing checklist
-- **SBAS Alerting**: Monitor for integrity warnings
+## Relationship to SBAS integrity
 
-### **4. Missed Approach**
-- **Trigger**: Loss of SBAS signal or altitude violation
-- **Initial Climb**: 250-500 feet AGL
-- **Turn**: Standard missed approach procedure
-- **SBAS Re-acquisition**: Re-establish correction lock
+LPV is a useful training case because it makes the integrity chain concrete:
 
-## 🛡️ **Safety Considerations**
+1. [[SBAS Architecture]] provides the monitoring, correction, broadcast, and receiver-processing chain.
+2. [[SBAS Integrity]] explains why use-or-non-use logic is central.
+3. [[Protection Levels]] express bounded-error concepts used in usability checks.
+4. [[Alert Limits]] represent operation-specific acceptability thresholds.
+5. The approved procedure and avionics determine how the pilot and aircraft use the guidance.
 
-### **Integrity Monitoring**
-- **Continuous Checks**: 1 Hz minimum
-- **Alert Levels**: Visual and aural warnings
-- **Fail-Safe**: Automatic missed approach trigger
-- **Backup Systems**: RAIM or alternative navigation
+This page intentionally avoids giving unsourced numerical thresholds. Earlier draft values have been removed from the authoritative narrative until they can be tied to specific standards or approved operational sources.
 
-### **Weather Constraints**
-- **Minimums**: LPV requires 400 feet ceiling, 1 SM visibility
-- **Wind Limits**: Crosswind 30 knots maximum
-- **Precipitation**: Moderate rain acceptable with proper configuration
-- **Low Visibility**: Operations down to 200 feet possible with LPV
+## LPV compared with nearby concepts
 
-### **Aircraft Requirements**
-- **SBAS Receiver**: Certified multi-constellation
-- **Display Capability**: Vertical deviation indicator
-- **Autopilot**: Coupled to SBAS guidance
-- **Backup Navigation**: Traditional radio navaids
+| Concept | Relationship to LPV | Important distinction |
+|---|---|---|
+| LNAV | Lateral navigation approach concept | Does not imply the same vertical-guidance basis as LPV |
+| LNAV/VNAV | Lateral plus vertical navigation concept | May use different vertical-navigation sources and approval logic |
+| RNAV | Area navigation family | Broader than LPV; not itself an SBAS mode |
+| RNP | Performance-based navigation with onboard monitoring/alerting requirements | Related to PBN concepts but not equivalent to LPV |
+| GBAS approach | Local-area augmentation approach context | Different augmentation architecture from SBAS |
 
-## 📊 **Operational Benefits**
+See [[LNAV-VNAV-Approach-Procedure]], [[RNAV-Approach-Procedure]], [[RNP-Approach-Procedure]], and [[GBAS-Approach-Procedure]] for nearby aviation notes.
 
-### **Advantages Over Traditional Approaches**
-- **Reduced Weather Delays**: 30-40% improvement in low visibility
-- **Fuel Savings**: 15-20% reduction via direct routing
-- **Capacity Increase**: 25% more approaches per hour
-- **Accessibility**: Remote airport capability
+## Operational interpretation
 
-### **Economic Impact**
-- **Infrastructure Savings**: No ILS installation ($2-5M per installation)
-- **Operational Efficiency**: Reduced holding patterns
-- **Environmental**: Lower emissions via optimized routing
+For a public knowledge base, the safest institutional phrasing is:
 
-## 🔧 **Implementation Requirements**
+```text
+LPV may provide vertically guided approach capability where the SBAS service, aircraft equipment, procedure publication, operational approval, and real-time integrity conditions support it.
+```
 
-### **Ground Infrastructure**
-- **SBAS Coverage**: Continental or regional augmentation
-- **Reference Stations**: Within 500 km radius
-- **Communication Links**: Reliable data transmission
-- **Monitoring Systems**: 24/7 operational surveillance
+Avoid unsupported claims such as:
 
-### **Aircraft Certification**
-- **Type Approval**: FAA/EASA SBAS LPV certification
-- **Pilot Training**: 10-hour simulator plus 5 hours dual instruction
-- **Equipment Check**: Pre-flight SBAS verification
-- **Documentation**: Updated flight manual procedures
+- universal LPV minima;
+- universal decision heights;
+- generic accuracy values detached from a standard or service definition;
+- airport cost savings without a sourced case study;
+- regional LPV availability inferred only from SBAS coverage;
+- training-hour requirements without regulator/operator source support.
 
-## ⚠️ **Limitations and Constraints**
+## Benefits to evaluate
 
-### **Operational Restrictions**
-- **Geographic**: Requires SBAS coverage area
-- **Temporal**: Sun interference during equinox periods
-- **Equipment**: Single-frequency receivers not approved
-- **Procedural**: Specific approach chart requirements
+LPV can be valuable because it may support vertically guided access without installing a traditional precision-approach ground system at every runway. However, the actual benefit depends on local and regional conditions:
 
-### **Known Issues**
-- **Ionospheric Disturbances**: Solar activity impact
-- **Multipath Effects**: Urban canyon interference
-- **Receiver Sensitivity**: Cold start acquisition time
-- **Data Latency**: Correction transmission delays
+- runway and airport network geometry;
+- terrain and obstacle environment;
+- weather and operational minima needs;
+- aircraft equipage;
+- procedure-design capacity;
+- regulator/ANSP approval and oversight;
+- SBAS service status and performance;
+- maintenance of AIS/AIM and charting processes.
 
-## 🔄 **Integration with Other Systems**
+For ASEAN implementation analysis, this connects LPV to [[ASEAN SBAS Operational Demand Drivers]], [[ASEAN SBAS Deployment Barriers]], and [[ASEAN SBAS Service-Model Options]].
 
-### **SBAS Architecture**
-- **Reference Network**: Local ground stations
-- **Satellite Links**: GEO broadcast correction data
-- **User Equipment**: Multi-constellation receivers
-- **Monitoring**: Real-time integrity verification
+## Source anchors and current maturity
 
-### **Air Traffic Management**
-- **Controller Procedures**: Standardized LPV approach vectors
-- **Separation Standards**: Reduced spacing possible
-- **Traffic Flow**: Optimized routing via SBAS
-- **Emergency Protocols**: Immediate failure procedures
+Current source scaffolds relevant to this page include:
 
-## 📊 **Performance Metrics**
+- [[Source - RTCA DO-229]] — airborne equipment and receiver-performance provenance scaffold.
+- [[Source - RTCA DO-242]] — augmentation-system provenance scaffold.
+- [[Source - ICAO Doc 9855]] — SBAS technical-specification provenance scaffold.
+- [[Source - ICAO Doc 9854]] — testing/monitoring provenance scaffold.
+- [[Source - RTCA DO-289]] — SBAS performance testing/monitoring provenance scaffold.
+- [[SBAS Source Backlog]] — active standards-source verification queue.
 
-### **Approach Success Rates**
-- **LPV vs ILS**: 92% vs 95% (weather-dependent)
-- **Cancellation Rate**: 8% vs 12% (traditional)
-- **On-Time Performance**: 88% improvement
-- **Fuel Efficiency**: 18% savings average
+This page is now `source-scaffold-linked`. It is a high-quality learning and navigation page, not a verified operational requirements table.
 
-### **Cost-Benefit Analysis**
-- **Implementation Cost**: $500K - $2M per airport (vs $2-5M ILS)
-- **Annual Savings**: $3-8M per major airport
-- **ROI Period**: 2-4 years
-- **Environmental Benefit**: 15,000 tons CO2 reduction annually
+## Implementation checklist for research use
 
-## 🔗 **Related Knowledge Links**
-- [[SBAS-Terminology]](Concepts/SBAS-Terminology.md) - Core definitions and terminology
-- [[Safety-Terminology]] - Safety and integrity requirements
-- [[Communication-Terminology]] - Communication protocols and data formats
-- [[SBAS in Civil Aviation MOC]](MOCs/SBAS-in-Civil-Aviation-MOC.md) - Operational procedures and use cases
-- [[SBAS-Standards-Regulation]](Standards-Regulation/SBAS-Standards-Regulation.md) - Certification and regulatory requirements
+For research or planning, evaluate LPV through the following questions:
 
-## 📝 **Research Notes**
+1. What official source confirms SBAS service status for the relevant region?
+2. What AIP/AIS/procedure source confirms the actual LPV procedure inventory?
+3. What aircraft equipage assumptions are being made?
+4. What regulator or ANSP material defines approval and oversight?
+5. What integrity, protection-level, and alert-limit sources apply?
+6. What outage, downgrade, or missed-approach procedures are specified in approved material?
+7. What local operational problem is LPV intended to solve?
 
-### **Open Questions**
-1. Urban canyon multipath mitigation effectiveness
-2. Solar activity impact on tropical regions
-3. Single-frequency receiver certification feasibility
-4. Cost optimization for small airports
+## Replaced draft material
 
-### **Future Considerations**
-- **GBAS Integration**: Hybrid approaches
-- **4D Trajectory**: Time-based procedures
-- **A2C2 Integration**: Aircraft-to-controller communication
-- **UAM Preparation**: Urban air mobility compatibility
+This page previously contained unsourced numerical performance values, generic weather minima, pilot-training hours, cost figures, and benefit percentages. Those have been removed from the main narrative because they were not tied to visible source anchors. Future values may be reintroduced only when each value is linked to a source, context, jurisdiction, procedure type, and revision/date.
 
-*Document Status: Draft | Next Review: 2026-05-03 | Version: 1.0*
+## Open verification tasks
+
+1. Build a verified source note for LPV procedure and approval terminology.
+2. Identify which claims belong to airborne-equipment standards versus procedure-design or regulator material.
+3. Add source-backed LPV examples from official AIP/AIS or regulator/ANSP pages.
+4. Separate LPV conceptual explanation from region-specific implementation claims.
+5. Connect verified LPV material back to [[SBAS in Civil Aviation MOC]] and [[SBAS-Standards-Regulation]].
+
+## See also
+
+- [[SBAS Integrity]]
+- [[Protection Levels]]
+- [[Alert Limits]]
+- [[SBAS Architecture]]
+- [[SBAS in Civil Aviation MOC]]
+- [[What is SBAS]]
+- [[SBAS Source Backlog]]

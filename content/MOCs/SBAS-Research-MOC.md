@@ -210,3 +210,8 @@ sources: [[Source1], [Source2], ...]
 - [[ResearchLog-2026-05-02-Institutional-Navigation-Upgrade]]
 - New reader-entry pillars: [[What is SBAS]], [[SBAS Architecture]], [[SBAS Architecture Flow]]
 - Navigation quality gate: homepage/MOC link repair, Quartz build, publication audit, and broken-wikilink scan passed
+
+## Integrity learning path upgrade — 2026-05-02
+- [[ResearchLog-2026-05-02-Integrity-Learning-Path-Upgrade]]
+- Upgraded institutional learning path: [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and [[LPV-Approach-Procedure]]
+- Removed unsupported LPV numerical/performance claims from the authoritative narrative pending source verification

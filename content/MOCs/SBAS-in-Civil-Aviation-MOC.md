@@ -34,14 +34,14 @@ A weak link in any layer can prevent operational use even when the technical SBA
 
 | Concept | Role in the knowledge base | Editorial status |
 |---|---|---|
-| [[LPV-Approach-Procedure]] | SBAS-enabled vertical guidance learning note | needs standards/source tightening |
+| [[LPV-Approach-Procedure]] | SBAS-enabled vertical guidance learning note | reviewed; source-scaffold-linked |
 | [[LNAV-VNAV-Approach-Procedure]] | vertical navigation context and comparison path | draft educational scaffold |
 | [[RNAV-Approach-Procedure]] | area-navigation context | draft educational scaffold |
 | [[RNP-Approach-Procedure]] | performance-based navigation context | draft educational scaffold |
 | [[GBAS-Approach-Procedure]] | local-area augmentation comparison | draft educational scaffold |
-| [[SBAS Integrity]] | safety-relevant function connecting system monitoring to operation | source-scaffold-linked |
-| [[Protection Levels]] | bounded-error concept used in operational usability checks | source-scaffold-linked |
-| [[Alert Limits]] | operation-specific bounds and alerting interpretation | source-scaffold-linked |
+| [[SBAS Integrity]] | safety-relevant function connecting system monitoring to operation | reviewed; source-scaffold-linked |
+| [[Protection Levels]] | bounded-error concept used in operational usability checks | reviewed; source-scaffold-linked |
+| [[Alert Limits]] | operation-specific bounds and alerting interpretation | reviewed; source-scaffold-linked |
 
 ## Integrity, protection levels, and alert limits
 

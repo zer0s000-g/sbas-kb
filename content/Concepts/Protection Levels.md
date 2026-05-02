@@ -1,79 +1,139 @@
 ---
 title: Protection Levels
-description: Draft concept note on protection levels in SBAS and their role in aviation use decisions
-tags: [concept, protection-levels, sbas, integrity, aviation, provisional]
+description: Institutional concept page explaining protection levels as bounded-error measures used in SBAS integrity and aviation usability decisions
+tags: [concept, protection-levels, sbas, integrity, aviation, alert-limits]
 created: 2026-04-23
-modified: 2026-04-23
-status: draft
+modified: 2026-05-02
+status: reviewed
 verification_status: source-scaffold-linked
 ---
 
 # Protection Levels
 
-## Definition status
-This note is a draft concept note.
+## Scope and reader profile
 
-Boundary:
-- It synthesizes terminology already present in the vault.
-- It is linked to provisional source scaffolds rather than completed source extraction.
-- Numeric thresholds and operation-specific criteria elsewhere in the vault should be treated as provisional until anchored to verified source notes.
+This page explains **protection levels** as they are used in the SBAS integrity learning path. It is written for technical readers who need the operational meaning of the concept without treating provisional values in draft notes as verified requirements.
 
-## Working definition
-Within the current vault, protection levels are treated as bounds used in safety-relevant navigation decisions.
+Exact mathematical definitions, confidence assumptions, receiver algorithms, and operation-specific thresholds must be checked against authoritative standards, service-provider documentation, and approved equipment/procedure material.
 
-The existing vault language suggests that protection levels matter because they help determine whether the navigation solution remains acceptable for a specific operation, especially in approach contexts.
+## Executive summary
 
-## Relationship to SBAS integrity
-[[SBAS Integrity]] is the broader safety function; protection levels appear in the vault as one of the practical expressions of that function.
+A **protection level** is a conservative bound used to support a navigation usability decision. In an SBAS aviation context, it expresses whether the estimated navigation error is bounded tightly enough for the intended operation.
 
-Current vault relationship pattern:
-- integrity establishes the need for trustworthy use/no-use logic
-- protection levels express the bound being compared against operational criteria
-- alerting occurs when the operational criteria are not satisfied
+In simplified form:
 
-This relationship still requires direct source confirmation.
+```text
+Protection level = a bound on possible navigation error for a specified dimension and operation context.
+```
 
-## Current in-vault usage
-Protection levels already appear in these places:
-- [[Safety-Terminology]]
-- [[SBAS in Civil Aviation MOC]]
-- [[LPV-Approach-Procedure]]
-- [[LNAV-VNAV-Approach-Procedure]]
-- [[SBAS-Research-MOC]]
+The protection level is not the same as the actual position error. It is a safety-oriented bound used to decide whether the navigation solution remains acceptable.
 
-## Aviation implications
-The current vault uses protection levels mainly in approach and operational-approval contexts.
+## Relationship to integrity and alert limits
 
-Examples implied by existing notes:
-- approach suitability depends on whether protection-level requirements are met
-- different procedure types may imply different protection-level expectations
-- protection-level language is closely tied to alert limits and integrity monitoring
+Protection levels sit between the broader integrity function and the operational alert-limit decision:
 
-These are synthesis statements and should not yet be treated as verified requirements.
+```text
+SBAS integrity provides monitored, bounded-error information.
+The receiver or approved system logic represents that bound through protection levels.
+Protection levels are compared with alert limits.
+If the relevant protection level is not acceptable for the operation, the operation should not continue under that basis.
+```
 
-## Current source anchors
-These are source scaffolds, not completed source notes.
-- [[Source - RTCA DO-242]]
+Related pages:
+
+- [[SBAS Integrity]] — broader safety function.
+- [[Alert Limits]] — operation-specific acceptability threshold.
+- [[LPV-Approach-Procedure]] — example aviation context.
+
+## Horizontal and vertical dimensions
+
+Protection-level concepts are commonly discussed in horizontal and vertical dimensions because aviation operations can have different lateral and vertical requirements.
+
+| Dimension | General interpretation | Aviation relevance |
+|---|---|---|
+| Horizontal protection concept | Bound on horizontal position error | Lateral containment, route/approach guidance, navigation performance |
+| Vertical protection concept | Bound on vertical position error | Vertically guided operations and approach safety context |
+
+This page intentionally avoids assigning numerical values. Numeric thresholds must be tied to specific standards, service definitions, procedure types, and equipment approvals.
+
+## Why protection levels matter
+
+Protection levels matter because they convert integrity monitoring into operational decision support.
+
+They help answer:
+
+- Is the navigation solution bounded well enough for this operation?
+- Is the receiver able to support the required mode or procedure?
+- Should the operation continue under the selected guidance basis?
+- Has the system crossed into a condition where an alert or mode change is required?
+
+In this sense, protection levels are not merely mathematical outputs. They are part of the aviation safety chain connecting SBAS architecture to cockpit usability.
+
+## Protection level is not actual error
+
+A common misunderstanding is to read a protection level as the measured error. It is better understood as a conservative bound used for safety decision-making.
+
+| Item | Meaning |
+|---|---|
+| Actual navigation error | Difference between true position and estimated position; usually not directly known by the user in real time |
+| Estimated accuracy | Statistical or modeled estimate of expected position quality |
+| Protection level | Conservative bound used to support integrity and use-or-non-use decisions |
+| Alert limit | Threshold associated with the intended operation |
+
+The operational question is not “is the actual error small right now?” but “is the error sufficiently bounded for the approved operation?”
+
+## Source anchors and current maturity
+
+Current source scaffolds relevant to protection-level work include:
+
 - [[Source - RTCA DO-229]]
+- [[Source - RTCA DO-242]]
 - [[Source - ICAO Doc 9855]]
 - [[Source - ICAO Doc 9854]]
 - [[Source - RTCA DO-289]]
+- [[SBAS Source Backlog]]
 
-## Distinguish from related concepts
-- [[SBAS Integrity]] is the broader safety concept.
-- [[Alert Limits]] are the operational bounds against which use decisions may be framed.
-- [[Safety-Terminology]] is currently the more general terminology stub.
-- [[WAAS]] is a regional system context in which these concepts appear in current vault notes.
+The page is `source-scaffold-linked`, not fully source-verified. It should be used as a structured conceptual reference until the source scaffolds are deepened.
 
-## Open provenance questions
-- Which notes currently use "protection level" too loosely or without source support?
-- Which protection-level claims in [[LPV-Approach-Procedure]] and [[LNAV-VNAV-Approach-Procedure]] are descriptive placeholders versus sourced requirements?
-- Which source scaffold should become the primary anchor for a fully verified protection-level note?
+## Use in the knowledge base
 
-## See also
+Protection-level language appears in:
+
 - [[SBAS Integrity]]
 - [[Alert Limits]]
 - [[SBAS in Civil Aviation MOC]]
 - [[LPV-Approach-Procedure]]
 - [[LNAV-VNAV-Approach-Procedure]]
+- [[Safety-Terminology]]
+
+This page should be treated as the preferred concept anchor for future cleanup of those references.
+
+## Implementation relevance
+
+For implementation planning, protection levels influence:
+
+- receiver eligibility and mode availability;
+- integrity monitoring and performance reporting;
+- procedure design and publication logic;
+- safety-case arguments;
+- validation of ionospheric and other error sources;
+- interpretation of service outages or degraded modes.
+
+For low-latitude regions, protection-level design and validation are linked to the ionospheric threat environment. See [[SBAS Ionospheric Threat — Empirical Evidence]] for the current research branch.
+
+## Open verification tasks
+
+1. Identify the source that should provide the primary definition of horizontal and vertical protection concepts for this KB.
+2. Audit procedure notes for unsourced protection-level values or implied thresholds.
+3. Separate generic GNSS protection-level language from SBAS-specific operational use.
+4. Add source-backed equations only after the relevant standard or service definition is directly verified.
+5. Link future numerical values to explicit source, operation, dimension, and confidence context.
+
+## See also
+
+- [[SBAS Integrity]]
+- [[Alert Limits]]
+- [[LPV-Approach-Procedure]]
+- [[SBAS Architecture]]
+- [[SBAS in Civil Aviation MOC]]
 - [[SBAS Source Backlog]]
