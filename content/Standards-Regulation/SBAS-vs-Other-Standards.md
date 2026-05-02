@@ -28,14 +28,14 @@ Several earlier draft mappings were corrected in the 2026-05-02 source-matrix cy
 
 ## Source-family comparison
 
-| Domain | Likely source family | Current KB source posture | Main caution |
-|---|---|---|---|
-| SBAS airborne equipment | RTCA/EUROCAE airborne-equipment MOPS | [[Source - RTCA DO-229]] is public-catalog reviewed | Detailed requirements require official standard extraction |
-| SBAS state implementation | ICAO GNSS guidance and Annex 10 | [[Source - ICAO Doc 9849]] added; Annex 10 note still needed | Guidance is not the same as an approval decision |
-| SBAS service availability | Service-provider definitions, NOTAM/status, AIP/regulator material | Future service-provider notes needed | Do not infer availability from architecture |
-| LPV procedures | Equipment MOPS + procedure design + AIP/regulator/operator sources | LPV page is source-scaffold-linked | Do not publish minima without procedure/source context |
-| GBAS | GBAS standards, local service approvals, airport-specific publications | Current GBAS notes remain educational scaffolds | Do not compare precision using unsourced generic numbers |
-| ABAS/RAIM | Receiver standards, PBN/regulator guidance, aircraft equipment approvals | Current notes are conceptual | Do not treat RAIM as interchangeable with SBAS integrity |
+| Domain                    | Likely source family                                                     | Current KB source posture                                             | Main caution                                                                                                                          |
+| ------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| SBAS airborne equipment   | RTCA/EUROCAE airborne-equipment MOPS                                     | [[Source - RTCA DO-229]] is public-product/regulatory-signal reviewed | Detailed requirements, classes, installation approval, and operational approval require official RTCA and regulator-source extraction |
+| SBAS state implementation | ICAO GNSS guidance and Annex 10                                          | [[Source - ICAO Doc 9849]] added; Annex 10 note still needed          | Guidance is not the same as an approval decision                                                                                      |
+| SBAS service availability | Service-provider definitions, NOTAM/status, AIP/regulator material       | Future service-provider notes needed                                  | Do not infer availability from architecture                                                                                           |
+| LPV procedures            | Equipment MOPS + procedure design + AIP/regulator/operator sources       | LPV page is source-scaffold-linked                                    | Do not publish minima without procedure/source context                                                                                |
+| GBAS                      | GBAS standards, local service approvals, airport-specific publications   | Current GBAS notes remain educational scaffolds                       | Do not compare precision using unsourced generic numbers                                                                              |
+| ABAS/RAIM                 | Receiver standards, PBN/regulator guidance, aircraft equipment approvals | Current notes are conceptual                                          | Do not treat RAIM as interchangeable with SBAS integrity                                                                              |
 
 ## Comparison rules
 

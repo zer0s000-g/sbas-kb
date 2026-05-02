@@ -108,7 +108,7 @@ This statement is conceptual. It must not be used to infer actual minima, alert 
 Current source scaffolds relevant to this page include:
 
 - [[SBAS Standards Source Matrix]]
-- [[Source - RTCA DO-229]] — airborne equipment and receiver-related provenance scaffold.
+- [[Source - RTCA DO-229]] — airborne equipment and receiver-related source-family anchor; official-text extraction still needed before using detailed receiver-integrity or alerting language.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — ICAO SARPs/technical-provisions source-family routing scaffold.
 - [[Source - ICAO Doc 9849]] — ICAO GNSS implementation-guidance scaffold.
 - [[Source - RTCA DO-242]] — red-flag provenance note; no longer used as an SBAS integrity anchor pending contrary direct-source evidence.
@@ -144,7 +144,7 @@ For ASEAN-focused planning, these issues connect directly to [[ASEAN SBAS Deploy
 ## Open verification tasks
 
 1. Verify which integrity statements should be anchored primarily to RTCA airborne-equipment material versus system-level augmentation material.
-2. Separate receiver annunciation requirements from service-provider monitoring requirements.
+2. Separate DO-229 receiver/equipment integrity and annunciation requirements from Annex 10/service-provider monitoring requirements and from operational procedure responses.
 3. Tie protection-level and alert-limit definitions to specific standards and service definitions.
 4. Replace remaining unsourced numerical claims in procedure notes with source-backed statements or cautious qualitative language.
 5. Identify which integrity claims belong to Annex 10, which belong to RTCA/EUROCAE receiver standards, and which belong to service-provider, procedure-design, or regulator sources.

@@ -104,7 +104,7 @@ For ASEAN implementation analysis, this connects LPV to [[ASEAN SBAS Operational
 Current source scaffolds relevant to this page include:
 
 - [[SBAS Standards Source Matrix]] — current claim-routing matrix for standards/source families.
-- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor.
+- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor; public RTCA/FAA/EASA signals support equipment routing, not installation approval, operational approval, or procedure availability by themselves.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
 - [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
 - [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag provenance notes retained because earlier drafts likely mis-scoped them for SBAS.
@@ -131,7 +131,7 @@ This page previously contained unsourced numerical performance values, generic w
 ## Open verification tasks
 
 1. Build a verified source note for LPV procedure and approval terminology.
-2. Identify which claims belong to airborne-equipment standards versus procedure-design or regulator material.
+2. Identify which LPV claims belong to DO-229 airborne-equipment standards versus procedure-design, service-provider, regulator, AIP/AIS, aircraft-installation, or operator material.
 3. Add source-backed LPV examples from official AIP/AIS or regulator/ANSP pages.
 4. Separate LPV conceptual explanation from region-specific implementation claims.
 5. Connect verified LPV material back to [[SBAS in Civil Aviation MOC]], [[SBAS-Standards-Regulation]], and the Annex 10 / DO-229 / procedure-design source split.

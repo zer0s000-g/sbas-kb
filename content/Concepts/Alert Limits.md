@@ -92,7 +92,7 @@ If it does not, the operation must transition according to the approved procedur
 Relevant current source scaffolds include:
 
 - [[SBAS Standards Source Matrix]]
-- [[Source - RTCA DO-229]]
+- [[Source - RTCA DO-229]] — receiver/equipment source-family anchor for future official extraction of alerting and usability-check language
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
@@ -101,7 +101,7 @@ Relevant current source scaffolds include:
 - [[Source - RTCA DO-289]]
 - [[SBAS Source Backlog]]
 
-This page remains `source-scaffold-linked`. It provides a careful conceptual framework, but not yet a verified table of alert-limit values. Any future values must be tied to exact source family, operation type, revision/date, and applicability conditions.
+This page remains `source-scaffold-linked`. It provides a careful conceptual framework, but not yet a verified table of alert-limit values. Any future values must be tied to exact source family, operation type, revision/date, and applicability conditions; DO-229 alone is not enough to publish operational minima or procedure-specific thresholds.
 
 ## Use in the knowledge base
 

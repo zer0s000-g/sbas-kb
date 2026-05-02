@@ -87,7 +87,7 @@ The operational question is not “is the actual error small right now?” but �
 Current source scaffolds relevant to protection-level work include:
 
 - [[SBAS Standards Source Matrix]]
-- [[Source - RTCA DO-229]]
+- [[Source - RTCA DO-229]] — receiver/equipment source-family anchor for future official extraction of protection-level and usability-check language
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
@@ -96,7 +96,7 @@ Current source scaffolds relevant to protection-level work include:
 - [[Source - RTCA DO-289]]
 - [[SBAS Source Backlog]]
 
-The page is `source-scaffold-linked`, not fully source-verified. It should be used as a structured conceptual reference until Annex 10, receiver-standard, and operational-source scaffolds are deepened through direct extraction.
+The page is `source-scaffold-linked`, not fully source-verified. It should be used as a structured conceptual reference until Annex 10, DO-229 receiver-standard, and operational-source scaffolds are deepened through direct official-text extraction.
 
 ## Use in the knowledge base
 

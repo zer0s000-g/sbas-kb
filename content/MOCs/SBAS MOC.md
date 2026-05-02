@@ -67,7 +67,7 @@ Editorial boundary: procedure notes are educational scaffolds unless explicitly 
 - [[Source - ICAO Doc 9854]] — red-flagged as likely mis-scoped for SBAS technical claims.
 - [[Source - ICAO Doc 9855]] — red-flagged as likely mis-scoped for SBAS technical claims.
 
-Priority source work is now direct extraction of the real SBAS standards backbone: Annex 10, [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]], procedure-design sources, and service-provider documents.
+Priority source work is now direct extraction of the real SBAS standards backbone: Annex 10, official [[Source - RTCA DO-229]] text, [[Source - ICAO Doc 9849]], regulator TSO/ETSO material, procedure-design sources, and service-provider documents.
 
 ## Regional systems branch
 
@@ -121,7 +121,7 @@ Boundary: GNSS-RO and IRI-2020 work is valuable for threat discovery and researc
 ## Highest-value next-note targets
 
 1. Directly extract the official text behind [[Source - ICAO Annex 10 Volume I GNSS SBAS]].
-2. Directly extract [[Source - RTCA DO-229]] and [[Source - ICAO Doc 9849]].
+2. Directly extract the official [[Source - RTCA DO-229]] text and [[Source - ICAO Doc 9849]], then create FAA/EASA TSO/ETSO source notes for approval-context separation.
 3. Upgrade remaining aviation procedure notes only after procedure-design/PBN source anchors are established.
 4. Build service-provider source notes before comparative system-performance tables.
 5. Continue ASEAN source-hardening through [[SBAS Source Backlog]] and [[ASEAN SBAS Source Backlog]].

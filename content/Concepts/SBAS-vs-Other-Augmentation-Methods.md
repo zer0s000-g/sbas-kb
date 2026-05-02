@@ -53,7 +53,7 @@ Integrity is not simply higher accuracy.
 ## Current source anchors
 
 - [[SBAS Standards Source Matrix]] — current claim-routing matrix.
-- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor.
+- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor; not a source for regional service status or procedure minima by itself.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
 - [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
 - [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag notes documenting earlier mis-scoped references.

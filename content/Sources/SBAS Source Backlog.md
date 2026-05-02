@@ -26,14 +26,14 @@ The standards branch now has a dedicated routing page: [[SBAS Standards Source M
 
 Public catalog review produced several corrections:
 
-| Reference                  | Current disposition                                                                                              |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [[Source - RTCA DO-229]]   | Keep as active GPS/SBAS airborne-equipment source-family anchor; direct extraction still required                |
-| [[Source - ICAO Doc 9849]] | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required                         |
-| [[Source - RTCA DO-242]]   | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims                     |
-| [[Source - RTCA DO-289]]   | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims          |
-| [[Source - ICAO Doc 9854]] | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims                       |
-| [[Source - ICAO Doc 9855]] | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications |
+| Reference                  | Current disposition                                                                                                                             |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Source - RTCA DO-229]]   | Keep as active GPS/SBAS airborne-equipment source-family anchor; public RTCA/FAA/EASA signals reviewed; official-text extraction still required |
+| [[Source - ICAO Doc 9849]] | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required                                                        |
+| [[Source - RTCA DO-242]]   | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims                                                    |
+| [[Source - RTCA DO-289]]   | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims                                         |
+| [[Source - ICAO Doc 9854]] | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims                                                      |
+| [[Source - ICAO Doc 9855]] | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications                                |
 
 ## Priority 1 — build the real standards backbone
 
@@ -47,8 +47,9 @@ Public catalog review produced several corrections:
 ### 2. [[Source - RTCA DO-229]]
 
 - Current vault usage: airborne GPS/SBAS equipment, LPV-capable equipment context, integrity/protection/alert-limit pages, aviation MOC.
-- Why this matters: it is currently the strongest public-catalog-reviewed source-family anchor for GPS/SBAS airborne equipment.
-- Verification need: direct extraction of revision-specific equipment classes, intended functions, alerting/integrity language, test methods, and exclusions.
+- Why this matters: it is currently the strongest public-product-and-regulatory-signal-reviewed source-family anchor for GPS/SBAS airborne equipment.
+- Verification need: direct extraction of official revision-specific equipment classes, intended functions, alerting/integrity language, test methods, exclusions, and the relationship between DO-229F, DO-229E, FAA TSO, and EASA ETSO material.
+- Current editorial rule: use DO-229 for receiver/equipment routing only; do not infer installation approval, operational approval, procedure minima, service status, or DFMC requirements.
 
 ### 3. [[Source - ICAO Doc 9849]]
 
@@ -102,7 +103,7 @@ Public catalog review produced several corrections:
 ## Suggested execution order
 
 1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] from the official Annex text and classify GNSS/SBAS claims by section and amendment baseline.
-2. Directly extract [[Source - RTCA DO-229]].
+2. Directly extract the official [[Source - RTCA DO-229]] text and create regulator-source notes for FAA TSO-C145/C146 and EASA ETSO-C145/C146 before publishing approval-specific statements.
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. Build procedure-design/PBN source notes.
 5. Build service-provider source notes for major SBAS systems.
