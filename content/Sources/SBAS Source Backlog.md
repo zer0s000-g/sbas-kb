@@ -26,23 +26,23 @@ The standards branch now has a dedicated routing page: [[SBAS Standards Source M
 
 Public catalog review produced several corrections:
 
-| Reference | Current disposition |
-|---|---|
-| [[Source - RTCA DO-229]] | Keep as active GPS/SBAS airborne-equipment source-family anchor; direct extraction still required |
-| [[Source - ICAO Doc 9849]] | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required |
-| [[Source - RTCA DO-242]] | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims |
-| [[Source - RTCA DO-289]] | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims |
-| [[Source - ICAO Doc 9854]] | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims |
+| Reference                  | Current disposition                                                                                              |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [[Source - RTCA DO-229]]   | Keep as active GPS/SBAS airborne-equipment source-family anchor; direct extraction still required                |
+| [[Source - ICAO Doc 9849]] | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required                         |
+| [[Source - RTCA DO-242]]   | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims                     |
+| [[Source - RTCA DO-289]]   | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims          |
+| [[Source - ICAO Doc 9854]] | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims                       |
 | [[Source - ICAO Doc 9855]] | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications |
 
 ## Priority 1 — build the real standards backbone
 
 ### 1. ICAO Annex 10, Volume I GNSS/SBAS material
 
-- Current vault usage: referenced conceptually across standards, architecture, integrity, aviation, and implementation notes, but not yet represented by a dedicated source note.
-- Why this matters: Annex 10 is likely the necessary ICAO technical/SARPs baseline for many GNSS/SBAS claims.
-- Verification need: identify exact volume, edition, amendment status, GNSS/SBAS sections, and downstream claim boundaries.
-- Candidate future note: Source - ICAO Annex 10 Volume I GNSS/SBAS.
+- Current vault usage: now represented by [[Source - ICAO Annex 10 Volume I GNSS SBAS]] as a public-catalog-reviewed source-family anchor.
+- Why this matters: Annex 10, Volume I is the necessary ICAO technical/SARPs source family to investigate for many GNSS/SBAS claims.
+- Verification need: move beyond public catalog metadata by extracting the official Annex text, exact edition/amendment baseline, GNSS/SBAS sections, and downstream claim boundaries.
+- Current editorial rule: use the source note for routing only; do not publish detailed Annex-derived requirements until direct extraction is complete.
 
 ### 2. [[Source - RTCA DO-229]]
 
@@ -101,7 +101,7 @@ Public catalog review produced several corrections:
 
 ## Suggested execution order
 
-1. Create Source - ICAO Annex 10 Volume I GNSS/SBAS.
+1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] from the official Annex text and classify GNSS/SBAS claims by section and amendment baseline.
 2. Directly extract [[Source - RTCA DO-229]].
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. Build procedure-design/PBN source notes.
@@ -112,6 +112,7 @@ Public catalog review produced several corrections:
 ## Related notes
 
 - [[SBAS Standards Source Matrix]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[SBAS MOC]]
 - [[SBAS-Research-MOC]]
 - [[SBAS-Standards-Regulation]]

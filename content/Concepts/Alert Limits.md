@@ -33,11 +33,11 @@ The alert limit is not a generic warning preference. It is tied to the operation
 
 Alert limits and protection levels are paired concepts:
 
-| Concept | Role |
-|---|---|
-| [[Protection Levels]] | Express a conservative bound on navigation error |
-| Alert limits | Define the maximum acceptable bound for the intended operation |
-| [[SBAS Integrity]] | Provides the broader monitoring and alerting function |
+| Concept               | Role                                                           |
+| --------------------- | -------------------------------------------------------------- |
+| [[Protection Levels]] | Express a conservative bound on navigation error               |
+| Alert limits          | Define the maximum acceptable bound for the intended operation |
+| [[SBAS Integrity]]    | Provides the broader monitoring and alerting function          |
 
 A simplified relationship is:
 
@@ -93,6 +93,7 @@ Relevant current source scaffolds include:
 
 - [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
 - [[Source - ICAO Doc 9855]]
@@ -100,7 +101,7 @@ Relevant current source scaffolds include:
 - [[Source - RTCA DO-289]]
 - [[SBAS Source Backlog]]
 
-This page remains `source-scaffold-linked`. It provides a careful conceptual framework, but not yet a verified table of alert-limit values.
+This page remains `source-scaffold-linked`. It provides a careful conceptual framework, but not yet a verified table of alert-limit values. Any future values must be tied to exact source family, operation type, revision/date, and applicability conditions.
 
 ## Use in the knowledge base
 

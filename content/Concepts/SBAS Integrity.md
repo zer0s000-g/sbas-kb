@@ -69,12 +69,12 @@ Related pages:
 
 A common mistake is to treat high accuracy as sufficient for aviation use. In an institutional SBAS context, that is not adequate.
 
-| Concept | Question answered | Why it matters |
-|---|---|---|
-| Accuracy | How close is the estimated position to the true position? | Important for navigation quality, but not sufficient for safety-critical use |
-| Integrity | Can the user trust the navigation solution for this operation, and will unsafe conditions be alerted? | Central to aviation use-or-non-use decisions |
-| Availability | Is the required service usable when needed? | Supports planning and operational dependability |
-| Continuity | Will the service remain usable through the operation? | Important during time-critical phases such as approach |
+| Concept      | Question answered                                                                                     | Why it matters                                                               |
+| ------------ | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Accuracy     | How close is the estimated position to the true position?                                             | Important for navigation quality, but not sufficient for safety-critical use |
+| Integrity    | Can the user trust the navigation solution for this operation, and will unsafe conditions be alerted? | Central to aviation use-or-non-use decisions                                 |
+| Availability | Is the required service usable when needed?                                                           | Supports planning and operational dependability                              |
+| Continuity   | Will the service remain usable through the operation?                                                 | Important during time-critical phases such as approach                       |
 
 A highly accurate solution that is not properly bounded or monitored may still be unsuitable for aviation operations requiring integrity assurance.
 
@@ -108,8 +108,9 @@ This statement is conceptual. It must not be used to infer actual minima, alert 
 Current source scaffolds relevant to this page include:
 
 - [[SBAS Standards Source Matrix]]
-- [[Source - RTCA DO-229]]
-- [[Source - ICAO Doc 9849]] — airborne equipment and receiver-related provenance scaffold.
+- [[Source - RTCA DO-229]] — airborne equipment and receiver-related provenance scaffold.
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — ICAO SARPs/technical-provisions source-family routing scaffold.
+- [[Source - ICAO Doc 9849]] — ICAO GNSS implementation-guidance scaffold.
 - [[Source - RTCA DO-242]] — red-flag provenance note; no longer used as an SBAS integrity anchor pending contrary direct-source evidence.
 - [[Source - RTCA DO-289]] — testing/monitoring provenance scaffold.
 - [[Source - ICAO Doc 9854]] — red-flag provenance note; no longer used as an SBAS performance-testing anchor.
@@ -146,7 +147,7 @@ For ASEAN-focused planning, these issues connect directly to [[ASEAN SBAS Deploy
 2. Separate receiver annunciation requirements from service-provider monitoring requirements.
 3. Tie protection-level and alert-limit definitions to specific standards and service definitions.
 4. Replace remaining unsourced numerical claims in procedure notes with source-backed statements or cautious qualitative language.
-5. Identify which ICAO and RTCA sources should become the primary anchors for a fully verified integrity pathway.
+5. Identify which integrity claims belong to Annex 10, which belong to RTCA/EUROCAE receiver standards, and which belong to service-provider, procedure-design, or regulator sources.
 
 ## See also
 

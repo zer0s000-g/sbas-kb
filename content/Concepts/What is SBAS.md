@@ -49,13 +49,13 @@ See [[SBAS Architecture]] for a fuller explanation and [[SBAS Architecture Flow]
 
 ## What SBAS adds to GNSS
 
-| Function | Meaning for users | Aviation significance |
-|---|---|---|
-| Correction | Improves the navigation solution by reducing modeled error sources | Supports more consistent positioning performance across a service area |
-| Integrity | Provides information used to determine whether the solution should be trusted | Central to safety-relevant procedure use |
-| Availability | Increases the chance that service requirements are met where coverage and geometry allow | Important for operational dependability and procedure planning |
-| Continuity | Supports uninterrupted use during a defined operation | Important during approach and other time-critical phases |
-| Standardized broadcast | Delivers augmentation data through aviation-relevant signal and message structures | Enables certified avionics and harmonized operations |
+| Function               | Meaning for users                                                                        | Aviation significance                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Correction             | Improves the navigation solution by reducing modeled error sources                       | Supports more consistent positioning performance across a service area |
+| Integrity              | Provides information used to determine whether the solution should be trusted            | Central to safety-relevant procedure use                               |
+| Availability           | Increases the chance that service requirements are met where coverage and geometry allow | Important for operational dependability and procedure planning         |
+| Continuity             | Supports uninterrupted use during a defined operation                                    | Important during approach and other time-critical phases               |
+| Standardized broadcast | Delivers augmentation data through aviation-relevant signal and message structures       | Enables certified avionics and harmonized operations                   |
 
 These concepts should not be treated as generic marketing claims. Their exact meaning depends on the applicable service definition, equipment standard, procedure type, region, and phase of flight.
 
@@ -95,13 +95,14 @@ This site currently has source scaffolds for several high-value standards and gu
 
 - [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
 - [[Source - RTCA DO-289]]
 - [[Source - ICAO Doc 9854]]
 - [[Source - ICAO Doc 9855]]
 
-These source notes are useful anchors, but several still require direct verification of exact title, edition, scope, and downstream claim support. Use [[SBAS Source Backlog]] as the active queue for source-hardening work.
+These source notes are useful anchors, but several still require direct official-text extraction or verification of exact title, edition, scope, and downstream claim support. Use [[SBAS Source Backlog]] as the active queue for source-hardening work.
 
 ## Implementation relevance
 

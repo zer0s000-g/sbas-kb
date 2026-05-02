@@ -49,10 +49,10 @@ Related pages:
 
 Protection-level concepts are commonly discussed in horizontal and vertical dimensions because aviation operations can have different lateral and vertical requirements.
 
-| Dimension | General interpretation | Aviation relevance |
-|---|---|---|
+| Dimension                     | General interpretation             | Aviation relevance                                                   |
+| ----------------------------- | ---------------------------------- | -------------------------------------------------------------------- |
 | Horizontal protection concept | Bound on horizontal position error | Lateral containment, route/approach guidance, navigation performance |
-| Vertical protection concept | Bound on vertical position error | Vertically guided operations and approach safety context |
+| Vertical protection concept   | Bound on vertical position error   | Vertically guided operations and approach safety context             |
 
 This page intentionally avoids assigning numerical values. Numeric thresholds must be tied to specific standards, service definitions, procedure types, and equipment approvals.
 
@@ -73,12 +73,12 @@ In this sense, protection levels are not merely mathematical outputs. They are p
 
 A common misunderstanding is to read a protection level as the measured error. It is better understood as a conservative bound used for safety decision-making.
 
-| Item | Meaning |
-|---|---|
+| Item                    | Meaning                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Actual navigation error | Difference between true position and estimated position; usually not directly known by the user in real time |
-| Estimated accuracy | Statistical or modeled estimate of expected position quality |
-| Protection level | Conservative bound used to support integrity and use-or-non-use decisions |
-| Alert limit | Threshold associated with the intended operation |
+| Estimated accuracy      | Statistical or modeled estimate of expected position quality                                                 |
+| Protection level        | Conservative bound used to support integrity and use-or-non-use decisions                                    |
+| Alert limit             | Threshold associated with the intended operation                                                             |
 
 The operational question is not “is the actual error small right now?” but “is the error sufficiently bounded for the approved operation?”
 
@@ -88,6 +88,7 @@ Current source scaffolds relevant to protection-level work include:
 
 - [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
 - [[Source - ICAO Doc 9855]]
@@ -95,7 +96,7 @@ Current source scaffolds relevant to protection-level work include:
 - [[Source - RTCA DO-289]]
 - [[SBAS Source Backlog]]
 
-The page is `source-scaffold-linked`, not fully source-verified. It should be used as a structured conceptual reference until the source scaffolds are deepened.
+The page is `source-scaffold-linked`, not fully source-verified. It should be used as a structured conceptual reference until Annex 10, receiver-standard, and operational-source scaffolds are deepened through direct extraction.
 
 ## Use in the knowledge base
 

@@ -32,14 +32,14 @@ LPV is an SBAS-enabled vertically guided approach concept where the receiver and
 
 An LPV operation depends on multiple layers working together:
 
-| Layer | Required question |
-|---|---|
-| SBAS service | Is an approved SBAS service available and suitable for the operation? |
-| Receiver and avionics | Is the aircraft equipped and approved for the required mode? |
-| Procedure publication | Is an LPV procedure published for the runway and current cycle? |
-| Integrity checks | Are the relevant [[Protection Levels]] acceptable against the relevant [[Alert Limits]]? |
-| Crew/operator approval | Is the operator and crew authorized to conduct the operation? |
-| Contingency logic | Is the required response defined if service, receiver mode, or integrity conditions degrade? |
+| Layer                  | Required question                                                                            |
+| ---------------------- | -------------------------------------------------------------------------------------------- |
+| SBAS service           | Is an approved SBAS service available and suitable for the operation?                        |
+| Receiver and avionics  | Is the aircraft equipped and approved for the required mode?                                 |
+| Procedure publication  | Is an LPV procedure published for the runway and current cycle?                              |
+| Integrity checks       | Are the relevant [[Protection Levels]] acceptable against the relevant [[Alert Limits]]?     |
+| Crew/operator approval | Is the operator and crew authorized to conduct the operation?                                |
+| Contingency logic      | Is the required response defined if service, receiver mode, or integrity conditions degrade? |
 
 A technical SBAS signal alone does not establish LPV operational availability.
 
@@ -57,13 +57,13 @@ This page intentionally avoids giving unsourced numerical thresholds. Earlier dr
 
 ## LPV compared with nearby concepts
 
-| Concept | Relationship to LPV | Important distinction |
-|---|---|---|
-| LNAV | Lateral navigation approach concept | Does not imply the same vertical-guidance basis as LPV |
-| LNAV/VNAV | Lateral plus vertical navigation concept | May use different vertical-navigation sources and approval logic |
-| RNAV | Area navigation family | Broader than LPV; not itself an SBAS mode |
-| RNP | Performance-based navigation with onboard monitoring/alerting requirements | Related to PBN concepts but not equivalent to LPV |
-| GBAS approach | Local-area augmentation approach context | Different augmentation architecture from SBAS |
+| Concept       | Relationship to LPV                                                        | Important distinction                                            |
+| ------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| LNAV          | Lateral navigation approach concept                                        | Does not imply the same vertical-guidance basis as LPV           |
+| LNAV/VNAV     | Lateral plus vertical navigation concept                                   | May use different vertical-navigation sources and approval logic |
+| RNAV          | Area navigation family                                                     | Broader than LPV; not itself an SBAS mode                        |
+| RNP           | Performance-based navigation with onboard monitoring/alerting requirements | Related to PBN concepts but not equivalent to LPV                |
+| GBAS approach | Local-area augmentation approach context                                   | Different augmentation architecture from SBAS                    |
 
 See [[LNAV-VNAV-Approach-Procedure]], [[RNAV-Approach-Procedure]], [[RNP-Approach-Procedure]], and [[GBAS-Approach-Procedure]] for nearby aviation notes.
 
@@ -105,6 +105,7 @@ Current source scaffolds relevant to this page include:
 
 - [[SBAS Standards Source Matrix]] — current claim-routing matrix for standards/source families.
 - [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor.
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
 - [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
 - [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag provenance notes retained because earlier drafts likely mis-scoped them for SBAS.
 - [[SBAS Source Backlog]] — active standards-source verification queue.
@@ -133,7 +134,7 @@ This page previously contained unsourced numerical performance values, generic w
 2. Identify which claims belong to airborne-equipment standards versus procedure-design or regulator material.
 3. Add source-backed LPV examples from official AIP/AIS or regulator/ANSP pages.
 4. Separate LPV conceptual explanation from region-specific implementation claims.
-5. Connect verified LPV material back to [[SBAS in Civil Aviation MOC]] and [[SBAS-Standards-Regulation]].
+5. Connect verified LPV material back to [[SBAS in Civil Aviation MOC]], [[SBAS-Standards-Regulation]], and the Annex 10 / DO-229 / procedure-design source split.
 
 ## See also
 

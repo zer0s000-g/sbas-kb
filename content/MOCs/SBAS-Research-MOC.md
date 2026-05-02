@@ -12,6 +12,7 @@ status: research
 # 🗺️ SBAS Research Map of Consciousness
 
 ## Initialization review — 2026-04-23
+
 - Parent navigation: [[SBAS MOC]]
 - Current structure is useful for navigation, but much of the content is still draft synthesis rather than source-grounded research.
 - Priority improvement area: create dedicated source notes before treating quantitative performance claims or standards mappings as settled.
@@ -20,6 +21,7 @@ status: research
 ## 📊 **Research Portfolio Overview**
 
 ### **Knowledge Domains**
+
 ```
 SBAS FUNDAMENTALS
     ├── GNSS Error Sources
@@ -58,7 +60,7 @@ COMPARATIVE ANALYSIS
     └── ARAIM (Advanced RAIM)
 
 STANDARDS & CERTIFICATION
-    ├── ICAO SARPs / GNSS guidance (Annex 10 source note pending; Doc 9849 scaffold added)
+    ├── ICAO SARPs / GNSS guidance ([[Source - ICAO Annex 10 Volume I GNSS SBAS]] routing note added; Doc 9849 scaffold added)
     ├── RTCA / EUROCAE equipment standards (DO-229 retained; DO-242 and DO-289 red-flagged for SBAS use)
     ├── EUROCAE (ED-52, ED-102, ED-142)
     └── National Regulations
@@ -73,12 +75,14 @@ INTEGRITY & SAFETY
 ## 🔬 **Research Methodology**
 
 ### **Evidence Hierarchy**
+
 1. **Primary Sources**: ICAO docs, RTCA standards, EUROCAE specs
 2. **Technical Literature**: IEEE papers, aviation journals
 3. **Implementation Reports**: Operational system documentation
 4. **Empirical Data**: Flight test results, performance monitoring
 
 ### **Knowledge Quality Levels**
+
 - **Level 1**: Verified standards (direct quotes from docs)
 - **Level 2**: Implementation evidence (test reports, operational data)
 - **Level 3**: Expert synthesis (multi-source analysis)
@@ -87,12 +91,14 @@ INTEGRITY & SAFETY
 ## 📈 **Research Progress Tracking**
 
 ### **Current Maturity**
+
 - **Conceptual Foundation**: 85% complete
 - **Source Documentation**: 60% complete
 - **Synthesis & Integration**: 40% complete
 - **Aviation Applications**: 35% complete
 
 ### **Priority Research Areas**
+
 1. **Immediate**: Core concept definitions (SBAS, GBAS, ABAS)
 2. **Short-term**: Regional system comparisons
 3. **Medium-term**: Civil aviation integration patterns
@@ -103,12 +109,14 @@ INTEGRITY & SAFETY
 ## 📝 **Research Notes Management**
 
 ### **Active provenance work**
+
 - Current backlog: [[SBAS Source Backlog]]
 - Active standards source scaffolds: [[SBAS Standards Source Matrix]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]], plus red-flag correction notes for [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]].
 - Empirical source scaffolds: [[Source - GNSS Radio Occultation Technique]], [[Source - IRI-2020 Ionosphere Model]], [[Source - GNSS-RO Indonesia Empirical Study]]
-- Immediate goal: build the real standards backbone before expanding quantitative claims: Annex 10 source note, direct DO-229 extraction, direct Doc 9849 extraction, procedure-design source notes, and service-provider source notes.
+- Immediate goal: build the real standards backbone before expanding quantitative claims: direct Annex 10 extraction, direct DO-229 extraction, direct Doc 9849 extraction, procedure-design source notes, and service-provider source notes.
 
 ### **Active regional expansion work**
+
 - [[ASEAN SBAS Adoption Landscape]]
 - [[ASEAN SBAS Readiness Heuristic]]
 - [[ASEAN SBAS Operational Demand Drivers]]
@@ -121,6 +129,7 @@ INTEGRITY & SAFETY
 - empirical ionospheric evidence for [[Indonesia]]: [[IRI-2020 vs GNSS-RO Indonesia]], [[SBAS Ionospheric Threat — Empirical Evidence]]
 
 ### **Source Note Format**
+
 ```
 --
 title: [Source Title]
@@ -148,6 +157,7 @@ topic_tags: [tag1, tag2, ...]
 ```
 
 ### **Synthesis Note Format**
+
 ```
 --
 title: [Synthesis Topic]
@@ -171,6 +181,7 @@ sources: [[Source1], [Source2], ...]
 ## 🎯 **Next Research Steps**
 
 ### Empirical Ionospheric Research (new)
+
 - [ ] Deepen [[Source - GNSS-RO Indonesia Empirical Study]] with verified dataset metadata
 - [ ] Add ground GNSS CORS/IGS validation for Indonesian TEC
 - [ ] Targeted post-sunset GNSS-RO acquisition (18–21 LT gap)
@@ -178,28 +189,33 @@ sources: [[Source1], [Source2], ...]
 - [ ] Extend IGRF analysis to full-year or multi-year sampling
 
 ### **Week 1-2: Foundation**
+
 - [ ] Create core concept notes (SBAS, GBAS, ABAS)
 - [ ] Document GNSS error sources
 - [ ] Establish SBAS architecture notes
 
 ### **Week 3-4: Applications**
+
 - [ ] Create approach procedure notes (LPV, APV, etc.)
 - [ ] Document operational use cases
 - [ ] Analyze airport accessibility
 
 ### **Week 5-6: Regional Systems**
+
 - [ ] Create individual regional system notes
 - [ ] Build comparative analysis
 - [ ] Document standards requirements
 
 ### **Week 7-8: Integration**
+
 - [ ] Complete synthesis notes
 - [ ] Build MOC navigation
 - [ ] Establish open questions
 
-*MOC Version: 1.0 | Status: Research Planning | Next Update: 2026-04-30*
+_MOC Version: 1.0 | Status: Research Planning | Next Update: 2026-04-30_
 
 ## GIPTA 2.0 research expansion — 2026-05-01
+
 - [[GIPTA 2.0 MOC]]
 - [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]]
 - [[ASEAN SBAS Testbed to Operational Service]]
@@ -207,11 +223,13 @@ sources: [[Source1], [Source2], ...]
 - [[Source - ADB ASEAN SBAS Technical Assistance]]
 
 ## Institutional navigation upgrade — 2026-05-02
+
 - [[ResearchLog-2026-05-02-Institutional-Navigation-Upgrade]]
 - New reader-entry pillars: [[What is SBAS]], [[SBAS Architecture]], [[SBAS Architecture Flow]]
 - Navigation quality gate: homepage/MOC link repair, Quartz build, publication audit, and broken-wikilink scan passed
 
 ## Integrity learning path upgrade — 2026-05-02
+
 - [[ResearchLog-2026-05-02-Integrity-Learning-Path-Upgrade]]
 - Upgraded institutional learning path: [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and [[LPV-Approach-Procedure]]
 - Removed unsupported LPV numerical/performance claims from the authoritative narrative pending source verification

@@ -18,12 +18,12 @@ This page compares augmentation concepts at an educational level. It intentional
 
 ## Short comparison
 
-| Method | Core idea | Typical source family needed | Main caution |
-|---|---|---|---|
-| SBAS | Wide-area GNSS augmentation using a monitored reference network, correction/integrity processing, and broadcast to equipped receivers | ICAO GNSS/SBAS material, service-provider definitions, airborne-equipment MOPS | Do not infer operational approval from signal availability alone |
-| GBAS | Local-area GNSS augmentation serving a specific airport or local service volume | GBAS standards, airport/service approvals, AIP/procedure material | Local precision service is not interchangeable with continental SBAS |
-| ABAS | Aircraft/receiver-based augmentation and integrity support using onboard processing and available signals | Receiver standards, aircraft equipment approval, PBN/regulator guidance | Receiver autonomy is not the same as external SBAS service monitoring |
-| RAIM | Receiver autonomous integrity monitoring using satellite geometry and consistency checks | Receiver standards, PBN/regulator guidance, aircraft/equipment approvals | RAIM availability and suitability depend on operation, receiver, and geometry |
+| Method | Core idea                                                                                                                             | Typical source family needed                                                   | Main caution                                                                  |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| SBAS   | Wide-area GNSS augmentation using a monitored reference network, correction/integrity processing, and broadcast to equipped receivers | ICAO GNSS/SBAS material, service-provider definitions, airborne-equipment MOPS | Do not infer operational approval from signal availability alone              |
+| GBAS   | Local-area GNSS augmentation serving a specific airport or local service volume                                                       | GBAS standards, airport/service approvals, AIP/procedure material              | Local precision service is not interchangeable with continental SBAS          |
+| ABAS   | Aircraft/receiver-based augmentation and integrity support using onboard processing and available signals                             | Receiver standards, aircraft equipment approval, PBN/regulator guidance        | Receiver autonomy is not the same as external SBAS service monitoring         |
+| RAIM   | Receiver autonomous integrity monitoring using satellite geometry and consistency checks                                              | Receiver standards, PBN/regulator guidance, aircraft/equipment approvals       | RAIM availability and suitability depend on operation, receiver, and geometry |
 
 ## Architecture distinction
 
@@ -54,12 +54,13 @@ Integrity is not simply higher accuracy.
 
 - [[SBAS Standards Source Matrix]] — current claim-routing matrix.
 - [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor.
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
 - [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
 - [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag notes documenting earlier mis-scoped references.
 
 ## Open source-hardening needs
 
-1. Create a dedicated Annex 10 source note for GNSS/SBAS technical baseline material.
+1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] before expanding GNSS/SBAS technical-baseline claims.
 2. Create procedure-design source notes before expanding RNAV, RNP, LNAV/VNAV, LPV, or GBAS procedure comparisons.
 3. Create service-provider source notes before publishing regional performance comparisons.
 4. Replace generic numerical tables only with source-anchored, context-specific values.

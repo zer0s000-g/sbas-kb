@@ -30,16 +30,16 @@ The architecture is therefore both technical and institutional. A working SBAS i
 
 ## System elements
 
-| Element | Primary role | Notes for aviation interpretation |
-|---|---|---|
-| GNSS constellations | Provide the base ranging signals that users navigate with | SBAS augments GNSS; it does not replace GNSS |
-| Reference stations | Measure GNSS signal behavior at known locations | Station geometry and reliability affect service monitoring capability |
-| Communications network | Carries observations from reference stations to processing centers | Latency, redundancy, and data quality matter for real-time service |
-| Master/processing stations | Estimate corrections, integrity parameters, and service messages | This is where monitoring logic becomes operational information |
-| Uplink stations | Send SBAS messages to broadcast satellites or broadcast payloads | Uplink continuity is part of service dependability |
-| Broadcast satellites/payloads | Transmit augmentation messages to users | Often GEO in traditional SBAS; exact architecture depends on system design |
-| User receivers | Apply corrections and check integrity information | Certified aviation use depends on approved equipment and procedures |
-| Operations and monitoring organization | Maintains service, alarms, configuration control, and performance reporting | Institutional capability is as important as technical architecture |
+| Element                                | Primary role                                                                | Notes for aviation interpretation                                          |
+| -------------------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| GNSS constellations                    | Provide the base ranging signals that users navigate with                   | SBAS augments GNSS; it does not replace GNSS                               |
+| Reference stations                     | Measure GNSS signal behavior at known locations                             | Station geometry and reliability affect service monitoring capability      |
+| Communications network                 | Carries observations from reference stations to processing centers          | Latency, redundancy, and data quality matter for real-time service         |
+| Master/processing stations             | Estimate corrections, integrity parameters, and service messages            | This is where monitoring logic becomes operational information             |
+| Uplink stations                        | Send SBAS messages to broadcast satellites or broadcast payloads            | Uplink continuity is part of service dependability                         |
+| Broadcast satellites/payloads          | Transmit augmentation messages to users                                     | Often GEO in traditional SBAS; exact architecture depends on system design |
+| User receivers                         | Apply corrections and check integrity information                           | Certified aviation use depends on approved equipment and procedures        |
+| Operations and monitoring organization | Maintains service, alarms, configuration control, and performance reporting | Institutional capability is as important as technical architecture         |
 
 ## Functional data path
 
@@ -86,14 +86,14 @@ A useful architecture description must therefore explain both the correction pat
 
 SBAS architecture depends on several interface classes:
 
-| Interface | Why it matters |
-|---|---|
-| GNSS signal interface | determines what base measurements are available |
-| reference-station data interface | affects quality, latency, and monitoring coverage |
-| processing-to-uplink interface | affects message timeliness and continuity |
-| broadcast signal/message interface | determines receiver compatibility |
-| receiver-to-procedure interface | determines what the pilot, avionics, and procedure can use |
-| service-provider-to-regulator interface | determines approval, reporting, and safety accountability |
+| Interface                               | Why it matters                                             |
+| --------------------------------------- | ---------------------------------------------------------- |
+| GNSS signal interface                   | determines what base measurements are available            |
+| reference-station data interface        | affects quality, latency, and monitoring coverage          |
+| processing-to-uplink interface          | affects message timeliness and continuity                  |
+| broadcast signal/message interface      | determines receiver compatibility                          |
+| receiver-to-procedure interface         | determines what the pilot, avionics, and procedure can use |
+| service-provider-to-regulator interface | determines approval, reporting, and safety accountability  |
 
 For institutional deployment, the last two interfaces are often as decisive as the first four.
 
@@ -128,13 +128,14 @@ Relevant source scaffolds include:
 
 - [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
 - [[Source - RTCA DO-289]]
 - [[Source - ICAO Doc 9854]]
 - [[Source - ICAO Doc 9855]]
 
-These source notes should be strengthened before this architecture page is promoted from synthesis-based institutional guidance to fully standards-linked reference material.
+These source notes should be strengthened before this architecture page is promoted from synthesis-based institutional guidance to fully standards-linked reference material. Annex 10 is now represented for source-family routing, but detailed SBAS architecture claims still require direct official-text extraction and, where relevant, service-provider architecture evidence.
 
 ## See also
 

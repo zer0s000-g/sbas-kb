@@ -18,16 +18,16 @@ Use this page as the institutional navigation layer. Use [[index]] as the public
 
 ## Recommended reader paths
 
-| Reader path | Start here | Continue to |
-|---|---|---|
-| Beginner | [[What is SBAS]] | [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS-Terminology]] |
-| Aviation operations | [[SBAS in Civil Aviation MOC]] | [[LPV-Approach-Procedure]], [[Protection Levels]], [[Alert Limits]] |
-| Standards and source review | [[SBAS Standards Source Matrix]] | [[SBAS-Standards-Regulation]], [[SBAS Source Backlog]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]] |
-| Regional systems | [[SBAS-Systems-by-Region-MOC]] | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]] |
-| ASEAN implementation | [[ASEAN SBAS Adoption Landscape]] | [[ASEAN SBAS Readiness Heuristic]], [[ASEAN SBAS Service-Model Options]] |
-| GIPTA 2.0 | [[GIPTA 2.0 MOC]] | [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[ASEAN SBAS Testbed]] |
-| Ionospheric research | [[SBAS Ionospheric Threat — Empirical Evidence]] | [[IRI-2020 vs GNSS-RO Indonesia]], [[GNSS Radio Occultation]] |
-| Site governance | [[SBAS Knowledge Base Editorial and Source Policy]] | [[Institutional Upgrade Audit 2026-05-01]], [[Institutional SBAS Knowledge Base Upgrade Roadmap]] |
+| Reader path                 | Start here                                          | Continue to                                                                                                  |
+| --------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Beginner                    | [[What is SBAS]]                                    | [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS-Terminology]]                                      |
+| Aviation operations         | [[SBAS in Civil Aviation MOC]]                      | [[LPV-Approach-Procedure]], [[Protection Levels]], [[Alert Limits]]                                          |
+| Standards and source review | [[SBAS Standards Source Matrix]]                    | [[SBAS-Standards-Regulation]], [[SBAS Source Backlog]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]] |
+| Regional systems            | [[SBAS-Systems-by-Region-MOC]]                      | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]]                                                         |
+| ASEAN implementation        | [[ASEAN SBAS Adoption Landscape]]                   | [[ASEAN SBAS Readiness Heuristic]], [[ASEAN SBAS Service-Model Options]]                                     |
+| GIPTA 2.0                   | [[GIPTA 2.0 MOC]]                                   | [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[ASEAN SBAS Testbed]]                                  |
+| Ionospheric research        | [[SBAS Ionospheric Threat — Empirical Evidence]]    | [[IRI-2020 vs GNSS-RO Indonesia]], [[GNSS Radio Occultation]]                                                |
+| Site governance             | [[SBAS Knowledge Base Editorial and Source Policy]] | [[Institutional Upgrade Audit 2026-05-01]], [[Institutional SBAS Knowledge Base Upgrade Roadmap]]            |
 
 ## Core concept branch
 
@@ -60,6 +60,7 @@ Editorial boundary: procedure notes are educational scaffolds unless explicitly 
 - [[SBAS Source Backlog]]
 - [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]] — red-flagged as likely mis-scoped for SBAS claims.
 - [[Source - RTCA DO-289]] — red-flagged as likely mis-scoped for SBAS claims.
@@ -119,7 +120,7 @@ Boundary: GNSS-RO and IRI-2020 work is valuable for threat discovery and researc
 
 ## Highest-value next-note targets
 
-1. Create a dedicated Annex 10 GNSS/SBAS source note.
+1. Directly extract the official text behind [[Source - ICAO Annex 10 Volume I GNSS SBAS]].
 2. Directly extract [[Source - RTCA DO-229]] and [[Source - ICAO Doc 9849]].
 3. Upgrade remaining aviation procedure notes only after procedure-design/PBN source anchors are established.
 4. Build service-provider source notes before comparative system-performance tables.
