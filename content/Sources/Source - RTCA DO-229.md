@@ -20,7 +20,7 @@ It has been tightened using public RTCA product metadata, public standards-catal
 Important boundary:
 
 - Public product and catalog metadata can support document identity, revision signals, broad equipment scope, and high-level source-family routing.
-- Public regulator/ETSO pages can support the fact that DO-229 is used in equipment approval frameworks and that installation/operation approvals remain separate.
+- Public regulator/ETSO pages can support the fact that DO-229 is used in equipment approval frameworks and that installation/operation approvals remain separate. Dedicated FAA and EASA approval-source notes now exist as [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]].
 - Public metadata cannot safely support detailed numerical requirements, test tolerances, receiver algorithms, alerting thresholds, annunciation behavior, operational minima, or compliance interpretations.
 - Use this note to route claims to the correct source family. Do not use it as a substitute for the official RTCA document, FAA/EASA TSO/ETSO text, aircraft installation approval, avionics manuals, operator approval, regulator guidance, AIP/procedure material, or procedure-design criteria.
 
@@ -81,7 +81,7 @@ operator approval, procedure authorization, or LPV availability claim.
 
 ### EASA ETSO cross-signal
 
-Public EASA ETSO material for GPS/SBAS navigation sensors and stand-alone GPS/SBAS navigation equipment references DO-229E Section 2, with modifications in ETSO appendices, as a minimum performance standard basis for certain equipment classes.
+Public EASA ETSO material for GPS/SBAS navigation sensors and stand-alone GPS/SBAS navigation equipment references DO-229E Section 2, with modifications in ETSO appendices, as a minimum performance standard basis for certain equipment classes. The extracted EASA source-routing layer is now represented by [[Source - EASA ETSO-C145e and ETSO-C146e]]. The FAA counterpart is represented conservatively by [[Source - FAA TSO-C145e and TSO-C146e]].
 
 Editorial implication:
 
@@ -97,7 +97,7 @@ Until the official RTCA standard text is extracted and section-mapped, this note
 - DO-229 is relevant to GPS/SBAS airborne equipment rather than to SBAS ground-segment certification as a whole.
 - DO-229 is a plausible source family to investigate for equipment classes, receiver performance, SBAS-based RNAV equipment, LP/LPV-capable equipment context, integrity-related receiver behavior, and test methods.
 - DO-229F public metadata indicates a single-frequency scope and a relationship to future DFMC MOPS development, but it should not be used as a DFMC requirements source.
-- FAA/EASA public material confirms that equipment approval frameworks may reference DO-229, but installation and operational approvals remain separate.
+- FAA/EASA public material confirms that equipment approval frameworks may reference DO-229, but installation and operational approvals remain separate; use [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] for approval-layer routing.
 
 ## What this source must not be used for yet
 
@@ -113,24 +113,24 @@ Do not use this note alone to publish or validate:
 
 ## Claim-boundary classification
 
-| Claim type                                                  | Current DO-229 support status                                                                                          | Documentation action                                                                                      |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Airborne GPS/SBAS receiver/equipment MOPS                   | Strong public product/catalog support                                                                                  | Link to this note, but keep detailed requirements pending official-text extraction                        |
-| Equipment classes and approval basis                        | Public regulator/ETSO cross-signals show relevance; details are revision/jurisdiction dependent                        | Route to DO-229 plus FAA/EASA/regulator source notes before making class-specific claims                  |
-| LP/LPV/LNAV/VNAV equipment capability                       | Broad public support as an equipment-source family; operational meaning still depends on procedure and approval layers | Use cautious conceptual phrasing and keep values out                                                      |
-| Receiver integrity, protection-level, and alerting behavior | Plausible DO-229 extraction target                                                                                     | Do not publish algorithms, thresholds, or annunciation behavior until extracted from official source text |
-| SBAS ground-system certification                            | Not the primary DO-229 claim family                                                                                    | Route to [[Source - ICAO Annex 10 Volume I GNSS SBAS]], service-provider, and regulator sources           |
-| Procedure design and minima                                 | DO-229 is not sufficient                                                                                               | Route to PANS-OPS/PBN, regulator, AIP/procedure chart, and operator sources                               |
-| Aircraft installation and operational approval              | DO-229/TSO/ETSO evidence is not sufficient                                                                             | Route to aircraft certification, installation approval, regulator, and operator sources                   |
-| Service availability and regional status                    | Not supported by DO-229                                                                                                | Route to service-definition, NOTAM/status, ANSP/AIP, and provider performance sources                     |
-| DFMC SBAS equipment                                         | Public product/catalog text warns that DO-229 is single-frequency                                                      | Treat as out of scope unless a dedicated DFMC MOPS/source note is created                                 |
+| Claim type                                                  | Current DO-229 support status                                                                                                       | Documentation action                                                                                                                            |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Airborne GPS/SBAS receiver/equipment MOPS                   | Strong public product/catalog support                                                                                               | Link to this note, but keep detailed requirements pending official-text extraction                                                              |
+| Equipment classes and approval basis                        | Public regulator/ETSO cross-signals show relevance; FAA/EASA source notes now exist; details remain revision/jurisdiction dependent | Route to DO-229 plus [[Source - FAA TSO-C145e and TSO-C146e]] / [[Source - EASA ETSO-C145e and ETSO-C146e]] before making class-specific claims |
+| LP/LPV/LNAV/VNAV equipment capability                       | Broad public support as an equipment-source family; operational meaning still depends on procedure and approval layers              | Use cautious conceptual phrasing and keep values out                                                                                            |
+| Receiver integrity, protection-level, and alerting behavior | Plausible DO-229 extraction target                                                                                                  | Do not publish algorithms, thresholds, or annunciation behavior until extracted from official source text                                       |
+| SBAS ground-system certification                            | Not the primary DO-229 claim family                                                                                                 | Route to [[Source - ICAO Annex 10 Volume I GNSS SBAS]], service-provider, and regulator sources                                                 |
+| Procedure design and minima                                 | DO-229 is not sufficient                                                                                                            | Route to PANS-OPS/PBN, regulator, AIP/procedure chart, and operator sources                                                                     |
+| Aircraft installation and operational approval              | DO-229/TSO/ETSO evidence is not sufficient                                                                                          | Route to aircraft certification, installation approval, regulator, and operator sources                                                         |
+| Service availability and regional status                    | Not supported by DO-229                                                                                                             | Route to service-definition, NOTAM/status, ANSP/AIP, and provider performance sources                                                           |
+| DFMC SBAS equipment                                         | Public product/catalog text warns that DO-229 is single-frequency                                                                   | Treat as out of scope unless a dedicated DFMC MOPS/source note is created                                                                       |
 
 ## Downstream documentation rules
 
 When editing downstream pages:
 
 1. Use DO-229 language for airborne equipment and receiver-source routing only.
-2. Pair DO-229 with FAA/EASA/regulator source notes before making equipment-approval statements.
+2. Pair DO-229 with [[Source - FAA TSO-C145e and TSO-C146e]], [[Source - EASA ETSO-C145e and ETSO-C146e]], or another applicable regulator source before making equipment-approval statements.
 3. Pair DO-229 with procedure-design, AIP/AIS, and operator/regulator sources before making operational LPV or minima statements.
 4. Pair DO-229 with Annex 10 and service-provider sources before making system-level SBAS or signal/service claims.
 5. Treat revision identity as material: DO-229D/E/F and regulator-modified appendices may not support identical downstream statements.
@@ -159,7 +159,7 @@ When editing downstream pages:
 - revision / change number:
 - publication date:
 - official access path / institutional library record:
-- applicable FAA TSO / EASA ETSO / other regulator references:
+- applicable FAA TSO / EASA ETSO / other regulator references, including [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] where relevant:
 
 ### Sections to extract cautiously
 
@@ -186,6 +186,8 @@ When editing downstream pages:
 - RTCA Community Hub, DO-229E product page: `https://my.rtca.org/NC__Product?id=a1B3600000211rIEAQ`
 - GlobalSpec standards catalog page for RTCA DO-229: `https://standards.globalspec.com/std/14281994/rtca-do-229`
 - FAA Technical Standard Orders page: `https://www.faa.gov/aircraft/air_cert/design_approvals/tso`
+- FAA DRS record for TSO-C145e: `https://drs.faa.gov/browse/excelExternalWindow/EFE54F1E6272A7068625811D0064B679.0001`
+- FAA DRS record for TSO-C146e: `https://drs.faa.gov/browse/excelExternalWindow/EFE10BFF3187F9A78625811A005E32A6.0001`
 - EASA ETSO-C145e public PDF: `https://www.easa.europa.eu/download/etso/ETSO-C145e_CS-ETSO_13.pdf`
 - EASA ETSO-C146e A1 public PDF: `https://www.easa.europa.eu/download/etso/ETSO-C146e_A1.pdf`
 - ESA Navipedia SBAS Standards page, used only as secondary orientation: `https://gssc.esa.int/navipedia/index.php/SBAS_Standards`
@@ -196,6 +198,8 @@ When editing downstream pages:
 - [[SBAS Source Backlog]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
+- [[Source - FAA TSO-C145e and TSO-C146e]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]]
 - [[SBAS-Standards-Regulation]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]

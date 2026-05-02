@@ -62,6 +62,7 @@ COMPARATIVE ANALYSIS
 STANDARDS & CERTIFICATION
     ├── ICAO SARPs / GNSS guidance ([[Source - ICAO Annex 10 Volume I GNSS SBAS]] routing note added; Doc 9849 scaffold added)
     ├── RTCA / EUROCAE equipment standards (DO-229 retained and public-product/regulatory-signal reviewed; DO-242 and DO-289 red-flagged for SBAS use)
+    ├── FAA/EASA TSO-ETSO article-approval layer ([[Source - FAA TSO-C145e and TSO-C146e]], [[Source - EASA ETSO-C145e and ETSO-C146e]])
     ├── EUROCAE (ED-52, ED-102, ED-142)
     └── National Regulations
 
@@ -111,10 +112,10 @@ INTEGRITY & SAFETY
 ### **Active provenance work**
 
 - Current backlog: [[SBAS Source Backlog]]
-- Active standards source scaffolds: [[SBAS Standards Source Matrix]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]], plus red-flag correction notes for [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]].
+- Active standards source scaffolds: [[SBAS Standards Source Matrix]], [[Source - RTCA DO-229]], [[Source - FAA TSO-C145e and TSO-C146e]], [[Source - EASA ETSO-C145e and ETSO-C146e]], [[Source - ICAO Doc 9849]], plus red-flag correction notes for [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]].
 - Empirical source scaffolds: [[Source - GNSS Radio Occultation Technique]], [[Source - IRI-2020 Ionosphere Model]], [[Source - GNSS-RO Indonesia Empirical Study]]
-- Immediate goal: build the real standards backbone before expanding quantitative claims: direct Annex 10 extraction, official DO-229 extraction, direct Doc 9849 extraction, FAA/EASA TSO/ETSO source notes, procedure-design source notes, and service-provider source notes.
-- Latest standards work logs: [[ResearchLog-2026-05-02-DO229-Source-Hardening]], [[ResearchLog-2026-05-02-Standards-Source-Matrix]].
+- Immediate goal: build the real standards backbone before expanding quantitative claims: direct Annex 10 extraction, official DO-229 extraction, direct FAA TSO-C145e/C146e extraction, deeper EASA ETSO-C145e/C146e section mapping, direct Doc 9849 extraction, procedure-design source notes, and service-provider source notes.
+- Latest standards work logs: [[ResearchLog-2026-05-02-TSO-ETSO-Source-Hardening]], [[ResearchLog-2026-05-02-DO229-Source-Hardening]], [[ResearchLog-2026-05-02-Standards-Source-Matrix]].
 
 ### **Active regional expansion work**
 

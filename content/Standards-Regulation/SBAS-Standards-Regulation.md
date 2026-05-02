@@ -26,14 +26,15 @@ Use [[SBAS Standards Source Matrix]] as the current routing table.
 
 ## Standards source families
 
-| Source family                               | Typical claim boundary                                                                                     | Current KB anchor                                                                                                                                            |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ICAO SARPs / technical provisions           | Global aviation baseline for aeronautical telecommunications, GNSS, and augmentation requirements          | [[Source - ICAO Annex 10 Volume I GNSS SBAS]] is the current public-catalog-reviewed source-family anchor; official text extraction still needed             |
-| ICAO implementation guidance                | State introduction of GNSS operations, implementation considerations, monitoring/assessment/reporting      | [[Source - ICAO Doc 9849]]                                                                                                                                   |
-| RTCA / EUROCAE airborne equipment standards | Receiver/equipment performance, equipment classes, test methods, and avionics capability                   | [[Source - RTCA DO-229]] is the current GPS/SBAS airborne-equipment anchor; FAA/EASA approval-source notes are still needed for jurisdiction-specific claims |
-| Procedure-design criteria                   | Procedure construction, minima design, coding assumptions, obstacle assessment                             | Dedicated PANS-OPS / procedure-design source notes still needed                                                                                              |
-| Regulator / ANSP / AIP sources              | State implementation, operational approval, published procedures, and actual availability                  | Regional and country source notes still being built                                                                                                          |
-| Service-provider documents                  | Service definition, coverage, performance, NOTAM/status practices, system-specific operational commitments | Future service-provider source notes needed for each SBAS system                                                                                             |
+| Source family                               | Typical claim boundary                                                                                                             | Current KB anchor                                                                                                                                                 |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ICAO SARPs / technical provisions           | Global aviation baseline for aeronautical telecommunications, GNSS, and augmentation requirements                                  | [[Source - ICAO Annex 10 Volume I GNSS SBAS]] is the current public-catalog-reviewed source-family anchor; official text extraction still needed                  |
+| ICAO implementation guidance                | State introduction of GNSS operations, implementation considerations, monitoring/assessment/reporting                              | [[Source - ICAO Doc 9849]]                                                                                                                                        |
+| RTCA / EUROCAE airborne equipment standards | Receiver/equipment performance, equipment classes, test methods, and avionics capability                                           | [[Source - RTCA DO-229]] is the current GPS/SBAS airborne-equipment MOPS anchor                                                                                   |
+| FAA / EASA TSO-ETSO article-approval layer  | Regulator article approval, approval-basis routing, jurisdiction-specific modifications, and manufacturing/design approval context | [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] now separate approval context from installation and operational approval |
+| Procedure-design criteria                   | Procedure construction, minima design, coding assumptions, obstacle assessment                                                     | Dedicated PANS-OPS / procedure-design source notes still needed                                                                                                   |
+| Regulator / ANSP / AIP sources              | State implementation, operational approval, published procedures, and actual availability                                          | Regional and country source notes still being built                                                                                                               |
+| Service-provider documents                  | Service definition, coverage, performance, NOTAM/status practices, system-specific operational commitments                         | Future service-provider source notes needed for each SBAS system                                                                                                  |
 
 ## Confirmed correction register
 
@@ -50,7 +51,7 @@ These corrections are intentionally preserved as red-flag source notes rather th
 
 ### RTCA DO-229
 
-[[Source - RTCA DO-229]] is the current public-product-and-regulatory-signal-reviewed anchor for GPS/SBAS airborne equipment. It can route claims about airborne receiver/equipment source-family support, but detailed numerical requirements, equipment-class specifics, installation approval, operational approval, and compliance interpretations still require direct extraction from the official RTCA standard and applicable FAA/EASA/regulator material.
+[[Source - RTCA DO-229]] is the current public-product-and-regulatory-signal-reviewed anchor for GPS/SBAS airborne equipment. It can route claims about airborne receiver/equipment source-family support, but detailed numerical requirements and equipment-class specifics still require direct extraction from the official RTCA standard. FAA/EASA article-approval context is now routed through [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]]. Aircraft installation approval, operational approval, and compliance interpretations still require additional official approval material.
 
 ### ICAO Annex 10, Volume I
 
@@ -60,20 +61,24 @@ These corrections are intentionally preserved as red-flag source notes rather th
 
 [[Source - ICAO Doc 9849]] is the current public-catalog-reviewed anchor for ICAO GNSS implementation guidance. It is useful for state implementation and GNSS/SBAS introduction context, but it must not be used alone as a normative requirements source.
 
+### FAA/EASA TSO-ETSO source layer
+
+[[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] now provide the regulator/article-approval routing layer for GPS/WAAS or GPS/SBAS airborne equipment. They should not be treated as aircraft installation approvals or operational approvals.
+
 ## Claim boundaries by topic
 
-| Topic                                        | What this page may say now                                                                                                         | What remains source-pending                                                                                            |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| SBAS concept and architecture                | SBAS is a GNSS augmentation architecture involving ground monitoring, correction/integrity processing, broadcast, and receiver use | Exact SARPs, message definitions, service commitments, and performance values                                          |
-| Airborne SBAS equipment                      | DO-229 is the correct current source-family anchor for GPS/SBAS airborne-equipment MOPS                                            | Revision-specific requirements, tests, equipment classes, alerting details, and regulator-specific approval conditions |
-| LPV and approach operations                  | LPV operational use depends on service, equipment, procedure, approval, and real-time integrity conditions                         | Minima, eligibility, procedure-design rules, and country/operator approval details                                     |
-| Integrity / protection levels / alert limits | The conceptual relationship can be explained safely                                                                                | Exact definitions, thresholds, and operation-specific values                                                           |
-| System comparisons                           | Source posture can be compared                                                                                                     | Performance rankings and availability claims require service-provider evidence                                         |
+| Topic                                        | What this page may say now                                                                                                                    | What remains source-pending                                                                                                      |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| SBAS concept and architecture                | SBAS is a GNSS augmentation architecture involving ground monitoring, correction/integrity processing, broadcast, and receiver use            | Exact SARPs, message definitions, service commitments, and performance values                                                    |
+| Airborne SBAS equipment                      | DO-229 is the correct current source-family anchor for GPS/SBAS airborne-equipment MOPS; FAA/EASA source notes route article-approval context | Revision-specific requirements, tests, equipment classes, alerting details, direct FAA TSO text, and deeper EASA section mapping |
+| LPV and approach operations                  | LPV operational use depends on service, equipment, procedure, approval, and real-time integrity conditions                                    | Minima, eligibility, procedure-design rules, and country/operator approval details                                               |
+| Integrity / protection levels / alert limits | The conceptual relationship can be explained safely                                                                                           | Exact definitions, thresholds, and operation-specific values                                                                     |
+| System comparisons                           | Source posture can be compared                                                                                                                | Performance rankings and availability claims require service-provider evidence                                                   |
 
 ## Immediate institutional source-building needs
 
 1. Direct extraction of [[Source - ICAO Annex 10 Volume I GNSS SBAS]] for exact GNSS/SBAS SARPs/technical-provisions mapping.
-2. Direct extraction of the official [[Source - RTCA DO-229]] text for airborne-equipment, equipment-class, test-method, and receiver-integrity language, followed by FAA/EASA TSO/ETSO source notes for approval context.
+2. Direct extraction of the official [[Source - RTCA DO-229]] text for airborne-equipment, equipment-class, test-method, and receiver-integrity language; direct FAA TSO-C145e/C146e text extraction; deeper EASA ETSO-C145e/C146e section mapping.
 3. Direct extraction of [[Source - ICAO Doc 9849]] for state GNSS implementation and SBAS monitoring guidance.
 4. Procedure-design source notes before further expanding LPV/LNAV/VNAV/RNAV/RNP/GBAS procedure pages.
 5. Service-provider source notes for WAAS, EGNOS, MSAS, GAGAN, BDSBAS, KASS, SouthPAN, and other systems before comparative performance tables.
@@ -83,6 +88,8 @@ These corrections are intentionally preserved as red-flag source notes rather th
 - [[SBAS Standards Source Matrix]]
 - [[SBAS Source Backlog]]
 - [[Source - RTCA DO-229]]
+- [[Source - FAA TSO-C145e and TSO-C146e]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - ICAO Doc 9854]]

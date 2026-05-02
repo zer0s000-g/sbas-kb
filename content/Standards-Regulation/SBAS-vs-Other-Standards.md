@@ -25,17 +25,18 @@ Several earlier draft mappings were corrected in the 2026-05-02 source-matrix cy
 - [[Source - ICAO Doc 9854]] is now red-flagged as the Global ATM Operational Concept rather than an SBAS performance-testing document.
 - [[Source - ICAO Doc 9855]] is now red-flagged as public-internet guidance for aeronautical applications rather than an SBAS technical-specification document.
 - [[Source - ICAO Doc 9849]] has been added as the current ICAO GNSS implementation-guidance anchor.
+- [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] now separate FAA/EASA article-approval context from DO-229 MOPS and operational approval.
 
 ## Source-family comparison
 
-| Domain                    | Likely source family                                                     | Current KB source posture                                             | Main caution                                                                                                                          |
-| ------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| SBAS airborne equipment   | RTCA/EUROCAE airborne-equipment MOPS                                     | [[Source - RTCA DO-229]] is public-product/regulatory-signal reviewed | Detailed requirements, classes, installation approval, and operational approval require official RTCA and regulator-source extraction |
-| SBAS state implementation | ICAO GNSS guidance and Annex 10                                          | [[Source - ICAO Doc 9849]] added; Annex 10 note still needed          | Guidance is not the same as an approval decision                                                                                      |
-| SBAS service availability | Service-provider definitions, NOTAM/status, AIP/regulator material       | Future service-provider notes needed                                  | Do not infer availability from architecture                                                                                           |
-| LPV procedures            | Equipment MOPS + procedure design + AIP/regulator/operator sources       | LPV page is source-scaffold-linked                                    | Do not publish minima without procedure/source context                                                                                |
-| GBAS                      | GBAS standards, local service approvals, airport-specific publications   | Current GBAS notes remain educational scaffolds                       | Do not compare precision using unsourced generic numbers                                                                              |
-| ABAS/RAIM                 | Receiver standards, PBN/regulator guidance, aircraft equipment approvals | Current notes are conceptual                                          | Do not treat RAIM as interchangeable with SBAS integrity                                                                              |
+| Domain                    | Likely source family                                                               | Current KB source posture                                                                                                                     | Main caution                                                                                                                                                |
+| ------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SBAS airborne equipment   | RTCA/EUROCAE airborne-equipment MOPS plus FAA/EASA TSO-ETSO article-approval layer | [[Source - RTCA DO-229]], [[Source - FAA TSO-C145e and TSO-C146e]], and [[Source - EASA ETSO-C145e and ETSO-C146e]] are now source-scaffolded | Detailed requirements, classes, installation approval, and operational approval require official RTCA, regulator, aircraft, operator, and procedure sources |
+| SBAS state implementation | ICAO GNSS guidance and Annex 10                                                    | [[Source - ICAO Doc 9849]] added; Annex 10 note still needed                                                                                  | Guidance is not the same as an approval decision                                                                                                            |
+| SBAS service availability | Service-provider definitions, NOTAM/status, AIP/regulator material                 | Future service-provider notes needed                                                                                                          | Do not infer availability from architecture                                                                                                                 |
+| LPV procedures            | Equipment MOPS + procedure design + AIP/regulator/operator sources                 | LPV page is source-scaffold-linked                                                                                                            | Do not publish minima without procedure/source context                                                                                                      |
+| GBAS                      | GBAS standards, local service approvals, airport-specific publications             | Current GBAS notes remain educational scaffolds                                                                                               | Do not compare precision using unsourced generic numbers                                                                                                    |
+| ABAS/RAIM                 | Receiver standards, PBN/regulator guidance, aircraft equipment approvals           | Current notes are conceptual                                                                                                                  | Do not treat RAIM as interchangeable with SBAS integrity                                                                                                    |
 
 ## Comparison rules
 
@@ -59,6 +60,8 @@ When comparing SBAS with GBAS, ABAS, RAIM, or other augmentation methods:
 - [[SBAS-Standards-Regulation]]
 - [[SBAS-vs-Other-Augmentation-Methods]]
 - [[Source - RTCA DO-229]]
+- [[Source - FAA TSO-C145e and TSO-C146e]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]]
 - [[Source - ICAO Doc 9849]]
 - [[SBAS Source Backlog]]
 - [[SBAS MOC]]

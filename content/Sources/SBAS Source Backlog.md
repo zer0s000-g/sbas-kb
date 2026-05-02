@@ -26,14 +26,16 @@ The standards branch now has a dedicated routing page: [[SBAS Standards Source M
 
 Public catalog review produced several corrections:
 
-| Reference                  | Current disposition                                                                                                                             |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Source - RTCA DO-229]]   | Keep as active GPS/SBAS airborne-equipment source-family anchor; public RTCA/FAA/EASA signals reviewed; official-text extraction still required |
-| [[Source - ICAO Doc 9849]] | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required                                                        |
-| [[Source - RTCA DO-242]]   | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims                                                    |
-| [[Source - RTCA DO-289]]   | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims                                         |
-| [[Source - ICAO Doc 9854]] | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims                                                      |
-| [[Source - ICAO Doc 9855]] | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications                                |
+| Reference                                   | Current disposition                                                                                                                                    |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [[Source - RTCA DO-229]]                    | Keep as active GPS/SBAS airborne-equipment source-family anchor; FAA/EASA approval-source notes now split out; official-text extraction still required |
+| [[Source - FAA TSO-C145e and TSO-C146e]]    | Active FAA regulator/article-approval routing note; direct TSO text extraction still required                                                          |
+| [[Source - EASA ETSO-C145e and ETSO-C146e]] | Active EASA regulator/article-approval routing note with extracted public PDF signals; official section mapping still required                         |
+| [[Source - ICAO Doc 9849]]                  | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required                                                               |
+| [[Source - RTCA DO-242]]                    | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims                                                           |
+| [[Source - RTCA DO-289]]                    | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims                                                |
+| [[Source - ICAO Doc 9854]]                  | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims                                                             |
+| [[Source - ICAO Doc 9855]]                  | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications                                       |
 
 ## Priority 1 — build the real standards backbone
 
@@ -48,23 +50,30 @@ Public catalog review produced several corrections:
 
 - Current vault usage: airborne GPS/SBAS equipment, LPV-capable equipment context, integrity/protection/alert-limit pages, aviation MOC.
 - Why this matters: it is currently the strongest public-product-and-regulatory-signal-reviewed source-family anchor for GPS/SBAS airborne equipment.
-- Verification need: direct extraction of official revision-specific equipment classes, intended functions, alerting/integrity language, test methods, exclusions, and the relationship between DO-229F, DO-229E, FAA TSO, and EASA ETSO material.
+- Verification need: direct extraction of official revision-specific equipment classes, intended functions, alerting/integrity language, test methods, exclusions, and the relationship between DO-229F, DO-229E, [[Source - FAA TSO-C145e and TSO-C146e]], and [[Source - EASA ETSO-C145e and ETSO-C146e]].
 - Current editorial rule: use DO-229 for receiver/equipment routing only; do not infer installation approval, operational approval, procedure minima, service status, or DFMC requirements.
 
-### 3. [[Source - ICAO Doc 9849]]
+### 3. FAA/EASA TSO/ETSO approval-source notes
+
+- Current vault usage: now represented by [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]].
+- Why this matters: DO-229 equipment-MOPS statements must be separated from jurisdiction-specific article approval, installation approval, and operational approval.
+- Verification need: direct FAA TSO-C145e/C146e extraction and deeper EASA section-level mapping before publishing class-specific approval claims.
+- Current editorial rule: use these notes for article-approval routing only; do not infer aircraft installation, operational use, procedure availability, or regulator equivalence.
+
+### 4. [[Source - ICAO Doc 9849]]
 
 - Current vault usage: newly added GNSS implementation-guidance anchor.
 - Why this matters: it appears to be the appropriate ICAO manual for state GNSS implementation context, replacing several earlier mis-scoped draft references.
 - Verification need: direct extraction of SBAS implementation, monitoring/assessment/reporting, DFMC GNSS, RFI mitigation, and Annex 10 relationship language.
 
-### 4. Procedure-design and PBN source family
+### 5. Procedure-design and PBN source family
 
 - Current vault usage: LPV, LNAV/VNAV, RNAV, RNP, and GBAS procedure notes need source hardening.
 - Why this matters: procedure minima and operational criteria cannot be derived from DO-229 or Doc 9849 alone.
 - Verification need: identify the correct ICAO PANS-OPS / PBN manuals and regulator procedure-design material.
 - Candidate future notes: procedure-design source notes for LPV and PBN operations.
 
-### 5. Service-provider source family
+### 6. Service-provider source family
 
 - Current vault usage: WAAS, EGNOS, MSAS, GAGAN, BDSBAS, regional comparison pages.
 - Why this matters: service commitments, coverage, availability, and system status are provider-specific.
@@ -103,7 +112,7 @@ Public catalog review produced several corrections:
 ## Suggested execution order
 
 1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] from the official Annex text and classify GNSS/SBAS claims by section and amendment baseline.
-2. Directly extract the official [[Source - RTCA DO-229]] text and create regulator-source notes for FAA TSO-C145/C146 and EASA ETSO-C145/C146 before publishing approval-specific statements.
+2. Directly extract the official [[Source - RTCA DO-229]] text and direct FAA TSO-C145e/C146e text; deepen [[Source - EASA ETSO-C145e and ETSO-C146e]] section mapping before publishing class-specific approval statements.
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. Build procedure-design/PBN source notes.
 5. Build service-provider source notes for major SBAS systems.
@@ -114,6 +123,8 @@ Public catalog review produced several corrections:
 
 - [[SBAS Standards Source Matrix]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
+- [[Source - FAA TSO-C145e and TSO-C146e]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]]
 - [[SBAS MOC]]
 - [[SBAS-Research-MOC]]
 - [[SBAS-Standards-Regulation]]
