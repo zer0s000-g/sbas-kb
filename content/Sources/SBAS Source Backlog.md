@@ -24,7 +24,7 @@ Important boundary:
 - Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], [[SBAS-vs-Other-Augmentation-Methods]], and [[SBAS in Civil Aviation MOC]].
 - Why this matters: several notes currently use it to support SBAS operational or standards claims.
 - Verification need: confirm document title, actual SBAS relevance, and which claims it can legitimately support.
-- Candidate future note: [[Source - ICAO Doc 8083]]
+- Candidate future note: Source - ICAO Doc 8083
 
 ### 2. ICAO Doc 9854
 - Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
@@ -41,7 +41,7 @@ Important boundary:
 - Current status: title, edition, and scope still require direct verification against the actual document
 
 ### 4. RTCA DO-229
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], [[SBAS in Civil Aviation MOC]], and [[MOCs/SBAS-Systems-by-Region-MOC.md]].
+- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], [[SBAS in Civil Aviation MOC]], and [[SBAS-Systems-by-Region-MOC]].
 - Why this matters: used as a key airborne equipment reference.
 - Verification need: confirm revision, title, and which operational/receiver claims in the vault are actually supported.
 - Starter note created: [[Source - RTCA DO-229]]
@@ -67,19 +67,19 @@ Important boundary:
 - Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
 - Why this matters: draft notes use it to anchor European SBAS claims.
 - Verification need: confirm exact role in EGNOS/SBAS framing.
-- Candidate future note: [[Source - EUROCAE ED-52]]
+- Candidate future note: Source - EUROCAE ED-52
 
 ### 8. EUROCAE ED-102
 - Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
 - Why this matters: currently used for interface-specification claims.
 - Verification need: confirm exact applicability to SBAS notes in this vault.
-- Candidate future note: [[Source - EUROCAE ED-102]]
+- Candidate future note: Source - EUROCAE ED-102
 
 ### 9. EUROCAE ED-142
 - Current vault usage: cited in [[SBAS-Standards-Regulation]] and [[SBAS-Research-MOC]].
 - Why this matters: draft notes use it in safety-assessment context.
 - Verification need: confirm whether current safety-linkage claims are precise or overgeneralized.
-- Candidate future note: [[Source - EUROCAE ED-142]]
+- Candidate future note: Source - EUROCAE ED-142
 
 ## Claim clusters that need source support
 

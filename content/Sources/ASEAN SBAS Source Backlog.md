@@ -70,7 +70,7 @@ Use [[GIPTA 2.0 MOC]] as the navigation hub for this source stack.
 ### 4. Asia-Pacific program documents relevant to Southeast Asian adoption questions
 - Why this matters: the vault currently uses [[MSAS]] and [[GAGAN]] mainly as comparators, but lacks source-backed regional adoption context.
 - Current vault usage: [[Asia-Pacific SBAS Implementation Patterns]], [[ASEAN SBAS Service-Model Options]]
-- Candidate future note: [[Source - Asia-Pacific SBAS Program References]]
+- Candidate future note: Source - Asia-Pacific SBAS Program References
 - Verification need: separate deployed-system descriptions from documents that actually inform ASEAN service-model thinking.
 
 ## Priority 3 — country-level evidence stacks

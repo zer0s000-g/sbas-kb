@@ -15,13 +15,13 @@ version: 1.0
 | Method | Primary Use | Accuracy | Coverage | Infrastructure | Typical Applications |
 |--------|-------------|----------|----------|----------------|---------------------|
 | **SBAS** | Aviation safety | 1-3m | Continental | GEO satellites + ground | En-route, terminal, approach |
-| **GBAS** | Precision approach | 0.5-1m | Airport vicinity | Local ground stations | LPV/RNAV approaches - see [[Aviation/LPV-Approach-Procedure.md]] |
+| **GBAS** | Precision approach | 0.5-1m | Airport vicinity | Local ground stations | LPV/RNAV approaches - see [[LPV-Approach-Procedure]] |
 | **ABAS** | Receiver autonomous | 5-10m | Global | On-board | General aviation, RNP |
 | **RAIM** | Integrity monitoring | 10-30m | Global | Receiver-based | Backup integrity |
 
 ## 🛫 Aviation Applications
 
-SBAS enables precision approach procedures including **LPV (Localizer Performance with Vertical)** approaches. LPV provides precision guidance comparable to traditional ILS but uses satellite-based augmentation instead of ground-based equipment. See [[Aviation/LPV-Approach-Procedure.md]] for detailed implementation.
+SBAS enables precision approach procedures including **LPV (Localizer Performance with Vertical)** approaches. LPV provides precision guidance comparable to traditional ILS but uses satellite-based augmentation instead of ground-based equipment. See [[LPV-Approach-Procedure]] for detailed implementation.
 
 ## 🎯 **Key Differentiators**
 
@@ -96,7 +96,7 @@ SBAS enables precision approach procedures including **LPV (Localizer Performanc
 
 ### **LPV Approach Integration**
 
-LPV (Localizer Performance with Vertical) approaches leverage GBAS infrastructure for precision terminal operations. See [[Aviation/LPV-Approach-Procedure.md]] for detailed procedures.
+LPV (Localizer Performance with Vertical) approaches leverage GBAS infrastructure for precision terminal operations. See [[LPV-Approach-Procedure]] for detailed procedures.
 
 ### **GBAS Advantages**
 - High precision for approaches
@@ -126,10 +126,10 @@ LPV (Localizer Performance with Vertical) approaches leverage GBAS infrastructur
 
 ## 📚 **Related Knowledge**
 - [[SBAS-Terminology]] - Core SBAS concepts
-- [[GNSS-Terminology]] - Satellite navigation fundamentals
+- GNSS terminology - Satellite navigation fundamentals
 - [[Safety-Terminology]] - Integrity and risk management
-- [[Navigation-Terminology]] - Performance metrics
-- [[ICAO-SBAS-Standards-Library.md]] - Regulatory specifications
+- navigation terminology - Performance metrics
+- [[SBAS Source Backlog]] - Regulatory specifications
 
 --
 *Node: SBAS-vs-Other-Augmentation-Methods | Links: 6+ | Depth: 1 | Status: Created*
@@ -145,7 +145,7 @@ RNAV enables flexible point-to-point navigation without ground-based navaids. Ke
 - **SBAS integration**: Enhanced accuracy and integrity monitoring
 - **Capacity increase**: 20% more approaches per hour
 
-See [[Aviation/RNAV-Approach-Procedure.md]] for detailed implementation procedures and operational requirements.
+See [[RNAV-Approach-Procedure]] for detailed implementation procedures and operational requirements.
 
 
 ## 🛫 Aviation Applications
@@ -157,7 +157,7 @@ LNAV/VNAV provides non-precision approach capability with advisory vertical guid
 - **SBAS integration**: Enhanced accuracy and integrity monitoring
 - **Cost-effective**: Lower implementation cost than LPV
 
-See [[Aviation/LNAV-VNAV-Approach-Procedure.md]] for detailed implementation procedures and operational requirements.
+See [[LNAV-VNAV-Approach-Procedure]] for detailed implementation procedures and operational requirements.
 
 
 ## 🛫 Aviation Applications
@@ -169,7 +169,7 @@ RNP enables performance-based navigation with specific accuracy requirements. Ke
 - **Reduced separation**: Lower separation standards possible
 - **Flexible routing**: Optimized flight paths and trajectories
 
-See [[Aviation/RNP-Approach-Procedure.md]] for detailed implementation procedures and operational requirements.
+See [[RNP-Approach-Procedure]] for detailed implementation procedures and operational requirements.
 
 
 ## 🛫 Aviation Applications
@@ -181,4 +181,4 @@ GBAS provides precision approach capability with 0.5-1m accuracy. Key features:
 - **High accuracy**: 0.5-1m horizontal precision
 - **Reduced weather delays**: 40-50% improvement
 
-See [[Aviation/GBAS-Approach-Procedure.md]] for detailed implementation procedures and operational requirements.
+See [[GBAS-Approach-Procedure]] for detailed implementation procedures and operational requirements.

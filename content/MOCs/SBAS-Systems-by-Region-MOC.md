@@ -1,182 +1,97 @@
 ---
 title: SBAS Systems by Region MOC
-description: Regional SBAS implementations, performance, and interoperability
-tags: [MOC, regional, sbas, comparison]
+description: Institutional navigation map for regional SBAS implementations, comparators, and source-backed system research
+tags: [MOC, regional, sbas, comparison, systems]
 category: mocs
 created: 2026-04-19
-modified: 2026-05-01
-version: 1.0
-status: research
+modified: 2026-05-02
+version: 2.0
+status: reviewed
+verification_status: synthesis-with-caveats
 ---
 
-# 🗺️ SBAS Systems by Region MOC
+# SBAS Systems by Region MOC
 
-## 📋 **Regional System Overview**
+## Scope
 
-### **Primary SBAS Implementations**
+This note maps regional SBAS systems and system-comparison research. It is a navigation and synthesis page, not a certified service-performance table.
 
-#### **WAAS (Wide Area Augmentation System) - USA**
-- See dedicated note: [[WAAS]]
-- **Coverage**: Continental USA, Alaska, Hawaii, parts of Canada/Mexico
-- **Satellites**: 3 GEO (G1, G2, G3)
-- **Uplink**: 7150-7250 MHz
-- **Accuracy**: 0.5-1.0 m (95%)
-- **Status**: Operational since 2003
-- **Key Features**: Full LPV approach support, oceanic coverage
+Exact system status, coverage, performance, service levels, satellite payloads, and operational approvals must be checked against current service-provider, regulator, and standards material before use in formal analysis.
 
-#### **EGNOS (European Geostationary Navigation Overlay Service) - Europe**
-- See dedicated note: [[EGNOS]]
-- **Coverage**: European territory + surrounding regions
-- **Satellites**: 3 GEO (E1, E2, E3)
-- **Uplink**: 1575.42 MHz (L1)
-- **Accuracy**: 0.7-1.5 m (95%)
-- **Status**: Operational since 2011
-- **Key Features**: Certified for LPV, interoperable with WAAS
+## Primary regional system notes
 
-#### **MSAS (Multi-functional Satellite Augmentation System) - Japan**
-- See dedicated note: [[MSAS]]
-- **Coverage**: Japan, selected Pacific regions
-- **Satellites**: 4 GEO (M1-M4)
-- **Uplink**: 1575.42 MHz
-- **Accuracy**: 0.5-1.0 m (95%)
-- **Status**: Operational since 2007
-- **Key Features**: Strong focus on oceanic operations
+| System | Region / role | Current note |
+|---|---|---|
+| WAAS | United States / North America reference system | [[WAAS]] |
+| EGNOS | Europe reference system | [[EGNOS]] |
+| MSAS | Japan / Asia-Pacific comparator | [[MSAS]] |
+| GAGAN | India / low-latitude regional comparator | [[GAGAN]] |
+| BDSBAS | China / BeiDou-linked Asia-Pacific comparator | [[BDSBAS]] |
 
-#### **GAGAN (GPS Aided Geo Augmented Navigation) - India**
-- See dedicated note: [[GAGAN]]
-- **Coverage**: India, surrounding regions
-- **Satellites**: 3 GEO (GAG-1, GAG-2, GAG-3 planned)
-- **Uplink**: 1575.42 MHz
-- **Accuracy**: 1.0-2.0 m (95%)
-- **Status**: Operational since 2011
-- **Key Features**: Cost-effective implementation, growing coverage
+Future source-backed notes may cover KASS, SDCM, SouthPAN, ASECNA, and other SBAS or SBAS-like programs. Until dedicated notes exist, those systems should be discussed as candidate research targets rather than linked as completed pages.
 
-#### **BDSBAS (BeiDou Satellite-Based Augmentation System) - China**
-- See dedicated note: [[BDSBAS]]
-- **Coverage**: China, Asia-Pacific
-- **Satellites**: 3 GEO (B1, B2, B3)
-- **Uplink**: 1575.42 MHz
-- **Accuracy**: 0.5-1.0 m (95%)
-- **Status**: Operational since 2012 (enhanced 2020)
-- **Key Features**: Integrated BeiDou constellation
+## Comparison and synthesis notes
 
-### **Emerging Systems**
-- **KASS (Korean Augmentation Satellite System)** - South Korea
-- **SDCM (System for Differential Correction and Monitoring)** - Russia
-- **ARAIM** - Advanced RAIM for global coverage
+- [[WAAS vs EGNOS]]
+- [[MSAS vs GAGAN]]
+- [[Asia-Pacific SBAS Implementation Patterns]]
+- [[Japan MSAS GBAS Lessons for ASEAN SBAS]]
+- [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]]
 
-### **Regional Adoption Branches Without a Unified System Note**
-- **ASEAN / Southeast Asia** - current gap area focused on implementation readiness, governance, and service-model choices rather than an already-deployed common system
-- Start here: [[ASEAN SBAS Adoption Landscape]]
-- Country grouping and prioritization: [[ASEAN SBAS Readiness Heuristic]]
-- Pathway choices: [[ASEAN SBAS Service-Model Options]]
+## ASEAN relevance
 
-## 🔧 **Performance Comparison**
+ASEAN does not currently appear in this knowledge base as a single deployed regional SBAS equivalent to WAAS or EGNOS. The ASEAN branch is instead an implementation-planning branch focused on readiness, governance, barriers, demand, source evidence, and service-model choice.
 
-| System | Accuracy | Coverage | Uplink Freq | Status | Key Strength |
-|--------|----------|----------|-------------|--------|-------------|
-| WAAS | 0.5-1.0m | Continental | 7150-7250 MHz | Mature | LPV capability |
-| EGNOS | 0.7-1.5m | European | 1575.42 MHz | Mature | Interoperability |
-| MSAS | 0.5-1.0m | Regional | 1575.42 MHz | Mature | Oceanic focus |
-| GAGAN | 1.0-2.0m | Regional | 1575.42 MHz | Growing | Cost-effective |
-| BDSBAS | 0.5-1.0m | Regional | 1575.42 MHz | Growing | BeiDou integration |
+Start with:
 
-## 🎯 **Interoperability Analysis**
+- [[ASEAN SBAS Adoption Landscape]]
+- [[ASEAN SBAS Readiness Heuristic]]
+- [[ASEAN SBAS Operational Demand Drivers]]
+- [[ASEAN SBAS Deployment Barriers]]
+- [[ASEAN SBAS Governance and Institutional Actors]]
+- [[ASEAN SBAS Service-Model Options]]
+- [[GIPTA 2.0 MOC]]
 
-### **Cross-System Compatibility**
-- **WAAS-EGNOS**: Certified for joint use in transatlantic operations
-- **EGNOS-MSAS**: Compatible for European-Asian routes
-- **Multi-constellation receivers**: Support all systems simultaneously
+## How to compare systems responsibly
 
-### **Operational Benefits**
-- **Redundancy**: Multiple systems provide backup coverage
-- **Global coverage**: No oceanic gaps
-- **Flexible routing**: Choose routes based on system availability
-- **Competitive pricing**: Multiple suppliers drive innovation
+Regional SBAS systems should not be compared only by headline accuracy or coverage numbers. A high-quality comparison should separate:
 
-## 📊 **Regional Performance Metrics**
+| Dimension | Why it matters |
+|---|---|
+| Service definition | Defines what the provider claims and for which users |
+| Aviation approval status | Determines whether signals support actual operations |
+| Coverage and geometry | Indicates where service may be usable, not necessarily where procedures exist |
+| Integrity concept | Determines safety-relevant usability |
+| Procedure inventory | Shows where operational benefits are actually available |
+| Aircraft equipage | Determines who can use the procedures |
+| Regulatory environment | Determines approval and oversight pathway |
+| Ionospheric environment | Especially important for low-latitude and equatorial regions |
+| Institutional model | Determines who operates, funds, monitors, and governs the service |
 
-### **Uptime Statistics**
-- **WAAS**: >99.95% annual uptime
-- **EGNOS**: >99.9% annual uptime  
-- **MSAS**: >99.9% annual uptime
-- **GAGAN**: >99.8% annual uptime (growing)
+## Source posture
 
-### **Infrastructure Requirements**
-- **Reference Stations**: 12-24 per region (varies by size)
-- **Uplink Stations**: 3-6 per region
-- **Monitoring Centers**: 1-2 per region
-- **Satellites**: 3-4 per system (GEO)
+Current system notes are useful but still need stronger direct source anchors. Priority source families include:
 
-## 🔍 **Integration Challenges**
+- service-provider definition documents and performance reports;
+- regulator and ANSP operational approval material;
+- ICAO APAC and regional planning documents;
+- RTCA/EUROCAE/ICAO standards scaffolds in [[SBAS Source Backlog]];
+- ASEAN and GIPTA-specific source stacks in [[ASEAN SBAS Source Backlog]] and [[GIPTA 2.0 MOC]].
 
-### **Technical Issues**
-- **Frequency coordination**: Avoid interference between systems
-- **Message format differences**: Ensure compatibility
-- **Timing synchronization**: Nanosecond precision required
-- **Receiver complexity**: Multi-system support increases cost
+## Research priorities
 
-### **Regulatory Issues**
-- **Spectrum allocation**: National regulations vary
-- **Certification requirements**: Different approval processes
-- **Data sharing agreements**: Privacy and security concerns
+1. Build a source-backed regional comparison matrix.
+2. Verify each system note against official service-provider sources.
+3. Separate technical service availability from published aviation procedure availability.
+4. Deepen Asia-Pacific comparator evidence for ASEAN planning.
+5. Add candidate notes for KASS, SouthPAN, SDCM, and ASECNA only after source scaffolds exist.
 
-## 🔙 **Future Developments**
+## See also
 
-### **System Upgrades**
-- **Second-generation satellites**: Higher power, better accuracy
-- **L-band integration**: Single-frequency operations
-- **AI-enhanced monitoring**: Predictive failure detection
-- **Quantum timing**: Improved synchronization
-
-### **Coverage Expansion**
-- **Arctic coverage**: Address polar routing needs
-- **Maritime extension**: Oceanic operations support
-- **Urban enhancement**: Dense city coverage
-- **Mountain terrain**: Challenging environment solutions
-
-## 📚 **Knowledge Connections**
-
-### **Linked Concepts**
-- [[SBAS-Terminology]] - Core definitions
-- [[SBAS Integrity]] - Integrity concept scaffold
-- [[Protection Levels]] - Operational bound concept scaffold
-- [[Alert Limits]] - Alerting-bound concept scaffold
-- [[WAAS]] - regional system note (U.S. context)
-- [[EGNOS]] - regional system note (European context)
-- [[MSAS]] - regional system note (Japan/Pacific context)
-- [[GAGAN]] - regional system note (India context)
-- [[BDSBAS]] - regional system note (China/Asia-Pacific context)
-- [[WAAS vs EGNOS]] - first regional comparison note
-- [[MSAS vs GAGAN]] - Asia-focused regional comparison note
-- [[Asia-Pacific SBAS Implementation Patterns]] - Asia-focused synthesis note
-- [[ASEAN SBAS Adoption Landscape]] - Southeast Asia implementation branch
-- [[ASEAN SBAS Readiness Heuristic]] - country grouping and prioritization heuristic
-- [[ASEAN SBAS Service-Model Options]] - pathway comparison for Southeast Asia
-- [[SBAS-vs-Other-Augmentation-Methods]] - Comparative analysis
-
-### **Research Priorities**
-1. Real-time performance monitoring across regions
-2. Cost-effectiveness analysis by region
-3. Pilot acceptance and training requirements
-4. Future-proofing for next-generation systems
-5. Compare Asia-Pacific patterns via [[Asia-Pacific SBAS Implementation Patterns]]
-6. Build ASEAN-specific regional implementation knowledge via [[ASEAN SBAS Adoption Landscape]]
-
-*MOC Version: 1.0 | Status: Draft | Next Update: 2026-04-26*
-
-## 📜 **Standards & Certification Links**
-- [[SBAS-Standards-Regulation.md]] - Primary standards documentation
-- [[SBAS-vs-Other-Standards.md]] - Comparative standards analysis
-- [[ICAO-SBAS-Standards-Library.md]] - Complete regulatory library
-- [[Source - RTCA DO-229]] - provisional source scaffold for equipment-standard references
-
-## 🚀 **Regulatory Resources**
-- Certification requirements by jurisdiction
-- Type approval processes
-- Continuing airworthiness requirements
-- Maintenance program standards
-
-## GIPTA 2.0 ASEAN planning layer
-- [[GIPTA 2.0 MOC]] adds source-linked material for ASEAN implementation planning, testbed development, and service-model comparison.
-- [[Japan MSAS GBAS Lessons for ASEAN SBAS]] connects Japan comparator evidence to ASEAN service-model options without treating MSAS expansion as already selected.
+- [[SBAS MOC]]
+- [[What is SBAS]]
+- [[SBAS Architecture]]
+- [[SBAS-vs-Other-Augmentation-Methods]]
+- [[SBAS-Standards-Regulation]]
+- [[SBAS Source Backlog]]
+- [[ASEAN SBAS Source Backlog]]

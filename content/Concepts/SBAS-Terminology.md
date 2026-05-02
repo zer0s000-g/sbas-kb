@@ -1,62 +1,75 @@
 ---
 title: Satellite-Based Augmentation System (SBAS) Terminology
-description: Core SBAS concepts, definitions, and technical specifications
+description: Controlled terminology page for core SBAS concepts used throughout the knowledge base
 tags: [terminology, sbas, gnss, corrections, integrity]
 category: core-terminology
 created: 2026-04-19
-modified: 2026-04-19
-version: 2.0
+modified: 2026-05-02
+version: 3.0
+status: reviewed
+verification_status: synthesis-with-caveats
 ---
 
-# 📖 Satellite-Based Augmentation System (SBAS) Terminology
+# Satellite-Based Augmentation System (SBAS) Terminology
 
-## 📋 **SBAS Definition**
-A ground-based augmentation system enhancing GNSS accuracy, integrity, and availability through differential correction transmitted via geostationary satellites.
+## Purpose
 
-## 🌐 **Core Technical Specifications**
+This note defines recurring SBAS terms used across the knowledge base. It is now a controlled terminology page, not the main beginner explanation. New readers should start with [[What is SBAS]] and then continue to [[SBAS Architecture]].
 
-### **System Architecture**
-- **Reference Stations**: Ground-based GNSS receivers
-- **Processing Center**: Central differential computation facility  
-- **Uplink Stations**: Ground transmitters to GEO satellites
-- **Satellite Network**: Geostationary broadcast satellites
-- **User Receivers**: SBAS-capable positioning equipment
+Definitions here are concise and intentionally conservative. Exact operational thresholds, message definitions, approval criteria, and service-performance commitments must be traced to the relevant source notes and official documents before being used as authoritative requirements.
 
-### **Performance Standards**
-- **Update Rate**: 0.5 - 6 seconds per correction
-- **Position Accuracy**: 1-3 meters (95% confidence)
-- **Integrity Monitoring**: Continuous fault detection
-- **Availability**: 99.9% operational time
-- **Coverage**: Continental scale per satellite
+## Core terms
 
-## 🛠 **Technical Components**
+| Term | Working definition | Related notes |
+|---|---|---|
+| SBAS | Wide-area GNSS augmentation service that broadcasts correction and integrity information to users | [[What is SBAS]], [[SBAS Architecture]] |
+| GNSS | Satellite navigation constellations and signals used as the base positioning source | [[SBAS Architecture]] |
+| Reference station | Surveyed ground receiver used to monitor GNSS signal behavior for augmentation processing | [[SBAS Architecture]] |
+| Master or processing station | Facility/function that estimates corrections, integrity parameters, and broadcast messages | [[SBAS Architecture]] |
+| Uplink station | Ground element that sends SBAS messages to the broadcast satellite or payload | [[SBAS Architecture Flow]] |
+| SBAS broadcast | Signal carrying augmentation messages to user receivers | [[SBAS Architecture Flow]] |
+| SBAS-capable receiver | User equipment able to receive, decode, and apply SBAS information according to its approval basis | [[LPV-Approach-Procedure]] |
+| Integrity | Ability to support timely warning when navigation information should not be relied upon for the intended operation | [[SBAS Integrity]] |
+| Protection level | Receiver-computed or service-supported bound used to judge whether navigation error remains acceptable for an operation | [[Protection Levels]] |
+| Alert limit | Operation-specific bound that protection levels must satisfy for the operation to continue | [[Alert Limits]] |
+| Availability | Probability or proportion of time that service requirements are met in the relevant context | [[SBAS-Systems-by-Region-MOC]] |
+| Continuity | Probability that service remains available for the duration of a defined operation | [[SBAS in Civil Aviation MOC]] |
+| LPV | Localizer Performance with Vertical guidance; an SBAS-enabled approach concept where approved | [[LPV-Approach-Procedure]] |
+| APV | Approach with vertical guidance; operational family relevant to GNSS/SBAS implementation | [[SBAS in Civil Aviation MOC]] |
+| GBAS | Ground-Based Augmentation System; local-area augmentation, usually airport-centered | [[GBAS-Approach-Procedure]], [[SBAS-vs-Other-Augmentation-Methods]] |
+| ABAS | Aircraft-Based Augmentation System; receiver/aircraft-side monitoring rather than a regional broadcast service | [[SBAS-vs-Other-Augmentation-Methods]], [[ASEAN ABAS Concept]] |
 
-### **Correction Types**
-1. **Fast Corrections**: Pseudorange and carrier phase adjustments
-2. **Long-term Corrections**: Ionospheric model updates
-3. **Differential Code Biases**: Satellite-specific corrections
-4. **URA (User Range Accuracy)**: Confidence interval indicators
+## Terms requiring careful source handling
 
-### **Signal Processing**
-- **Multi-constellation Support**: GPS, GLONASS, Galileo, BeiDou, QZSS
-- **Ionospheric Correction**: Dual-frequency measurements
-- **Message Generation**: Real-time correction computation
-- **Broadcast Transmission**: Encoded satellite uplink
+The following terms are frequently misused or over-generalized:
 
-## 🔗 **Cross-Reference Links**
-- [[SBAS-vs-Other-Augmentation-Methods]] - Comparative analysis
-- [[SBAS-Signal-Processing]] - Signal processing algorithms
-- [[GNSS-Terminology]] - Satellite navigation fundamentals
-- [[Safety-Terminology]] - Safety requirements and integrity
-- [[ICAO-SBAS-Standards-Library.md]] - Regulatory specifications
-- [[MOCs/SBAS-Research-MOC.md]] - Research overview
-- [[MOCs/SBAS-in-Civil-Aviation-MOC.md]] - Operational applications
-- [[MOCs/SBAS-Systems-by-Region-MOC.md]] - Regional implementations
-- [[Standards-Regulation/SBAS-Standards-Regulation.md]] - Standards
-- [[Standards-Regulation/SBAS-vs-Other-Standards.md]] - Standards comparison
+- **Accuracy**: must be tied to a metric, confidence level, service mode, and source.
+- **Integrity**: should not be reduced to “high accuracy”; it is about bounding and alerting.
+- **Availability**: may refer to signal availability, service availability, procedure availability, or operational availability; these are not interchangeable.
+- **Operational**: can mean a live technical service, a certified aviation service, a published procedure, or an approved aircraft operation. State which meaning is intended.
+- **Coverage**: a coverage footprint does not automatically imply approved procedures or service-level compliance at every airport.
+- **Readiness**: in regional implementation analysis, readiness includes institutional, regulatory, AIS/AIM, procedure-design, aircraft-equipage, and safety-oversight dimensions.
 
---
-*Node: SBAS-Terminology | Links: 10+ | Depth: 1 | Status: Active*
+## Source posture
 
-### **LPV (Localizer Performance with Vertical)**
-Category A precision approach utilizing SBAS for lateral and vertical guidance. Provides 0.8m horizontal and 15m vertical accuracy without traditional ILS infrastructure.
+Terminology in this page is aligned with the site’s current synthesis and source scaffolds. High-priority source anchors include:
+
+- [[Source - RTCA DO-229]]
+- [[Source - RTCA DO-242]]
+- [[Source - RTCA DO-289]]
+- [[Source - ICAO Doc 9854]]
+- [[Source - ICAO Doc 9855]]
+- [[SBAS Source Backlog]]
+
+## See also
+
+- [[What is SBAS]]
+- [[SBAS Architecture]]
+- [[SBAS Architecture Flow]]
+- [[SBAS Integrity]]
+- [[Protection Levels]]
+- [[Alert Limits]]
+- [[Safety-Terminology]]
+- [[Communication-Terminology]]
+- [[SBAS-vs-Other-Augmentation-Methods]]
+- [[SBAS-Standards-Regulation]]

@@ -162,13 +162,13 @@ RNP SPECIFICATIONS:
 
 ## 🔗 **Related Knowledge Links**
 - [[SBAS-Terminology]](Concepts/SBAS-Terminology.md) - Core definitions and terminology
-- [[Safety-Terminology]](Concepts/Safety-Terminology.md) - Safety and integrity requirements
-- [[Communication-Terminology]](Concepts/Communication-Terminology.md) - Communication protocols and data formats
-- [[MOCs/SBAS-in-Civil-Aviation-MOC.md]](MOCs/SBAS-in-Civil-Aviation-MOC.md) - Operational procedures and use cases
-- [[Standards-Regulation/SBAS-Standards-Regulation.md]](Standards-Regulation/SBAS-Standards-Regulation.md) - Certification and regulatory requirements
-- [[Aviation/LPV-Approach-Procedure.md]](Aviation/LPV-Approach-Procedure.md) - LPV approach procedures and integration
-- [[Aviation/RNAV-Approach-Procedure.md]](Aviation/RNAV-Approach-Procedure.md) - RNAV approach procedures and integration
-- [[Aviation/LNAV-VNAV-Approach-Procedure.md]](Aviation/LNAV-VNAV-Approach-Procedure.md) - LNAV/VNAV approach procedures and integration
+- [[Safety-Terminology]] - Safety and integrity requirements
+- [[Communication-Terminology]] - Communication protocols and data formats
+- [[SBAS in Civil Aviation MOC]](MOCs/SBAS-in-Civil-Aviation-MOC.md) - Operational procedures and use cases
+- [[SBAS-Standards-Regulation]](Standards-Regulation/SBAS-Standards-Regulation.md) - Certification and regulatory requirements
+- [[LPV-Approach-Procedure]](Aviation/LPV-Approach-Procedure.md) - LPV approach procedures and integration
+- [[RNAV-Approach-Procedure]](Aviation/RNAV-Approach-Procedure.md) - RNAV approach procedures and integration
+- [[LNAV-VNAV-Approach-Procedure]](Aviation/LNAV-VNAV-Approach-Procedure.md) - LNAV/VNAV approach procedures and integration
 
 ## 📝 **Research Notes**
 

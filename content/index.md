@@ -1,67 +1,95 @@
 ---
 title: SBAS Knowledge Base
-description: Satellite-Based Augmentation System research, standards, and empirical ionospheric evidence for civil aviation and ASEAN deployment
-tags: [sbas, gnss, aviation, knowledge-base, asean, ionosphere]
+description: Institutional-grade Satellite-Based Augmentation System research, standards, and implementation knowledge for civil aviation, ASEAN deployment, and ionospheric integrity analysis
+tags: [sbas, gnss, aviation, knowledge-base, asean, ionosphere, standards]
 created: 2026-04-19
-modified: 2026-05-01
+modified: 2026-05-02
+status: active
+verification_status: synthesis-with-caveats
 ---
 
 # SBAS Knowledge Base
 
-Welcome to a structured, source-scaffolded research knowledge base on **Satellite-Based Augmentation Systems (SBAS)** for civil aviation, with a focused expansion into **ASEAN regional deployment** and **empirical ionospheric threat modeling**.
+This site is a structured public reference on **Satellite-Based Augmentation Systems (SBAS)** for civil aviation. It connects core concepts, aviation operations, standards, regional systems, ASEAN implementation planning, GIPTA 2.0 source material, and empirical ionospheric research.
 
-## What this site contains
+The knowledge base is written for readers who need more than a glossary: engineers, researchers, regulators, ANSP staff, procedure designers, universities, and implementation teams evaluating how SBAS works and how it could be deployed responsibly.
 
-| Branch | Description | Entry point |
-|--------|-------------|-------------|
-| **Core concepts** | SBAS integrity, protection levels, alert limits, terminology | [[Concepts/SBAS-Terminology\|SBAS Terminology]] |
-| **Aviation operations** | LPV, LNAV/VNAV, RNP, RNAV approach procedures | [[Aviation/LPV-Approach-Procedure\|LPV Approach]] |
-| **Regional systems** | WAAS, EGNOS, MSAS, GAGAN, BDSBAS | [[Systems/WAAS\|WAAS]] |
-| **ASEAN expansion** | Governance, barriers, demand drivers, readiness heuristic | [[ASEAN/ASEAN SBAS Adoption Landscape\|ASEAN Adoption Landscape]] |
-| **Standards & sources** | ICAO Docs, RTCA DO-229/242/289, EUROCAE | [[Sources/SBAS Source Backlog\|Source Backlog]] |
-| **Empirical ionospheric research** | GNSS-RO validation, IRI-2020 comparison, threat screening | [[Syntheses/IRI-2020 vs GNSS-RO Indonesia\|IRI-2020 vs GNSS-RO Indonesia]] |
-| **GIPTA 2.0 / ASEAN implementation** | GIPTA document stack, source notes, testbed, RFI, WRC-27, and ASEAN implementation pathway | [[MOCs/GIPTA 2.0 MOC|GIPTA 2.0 MOC]] |
-| **Institutional upgrade** | Editorial policy, maturity audit, and roadmap toward reference-grade public use | [[Institutional SBAS Knowledge Base Upgrade Roadmap]] |
+## Start here
 
-## Navigate by map
+| Reader need | Best entry point | What you will find |
+|---|---|---|
+| Learn SBAS from zero | [[What is SBAS]] | A plain-language but technically careful beginner gateway |
+| Understand the system chain | [[SBAS Architecture]] | How reference stations, processing, uplink, broadcast, and receivers fit together |
+| Navigate the whole site | [[SBAS MOC]] | Top-level map of concepts, operations, sources, regions, and research |
+| Understand aviation use | [[SBAS in Civil Aviation MOC]] | LPV/APV/RNAV context, operational caveats, and source needs |
+| Compare deployed systems | [[SBAS-Systems-by-Region-MOC]] | WAAS, EGNOS, MSAS, GAGAN, BDSBAS, and Asia-Pacific implementation patterns |
+| Follow ASEAN work | [[ASEAN SBAS Adoption Landscape]] | Regional adoption framing, governance, barriers, demand, and service-model options |
+| Review GIPTA 2.0 material | [[GIPTA 2.0 MOC]] | Source-linked ASEAN testbed and implementation pathway material |
+| Check source maturity | [[SBAS Source Backlog]] | Standards and evidence gaps that still need direct verification |
+| Explore ionospheric research | [[SBAS Ionospheric Threat — Empirical Evidence]] | GNSS-RO/IRI-2020 threat-screening work for Indonesia |
 
-- [[MOCs/SBAS MOC\|SBAS MOC]] — top-level vault map
-- [[Institutional SBAS Knowledge Base Upgrade Roadmap]] — institutional-grade expansion plan
-- [[Institutional Upgrade Audit 2026-05-01]] — current maturity and quality audit
-- [[SBAS Knowledge Base Editorial and Source Policy]] — publication and source rules
-- [[MOCs/SBAS-Research-MOC\|SBAS Research MOC]] — research portfolio tracker
-- [[Sources/SBAS Source Backlog\|SBAS Source Backlog]] — provenance gaps queue
-- [[Sources/ASEAN SBAS Source Backlog\|ASEAN Source Backlog]] — regional source priorities
+## What this site is — and is not
 
-## Empirical research highlight
+This is a living technical knowledge base. It is designed to make SBAS learning and implementation analysis faster, more traceable, and easier to review.
 
-Recent work validated IRI-2020 against GNSS Radio Occultation over Indonesia, producing a pre-operational SBAS ionospheric threat framework:
+It is **not** an operational approval document, a certified design manual, or a replacement for ICAO, RTCA, EUROCAE, regulator, ANSP, or service-provider material. Pages distinguish between verified source anchors, source scaffolds, draft synthesis, implementation interpretation, and open research questions.
 
-- **Bias:** 66.72 TECU systematic underestimate
-- **99th percentile TEC:** 341 TECU (55.4 m L1 delay)
-- **99th percentile gradient:** 81.9 mm/km
-- **Post-sunset gap:** 18–21 LT still unobserved (integrity priority)
+## Core learning path
 
-→ [[Syntheses/SBAS Ionospheric Threat — Empirical Evidence\|Read the threat analysis]]  
-→ [[Syntheses/Indonesian SBAS ION Paper Iterations\|Paper iteration history (V1–V4)]]
+1. [[What is SBAS]] — definition, purpose, scope, and common misunderstandings.
+2. [[SBAS Architecture]] — the end-to-end augmentation chain and principal system elements.
+3. [[SBAS Architecture Flow]] — a compact flow diagram for the operational data path.
+4. [[SBAS Integrity]] — why SBAS is safety-relevant, not just accuracy-enhancing.
+5. [[Protection Levels]] and [[Alert Limits]] — how integrity is expressed for aviation use.
+6. [[SBAS in Civil Aviation MOC]] — how SBAS connects to approach operations and PBN implementation.
+7. [[SBAS-Standards-Regulation]] — the current standards map, with caveats and source-backlog links.
 
-## About this knowledge base
+## Research and implementation branches
 
-Built with the [obsidian-knowledge-management](obsidian-knowledge-management.md) methodology:
-- Atomic notes with minimal overlap
-- Bidirectional links (3–5 per node)
-- Explicit provenance warnings on all draft notes
-- Source scaffolds that separate "what the vault says" from "what the source verifies"
+### ASEAN and GIPTA implementation branch
+- [[ASEAN SBAS Adoption Landscape]]
+- [[ASEAN SBAS Readiness Heuristic]]
+- [[ASEAN SBAS Operational Demand Drivers]]
+- [[ASEAN SBAS Deployment Barriers]]
+- [[ASEAN SBAS Governance and Institutional Actors]]
+- [[ASEAN SBAS Service-Model Options]]
+- [[GIPTA 2.0 MOC]]
+- [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]]
+- [[ASEAN SBAS Testbed to Operational Service]]
 
-## Status
+### Ionospheric integrity and empirical research branch
+- [[GNSS Radio Occultation]]
+- [[Total Electron Content (TEC)]]
+- [[Ionospheric Model Validation]]
+- [[IRI-2020 vs GNSS-RO Indonesia]]
+- [[SBAS Ionospheric Threat — Empirical Evidence]]
+- [[Indonesian SBAS ION Paper Iterations]]
 
-| Component | Maturity |
-|-----------|----------|
-| Conceptual foundation | 85% |
-| Source documentation | 60% + new empirical stack |
-| ASEAN regional branch | 65% + GIPTA source stack |
-| GIPTA 2.0 source expansion | Source scaffolds added |
-| Institutional-grade upgrade | Audit, roadmap, and editorial policy started |
-| Empirical ionospheric evidence | Published as internal stack |
+### Source and governance branch
+- [[SBAS Source Backlog]]
+- [[ASEAN SBAS Source Backlog]]
+- [[SBAS Knowledge Base Editorial and Source Policy]]
+- [[Institutional Upgrade Audit 2026-05-01]]
+- [[Institutional SBAS Knowledge Base Upgrade Roadmap]]
 
-*Last updated: 2026-05-01*
+## Current maturity snapshot
+
+| Area | Current maturity | Editorial handling |
+|---|---|---|
+| Core SBAS concepts | improving | being upgraded from terminology notes into institutional pillar pages |
+| Standards/source backbone | partial | source scaffolds exist; exact document scope must still be verified where noted |
+| Aviation operations | draft but useful | operational claims require source tightening before being treated as authoritative |
+| ASEAN implementation | strong synthesis layer | supported by GIPTA and regional source scaffolds, with country claims still caveated |
+| Ionospheric research | empirical internal stack | useful for threat discovery; not yet an operational correction or certification model |
+| Publication governance | active | privacy, frontmatter, source, and maturity rules are now explicit |
+
+## Publication discipline
+
+Before relying on any page, check its frontmatter and caveats. In this site:
+
+- `institutional` or `reviewed` means the page is suitable for normal public navigation.
+- `draft` means useful but not yet final.
+- `source-scaffold-linked` means source notes exist but still need deeper verification.
+- `synthesis-with-caveats` means the page interprets multiple sources or notes and preserves uncertainty.
+
+See [[SBAS Knowledge Base Editorial and Source Policy]] for the full rule set.

@@ -25,7 +25,7 @@ GAGAN is currently referenced in:
 - [[SBAS-Systems-by-Region-MOC]]
 - [[SBAS-Research-MOC]]
 - [[SBAS MOC]]
-- [[Logs/WorkLog-2026-04-19.md]]
+- [[WorkLog-2026-04-19]]
 
 ## Provisional in-vault profile
 The current vault describes GAGAN as having:

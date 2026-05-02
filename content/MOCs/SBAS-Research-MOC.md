@@ -205,3 +205,8 @@ sources: [[Source1], [Source2], ...]
 - [[ASEAN SBAS Testbed to Operational Service]]
 - [[Source - ASEAN SBAS Testbed Development Proposal]]
 - [[Source - ADB ASEAN SBAS Technical Assistance]]
+
+## Institutional navigation upgrade — 2026-05-02
+- [[ResearchLog-2026-05-02-Institutional-Navigation-Upgrade]]
+- New reader-entry pillars: [[What is SBAS]], [[SBAS Architecture]], [[SBAS Architecture Flow]]
+- Navigation quality gate: homepage/MOC link repair, Quartz build, publication audit, and broken-wikilink scan passed

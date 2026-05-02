@@ -1,144 +1,116 @@
 ---
 title: SBAS in Civil Aviation MOC
-description: Operational use cases, approach procedures, and safety implications for SBAS in civil aviation
-tags: [MOC, civil-aviation, sbas, approach, operations]
+description: Institutional map of how SBAS connects to civil aviation operations, approach procedures, integrity, and regulatory approval
+tags: [MOC, civil-aviation, sbas, approach, operations, integrity]
 category: mocs
 created: 2026-04-19
-modified: 2026-04-23
-version: 1.0
-status: research
+modified: 2026-05-02
+version: 2.0
+status: reviewed
+verification_status: source-scaffold-linked
 ---
 
-# 🛡️ SBAS in Civil Aviation MOC
+# SBAS in Civil Aviation MOC
 
-## Initialization review — 2026-04-23
-- Parent navigation: [[SBAS MOC]]
-- This note captures important operational themes, but several quantitative claims and standards references still need source-note support.
-- Treat this note as a draft civil-aviation map pending dedicated source extraction and concept-note expansion.
-- Highest-value follow-up: connect approach concepts to sourced notes on integrity, protection levels, alert limits, and operational approvals.
-- Related concept scaffolds now available: [[SBAS Integrity]] and [[Protection Levels]].
+## Scope
 
-## 📊 **Operational Use Cases**
+This note maps the aviation-operations branch of the knowledge base. It explains how SBAS relates to approach procedures, integrity concepts, operational approval, and implementation planning.
 
-### **Approach Categories Supported by SBAS**
+It is not an operational manual. Do not use this page to determine procedure minima, aircraft eligibility, crew authorization, or service availability. Those decisions require the applicable AIP, procedure chart, avionics approval, operator approval, regulator material, and service-provider documentation.
 
-```
-EN-ROUTE (E/R)
-    ├── LNAV (Lateral Navigation Only)
-    ├── LPV (Localizer Performance with Vertical) - requires SBAS
-    └── APV (Approach with Vertical Guidance)
+## Core aviation logic
 
-TERMINAL (T)
-    ├── RNAV (GNSS) Approaches
-    ├── LPV approaches
-    ├── Visual with GNSS guidance
+SBAS contributes to civil aviation by combining wide-area GNSS augmentation with integrity information that can support approved operations. The operational chain has several layers:
 
-LANDING (L)
-    ├── Precision approaches (GBAS preferred)
-    └── Non-precision with GNSS final approach
-```
+1. a certified or otherwise approved SBAS service is available for the intended area and operation;
+2. the aircraft has suitable SBAS-capable equipment and installation approval;
+3. the procedure is designed, published, and maintained by the appropriate authority;
+4. the crew and operator are authorized for the operation;
+5. the receiver indicates that the required performance and integrity conditions are satisfied during the operation.
 
-### **Airspace Access Implications**
+A weak link in any layer can prevent operational use even when the technical SBAS signal is present.
 
-**Airport Categories by SBAS Capability**
-- **Category 1**: Basic GNSS (no augmentation) - limited operations
-- **Category 2**: SBAS-enabled - expanded operations
-- **Category 3**: GBAS/SBAS combination - full operations
+## Approach and navigation concepts
 
-**Operational Benefits**:
-- Extended operating hours (reduced weather constraints)
-- New route availability (oceanic, polar)
-- Reduced holding patterns
-- Fuel savings from direct routing
+| Concept | Role in the knowledge base | Editorial status |
+|---|---|---|
+| [[LPV-Approach-Procedure]] | SBAS-enabled vertical guidance learning note | needs standards/source tightening |
+| [[LNAV-VNAV-Approach-Procedure]] | vertical navigation context and comparison path | draft educational scaffold |
+| [[RNAV-Approach-Procedure]] | area-navigation context | draft educational scaffold |
+| [[RNP-Approach-Procedure]] | performance-based navigation context | draft educational scaffold |
+| [[GBAS-Approach-Procedure]] | local-area augmentation comparison | draft educational scaffold |
+| [[SBAS Integrity]] | safety-relevant function connecting system monitoring to operation | source-scaffold-linked |
+| [[Protection Levels]] | bounded-error concept used in operational usability checks | source-scaffold-linked |
+| [[Alert Limits]] | operation-specific bounds and alerting interpretation | source-scaffold-linked |
 
-## 🔧 **Technical Mechanisms**
+## Integrity, protection levels, and alert limits
 
-### **LPV Approach Requirements**
-```
-SBAS provides:
-- Lateral guidance: ±10m accuracy (95%)
-- Vertical guidance: ±15m accuracy (95%)
-- Alerting: <6 seconds detection time
-- Availability: 99.9% during approach
+In aviation, SBAS must be understood through integrity rather than accuracy alone.
 
-Decision Height: 
-- LPV: typically 200 feet AGL
-- LNAV: typically 400+ feet AGL
+- [[SBAS Integrity]] explains why timely warning and bounded error are central.
+- [[Protection Levels]] explain the receiver/service-side bound concept.
+- [[Alert Limits]] explain the operation-specific threshold concept.
+
+A simplified operational relationship is:
+
+```text
+If the relevant protection level is within the applicable alert limit,
+and all other service/equipment/procedure/approval conditions are satisfied,
+then the operation may continue under the approved procedure basis.
 ```
 
-### **Integrity Requirements for Approach**
-- **Protection Level**: Must meet approach category requirements — see [[Protection Levels]]
-- **Alert Limit**: Must be tighter than approach minimums — see [[Alert Limits]]
-- **False Alarm Rate**: <0.001% per approach hour
-- **Detection Time**: <6 seconds for critical faults
-- **Concept context**: [[SBAS Integrity]]
+This relationship is conceptual. Exact definitions and thresholds must come from authoritative standards and approved operational material.
 
-## 📊 **Safety & Risk Analysis**
+## Operational benefits to evaluate
 
-### **Risk Reduction Factors**
-- **Loss of Navigation**: Reduced by SBAS redundancy
-- **Terrain Conflicts**: Improved obstacle clearance awareness
-- **Weather**: Reduced impact through precision guidance
-- **Controller Workload**: Reduced through automation
+SBAS may support:
 
-### **Failure Modes**
-- **SBAS Unavailability**: Revert to non-SBAS procedures
-- **Single Frequency Loss**: Use backup frequency or revert
-- **Ionospheric Disturbance**: Enhanced monitoring required
-- **Receiver Failure**: Standard avionics redundancy
+- wider access to vertically guided approach procedures where ground navaids are limited;
+- improved operational resilience for remote, island, mountainous, or distributed airport networks;
+- more consistent regional navigation capability for equipped aircraft;
+- reduced dependence on some legacy ground infrastructure, depending on local safety and regulatory decisions;
+- improved basis for PBN implementation where procedures, oversight, and equipage are aligned.
 
-## 🌍 **Regional Implementation Patterns**
+These benefits are context-dependent. They should be evaluated against real airport networks, procedure inventories, traffic needs, terrain/weather constraints, equipage, and regulator/ANSP readiness.
 
-### **High-Capacity Regions**
-- **USA (WAAS)**: Full LPV approach coverage — see [[WAAS]]
-- **Europe (EGNOS)**: Extensive terminal area coverage — see [[EGNOS]]
-- **Japan (MSAS)**: Oceanic and terminal operations — see [[MSAS]]
+## Regional implementation context
 
-### **Developing Regions**
-- **Asia-Pacific**: Gradual SBAS rollout — see [[Asia-Pacific SBAS Implementation Patterns]]
-- **ASEAN / Southeast Asia**: adoption depends on readiness, governance, and service-model choice more than on generic SBAS awareness — see [[ASEAN SBAS Adoption Landscape]]
-- **Middle East**: Select airport coverage
-- **Africa**: Limited infrastructure
+Regional branches relevant to civil aviation include:
 
-### **ASEAN-focused retrieval path**
-- Demand side: [[ASEAN SBAS Operational Demand Drivers]]
-- Constraint side: [[ASEAN SBAS Deployment Barriers]]
-- Governance side: [[ASEAN SBAS Governance and Institutional Actors]]
-- Country grouping: [[ASEAN SBAS Readiness Heuristic]]
-- Pathway comparison: [[ASEAN SBAS Service-Model Options]]
+- [[SBAS-Systems-by-Region-MOC]] — global system comparison and regional implementation map.
+- [[Asia-Pacific SBAS Implementation Patterns]] — Asia-Pacific synthesis.
+- [[ASEAN SBAS Adoption Landscape]] — Southeast Asian adoption framing.
+- [[ASEAN SBAS Operational Demand Drivers]] — why SBAS may matter operationally in ASEAN.
+- [[ASEAN SBAS Deployment Barriers]] — why implementation is difficult.
+- [[ASEAN SBAS Governance and Institutional Actors]] — institutional pathway analysis.
+- [[ASEAN SBAS Service-Model Options]] — possible regional service models.
 
-## 🔐 **Standards & Certification**
+## Standards and source anchors
 
-### **Required Approvals**
-- **ICAO Doc 8083**: SBAS SARPs compliance
-- **RTCA DO-229**: Equipment minimum performance — see [[Source - RTCA DO-229]] for the current provisional source scaffold
-- **National Airworthiness**: Local certification requirements
-- **Airport Authority**: Local operational approval
+Current source scaffolds relevant to aviation operations include:
 
-### **Avionics Requirements**
-- **Receiver Type**: SBAS-capable multi-constellation
-- **Display Capability**: Vertical deviation indication
-- **Alert System**: Visual/audio warnings
-- **Logging**: Flight data recorder compatibility
+- [[Source - RTCA DO-229]]
+- [[Source - RTCA DO-242]]
+- [[Source - RTCA DO-289]]
+- [[Source - ICAO Doc 9854]]
+- [[Source - ICAO Doc 9855]]
+- [[SBAS Source Backlog]]
 
-## 🎯 **Research Questions & Gaps**
+Several earlier notes contain numerical values or operational examples that should be treated as provisional until tied to these or other authoritative sources.
 
-### **Open Questions**
-- How does SBAS availability vary by geographic region?
-- What are the economic benefits for small airports?
-- How do pilots adapt to SBAS-dependent procedures?
-- What are the cybersecurity implications of SBAS dependence?
+## Open source-hardening tasks
 
-### **Data Needs**
-- Global SBAS uptime statistics
-- Approach success rates with vs without SBAS
-- Pilot adaptation timelines
-- Cost-benefit analysis by airport category
+1. Verify exact standards and guidance references for SBAS-supported aviation procedures.
+2. Separate LPV, APV, LNAV/VNAV, RNAV, and RNP terminology carefully.
+3. Replace generic benefit percentages with sourced case studies or remove them.
+4. Tie any minima, alerting, or performance figures to specific standards, service definitions, or regulator material.
+5. Add country- or airport-level evidence only when the relevant AIP/AIS/procedure source is visible.
 
-## 🔮 **Key References Needed**
-- ICAO SBAS implementation guides
-- Regional air navigation plans
-- Airport categorization documents
-- Flight test reports
+## See also
 
-*MOC Version: 1.0 | Status: Draft | Next Update: 2026-04-26*
+- [[What is SBAS]]
+- [[SBAS Architecture]]
+- [[SBAS MOC]]
+- [[SBAS-Standards-Regulation]]
+- [[SBAS Source Backlog]]
+- [[ASEAN SBAS Source Backlog]]
