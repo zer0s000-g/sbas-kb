@@ -89,14 +89,13 @@ Regional branches relevant to civil aviation include:
 
 Current source scaffolds relevant to aviation operations include:
 
-- [[Source - RTCA DO-229]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - ICAO Doc 9855]]
+- [[SBAS Standards Source Matrix]]
+- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment anchor.
+- [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance anchor.
+- [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — retained as red-flag provenance notes because earlier drafts likely mis-scoped them for SBAS.
 - [[SBAS Source Backlog]]
 
-Several earlier notes contain numerical values or operational examples that should be treated as provisional until tied to these or other authoritative sources.
+Several earlier notes contain numerical values or operational examples that should be treated as provisional until tied to the correct official source family.
 
 ## Open source-hardening tasks
 

@@ -1,184 +1,75 @@
 ---
 title: SBAS vs Other Augmentation Methods
-description: Comparative analysis of satellite-based augmentation vs ground-based and airborne augmentation
-tags: [comparison, augmentation-methods, sbas, gbas, abas, raim]
+description: Source-disciplined comparison of SBAS with GBAS, ABAS, RAIM, and related augmentation concepts
+tags: [comparison, augmentation-methods, sbas, gbas, abas, raim, integrity]
 category: concepts
 created: 2026-04-19
-modified: 2026-04-23
-version: 1.0
+modified: 2026-05-02
+version: 2.0
+status: reviewed
+verification_status: source-scaffold-linked
 ---
 
-# 🔄 SBAS vs Other Augmentation Methods
+# SBAS vs Other Augmentation Methods
 
-## 📊 **Overview Comparison**
+## Scope
 
-| Method | Primary Use | Accuracy | Coverage | Infrastructure | Typical Applications |
-|--------|-------------|----------|----------|----------------|---------------------|
-| **SBAS** | Aviation safety | 1-3m | Continental | GEO satellites + ground | En-route, terminal, approach |
-| **GBAS** | Precision approach | 0.5-1m | Airport vicinity | Local ground stations | LPV/RNAV approaches - see [[LPV-Approach-Procedure]] |
-| **ABAS** | Receiver autonomous | 5-10m | Global | On-board | General aviation, RNP |
-| **RAIM** | Integrity monitoring | 10-30m | Global | Receiver-based | Backup integrity |
+This page compares augmentation concepts at an educational level. It intentionally avoids unsupported numerical accuracy, coverage, latency, alerting, and benefit claims. Exact performance and operational eligibility must be checked against authoritative standards, service-provider documentation, regulator material, AIP/procedure publications, aircraft/avionics approvals, and operator procedures.
 
-## 🛫 Aviation Applications
+## Short comparison
 
-SBAS enables precision approach procedures including **LPV (Localizer Performance with Vertical)** approaches. LPV provides precision guidance comparable to traditional ILS but uses satellite-based augmentation instead of ground-based equipment. See [[LPV-Approach-Procedure]] for detailed implementation.
+| Method | Core idea | Typical source family needed | Main caution |
+|---|---|---|---|
+| SBAS | Wide-area GNSS augmentation using a monitored reference network, correction/integrity processing, and broadcast to equipped receivers | ICAO GNSS/SBAS material, service-provider definitions, airborne-equipment MOPS | Do not infer operational approval from signal availability alone |
+| GBAS | Local-area GNSS augmentation serving a specific airport or local service volume | GBAS standards, airport/service approvals, AIP/procedure material | Local precision service is not interchangeable with continental SBAS |
+| ABAS | Aircraft/receiver-based augmentation and integrity support using onboard processing and available signals | Receiver standards, aircraft equipment approval, PBN/regulator guidance | Receiver autonomy is not the same as external SBAS service monitoring |
+| RAIM | Receiver autonomous integrity monitoring using satellite geometry and consistency checks | Receiver standards, PBN/regulator guidance, aircraft/equipment approvals | RAIM availability and suitability depend on operation, receiver, and geometry |
 
-## 🎯 **Key Differentiators**
+## Architecture distinction
 
-### **Coverage Area**
-- **SBAS**: Continental scale (single satellite ≈ 42% Earth coverage)
-- **GBAS**: Local (≈ 50km radius around reference station)
-- **ABAS**: Global (uses satellite geometry)
-- **RAIM**: Global (relies on satellite geometry)
+SBAS and GBAS both augment GNSS, but they solve different deployment problems:
 
-### **Accuracy Performance**
-- **SBAS**: 1-3m horizontal (95% confidence)
-- **GBAS**: 0.5-1m horizontal (precision approach standard)
-- **ABAS**: 5-10m horizontal (typical RNP performance)
-- **RAIM**: 10-30m horizontal (integrity bound)
+- SBAS is designed for wide-area service provision and can support many users across a large service region when service, procedure, equipment, and regulatory conditions are met.
+- GBAS is designed around local-area augmentation, usually tied to an airport or local service environment.
+- ABAS and RAIM are onboard/receiver-side concepts rather than external wide-area augmentation services.
 
-### **Infrastructure Requirements**
-- **SBAS**: Geostationary satellites + ground reference network + uplink stations
-- **GBAS**: Local reference stations + VHF data transmission + airport facilities
-- **ABAS**: No ground infrastructure (receiver-based)
-- **RAIM**: Receiver processing only
+## Aviation-use distinction
 
-### **Integrity Assurance**
-- **SBAS**: Continuous monitoring, <6s detection time
-- **GBAS**: Real-time monitoring, <1s detection
-- **ABAS**: Depends on satellite geometry
-- **RAIM**: Algorithm-based detection
+[[LPV-Approach-Procedure]] is an SBAS-supported approach concept, not a GBAS procedure. Earlier draft wording in this vault blurred that distinction. The corrected interpretation is:
 
-## ⚙ **Aviation Application Context**
+- LPV is associated with SBAS-capable airborne equipment and an approved SBAS-supported procedure environment.
+- GBAS supports its own local-area precision-approach concepts and should be documented through GBAS-specific standards and airport/service sources.
+- LNAV/VNAV, RNAV, RNP, ABAS, and RAIM concepts need their own source-disciplined procedure and equipment notes.
 
-### **En-Route Operations**
-- **Primary**: SBAS (continental coverage)
-- **Alternative**: ABAS/RAIM (no ground infrastructure needed)
-- **Use Case**: Long-haul oceanic and remote area operations
+## Integrity distinction
 
-### **Terminal Area Operations**
-- **Primary**: SBAS (wide area coverage)
-- **Alternative**: GBAS (precision approaches)
-- **Use Case**: Standard terminal vectoring and sequencing
+Integrity is not simply higher accuracy.
 
-### **Precision Approaches**
-- **Primary**: GBAS (LPV, APV)
-- **Secondary**: SBAS (LNAV/VNAV approaches)
-- **Backup**: RAIM (integrity monitoring)
+- [[SBAS Integrity]] explains SBAS integrity as the safety-relevant use-or-non-use function.
+- [[Protection Levels]] explain bounded-error concepts.
+- [[Alert Limits]] explain operation-specific usability thresholds.
+- ABAS/RAIM integrity concepts should not be presented as equivalent to SBAS service-level integrity without source-specific language.
 
-## 🔗 **Relationship to ICAO Standards**
+## Current source anchors
 
-### **SBAS and ICAO**
-- **Doc 8083**: SARPs for SBAS operations
-- **Doc 7084**: GBAS specifications
-- **Doc 9854**: Performance requirements
-- **Doc 9855**: Testing methodology
+- [[SBAS Standards Source Matrix]] — current claim-routing matrix.
+- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor.
+- [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
+- [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag notes documenting earlier mis-scoped references.
 
-### **Complementary Use**
-- SBAS provides broad-area coverage
-- GBAS provides precision terminal services
-- RAIM provides backup integrity monitoring
-- ABAS provides receiver-level autonomy
+## Open source-hardening needs
 
-## 📈 **Performance Trade-offs**
+1. Create a dedicated Annex 10 source note for GNSS/SBAS technical baseline material.
+2. Create procedure-design source notes before expanding RNAV, RNP, LNAV/VNAV, LPV, or GBAS procedure comparisons.
+3. Create service-provider source notes before publishing regional performance comparisons.
+4. Replace generic numerical tables only with source-anchored, context-specific values.
 
-### **SBAS Advantages**
-- Continental coverage with minimal ground infrastructure
-- Suitable for oceanic and remote operations
-- Lower recurring costs per user
-- Standardized international specifications
+## See also
 
-### **SBAS Limitations**
-- Higher latency (correction transmission)
-- Less precision than GBAS for approaches
-- Dependency on satellite availability
-- Ionospheric sensitivity
-
-### **LPV Approach Integration**
-
-LPV (Localizer Performance with Vertical) approaches leverage GBAS infrastructure for precision terminal operations. See [[LPV-Approach-Procedure]] for detailed procedures.
-
-### **GBAS Advantages**
-- High precision for approaches
-- Low latency corrections
-- Independent of satellite geometry
-- Better for urban canyon environments
-
-### **GBAS Limitations**
-- Local coverage only
-- Requires extensive ground infrastructure
-- Higher installation and maintenance costs
-- Airport-specific deployment
-
-## 🔮 **Future Integration Trends**
-
-### **Hybrid Approaches**
-- SBAS for en-route + GBAS for approaches
-- Seamless transition between augmentation methods
-- Multi-constellation receiver support
-- Adaptive method selection based on context
-
-### **Evolution Path**
-- Increased SBAS precision through multi-GNSS
-- GBAS expansion to multiple airports
-- ABAS integration with onboard systems
-- Unified performance standards across methods
-
-## 📚 **Related Knowledge**
-- [[SBAS-Terminology]] - Core SBAS concepts
-- GNSS terminology - Satellite navigation fundamentals
-- [[Safety-Terminology]] - Integrity and risk management
-- navigation terminology - Performance metrics
-- [[SBAS Source Backlog]] - Regulatory specifications
-
---
-*Node: SBAS-vs-Other-Augmentation-Methods | Links: 6+ | Depth: 1 | Status: Created*
-
-**Next best topic to expand**: Add specific regional system details (now including [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], and [[BDSBAS]] as draft system notes) or expand Aviation/Operational Use Cases.
-
-## 🛫 Aviation Applications
-
-### **RNAV (Area Navigation) Approaches**
-RNAV enables flexible point-to-point navigation without ground-based navaids. Key features:
-- **Flexible routing**: Curved flight paths and optimized trajectories
-- **Reduced infrastructure**: No VOR/DME requirements
-- **SBAS integration**: Enhanced accuracy and integrity monitoring
-- **Capacity increase**: 20% more approaches per hour
-
-See [[RNAV-Approach-Procedure]] for detailed implementation procedures and operational requirements.
-
-
-## 🛫 Aviation Applications
-
-### **LNAV/VNAV (Lateral Navigation / Vertical Navigation) Approaches**
-LNAV/VNAV provides non-precision approach capability with advisory vertical guidance. Key features:
-- **Lateral navigation**: GPS-based lateral guidance
-- **Vertical navigation**: Advisory glideslope (not precision)
-- **SBAS integration**: Enhanced accuracy and integrity monitoring
-- **Cost-effective**: Lower implementation cost than LPV
-
-See [[LNAV-VNAV-Approach-Procedure]] for detailed implementation procedures and operational requirements.
-
-
-## 🛫 Aviation Applications
-
-### **RNP (Required Navigation Performance) Approaches**
-RNP enables performance-based navigation with specific accuracy requirements. Key features:
-- **Performance-based**: Specific accuracy requirements (RNP 0.3, RNP 1.0, etc.)
-- **SBAS integration**: Enhanced accuracy and integrity monitoring
-- **Reduced separation**: Lower separation standards possible
-- **Flexible routing**: Optimized flight paths and trajectories
-
-See [[RNP-Approach-Procedure]] for detailed implementation procedures and operational requirements.
-
-
-## 🛫 Aviation Applications
-
-### **GBAS (Ground-Based Augmentation System) Approaches**
-GBAS provides precision approach capability with 0.5-1m accuracy. Key features:
-- **Precision approach**: CAT I, II, and III capabilities
-- **Local coverage**: 50km radius around airport
-- **High accuracy**: 0.5-1m horizontal precision
-- **Reduced weather delays**: 40-50% improvement
-
-See [[GBAS-Approach-Procedure]] for detailed implementation procedures and operational requirements.
+- [[What is SBAS]]
+- [[SBAS Architecture]]
+- [[SBAS Integrity]]
+- [[LPV-Approach-Procedure]]
+- [[SBAS-Standards-Regulation]]
+- [[SBAS Source Backlog]]
+- [[SBAS MOC]]

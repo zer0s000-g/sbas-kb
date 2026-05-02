@@ -1,88 +1,59 @@
 ---
 title: Source - RTCA DO-289
-description: Starter source note for RTCA DO-289 built from current in-vault references only
-tags: [source, rtca, do-289, sbas, testing, provisional]
+description: Red-flag source note documenting that public catalog signals identify RTCA DO-289 as aircraft-surveillance related, not as an SBAS performance-testing anchor
+tags: [source, rtca, do-289, surveillance, ads-b, red-flag, provenance]
 source_type: standard
 created: 2026-04-23
-modified: 2026-04-23
-status: starter
-verification_status: metadata-pending
+modified: 2026-05-02
+status: red-flag
+verification_status: public-catalog-mismatch
 ---
 
 # Source - RTCA DO-289
 
 ## Scope of this note
-This is a starter source note created from references already present inside the vault.
+
+This note records a provenance correction. Earlier vault scaffolding treated RTCA DO-289 as if it were an SBAS performance-testing or monitoring standard. Public catalog signals reviewed in this cycle instead identify RTCA DO-289 as an aircraft-surveillance-applications standard.
 
 Important boundary:
-- This note does not yet verify the exact revision, full title, publication metadata, or normative scope from the source document itself.
-- Any claim below is limited to what the current vault already says about RTCA DO-289.
-- Treat this note as a provenance scaffold, not a completed source extraction.
 
-## Current in-vault references
-The vault currently refers to RTCA DO-289 in the following places:
+- This note is not a completed extraction from the RTCA document itself.
+- The public-catalog signal is sufficient to flag prior SBAS-specific use as likely mis-scoped.
+- Do not use DO-289 as a source anchor for SBAS testing, SBAS monitoring, LPV, protection levels, alert limits, or SBAS service performance unless later direct-source review proves a specific relevant linkage.
+
+## Public-catalog identity signal
+
+| Field | Current public-catalog signal |
+|---|---|
+| Issuing body | RTCA, Inc. |
+| Document | DO-289 |
+| Public title signal | Minimum Aviation System Performance Standards (MASPS) for Aircraft Surveillance Applications (ASA) |
+| Publication-date signal | 2006-12-13 for the cataloged current item |
+| Scope signal | ADS-B / aircraft-surveillance application parameter clarification and surveillance applications |
+| SBAS relevance signal | Not identified as an SBAS performance-testing standard in the reviewed public catalog material |
+
+## Provenance correction
+
+Previous in-vault wording described DO-289 as an SBAS performance testing or monitoring source. Treat that mapping as superseded by this red flag until direct source review identifies the intended standard.
+
+Likely downstream action:
+
+- Remove DO-289 from SBAS source-priority lists except as a red-flag / mis-scoped reference.
+- Do not route SBAS performance-monitoring claims to DO-289.
+- Look for the actual SBAS monitoring source family in ICAO Annex 10, ICAO Doc 9849, service-definition documents, ANSP/service-provider performance reports, and regulator guidance.
+
+## Downstream cleanup targets
+
 - [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
-- [[SBAS-Research-MOC]]
+- [[SBAS Standards Source Matrix]]
 - [[SBAS Source Backlog]]
-
-## Provisional in-vault metadata
-These fields are mentioned in current vault notes and still require direct verification against the source document.
-
-- Provisional title used in the vault: "Performance Testing and Monitoring of Satellite-Based Augmentation Systems"
-- Provisional role in the vault: RTCA testing and performance-verification reference for SBAS
-- Verification still needed:
-  - exact title
-  - revision/version
-  - publication year
-  - whether the scope is strictly SBAS testing/monitoring or broader than current notes imply
-  - which claims in existing notes are normative versus interpretive
-
-## Claims currently attributed or adjacent to RTCA DO-289 in the vault
-These are not yet validated against the source itself.
-
-### Explicit statements already present in vault notes
-- [[SBAS-Standards-Regulation]] uses RTCA DO-289 for testing protocols, performance verification, and field evaluation requirements.
-- [[SBAS-vs-Other-Standards]] lists RTCA DO-289 as a supporting SBAS standards reference.
-- [[SBAS-Research-MOC]] groups DO-289 with other RTCA standards relevant to SBAS research.
-
-### Immediate audit questions
-- Which testing and monitoring claims should cite [[Source - RTCA DO-289]] rather than [[Source - RTCA DO-242]] or [[Source - RTCA DO-229]]?
-- Are some current field-evaluation claims too specific for what the vault has actually verified?
-- Which future source note should be paired with DO-289 to distinguish ICAO versus RTCA testing frameworks?
-
-## Suggested downstream cleanup targets
-Once this source note is verified against the actual document, revisit:
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
 - [[SBAS-Research-MOC]]
-- [[Source - ICAO Doc 9854]]
-
-## Extraction template for next cycle
-### Bibliographic metadata
-- issuing body:
-- exact title:
-- document number:
-- revision:
-- publication date:
-- access path:
-
-### What the source explicitly states
-- 
-
-### Likely relevant sections
-- performance-testing approach
-- monitoring and verification language
-- field evaluation framework
-- relationship to other RTCA augmentation standards
-
-### What remains uncertain
-- how current vault notes should divide testing claims between RTCA DO-289 and ICAO Doc 9854
-- which performance-verification claims can be traced here after direct inspection
+- [[SBAS in Civil Aviation MOC]]
 
 ## See also
+
+- [[SBAS Standards Source Matrix]]
+- [[Source - RTCA DO-242]]
+- [[Source - RTCA DO-229]]
 - [[SBAS Source Backlog]]
-- [[Source - ICAO Doc 9854]]
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
 - [[SBAS MOC]]

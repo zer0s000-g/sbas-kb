@@ -103,11 +103,10 @@ For ASEAN implementation analysis, this connects LPV to [[ASEAN SBAS Operational
 
 Current source scaffolds relevant to this page include:
 
-- [[Source - RTCA DO-229]] — airborne equipment and receiver-performance provenance scaffold.
-- [[Source - RTCA DO-242]] — augmentation-system provenance scaffold.
-- [[Source - ICAO Doc 9855]] — SBAS technical-specification provenance scaffold.
-- [[Source - ICAO Doc 9854]] — testing/monitoring provenance scaffold.
-- [[Source - RTCA DO-289]] — SBAS performance testing/monitoring provenance scaffold.
+- [[SBAS Standards Source Matrix]] — current claim-routing matrix for standards/source families.
+- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor.
+- [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
+- [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag provenance notes retained because earlier drafts likely mis-scoped them for SBAS.
 - [[SBAS Source Backlog]] — active standards-source verification queue.
 
 This page is now `source-scaffold-linked`. It is a high-quality learning and navigation page, not a verified operational requirements table.

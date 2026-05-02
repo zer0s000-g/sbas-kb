@@ -107,11 +107,13 @@ This statement is conceptual. It must not be used to infer actual minima, alert 
 
 Current source scaffolds relevant to this page include:
 
-- [[Source - RTCA DO-229]] — airborne equipment and receiver-related provenance scaffold.
-- [[Source - RTCA DO-242]] — augmentation-system and integrity-related provenance scaffold.
+- [[SBAS Standards Source Matrix]]
+- [[Source - RTCA DO-229]]
+- [[Source - ICAO Doc 9849]] — airborne equipment and receiver-related provenance scaffold.
+- [[Source - RTCA DO-242]] — red-flag provenance note; no longer used as an SBAS integrity anchor pending contrary direct-source evidence.
 - [[Source - RTCA DO-289]] — testing/monitoring provenance scaffold.
-- [[Source - ICAO Doc 9854]] — performance testing/monitoring provenance scaffold.
-- [[Source - ICAO Doc 9855]] — SBAS technical-specification provenance scaffold.
+- [[Source - ICAO Doc 9854]] — red-flag provenance note; no longer used as an SBAS performance-testing anchor.
+- [[Source - ICAO Doc 9855]] — red-flag provenance note; no longer used as an SBAS technical-specification anchor.
 - [[SBAS Source Backlog]] — active standards-source verification queue.
 
 The source notes above are still scaffolds unless explicitly marked otherwise. This integrity page therefore remains `source-scaffold-linked`: it is suitable as a structured learning page, but not yet as a fully source-verified normative page.

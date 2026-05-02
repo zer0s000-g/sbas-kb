@@ -1,91 +1,66 @@
 ---
 title: Source - ICAO Doc 9854
-description: Starter source note for ICAO Doc 9854 built from current in-vault references only
-tags: [source, icao, doc-9854, sbas, gbas, provisional]
-source_type: standard
+description: Source note documenting ICAO Doc 9854 as the Global ATM Operational Concept, not an SBAS performance-testing standard
+tags: [source, icao, doc-9854, atm, operational-concept, red-flag, provenance]
+source_type: manual
 created: 2026-04-23
-modified: 2026-04-23
-status: starter
-verification_status: metadata-pending
+modified: 2026-05-02
+status: red-flag
+verification_status: public-catalog-mismatch
 ---
 
 # Source - ICAO Doc 9854
 
 ## Scope of this note
-This is a starter source note created from references already present inside the vault.
+
+This note records a standards-mapping correction. Earlier vault drafts treated ICAO Doc 9854 as if it were a GBAS/SBAS performance-testing and monitoring document. The ICAO Store public catalog identifies Doc 9854 as the Global Air Traffic Management Operational Concept.
 
 Important boundary:
-- This note does not yet verify the exact title, edition, publication metadata, or normative scope from the source document itself.
-- Any claim below is limited to what the current vault already says about ICAO Doc 9854.
-- Treat this note as a provenance scaffold, not a completed source extraction.
 
-## Current in-vault references
-The vault currently refers to ICAO Doc 9854 in the following places:
+- This note is based on public ICAO Store catalog metadata, not full manual extraction.
+- It is sufficient to correct the broad document identity and prevent misrouting of SBAS technical claims.
+- Do not use Doc 9854 as the authority for SBAS alert limits, protection levels, LPV equipment requirements, SBAS test procedures, or service-performance metrics.
+
+## Public-catalog identity signal
+
+| Field | Current ICAO Store signal |
+|---|---|
+| Issuing body | ICAO |
+| Document | Doc 9854 |
+| Title | Global Air Traffic Management Operational Concept |
+| Publication type | Manual |
+| Edition signal | 1st Edition, 2005 |
+| Purpose signal | Guide planning and implementation of global air traffic management by describing how the emerging and future ATM system should operate |
+
+## Provenance correction
+
+Previous in-vault wording mapped Doc 9854 to SBAS/GBAS performance testing and monitoring. Treat that mapping as incorrect unless future direct source review proves a specific supporting passage for a narrow ATM-planning claim.
+
+Appropriate current use:
+
+- broad ATM modernization or global operational-concept context;
+- high-level planning vocabulary, if directly quoted or extracted later.
+
+Inappropriate current use:
+
+- SBAS technical specifications;
+- SBAS performance monitoring;
+- alert limits, protection levels, integrity thresholds;
+- LPV procedure requirements or equipment standards.
+
+## Downstream cleanup targets
+
 - [[SBAS-Standards-Regulation]]
+- [[SBAS Standards Source Matrix]]
 - [[SBAS-vs-Other-Standards]]
-- [[SBAS-Research-MOC]]
+- [[SBAS-vs-Other-Augmentation-Methods]]
 - [[SBAS Source Backlog]]
-- [[SBAS-vs-Other-Augmentation-Methods]]
-- [[Source - ICAO Doc 9855]]
-
-## Provisional in-vault metadata
-These fields are mentioned in current vault notes and still require direct verification against the source document.
-
-- Provisional title used in the vault: "Performance Testing and Monitoring of GBAS and Satellite-Based Augmentation Systems"
-- Provisional role in the vault: ICAO testing and monitoring reference for augmentation systems
-- Verification still needed:
-  - exact title
-  - edition/version
-  - publication year
-  - whether scope covers both GBAS and SBAS in the way current notes imply
-  - which claims in comparison and standards notes are normative versus interpretive
-
-## Claims currently attributed or adjacent to ICAO Doc 9854 in the vault
-These are not yet validated against the source itself.
-
-### Explicit statements already present in vault notes
-- [[SBAS-Standards-Regulation]] uses ICAO Doc 9854 for performance testing and monitoring claims.
-- [[SBAS-vs-Other-Augmentation-Methods]] currently maps Doc 9854 to performance requirements.
-- [[Source - ICAO Doc 9855]] already flags the possibility that some claims attributed to Doc 9855 may belong here instead.
-
-### Immediate audit questions
-- Which testing or monitoring claims in the vault should cite Doc 9854 rather than [[Source - ICAO Doc 9855]]?
-- Is [[SBAS-vs-Other-Augmentation-Methods]] using Doc 9854 too broadly as a generic performance reference?
-- Which operational-performance notes should eventually link to Doc 9854 once verified?
-
-## Suggested downstream cleanup targets
-Once this source note is verified against the actual document, revisit:
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
-- [[SBAS-vs-Other-Augmentation-Methods]]
-- [[Source - ICAO Doc 9855]]
-
-## Extraction template for next cycle
-### Bibliographic metadata
-- issuing body:
-- exact title:
-- document number:
-- edition/revision:
-- publication date:
-- access path:
-
-### What the source explicitly states
-- 
-
-### Likely relevant sections
-- performance testing framework
-- monitoring and evaluation language
-- scope across GBAS and SBAS
-- relationship to technical-specification documents
-
-### What remains uncertain
-- whether the vault is currently conflating performance monitoring with technical specification material
-- which aviation-use-case notes should eventually point here once direct source inspection happens
+- [[SBAS-Research-MOC]]
 
 ## See also
-- [[SBAS Source Backlog]]
+
+- [[SBAS Standards Source Matrix]]
+- [[Source - ICAO Doc 9849]]
 - [[Source - ICAO Doc 9855]]
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
-- [[SBAS-vs-Other-Augmentation-Methods]]
+- [[SBAS Source Backlog]]
 - [[SBAS MOC]]

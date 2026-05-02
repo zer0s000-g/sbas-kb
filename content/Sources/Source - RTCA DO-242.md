@@ -1,89 +1,74 @@
 ---
 title: Source - RTCA DO-242
-description: Starter source note for RTCA DO-242 built from current in-vault references only
-tags: [source, rtca, do-242, sbas, gnss, provisional]
+description: Red-flag source note documenting that public catalog signals identify RTCA DO-242 as ADS-B related, not as a current SBAS augmentation-system anchor
+tags: [source, rtca, do-242, ads-b, surveillance, red-flag, provenance]
 source_type: standard
 created: 2026-04-23
-modified: 2026-04-23
-status: starter
-verification_status: metadata-pending
+modified: 2026-05-02
+status: red-flag
+verification_status: public-catalog-mismatch
 ---
 
 # Source - RTCA DO-242
 
 ## Scope of this note
-This is a starter source note created from references already present inside the vault.
+
+This note preserves a provenance correction. Earlier vault drafts treated RTCA DO-242 as if it were a GNSS augmentation-system or SBAS integrity source. Public catalog signals reviewed in this cycle instead identify RTCA DO-242 as an ADS-B / surveillance-related standard.
 
 Important boundary:
-- This note does not yet verify the exact revision, full title, publication metadata, or normative scope from the source document itself.
-- Any claim below is limited to what the current vault already says about RTCA DO-242.
-- Treat this note as a provenance scaffold, not a completed source extraction.
 
-## Current in-vault references
-The vault currently refers to RTCA DO-242 in the following places:
+- This note is not a completed extraction from the RTCA document itself.
+- The public-catalog signal is strong enough to flag the previous SBAS use as likely mis-scoped.
+- Do not use DO-242 as a source anchor for SBAS integrity, LPV, protection levels, alert limits, or augmentation-system requirements unless a later direct source review proves a specific relevant linkage.
+
+## Public-catalog identity signal
+
+| Field | Current public-catalog signal |
+|---|---|
+| Issuing body | RTCA, Inc. |
+| Document | DO-242 / change to DO-242A in the consulted catalog signal |
+| Public title signal | Minimum Aviation System Performance Standards for Automatic Dependent Surveillance Broadcast (ADS-B) |
+| Publication-date signal | 2006-12-13 for the cataloged current change item |
+| Scope signal | Clarifies ADS-B transmitted-position-quality parameters |
+| SBAS relevance signal | Not identified as an SBAS augmentation-system standard in the reviewed public catalog material |
+
+## Provenance correction
+
+Previous in-vault wording described DO-242 as a GNSS augmentation systems reference. That wording should be treated as superseded by this correction until direct-source review shows otherwise.
+
+Recommended replacement behavior:
+
+- For airborne GPS/SBAS equipment claims, use [[Source - RTCA DO-229]].
+- For GNSS implementation guidance, use [[Source - ICAO Doc 9849]] with Annex 10 / regulator sources still required for normative claims.
+- For system-level SBAS SARPs or service-definition claims, create or verify Annex 10, service-provider, and regulator source notes.
+- For ADS-B position-quality or surveillance applications, retain DO-242 only as a possible surveillance-system source family, not as an SBAS source.
+
+## Downstream cleanup targets
+
+The following pages should avoid presenting DO-242 as an SBAS integrity or augmentation-system authority:
+
 - [[SBAS-Standards-Regulation]]
+- [[SBAS Standards Source Matrix]]
 - [[SBAS-vs-Other-Standards]]
-- [[SBAS-Research-MOC]]
+- [[SBAS-vs-Other-Augmentation-Methods]]
+- [[SBAS Integrity]]
+- [[Protection Levels]]
+- [[Alert Limits]]
+- [[LPV-Approach-Procedure]]
+- [[SBAS in Civil Aviation MOC]]
 - [[SBAS Source Backlog]]
-- [[Source - RTCA DO-229]]
 
-## Provisional in-vault metadata
-These fields are mentioned in current vault notes and still require direct verification against the source document.
+## What remains uncertain
 
-- Provisional title used in the vault: "Minimum Operational Performance Standards for GNSS Augmentation Systems"
-- Provisional role in the vault: augmentation-system reference used for SBAS and integrity-related discussion
-- Verification still needed:
-  - exact title
-  - revision/version
-  - publication year
-  - whether scope covers SBAS broadly, GNSS augmentation generally, or a narrower subset
-  - which claims in existing notes are normative versus interpretive
-
-## Claims currently attributed or adjacent to RTCA DO-242 in the vault
-These are not yet validated against the source itself.
-
-### Explicit statements already present in vault notes
-- [[SBAS-Standards-Regulation]] uses RTCA DO-242 as a GNSS augmentation systems reference.
-- [[SBAS-vs-Other-Standards]] lists DO-242 under SBAS and RAIM contexts.
-- [[SBAS-Research-MOC]] lists DO-242 as part of the RTCA standards cluster.
-
-### Immediate audit questions
-- Does the current vault use DO-242 too broadly as a generic integrity reference?
-- Which claims in [[SBAS-vs-Other-Standards]] belong to DO-242 versus [[Source - RTCA DO-229]]?
-- Which future concept notes on integrity, alerting, or augmentation architecture should point to DO-242?
-
-## Suggested downstream cleanup targets
-Once this source note is verified against the actual document, revisit:
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
-- [[SBAS-Research-MOC]]
-- [[Source - RTCA DO-229]]
-
-## Extraction template for next cycle
-### Bibliographic metadata
-- issuing body:
-- exact title:
-- document number:
-- revision:
-- publication date:
-- access path:
-
-### What the source explicitly states
-- 
-
-### Likely relevant sections
-- augmentation system performance
-- integrity and alerting framework
-- operational scope of augmentation services
-- relationship to airborne equipment standards
-
-### What remains uncertain
-- whether some current vault references to DO-242 are actually secondary references to broader SBAS standards work
-- how sharply DO-242 should be separated from equipment-specific claims currently grouped with DO-229
+- Whether older working groups, related RTCA documents, or secondary citations created the initial in-vault confusion.
+- Whether a different RTCA document number, not DO-242, was intended as the SBAS augmentation-system anchor.
+- Which exact RTCA/EUROCAE/ICAO source should anchor each remaining system-level SBAS claim.
 
 ## See also
+
+- [[SBAS Standards Source Matrix]]
 - [[SBAS Source Backlog]]
 - [[Source - RTCA DO-229]]
+- [[Source - RTCA DO-289]]
 - [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
 - [[SBAS MOC]]

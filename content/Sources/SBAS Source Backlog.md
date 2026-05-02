@@ -1,126 +1,120 @@
 ---
 title: SBAS Source Backlog
-description: Prioritized backlog of source notes needed to support existing SBAS claims in the vault
+description: Prioritized source-building backlog for source-disciplined SBAS knowledge-base claims
 tags: [sources, backlog, provenance, sbas, research]
 created: 2026-04-23
-modified: 2026-04-23
+modified: 2026-05-02
 status: active
-verification_status: internal-backlog-only
+verification_status: internal-backlog-with-public-catalog-corrections
 ---
 
 # SBAS Source Backlog
 
 ## Purpose
-This note tracks high-priority source notes that should be created before draft SBAS claims in the vault are treated as verified research conclusions.
+
+This note tracks high-priority source notes needed before draft SBAS claims in the vault are treated as verified research conclusions.
 
 Important boundary:
+
 - This is not itself an authoritative source note.
-- It is a provenance-management note built from existing references already mentioned inside the vault.
-- External document metadata and scope still need verification against the actual source documents.
+- It is a provenance-management note built from current vault usage and public-catalog review signals.
+- External standards and guidance must still be checked against official source documents before numerical or operational requirements are published.
 
-## Priority 1 — foundational standards already referenced in the vault
+## 2026-05-02 source-matrix correction
 
-### 1. ICAO Doc 8083
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], [[SBAS-vs-Other-Augmentation-Methods]], and [[SBAS in Civil Aviation MOC]].
-- Why this matters: several notes currently use it to support SBAS operational or standards claims.
-- Verification need: confirm document title, actual SBAS relevance, and which claims it can legitimately support.
-- Candidate future note: Source - ICAO Doc 8083
+The standards branch now has a dedicated routing page: [[SBAS Standards Source Matrix]].
 
-### 2. ICAO Doc 9854
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
-- Why this matters: used as if it supports performance testing and monitoring claims.
-- Verification need: confirm exact title, scope, and whether it covers SBAS, GBAS, or both.
-- Starter note created: [[Source - ICAO Doc 9854]]
-- Current status: title, edition, and scope still require direct verification against the actual document
+Public catalog review produced several corrections:
 
-### 3. ICAO Doc 9855
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
-- Why this matters: draft notes rely on it for technical specification claims.
-- Verification need: confirm exact scope and map which technical claims can be traced to it.
-- Starter note created: [[Source - ICAO Doc 9855]]
-- Current status: title, edition, and scope still require direct verification against the actual document
+| Reference | Current disposition |
+|---|---|
+| [[Source - RTCA DO-229]] | Keep as active GPS/SBAS airborne-equipment source-family anchor; direct extraction still required |
+| [[Source - ICAO Doc 9849]] | Add as active ICAO GNSS implementation-guidance anchor; direct extraction still required |
+| [[Source - RTCA DO-242]] | Red-flag as ADS-B/surveillance related; do not use for SBAS integrity or augmentation claims |
+| [[Source - RTCA DO-289]] | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims |
+| [[Source - ICAO Doc 9854]] | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims |
+| [[Source - ICAO Doc 9855]] | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications |
 
-### 4. RTCA DO-229
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], [[SBAS in Civil Aviation MOC]], and [[SBAS-Systems-by-Region-MOC]].
-- Why this matters: used as a key airborne equipment reference.
-- Verification need: confirm revision, title, and which operational/receiver claims in the vault are actually supported.
-- Starter note created: [[Source - RTCA DO-229]]
-- Current status: metadata and scope still require direct verification against the actual document
+## Priority 1 — build the real standards backbone
 
-### 5. RTCA DO-242
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
-- Why this matters: used for augmentation and integrity-related claims.
-- Verification need: confirm scope and relationship to SBAS vs broader GNSS augmentation.
-- Starter note created: [[Source - RTCA DO-242]]
-- Current status: title, revision, and scope still require direct verification against the actual document
+### 1. ICAO Annex 10, Volume I GNSS/SBAS material
 
-### 6. RTCA DO-289
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
-- Why this matters: draft notes use it for testing/monitoring statements.
-- Verification need: confirm title, scope, and whether current references are too broad.
-- Starter note created: [[Source - RTCA DO-289]]
-- Current status: title, revision, and scope still require direct verification against the actual document
+- Current vault usage: referenced conceptually across standards, architecture, integrity, aviation, and implementation notes, but not yet represented by a dedicated source note.
+- Why this matters: Annex 10 is likely the necessary ICAO technical/SARPs baseline for many GNSS/SBAS claims.
+- Verification need: identify exact volume, edition, amendment status, GNSS/SBAS sections, and downstream claim boundaries.
+- Candidate future note: Source - ICAO Annex 10 Volume I GNSS/SBAS.
 
-## Priority 2 — regional and European framework references already mentioned indirectly
+### 2. [[Source - RTCA DO-229]]
 
-### 7. EUROCAE ED-52
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
-- Why this matters: draft notes use it to anchor European SBAS claims.
-- Verification need: confirm exact role in EGNOS/SBAS framing.
-- Candidate future note: Source - EUROCAE ED-52
+- Current vault usage: airborne GPS/SBAS equipment, LPV-capable equipment context, integrity/protection/alert-limit pages, aviation MOC.
+- Why this matters: it is currently the strongest public-catalog-reviewed source-family anchor for GPS/SBAS airborne equipment.
+- Verification need: direct extraction of revision-specific equipment classes, intended functions, alerting/integrity language, test methods, and exclusions.
 
-### 8. EUROCAE ED-102
-- Current vault usage: cited in [[SBAS-Standards-Regulation]], [[SBAS-vs-Other-Standards]], and [[SBAS-Research-MOC]].
-- Why this matters: currently used for interface-specification claims.
-- Verification need: confirm exact applicability to SBAS notes in this vault.
-- Candidate future note: Source - EUROCAE ED-102
+### 3. [[Source - ICAO Doc 9849]]
 
-### 9. EUROCAE ED-142
-- Current vault usage: cited in [[SBAS-Standards-Regulation]] and [[SBAS-Research-MOC]].
-- Why this matters: draft notes use it in safety-assessment context.
-- Verification need: confirm whether current safety-linkage claims are precise or overgeneralized.
-- Candidate future note: Source - EUROCAE ED-142
+- Current vault usage: newly added GNSS implementation-guidance anchor.
+- Why this matters: it appears to be the appropriate ICAO manual for state GNSS implementation context, replacing several earlier mis-scoped draft references.
+- Verification need: direct extraction of SBAS implementation, monitoring/assessment/reporting, DFMC GNSS, RFI mitigation, and Annex 10 relationship language.
 
-## Claim clusters that need source support
+### 4. Procedure-design and PBN source family
+
+- Current vault usage: LPV, LNAV/VNAV, RNAV, RNP, and GBAS procedure notes need source hardening.
+- Why this matters: procedure minima and operational criteria cannot be derived from DO-229 or Doc 9849 alone.
+- Verification need: identify the correct ICAO PANS-OPS / PBN manuals and regulator procedure-design material.
+- Candidate future notes: procedure-design source notes for LPV and PBN operations.
+
+### 5. Service-provider source family
+
+- Current vault usage: WAAS, EGNOS, MSAS, GAGAN, BDSBAS, regional comparison pages.
+- Why this matters: service commitments, coverage, availability, and system status are provider-specific.
+- Verification need: create dedicated service-definition/performance source notes before publishing comparative tables.
+
+## Priority 2 — regional and European framework references
+
+- EUROCAE ED references remain candidates but need exact title/scope verification before being used for EGNOS/SBAS claims.
+- APAC, APANPIRG, CNS SG, AIP/AIS, regulator, and ANSP source notes remain important for ASEAN implementation analysis.
+- Country-specific readiness claims should continue to use cautious evidence categories unless direct institutional sources support stronger statements.
+
+## Claim clusters that still need direct source support
 
 ### Standards mapping
-- document titles
-- document scope statements
-- which documents are system-level vs airborne-equipment vs testing references
+
+- document titles and editions;
+- document scope statements;
+- whether a source is airborne-equipment, system-level, procedure-design, service-provider, regulator/ANSP, or implementation guidance;
+- whether source material is normative, guidance, catalog metadata, or secondary commentary.
 
 ### Performance figures
-- horizontal/vertical accuracy numbers
-- continuity and availability percentages
-- alerting or time-to-alarm values
-- regional uptime figures
+
+- horizontal/vertical accuracy numbers;
+- continuity and availability percentages;
+- alerting or time-to-alert values;
+- regional uptime and service-performance figures.
 
 ### Operational claims
-- LPV/APV capability statements
-- regional operational approval statements
-- interoperability claims across WAAS/EGNOS/MSAS/GAGAN and other systems
+
+- LPV/APV capability statements;
+- aircraft/equipment eligibility;
+- regional operational approval statements;
+- procedure availability;
+- interoperability claims across WAAS/EGNOS/MSAS/GAGAN and other systems.
 
 ## Suggested execution order
-1. [[Source - RTCA DO-229]]
-2. [[Source - ICAO Doc 9855]]
-3. [[Source - ICAO Doc 9854]]
-4. [[Source - RTCA DO-242]]
-5. [[Source - RTCA DO-289]]
-6. European framework notes after the above
-7. [[Source - GNSS Radio Occultation Technique]]
-8. [[Source - IRI-2020 Ionosphere Model]]
-9. [[Source - GNSS-RO Indonesia Empirical Study]]
+
+1. Create Source - ICAO Annex 10 Volume I GNSS/SBAS.
+2. Directly extract [[Source - RTCA DO-229]].
+3. Directly extract [[Source - ICAO Doc 9849]].
+4. Build procedure-design/PBN source notes.
+5. Build service-provider source notes for major SBAS systems.
+6. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and [[LPV-Approach-Procedure]] only after the above source anchors exist.
+7. Continue ASEAN/regional source hardening through [[ASEAN SBAS Source Backlog]].
 
 ## Related notes
+
+- [[SBAS Standards Source Matrix]]
 - [[SBAS MOC]]
-- [[SBAS Research MOC]]
+- [[SBAS-Research-MOC]]
 - [[SBAS-Standards-Regulation]]
 - [[SBAS-vs-Other-Standards]]
 - [[SBAS in Civil Aviation MOC]]
 - [[ASEAN SBAS Source Backlog]]
-- [[GNSS Radio Occultation]]
-- [[IRI-2020 vs GNSS-RO Indonesia]]
-
-## Open questions
-- Which cited standards references in the current vault are mis-scoped, outdated, or incorrectly titled?
-- Which existing performance figures can be supported by primary standards versus implementation reports?
-- Should future source notes separate normative requirements from guidance and operational implementation material?

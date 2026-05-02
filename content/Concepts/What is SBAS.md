@@ -93,7 +93,9 @@ See [[SBAS-vs-Other-Augmentation-Methods]] for augmentation comparisons.
 
 This site currently has source scaffolds for several high-value standards and guidance references, including:
 
+- [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
 - [[Source - RTCA DO-289]]
 - [[Source - ICAO Doc 9854]]

@@ -1,181 +1,89 @@
 ---
 title: SBAS Standards and Regulation
-description: ICAO, RTCA, EUROCAE standards and certification requirements for SBAS
-tags: [standards, regulation, icao, rtca, eurocae, certification]
+description: Source-disciplined overview of SBAS standards, regulatory source families, and claim boundaries for institutional knowledge-base use
+tags: [standards, regulation, icao, rtca, eurocae, certification, source-discipline]
 category: standards
 created: 2026-04-19
-modified: 2026-04-23
-version: 1.0
-status: draft
+modified: 2026-05-02
+version: 2.0
+status: reviewed
+verification_status: public-catalog-reviewed-with-open-source-extraction
 ---
 
-# 📜 SBAS Standards and Regulation
+# SBAS Standards and Regulation
 
-## 🧼 **Regulatory Framework**
+## Scope
 
-### **International Standards**
+This page is an institutional orientation to SBAS standards and regulatory source families. It is designed to help readers understand which documents and institutions may support which types of claims.
 
-#### **ICAO (International Civil Aviation Organization)**
-- **Doc 8083**: "Procedures for Air Navigation Services - Surveillance" 
-  - SBAS-specific SARPs (Standards and Recommended Practices)
-  - Requirements for system design and operation
-  - Safety management requirements
+It is not an operational compliance manual. Do not use this page to determine procedure minima, aircraft eligibility, receiver certification, crew authorization, service availability, or regulatory compliance. Those decisions require the applicable official standards, regulator material, service-provider documentation, aircraft/avionics approval basis, AIP/procedure publications, and operator procedures.
 
-- **Doc 7084**: "Ground-Based Augmentation Systems (GBAS)"
-  - Technical specifications for GBAS
-  - Performance requirements
-  - Testing protocols
+## Current source posture
 
-- **Doc 9854**: "Performance Testing and Monitoring of GBAS and Satellite-Based Augmentation Systems"
-  - Test methodologies
-  - Performance monitoring requirements
-  - Field testing procedures
-  - Starter source note: [[Source - ICAO Doc 9854]] (title, edition, and scope still need direct verification)
+This standards branch has moved from a draft list of document names to a source-disciplined map. The most important correction is that several earlier document mappings were too broad or apparently incorrect.
 
-- **Doc 9855**: "Technical Specifications for Satellite-Based Augmentation Systems"
-  - Detailed technical specifications
-  - Interface requirements
-  - Performance standards
-  - Starter source note: [[Source - ICAO Doc 9855]] (title, edition, and scope still need direct verification)
+Use [[SBAS Standards Source Matrix]] as the current routing table.
 
-### **Regional/State Standards**
+## Standards source families
 
-#### **RTCA (Radio Technical Commission for Aeronautics)**
-- **DO-229**: "Minimum Operational Performance Standards for Global Positioning System/Wide Area Augmentation System (GPS/WAAS) Airborne Equipment"
-  - Equipment requirements
-  - Performance specifications
-  - Testing procedures
-  - Starter source note: [[Source - RTCA DO-229]] (metadata and scope still need direct verification)
+| Source family | Typical claim boundary | Current KB anchor |
+|---|---|---|
+| ICAO SARPs / technical provisions | Global aviation baseline for aeronautical telecommunications, GNSS, and augmentation requirements | Dedicated Annex 10 source note still needed |
+| ICAO implementation guidance | State introduction of GNSS operations, implementation considerations, monitoring/assessment/reporting | [[Source - ICAO Doc 9849]] |
+| RTCA / EUROCAE airborne equipment standards | Receiver/equipment performance, equipment classes, test methods, and avionics capability | [[Source - RTCA DO-229]] is the current GPS/SBAS airborne-equipment anchor |
+| Procedure-design criteria | Procedure construction, minima design, coding assumptions, obstacle assessment | Dedicated PANS-OPS / procedure-design source notes still needed |
+| Regulator / ANSP / AIP sources | State implementation, operational approval, published procedures, and actual availability | Regional and country source notes still being built |
+| Service-provider documents | Service definition, coverage, performance, NOTAM/status practices, system-specific operational commitments | Future service-provider source notes needed for each SBAS system |
 
-- **DO-242**: "Minimum Operational Performance Standards for GNSS Augmentation Systems"
-  - Augmentation system requirements
-  - Integrity monitoring specifications
-  - Alerting requirements
-  - Starter source note: [[Source - RTCA DO-242]] (title, revision, and scope still need direct verification)
+## Confirmed correction register
 
-- **DO-289**: "Performance Testing and Monitoring of Satellite-Based Augmentation Systems"
-  - Testing protocols
-  - Performance verification
-  - Field evaluation requirements
-  - Starter source note: [[Source - RTCA DO-289]] (title, revision, and scope still need direct verification)
+| Earlier in-vault mapping | Current correction | Resulting editorial rule |
+|---|---|---|
+| ICAO Doc 9855 as SBAS technical specification | Public ICAO catalog identifies Doc 9855 as Guidelines on the Use of the Public Internet for Aeronautical Applications | Do not cite Doc 9855 for SBAS technical claims |
+| ICAO Doc 9854 as SBAS/GBAS performance testing and monitoring | Public ICAO catalog identifies Doc 9854 as Global Air Traffic Management Operational Concept | Do not cite Doc 9854 for SBAS performance-testing claims |
+| RTCA DO-242 as GNSS augmentation/integrity standard | Public catalog identifies DO-242 as ADS-B related | Do not cite DO-242 for SBAS integrity or augmentation-system claims |
+| RTCA DO-289 as SBAS performance-testing standard | Public catalog identifies DO-289 as aircraft surveillance applications | Do not cite DO-289 for SBAS monitoring or testing claims |
 
-- **DO-296**: "Aircraft-Based Navigation Performance Requirements for Area Navigation (RNAV) and Required Navigation Performance (RNP)"
-  - Navigation performance standards
-  - SBAS integration requirements
-  - Operational approval criteria
+These corrections are intentionally preserved as red-flag source notes rather than deleted, so future editors can see why older draft references changed.
 
-#### **EUROCAE (European Organisation for the Safety of Air Navigation)**
-- **ED-52**: "European Geostationary Navigation Overlay Service (EGNOS)"
-  - EGNOS technical specifications
-  - Performance requirements
-  - Certification requirements
+## Current high-confidence anchors
 
-- **ED-102**: "Interface Specifications for Satellite-Based Augmentation Systems"
-  - Interface definitions
-  - Data formats
-  - Communication protocols
+### RTCA DO-229
 
-- **ED-142**: "Safety Assessment of Navigation Systems and Equipment"
-  - Safety assessment methodology
-  - Risk analysis requirements
-  - Certification guidance
+[[Source - RTCA DO-229]] is the current public-catalog-reviewed anchor for GPS/SBAS airborne equipment. It can route claims about airborne receiver/equipment source family support, but detailed numerical requirements and compliance interpretations still require direct extraction from the official RTCA standard and applicable regulator material.
 
-## 📋 **Certification Requirements**
+### ICAO Doc 9849
 
-### **Type Certification Process**
-1. **Application**: Submit design and analysis documentation
-2. **Review**: Regulatory authority evaluates compliance
-3. **Testing**: Laboratory and flight testing
-4. **Approval**: Certificate issuance
-5. **Production**: Ongoing compliance monitoring
+[[Source - ICAO Doc 9849]] is the current public-catalog-reviewed anchor for ICAO GNSS implementation guidance. It is useful for state implementation and GNSS/SBAS introduction context, but it must not be used alone as a normative requirements source.
 
-### **Key Certification Areas**
-- **Receiver Equipment**: Type certification for SBAS-capable receivers
-- **System Performance**: Demonstration of required accuracy and integrity
-- **Safety Analysis**: Failure mode and effects analysis (FMEA)
-- **Operational Procedures**: Approved usage guidelines
-- **Training Requirements**: Personnel certification programs
+## Claim boundaries by topic
 
-### **Airworthiness Requirements**
-- **System Integrity**: Must meet DO-254 (hardware) and DO-178C (software) standards
-- **Safety Assessment**: Comply with DO-256/ED-80 (navigation sensors)
-- **Environmental Testing**: MIL-STD-810 environmental testing
-- **EMC Compliance**: Electromagnetic compatibility requirements
+| Topic | What this page may say now | What remains source-pending |
+|---|---|---|
+| SBAS concept and architecture | SBAS is a GNSS augmentation architecture involving ground monitoring, correction/integrity processing, broadcast, and receiver use | Exact SARPs, message definitions, service commitments, and performance values |
+| Airborne SBAS equipment | DO-229 is the correct current source-family anchor for GPS/SBAS airborne-equipment MOPS | Revision-specific requirements, tests, equipment classes, alerting details |
+| LPV and approach operations | LPV operational use depends on service, equipment, procedure, approval, and real-time integrity conditions | Minima, eligibility, procedure-design rules, and country/operator approval details |
+| Integrity / protection levels / alert limits | The conceptual relationship can be explained safely | Exact definitions, thresholds, and operation-specific values |
+| System comparisons | Source posture can be compared | Performance rankings and availability claims require service-provider evidence |
 
-## 🔐 **Implementation Standards**
+## Immediate institutional source-building needs
 
-### **System Design Standards**
-- **Architecture**: Defined system architecture requirements
-- **Interfaces**: Standardized input/output interfaces
-- **Data Formats**: Consistent message formats and protocols
-- **Timing**: Precise timing and synchronization requirements
+1. Dedicated source note for ICAO Annex 10, Volume I GNSS/SBAS material.
+2. Direct extraction of [[Source - RTCA DO-229]] for airborne-equipment and integrity-related language.
+3. Direct extraction of [[Source - ICAO Doc 9849]] for state GNSS implementation and SBAS monitoring guidance.
+4. Procedure-design source notes before further expanding LPV/LNAV/VNAV/RNAV/RNP/GBAS procedure pages.
+5. Service-provider source notes for WAAS, EGNOS, MSAS, GAGAN, BDSBAS, KASS, SouthPAN, and other systems before comparative performance tables.
 
-### **Performance Standards**
-- **Accuracy**: Defined accuracy requirements by application
-- **Integrity**: Protection levels and alerting requirements
-- **Availability**: Minimum uptime requirements
-- **Continuity**: Reliability and redundancy requirements
+## See also
 
-### **Operational Standards**
-- **Procedures**: Standard operating procedures
-- **Monitoring**: Continuous performance monitoring
-- **Reporting**: Regular reporting requirements
-- **Maintenance**: Scheduled maintenance protocols
-
-## 🔍 **Interoperability Standards**
-
-### **Cross-System Interoperability**
-- **Message Formats**: Standardized data exchange formats
-- **Timing Protocols**: Synchronized timing across systems
-- **Frequency Management**: Spectrum coordination
-- **Backup Systems**: Seamless transition procedures
-
-### **International Coordination**
-- **ICAO Framework**: Global coordination through ICAO
-- **Regional Cooperation**: Regional air navigation agreements
-- **Data Sharing**: Performance data exchange protocols
-- **Harmonization**: Mutual recognition of certifications
-
-## 🎯 **Current Challenges**
-
-### **Regulatory Gaps**
-- Emerging technology standards (L5, dual-frequency)
-- Urban air mobility integration
-- Cybersecurity requirements
-- Data privacy and protection
-
-### **Implementation Issues**
-- Regional variation in requirements
-- Certification timeline delays
-- Training resource shortages
-- Cost of compliance
-
-## 🔮 **Key Standards References**
-
-### **Primary Documents**
-- ICAO Doc 8083 - Procedures for Air Navigation Services
-- RTCA DO-229 - GPS/WAAS Airborne Equipment Standards
-- EUROCAE ED-52 - EGNOS Technical Specifications
-- ICAO Doc 9855 - SBAS Technical Specifications
-
-### **Supporting Documents**
-- RTCA DO-242 - GNSS Augmentation Systems
-- RTCA DO-289 - SBAS Performance Testing
-- EUROCAE ED-102 - Interface Specifications
-- ICAO Doc 7084 - GBAS Specifications
-
-## 🚀 **Future Regulatory Developments**
-
-### **Emerging Requirements**
-- **Next-generation SBAS**: Standards for advanced capabilities
-- **Dual-frequency operations**: L1+L5 requirements
-- **Enhanced integrity**: Stricter safety requirements
-- **Cybersecurity**: Enhanced security standards
-
-### **Harmonization Efforts**
-- Global standards alignment
-- Mutual recognition agreements
-- Simplified certification processes
-- Reduced regional variations
-
-*Document Status: Draft | Next Review: 2026-07-19 | Version: 1.0*
+- [[SBAS Standards Source Matrix]]
+- [[SBAS Source Backlog]]
+- [[Source - RTCA DO-229]]
+- [[Source - ICAO Doc 9849]]
+- [[Source - ICAO Doc 9854]]
+- [[Source - ICAO Doc 9855]]
+- [[Source - RTCA DO-242]]
+- [[Source - RTCA DO-289]]
+- [[SBAS Integrity]]
+- [[LPV-Approach-Procedure]]
+- [[SBAS MOC]]

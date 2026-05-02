@@ -1,89 +1,72 @@
 ---
 title: Source - ICAO Doc 9855
-description: Starter source note for ICAO Doc 9855 built from current in-vault references only
-tags: [source, icao, doc-9855, sbas, standards, provisional]
-source_type: standard
+description: Source note documenting ICAO Doc 9855 as public-internet guidance for aeronautical applications, not an SBAS technical-specification anchor
+tags: [source, icao, doc-9855, public-internet, aeronautical-applications, red-flag, provenance]
+source_type: manual
 created: 2026-04-23
-modified: 2026-04-23
-status: starter
-verification_status: metadata-pending
+modified: 2026-05-02
+status: red-flag
+verification_status: public-catalog-mismatch
 ---
 
 # Source - ICAO Doc 9855
 
 ## Scope of this note
-This is a starter source note created from references already present inside the vault.
+
+This note records a standards-mapping correction. Earlier vault drafts treated ICAO Doc 9855 as if it were an SBAS technical-specification source. The ICAO Store public catalog identifies Doc 9855 as Guidelines on the Use of the Public Internet for Aeronautical Applications.
 
 Important boundary:
-- This note does not yet verify the exact title, edition, publication metadata, or normative scope from the source document itself.
-- Any claim below is limited to what the current vault already says about ICAO Doc 9855.
-- Treat this note as a provenance scaffold, not a completed source extraction.
 
-## Current in-vault references
-The vault currently refers to ICAO Doc 9855 in the following places:
+- This note is based on public ICAO Store catalog metadata, not full manual extraction.
+- It is sufficient to prevent the current vault from using Doc 9855 as an SBAS technical-specification source.
+- Do not use Doc 9855 as the authority for SBAS architecture, LPV, integrity, protection levels, alert limits, performance testing, or service requirements.
+
+## Public-catalog identity signal
+
+| Field | Current ICAO Store signal |
+|---|---|
+| Issuing body | ICAO |
+| Document | Doc 9855 |
+| Title | Guidelines on the Use of the Public Internet for Aeronautical Applications |
+| Publication type | Manual |
+| Order/SKU signal | 9855 / DOC-09855-001-01 |
+| SBAS relevance signal | No SBAS technical-specification role identified in the reviewed public catalog material |
+
+## Provenance correction
+
+Previous in-vault wording mapped Doc 9855 to SBAS technical specifications. Treat that mapping as incorrect unless future direct source review identifies a narrow, non-SBAS internet/aeronautical-applications claim.
+
+Appropriate current use:
+
+- possible source for public-internet use in aeronautical applications, after direct extraction.
+
+Inappropriate current use:
+
+- SBAS system design;
+- GPS/SBAS airborne equipment;
+- LPV capability;
+- protection-level and alert-limit definitions;
+- SBAS performance monitoring;
+- regional SBAS implementation claims.
+
+## Downstream cleanup targets
+
 - [[SBAS-Standards-Regulation]]
+- [[SBAS Standards Source Matrix]]
 - [[SBAS-vs-Other-Standards]]
-- [[SBAS-Research-MOC]]
+- [[SBAS-vs-Other-Augmentation-Methods]]
 - [[SBAS Source Backlog]]
-- [[SBAS-vs-Other-Augmentation-Methods]]
-
-## Provisional in-vault metadata
-These fields are mentioned in current vault notes and still require direct verification against the source document.
-
-- Provisional title used in the vault: "Technical Specifications for Satellite-Based Augmentation Systems"
-- Provisional role in the vault: ICAO technical-specification reference for SBAS
-- Verification still needed:
-  - exact title
-  - edition/version
-  - publication year
-  - whether the vault is using it for technical specifications, testing methodology, or both
-  - which existing claims in standards and comparison notes are normative versus interpretive
-
-## Claims currently attributed or adjacent to ICAO Doc 9855 in the vault
-These are not yet validated against the source itself.
-
-### Explicit statements already present in vault notes
-- [[SBAS-Standards-Regulation]] describes ICAO Doc 9855 as a technical specification reference for SBAS.
-- [[SBAS-vs-Other-Standards]] lists ICAO Doc 9855 as a core/supporting SBAS standards reference.
-- [[SBAS-vs-Other-Augmentation-Methods]] currently associates Doc 9855 with testing methodology, which may or may not be correctly scoped.
-
-### Immediate audit questions
-- Is the current use of Doc 9855 in [[SBAS-vs-Other-Augmentation-Methods]] correctly scoped?
-- Which technical-architecture claims in standards notes should cite Doc 9855 directly?
-- Which claims actually belong under [[Source - ICAO Doc 9854]] instead of this note?
-
-## Suggested downstream cleanup targets
-Once this source note is verified against the actual document, revisit:
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
-- [[SBAS-vs-Other-Augmentation-Methods]]
 - [[SBAS-Research-MOC]]
-
-## Extraction template for next cycle
-### Bibliographic metadata
-- issuing body:
-- exact title:
-- document number:
-- edition/revision:
-- publication date:
-- access path:
-
-### What the source explicitly states
-- 
-
-### Likely relevant sections
-- SBAS technical architecture
-- interface and performance specification language
-- system-level requirements
-- relationship to other ICAO guidance and standards materials
-
-### What remains uncertain
-- whether current vault notes are conflating Doc 9855 with testing/monitoring documents
-- which specific technical claims can be cleanly traced to this document after direct inspection
+- [[What is SBAS]]
+- [[SBAS Architecture]]
+- [[SBAS Integrity]]
+- [[Protection Levels]]
+- [[Alert Limits]]
 
 ## See also
+
+- [[SBAS Standards Source Matrix]]
+- [[Source - ICAO Doc 9849]]
+- [[Source - ICAO Doc 9854]]
 - [[SBAS Source Backlog]]
-- [[SBAS-Standards-Regulation]]
-- [[SBAS-vs-Other-Standards]]
-- [[SBAS-vs-Other-Augmentation-Methods]]
 - [[SBAS MOC]]

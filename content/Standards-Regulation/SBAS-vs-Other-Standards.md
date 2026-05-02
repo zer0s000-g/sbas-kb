@@ -1,125 +1,64 @@
 ---
 title: SBAS Standards Comparison
-description: Comparative analysis of SBAS, GBAS, ABAS, and RAIM standards and requirements
-tags: [standards, comparison, sbas, gbas, abas, raim]
+description: Source-disciplined comparison of standards source families for SBAS, GBAS, ABAS, RAIM, and related aviation-navigation concepts
+tags: [standards, comparison, sbas, gbas, abas, raim, source-discipline]
 category: standards
 created: 2026-04-19
-modified: 2026-04-23
-version: 1.0
-status: draft
+modified: 2026-05-02
+version: 2.0
+status: reviewed
+verification_status: source-scaffold-linked
 ---
 
-# 📜 SBAS Standards Comparison
+# SBAS Standards Comparison
 
-## Provenance status — 2026-04-23
-- This note is still a draft comparison layer, not a verified source note.
-- Several document-to-topic mappings below remain provisional until checked against dedicated source notes.
-- Current source scaffolds: [[Source - RTCA DO-229]], [[Source - RTCA DO-242]], [[Source - ICAO Doc 9855]].
-- Treat broad statements about certification focus or document scope as synthesis pending direct source verification.
+## Scope
 
-## 📊 **Standards Framework Comparison**
+This page compares standards source families, not operational approvals. It does not certify that a document supports a specific numerical requirement or procedure. Use [[SBAS Standards Source Matrix]] for the current source-routing table.
 
-| Standard Type | Primary Authority | Key Documents | Certification Focus |
-|---------------|-------------------|---------------|---------------------|
-| **SBAS** | ICAO, RTCA, EUROCAE | Doc 8083, DO-242, ED-52 | System-level certification |
-| **GBAS** | ICAO, RTCA, EUROCAE | Doc 7084, DO-229, ED-102 | Equipment & approach certification |
-| **ABAS** | RTCA | DO-296, DO-229 | Receiver autonomous integrity |
-| **RAIM** | RTCA, ICAO | DO-229, DO-242 | Built-in receiver integrity |
+## Provenance status
 
-## 🔧 **ICAO Standardization**
+Several earlier draft mappings were corrected in the 2026-05-02 source-matrix cycle:
 
-### **Core ICAO Documents for SBAS**
-- **Doc 8083**: Procedures for Air Navigation Services
-  - Contains SBAS-specific SARPs
-  - Defines operational requirements
-  - Establishes safety management framework
-  
-- **Doc 9855**: Technical Specifications for SBAS
-  - Detailed technical requirements
-  - Performance specifications
-  - Interface definitions
+- [[Source - RTCA DO-242]] is now red-flagged as ADS-B/surveillance related rather than an SBAS augmentation-system source.
+- [[Source - RTCA DO-289]] is now red-flagged as aircraft-surveillance related rather than an SBAS performance-testing source.
+- [[Source - ICAO Doc 9854]] is now red-flagged as the Global ATM Operational Concept rather than an SBAS performance-testing document.
+- [[Source - ICAO Doc 9855]] is now red-flagged as public-internet guidance for aeronautical applications rather than an SBAS technical-specification document.
+- [[Source - ICAO Doc 9849]] has been added as the current ICAO GNSS implementation-guidance anchor.
 
-### **ICAO SARPs Structure**
-```
-SARPs (Standards and Recommended Practices)
-    ├─ Volume I: Personnel Licensing
-    ├─ Volume II: Airworthiness
-    ├─ Volume III: Meteorology
-    ├─ Volume IV: Aeronautical Telecommunications
-    └─ Volume V: Air Navigation Services ← SBAS SARPs here
-```
+## Source-family comparison
 
-## 🔍 **Regulatory Compliance Matrix**
+| Domain | Likely source family | Current KB source posture | Main caution |
+|---|---|---|---|
+| SBAS airborne equipment | RTCA/EUROCAE airborne-equipment MOPS | [[Source - RTCA DO-229]] is public-catalog reviewed | Detailed requirements require official standard extraction |
+| SBAS state implementation | ICAO GNSS guidance and Annex 10 | [[Source - ICAO Doc 9849]] added; Annex 10 note still needed | Guidance is not the same as an approval decision |
+| SBAS service availability | Service-provider definitions, NOTAM/status, AIP/regulator material | Future service-provider notes needed | Do not infer availability from architecture |
+| LPV procedures | Equipment MOPS + procedure design + AIP/regulator/operator sources | LPV page is source-scaffold-linked | Do not publish minima without procedure/source context |
+| GBAS | GBAS standards, local service approvals, airport-specific publications | Current GBAS notes remain educational scaffolds | Do not compare precision using unsourced generic numbers |
+| ABAS/RAIM | Receiver standards, PBN/regulator guidance, aircraft equipment approvals | Current notes are conceptual | Do not treat RAIM as interchangeable with SBAS integrity |
 
-### **SBAS Certification Requirements**
-| Requirement | SBAS | GBAS | ABAS | RAIM |
-|-------------|------|------|------|------|
-| **Type Certification** | Required | Required | Optional | Not applicable |
-| **Performance Testing** | Extensive | Extensive | Moderate | Limited |
-| **Field Evaluation** | Required | Required | Optional | Not applicable |
-| **Safety Assessment** | Mandatory | Mandatory | Recommended | Not applicable |
-| **Ongoing Monitoring** | Required | Required | Optional | Not applicable |
+## Comparison rules
 
-### **Key Regulatory Differences**
-- **SBAS**: System-level certification, broader coverage
-- **GBAS**: Focus on approach procedures, site-specific
-- **ABAS**: Receiver-level certification, less stringent
-- **RAIM**: Algorithm-based, receiver-integrated
+When comparing SBAS with GBAS, ABAS, RAIM, or other augmentation methods:
 
-## 🚀 **Implementation Standards**
+1. Compare architecture and source family first.
+2. Compare numerical performance only after matching source types are available.
+3. Avoid mixing airborne-equipment standards, service-provider commitments, procedure-design criteria, and regulator approvals in one unsupported table.
+4. Treat operational phrases such as available, approved, capable, certified, or precision as source-sensitive terms.
 
-### **SBAS Technical Standards**
-- **Message Format**: Standardized correction messages
-- **Timing Requirements**: Nanosecond precision
-- **Accuracy Specifications**: Defined by application
-- **Integrity Monitoring**: Continuous fault detection
+## Current safe summary
 
-### **Cross-System Standards**
-- **Message Compatibility**: Ensure interoperability
-- **Timing Synchronization**: Coordinated clocks
-- **Frequency Management**: Spectrum coordination
-- **Data Exchange**: Standardized formats
+- SBAS is a wide-area GNSS augmentation concept with ground monitoring, correction/integrity processing, broadcast, and receiver processing.
+- GBAS is local-area augmentation and should be sourced through GBAS-specific standards and airport/service approvals.
+- ABAS/RAIM are receiver/onboard integrity concepts and should not be presented as equivalent to SBAS service-level integrity without careful sourcing.
+- LPV depends on an approved chain of SBAS service, airborne equipment, published procedure, operator/crew authorization, and real-time integrity conditions.
 
-## 🎯 **Research & Development Standards**
+## See also
 
-### **Emerging Technology Standards**
-- **Dual-Frequency Operations**: L1+L5 integration
-- **Modernized SBAS**: Next-generation capabilities
-- **Cybersecurity Requirements**: Enhanced protection
-- **Data Privacy**: Protection frameworks
-
-### **Harmonization Efforts**
-- **Global Standards**: ICAO-led initiatives
-- **Regional Cooperation**: Mutual recognition
-- **Simplified Certification**: Streamlined processes
-- **Cost Reduction**: Efficiency improvements
-
-## 🔮 **Key Standards References**
-
-### **Primary Standards**
-1. ICAO Doc 8083 - Procedures for Air Navigation Services
-2. [[Source - RTCA DO-229]] - current provisional airborne-equipment source scaffold
-3. EUROCAE ED-52 - EGNOS Technical Specifications
-4. [[Source - RTCA DO-242]] - current provisional augmentation-system source scaffold
-
-### **Supporting Standards**
-1. [[Source - ICAO Doc 9855]] - current provisional ICAO technical-specification source scaffold
-2. RTCA DO-289 - SBAS Performance Testing
-3. EUROCAE ED-102 - Interface Specifications
-4. RTCA DO-296 - RNP Performance Requirements
-
-## 🚀 **Future Regulatory Trends**
-
-### **Upcoming Standards**
-- **Advanced SBAS**: Next-generation capabilities
-- **L5 Integration**: Dual-frequency operations
-- **Enhanced Safety**: Stricter requirements
-- **Global Harmonization**: Unified standards
-
-### **Regulatory Challenges**
-- Technology evolution pace
-- Regional variation management
-- Cost-effective compliance
-- Training and education
-
-*Document Status: Draft | Next Review: 2026-07-19 | Version: 1.0*
+- [[SBAS Standards Source Matrix]]
+- [[SBAS-Standards-Regulation]]
+- [[SBAS-vs-Other-Augmentation-Methods]]
+- [[Source - RTCA DO-229]]
+- [[Source - ICAO Doc 9849]]
+- [[SBAS Source Backlog]]
+- [[SBAS MOC]]

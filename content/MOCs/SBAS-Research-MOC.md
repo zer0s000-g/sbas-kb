@@ -58,8 +58,8 @@ COMPARATIVE ANALYSIS
     └── ARAIM (Advanced RAIM)
 
 STANDARDS & CERTIFICATION
-    ├── ICAO SARPs (Doc 8083, 7084, 9854, 9855)
-    ├── RTCA (DO-229, DO-242, DO-289)
+    ├── ICAO SARPs / GNSS guidance (Annex 10 source note pending; Doc 9849 scaffold added)
+    ├── RTCA / EUROCAE equipment standards (DO-229 retained; DO-242 and DO-289 red-flagged for SBAS use)
     ├── EUROCAE (ED-52, ED-102, ED-142)
     └── National Regulations
 
@@ -104,9 +104,9 @@ INTEGRITY & SAFETY
 
 ### **Active provenance work**
 - Current backlog: [[SBAS Source Backlog]]
-- Active source scaffolds: [[Source - RTCA DO-229]], [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], [[Source - ICAO Doc 9855]]
+- Active standards source scaffolds: [[SBAS Standards Source Matrix]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]], plus red-flag correction notes for [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]].
 - Empirical source scaffolds: [[Source - GNSS Radio Occultation Technique]], [[Source - IRI-2020 Ionosphere Model]], [[Source - GNSS-RO Indonesia Empirical Study]]
-- Immediate goal: turn high-frequency standards references into dedicated source notes before expanding quantitative claims.
+- Immediate goal: build the real standards backbone before expanding quantitative claims: Annex 10 source note, direct DO-229 extraction, direct Doc 9849 extraction, procedure-design source notes, and service-provider source notes.
 
 ### **Active regional expansion work**
 - [[ASEAN SBAS Adoption Landscape]]

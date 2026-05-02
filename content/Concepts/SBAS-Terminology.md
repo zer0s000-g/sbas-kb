@@ -54,7 +54,9 @@ The following terms are frequently misused or over-generalized:
 
 Terminology in this page is aligned with the site’s current synthesis and source scaffolds. High-priority source anchors include:
 
+- [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Doc 9849]]
 - [[Source - RTCA DO-242]]
 - [[Source - RTCA DO-289]]
 - [[Source - ICAO Doc 9854]]

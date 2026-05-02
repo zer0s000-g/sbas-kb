@@ -22,7 +22,7 @@ Use this page as the institutional navigation layer. Use [[index]] as the public
 |---|---|---|
 | Beginner | [[What is SBAS]] | [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS-Terminology]] |
 | Aviation operations | [[SBAS in Civil Aviation MOC]] | [[LPV-Approach-Procedure]], [[Protection Levels]], [[Alert Limits]] |
-| Standards and source review | [[SBAS Source Backlog]] | [[SBAS-Standards-Regulation]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9855]] |
+| Standards and source review | [[SBAS Standards Source Matrix]] | [[SBAS-Standards-Regulation]], [[SBAS Source Backlog]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]] |
 | Regional systems | [[SBAS-Systems-by-Region-MOC]] | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]] |
 | ASEAN implementation | [[ASEAN SBAS Adoption Landscape]] | [[ASEAN SBAS Readiness Heuristic]], [[ASEAN SBAS Service-Model Options]] |
 | GIPTA 2.0 | [[GIPTA 2.0 MOC]] | [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[ASEAN SBAS Testbed]] |
@@ -58,13 +58,15 @@ Editorial boundary: procedure notes are educational scaffolds unless explicitly 
 - [[SBAS-Standards-Regulation]]
 - [[SBAS-vs-Other-Standards]]
 - [[SBAS Source Backlog]]
+- [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - ICAO Doc 9855]]
+- [[Source - ICAO Doc 9849]]
+- [[Source - RTCA DO-242]] — red-flagged as likely mis-scoped for SBAS claims.
+- [[Source - RTCA DO-289]] — red-flagged as likely mis-scoped for SBAS claims.
+- [[Source - ICAO Doc 9854]] — red-flagged as likely mis-scoped for SBAS technical claims.
+- [[Source - ICAO Doc 9855]] — red-flagged as likely mis-scoped for SBAS technical claims.
 
-Priority source work remains direct verification of document titles, editions, scope, and which downstream claims each document can actually support.
+Priority source work is now direct extraction of the real SBAS standards backbone: Annex 10, [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]], procedure-design sources, and service-provider documents.
 
 ## Regional systems branch
 
@@ -117,11 +119,11 @@ Boundary: GNSS-RO and IRI-2020 work is valuable for threat discovery and researc
 
 ## Highest-value next-note targets
 
-1. Strengthen [[SBAS Architecture]] with direct standards and service-definition anchors.
-2. Upgrade [[SBAS in Civil Aviation MOC]] and the aviation procedure notes with explicit source support.
-3. Deepen [[SBAS Integrity]], [[Protection Levels]], and [[Alert Limits]] as a connected integrity learning path.
-4. Build a sourced comparison matrix for [[SBAS-Systems-by-Region-MOC]].
-5. Continue source-hardening through [[SBAS Source Backlog]] and [[ASEAN SBAS Source Backlog]].
+1. Create a dedicated Annex 10 GNSS/SBAS source note.
+2. Directly extract [[Source - RTCA DO-229]] and [[Source - ICAO Doc 9849]].
+3. Upgrade remaining aviation procedure notes only after procedure-design/PBN source anchors are established.
+4. Build service-provider source notes before comparative system-performance tables.
+5. Continue ASEAN source-hardening through [[SBAS Source Backlog]] and [[ASEAN SBAS Source Backlog]].
 
 ## See also
 
