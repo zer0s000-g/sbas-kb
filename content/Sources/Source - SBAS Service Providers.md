@@ -18,7 +18,8 @@ tags:
   ]
 source_type: service-definition
 status: active
-verification_status: public-catalog-reviewed-not-source-extracted
+verification_status: partial-direct-extraction-for-gagan-msas-southpan
+last_service_provider_upgrade: "2026-05-03: dedicated source notes created for GAGAN, MSAS, and SouthPAN from official/ICAO APAC material"
 ---
 
 # Source - SBAS Service Providers
@@ -71,26 +72,25 @@ Important boundary:
 
 ### MSAS — Japan
 
-| Field                 | Current public signal                                                                                |
-| --------------------- | ---------------------------------------------------------------------------------------------------- |
-| System                | MTSAT Satellite-based Augmentation System (MSAS) / Michibiki Satellite-based Augmentation Service    |
-| Operating agency      | Japan Civil Aviation Bureau (JCAB), Ministry of Land, Infrastructure, Transport and Tourism          |
-| Service type          | SBAS for aviation                                                                                    |
-| Public source signals | ESA Navipedia; UNOOSA ICG presentations; JCAB/EGNOS GSC presentations                                |
-| Scope signal          | GPS augmentation system for aviation use in Japan                                                    |
-| Important signal      | JCAB is evaluating MSAS for LPV operation; system evolution linked to Michibiki (QZSS) constellation |
+|| Field | Current public signal |
+||---|---|
+|| System | MSAS / Michibiki Satellite-based Augmentation Service context |
+|| Operating agency | MLIT / JCAB for aviation SBAS signal generation and authorization context; QZSS provides satellite transmission service |
+|| Dedicated source note | [[Source - MSAS]] |
+|| Verified extraction status | Official QZSS SBAS Transmission Service page and ICAO APAC CNS SG/24 IP15 extracted |
+|| Core verified signal | MSAS operated with MTSAT from 27 September 2007 and transitioned to QZS-3/QZSS GEO transmission by March/April 2020 |
+|| Boundary | Current post-2023 LPV operational status and airport-specific procedure availability still require later JCAB/MLIT/QZSS/AIP extraction |
 
 ### GAGAN — India
 
-| Field              | Current public signal                                                                                                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| System             | GPS Aided GEO Augmented Navigation (GAGAN)                                                                                                                                           |
-| Operating agency   | Airports Authority of India (AAI) and Indian Space Research Organisation (ISRO)                                                                                                      |
-| Service type       | SBAS for aviation safety-of-life                                                                                                                                                     |
-| Public source page | https://www.aai.aero/en/content/what-gagan                                                                                                                                           |
-| Scope signal       | "GAGAN is the acronym for GPS Aided GEO Augmented Navigation. The GAGAN uses a system of ground stations to provide necessary augmentations to the GPS standard positioning service" |
-| Additional signal  | ISRO page confirms GAGAN as "Satellite Based Augmentation System (SBAS) implemented jointly with Airport Authority of India"                                                         |
-| Important signal   | GAGAN is the Indian SBAS implementation                                                                                                                                              |
+|| Field | Current public signal |
+||---|---|
+|| System | GPS Aided GEO Augmented Navigation (GAGAN) |
+|| Operating agency | Airports Authority of India (AAI) and Indian Space Research Organisation (ISRO); DGCA India certification signal in ITF/7 IP05b |
+|| Dedicated source note | [[Source - GAGAN SBAS Operation]] |
+|| Verified extraction status | ICAO APAC ITF/7 IP05b and AAI public GEO-satellite FAQ extracted |
+|| Core verified signal | RNP 0.1 operational certification in 2013 for Indian FIRs; APV I in 2015 for Indian landmass; 23 LPV procedures at 15 airports as of May 2025 |
+|| Boundary | Procedure minima, exact service performance, and operational authorization details still require DGCA/AAI/AIP extraction |
 
 ### BDSBAS — China
 
@@ -117,15 +117,14 @@ Important boundary:
 
 ### SouthPAN — Australia and New Zealand
 
-| Field              | Current public signal                                                                                                                         |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| System             | Southern Positioning Augmentation Network (SouthPAN)                                                                                          |
-| Operating agency   | Geoscience Australia and Toitū Te Whenua Land Information New Zealand                                                                         |
-| Service type       | SBAS for aviation and other positioning applications                                                                                          |
-| Public source page | https://www.ga.gov.au/scientific-topics/positioning-navigation/positioning-australia/about-the-program/southpan                               |
-| Scope signal       | "SouthPAN delivers three services: L1 SBAS, Dual Frequency Multi-Constellation (DFMC) SBAS, and Precise Point Positioning Via SouthPAN (PVS)" |
-| Additional signal  | Early Open Services available; 99.5% accuracy service milestone reported                                                                      |
-| Important signal   | SouthPAN is the Australian/New Zealand SBAS implementation                                                                                    |
+|| Field | Current public signal |
+||---|---|
+|| System | Southern Positioning Augmentation Network (SouthPAN) |
+|| Operating agency | Geoscience Australia and Toitū Te Whenua Land Information New Zealand |
+|| Dedicated source note | [[Source - SouthPAN]] |
+|| Verified extraction status | Official SouthPAN FAQ, early Open Services factsheet, and Signal-In-Space Open Services service-definition document extracted |
+|| Core verified signal | Early Open Services available since September 2022; service families L1 SBAS, DFMC SBAS, PVS, and Data Access Services; PRN 122; Safety-of-Life aviation service target 2028 |
+|| Boundary | Early Open Services are not certified aviation Safety-of-Life services; LPV/procedure/approval claims require later certified-service and AIP/regulator extraction |
 
 ## What this source-family can currently anchor
 
@@ -188,8 +187,8 @@ Do not use this note alone to publish:
 
 ### Other systems required
 
-- [ ] MSAS: JCAB service definition and LPV evaluation status
-- [ ] GAGAN: AAI/ISRO service definition and certification basis
+- [x] MSAS: QZSS service page and ICAO APAC CNS SG/24 IP15 extracted into [[Source - MSAS]]; current post-2023 LPV operational status still needs later JCAB/MLIT/QZSS/AIP extraction.
+- [x] GAGAN: ICAO APAC ITF/7 IP05b and AAI GEO-satellite FAQ extracted into [[Source - GAGAN SBAS Operation]]; exact service performance and procedure minima still need DGCA/AAI/AIP extraction.
 - [ ] BDSBAS: BeiDou official SBAS service signal and DFMC development status
 - [ ] KASS: KARI service definition and certification basis
-- [ ] SouthPAN: Geoscience Australia service definition and DFMC service status
+- [x] SouthPAN: Geoscience Australia/LINZ open-service and Signal-In-Space service-definition material extracted into [[Source - SouthPAN]]; certified Safety-of-Life/AIP material still required before aviation-operational claims.
