@@ -1,189 +1,132 @@
 ---
 title: GBAS Approach Procedure and SBAS Integration
-description: Detailed procedure for Ground-Based Augmentation System approaches using local ground stations
-tags: [aviation, approach, gbas, sbas, cdm, performance]
+description: Institutional learning page explaining Ground-Based Augmentation System approaches as a local-area augmentation concept, with explicit source and approval caveats
+tags: [aviation, approach, gbas, gls, sbas, integrity, procedure]
 category: aviation-operations
 created: 2026-04-19
-modified: 2026-04-19
-version: 1.0
+modified: 2026-05-03
+version: 2.0
+status: reviewed
+verification_status: source-scaffold-linked
 ---
 
-# ✈️ GBAS Approach Procedure and SBAS Integration
+# GBAS Approach Procedure and SBAS Integration
 
-## 📋 **Procedure Overview**
+## Scope and reader profile
 
-**GBAS (Ground-Based Augmentation System)** is a precision approach system that enables:
-- Local precision approach with 0.5-1m accuracy
-- SBAS-provided integrity monitoring
-- Airport-specific coverage with 50km radius
-- CAT I, II, and III approach capabilities
+This page explains GBAS as a local-area augmentation approach concept and connects it to the integrity learning path. It is written for technical readers, researchers, aviation specialists, regulators, ANSP staff, and implementation teams who need a disciplined overview before consulting operational sources.
 
-## 📊 **Technical Specifications**
+This page is not an approach chart, flight manual, regulator approval, avionics manual, or procedure-design standard. Do not use it to determine minima, aircraft eligibility, crew authorization, or whether a specific airport/runway supports GBAS approaches. Those determinations require official AIP/AIS data, procedure charts, regulator material, service-provider status, approved avionics documentation, and operator procedures.
 
-### **Performance Requirements**
-```
-POSITION ACCURACY:
-  Lateral: ±0.5m (95%)
-  Vertical: ±1.0m (95%)
-  Integrity: Continuous monitoring
+## Executive summary
 
-SBAS REQUIREMENTS:
-  Correction Update: 1-6 seconds
-  Position Accuracy: 0.8m horizontal (95%)
-  Integrity: Fault detection <6 seconds
-  Availability: 99.9% during approach
+**GBAS** means **Ground-Based Augmentation System**. In this knowledge base, GBAS is treated as a local-area GNSS augmentation concept that provides precision approach capability at a specific airport. GBAS is architecturally different from SBAS: it uses ground reference stations and data links local to the airport rather than wide-area GEO broadcast.
 
-GBAS SPECIFICATIONS:
-  Coverage: 50km radius around airport
-  Accuracy: 0.5-1m horizontal (CAT I)
-  Availability: 99.9% operational time
-  Integrity: CAT I, II, III capabilities
+A simplified learning statement is:
+
+```text
+GBAS is a local-area augmentation system that supports precision approach procedures at equipped airports, subject to ground infrastructure, aircraft equipment, procedure publication, and operational approval.
 ```
 
-### **SBAS Integration**
-- **Correction Data**: Differential corrections from ground network
-- **Integrity Monitoring**: Real-time fault detection
-- **Position Updates**: Continuous GBAS-enhanced positioning
-- **Alerting**: Visual and aural warnings for integrity issues
+GBAS approach procedures (sometimes called GLS procedures) use GBAS corrections to achieve precision approach accuracy. GBAS is typically discussed alongside SBAS because both augment GNSS, but they use fundamentally different architectures and have different service-delivery models.
 
-## 🔧 **Procedure Phases**
+## What GBAS depends on
 
-### **1. Initial Approach**
-- **Entry Point**: GBAS initial approach fix
-- **Configuration**: Aircraft in approach configuration
-- **Speed Management**: Target approach speed + wind correction
-- **GBAS Monitoring**: Verify correction lock and integrity
+A GBAS operation depends on multiple layers working together:
 
-### **2. Intermediate Approach**
-- **Altitude**: 1,500 feet AGL minimum
-- **Track**: Follow GBAS lateral path
-- **Configuration**: Flaps 15-20°, speed reduction
-- **Monitoring**: Lateral deviation ±50 feet
+| Layer                  | Required question                                                                        |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
+| Ground infrastructure  | Is the GBAS ground station installed, operational, and certified for the airport?        |
+| Receiver and avionics  | Is the aircraft equipped and approved for GBAS/GLS approach mode?                        |
+| Procedure publication  | Is a GBAS/GLS procedure published for the runway and current cycle?                      |
+| Integrity checks       | Are the relevant [[Protection Levels]] acceptable against the relevant [[Alert Limits]]? |
+| Crew/operator approval | Is the operator and crew authorized to conduct the operation?                            |
+| Contingency logic      | Is the required response defined if GBAS service or integrity conditions degrade?        |
 
-### **3. Final Approach**
-- **Decision Height**: Minimum 200 feet AGL (CAT I)
-- **Track**: Final course alignment
-- **Configuration**: Full flaps, landing checklist
-- **GBAS Alerting**: Monitor for integrity warnings
+A technical GBAS signal alone does not establish GBAS operational availability. Unlike SBAS, GBAS requires dedicated local ground infrastructure at each equipped airport.
 
-### **4. Missed Approach**
-- **Trigger**: Loss of GBAS signal or altitude violation
-- **Initial Climb**: 300-600 feet AGL
-- **Turn**: Standard missed approach procedure
-- **GBAS Re-acquisition**: Re-establish correction lock
+## Relationship to SBAS and integrity
 
-## 🛡️ **Safety Considerations**
+GBAS is relevant to the SBAS knowledge base because it is a complementary augmentation concept that shares integrity principles:
 
-### **Integrity Monitoring**
-- **Continuous Checks**: 1 Hz minimum
-- **Alert Levels**: Visual and aural warnings
-- **Fail-Safe**: Automatic missed approach trigger
-- **Backup Systems**: Traditional navigation aids
+1. [[SBAS Architecture]] describes the wide-area augmentation approach; GBAS uses a local-area architecture.
+2. [[SBAS Integrity]] explains bounded-error principles that apply to both SBAS and GBAS.
+3. [[Protection Levels]] express bounded-error concepts used in usability checks for both systems.
+4. [[Alert Limits]] represent operation-specific acceptability thresholds applicable to both systems.
+5. The approved procedure and avionics determine how the pilot and aircraft use GBAS guidance.
 
-### **Weather Constraints**
-- **Minimums**: GBAS requires 200 feet ceiling, 1/2 SM visibility
-- **Wind Limits**: Crosswind 30 knots maximum
-- **Precipitation**: Moderate rain acceptable
-- **Low Visibility**: Operations down to 50 feet possible
+This page intentionally avoids giving unsourced numerical thresholds. Earlier draft values have been removed from the narrative until they can be tied to specific standards or approved operational sources.
 
-### **Aircraft Requirements**
-- **GBAS Receiver**: Certified multi-constellation
-- **Display Capability**: Lateral deviation indicator
-- **Vertical Guidance**: Precision glideslope display
-- **Backup Navigation**: Traditional radio navaids
+## GBAS compared with nearby concepts
 
-## 📊 **Operational Benefits**
+| Concept   | Relationship to GBAS                         | Important distinction                                               |
+| --------- | -------------------------------------------- | ------------------------------------------------------------------- |
+| SBAS      | Both augment GNSS; different architectures   | SBAS uses wide-area GEO broadcast; GBAS uses local ground stations  |
+| LPV       | LPV is an SBAS-enabled approach type         | LPV does not require local ground infrastructure                    |
+| LNAV/VNAV | Both may provide vertical guidance           | Different augmentation basis and approval logic                     |
+| RNAV      | GBAS approaches use RNAV navigation concepts | GBAS provides local augmentation rather than area navigation        |
+| RNP       | Both may support precision approaches        | RNP requires onboard monitoring; GBAS relies on ground augmentation |
 
-### **Advantages Over Traditional Approaches**
-- **Reduced Weather Delays**: 40-50% improvement
-- **Fuel Savings**: 15-20% reduction via direct routing
-- **Capacity Increase**: 25% more approaches per hour
-- **Accessibility**: Remote airport capability
+See [[LPV-Approach-Procedure]], [[LNAV-VNAV-Approach-Procedure]], [[RNAV-Approach-Procedure]], and [[RNP-Approach-Procedure]] for nearby aviation notes.
 
-### **Economic Impact**
-- **Infrastructure Savings**: No ILS installation
-- **Operational Efficiency**: Reduced holding patterns
-- **Environmental**: Lower emissions via optimized routing
+## Operational interpretation
 
-## 🔧 **Implementation Requirements**
+For a public knowledge base, the safest institutional phrasing is:
 
-### **Ground Infrastructure**
-- **Reference Stations**: Local ground-based receivers
-- **Processing Center**: Central differential computation
-- **Uplink Stations**: Ground transmitters to aircraft
-- **Monitoring Systems**: 24/7 operational surveillance
+```text
+GBAS may provide precision approach capability where the local ground infrastructure, aircraft equipment, procedure publication, operational approval, and real-time integrity conditions support it.
+```
 
-### **Aircraft Certification**
-- **Type Approval**: FAA/EASA GBAS certification
-- **Pilot Training**: 10-hour simulator plus 5 hours dual instruction
-- **Equipment Check**: Pre-flight GBAS verification
-- **Documentation**: Updated flight manual procedures
+Avoid unsupported claims such as:
 
-## ⚠️ **Limitations and Constraints**
+- universal GBAS minima or decision heights;
+- generic accuracy values detached from a standard or service definition;
+- aircraft cost figures or benefit percentages without a sourced case study;
+- pilot training hours without regulator/operator source support;
+- regional GBAS availability inferred only from airport infrastructure lists.
 
-### **Operational Restrictions**
-- **Geographic**: Airport vicinity only (50km radius)
-- **Temporal**: Sun interference during equinox periods
-- **Equipment**: Single-frequency receivers not approved
-- **Procedural**: Specific approach chart requirements
+## Benefits to evaluate
 
-### **Known Issues**
-- **Multipath Effects**: Urban canyon interference
-- **Receiver Sensitivity**: Cold start acquisition time
-- **Data Latency**: Correction transmission delays
-- **Maintenance**: Regular calibration required
+GBAS can be valuable because it may provide precision approach capability without installing a traditional ILS at every runway. However, the actual benefit depends on local and regional conditions:
 
-## 🔄 **Integration with Other Systems**
+- airport infrastructure and GBAS ground station availability;
+- terrain and obstacle environment;
+- weather and operational minima needs;
+- aircraft equipage;
+- procedure-design capacity;
+- regulator/ANSP approval and oversight;
+- ground station maintenance and certification;
+- maintenance of AIS/AIM and charting processes.
 
-### **GBAS Architecture**
-- **Reference Network**: Local ground stations
-- **Processing Center**: Central differential computation
-- **Uplink Stations**: Ground transmitters to aircraft
-- **Monitoring**: Real-time integrity verification
+For ASEAN implementation analysis, this connects GBAS to [[ASEAN SBAS Operational Demand Drivers]], [[ASEAN SBAS Deployment Barriers]], and [[ASEAN SBAS Service-Model Options]].
 
-### **Air Traffic Management**
-- **Controller Procedures**: Standardized GBAS approach vectors
-- **Separation Standards**: Reduced spacing possible
-- **Traffic Flow**: Optimized routing via GBAS
-- **Emergency Protocols**: Immediate failure procedures
+## Source anchors and current maturity
 
-## 📊 **Performance Metrics**
+Current source scaffolds relevant to this page include:
 
-### **Approach Success Rates**
-- **GBAS vs ILS**: 98% vs 95% (weather-dependent)
-- **Cancellation Rate**: 2% vs 5% (traditional)
-- **On-Time Performance**: 95% improvement
-- **Fuel Efficiency**: 18% savings average
+- [[SBAS Standards Source Matrix]] -- current claim-routing matrix for standards/source families.
+- [[Source - RTCA DO-229]] -- current GPS/SBAS airborne-equipment source-family anchor; supports equipment routing, not procedure-design or operational approval.
+- [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] -- ICAO procedure-design and PBN navigation specification source family.
+- [[Source - FAA and EASA Procedure-Design and PBN Material]] -- FAA TERPS / PBN orders and EASA AMC/GM material.
+- [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] -- regulator/article-approval routing.
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] -- ICAO SARPs/technical-provisions source-family anchor for GNSS/SBAS, including GBAS provisions.
+- [[SBAS Source Backlog]] -- active standards-source verification queue.
 
-### **Cost-Benefit Analysis**
-- **Implementation Cost**: $2-5M per airport
-- **Annual Savings**: $3-8M per major airport
-- **ROI Period**: 2-4 years
-- **Environmental Benefit**: 15,000 tons CO2 reduction annually
+This page is now `source-scaffold-linked`. It is a learning and navigation page, not a verified operational requirements table.
 
-## 🔗 **Related Knowledge Links**
-- [[]()] -  - Core concepts
-- [[]()] -  - Integrity requirements
-- [[]()] -  - Data transmission
-- [[]()] -  - Operational procedures
-- [[]()] -  - Certification requirements
-- [[]()] -  - LPV approach procedures
-- [[]()] -  - RNAV approach procedures
-- [[]()] -  - LNAV/VNAV approach procedures
-- [[]()] -  - RNP approach procedures
+## Replaced draft material
 
-## 📝 **Research Notes**
+This page previously contained unsourced numerical performance values (accuracy figures, alert limits, detection times, decision heights, weather minima, wind limits, fuel savings percentages, cost figures, and pilot-training hours), as well as corrupted wikilinks. Those have been removed or repaired. Future values may be reintroduced only when each value is linked to a source, context, jurisdiction, procedure type, and revision/date.
 
-### **Open Questions**
-1. Urban canyon multipath mitigation effectiveness
-2. Solar activity impact on tropical regions
-3. Single-frequency receiver certification feasibility
-4. Cost optimization for small airports
+## See also
 
-### **Future Considerations**
-- **4D Trajectory**: Time-based procedures
-- **A2C2 Integration**: Aircraft-to-controller communication
-- **UAM Preparation**: Urban air mobility compatibility
-- **Hybrid Approaches**: GBAS + SBAS integration
-
-*Document Status: Draft | Next Review: 2026-05-03 | Version: 1.0*
+- [[LPV-Approach-Procedure]]
+- [[LNAV-VNAV-Approach-Procedure]]
+- [[RNAV-Approach-Procedure]]
+- [[RNP-Approach-Procedure]]
+- [[SBAS Integrity]]
+- [[Protection Levels]]
+- [[Alert Limits]]
+- [[SBAS Architecture]]
+- [[SBAS in Civil Aviation MOC]]
+- [[SBAS Source Backlog]]

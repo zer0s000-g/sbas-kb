@@ -3,7 +3,7 @@ title: SBAS Source Backlog
 description: Prioritized source-building backlog for source-disciplined SBAS knowledge-base claims
 tags: [sources, backlog, provenance, sbas, research]
 created: 2026-04-23
-modified: 2026-05-02
+modified: 2026-05-03
 status: active
 verification_status: internal-backlog-with-public-catalog-corrections
 ---
@@ -68,10 +68,10 @@ Public catalog review produced several corrections:
 
 ### 5. Procedure-design and PBN source family
 
-- Current vault usage: LPV, LNAV/VNAV, RNAV, RNP, and GBAS procedure notes need source hardening.
-- Why this matters: procedure minima and operational criteria cannot be derived from DO-229 or Doc 9849 alone.
-- Verification need: identify the correct ICAO PANS-OPS / PBN manuals and regulator procedure-design material.
-- Candidate future notes: procedure-design source notes for LPV and PBN operations.
+- Current vault usage: LPV, LNAV/VNAV, RNAV, RNP, and GBAS procedure notes now link to [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]].
+- Why this matters: procedure design is now represented by dedicated source notes separating it from equipment MOPS, article approval, and service-provider commitment.
+- Verification need: direct extraction of Doc 8168 Vol II (procedure-design criteria), Doc 9613 (RNP navigation specifications), FAA Order 8260.3G/8260.58D (U.S. TERPS/PBN criteria), and EASA AMC/GM (European PBN operational approval).
+- Current editorial rule: use these notes for procedure-design routing only; do not infer procedure minima, obstacle-clearance values, or airport/runway eligibility without official text extraction.
 
 ### 6. Service-provider source family
 
@@ -114,9 +114,9 @@ Public catalog review produced several corrections:
 1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] from the official Annex text and classify GNSS/SBAS claims by section and amendment baseline.
 2. Directly extract the official [[Source - RTCA DO-229]] text and direct FAA TSO-C145e/C146e text; deepen [[Source - EASA ETSO-C145e and ETSO-C146e]] section mapping before publishing class-specific approval statements.
 3. Directly extract [[Source - ICAO Doc 9849]].
-4. Build procedure-design/PBN source notes.
+4. ~~Build procedure-design/PBN source notes.~~ **Completed 2026-05-03**: [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]] now exist as routing anchors; direct text extraction still required.
 5. Build service-provider source notes for major SBAS systems.
-6. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and [[LPV-Approach-Procedure]] only after the above source anchors exist.
+6. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and procedure pages with numerical values only after the above source anchors are directly extracted.
 7. Continue ASEAN/regional source hardening through [[ASEAN SBAS Source Backlog]].
 
 ## Related notes

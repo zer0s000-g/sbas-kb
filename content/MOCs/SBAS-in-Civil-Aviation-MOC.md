@@ -4,7 +4,7 @@ description: Institutional map of how SBAS connects to civil aviation operations
 tags: [MOC, civil-aviation, sbas, approach, operations, integrity]
 category: mocs
 created: 2026-04-19
-modified: 2026-05-02
+modified: 2026-05-03
 version: 2.0
 status: reviewed
 verification_status: source-scaffold-linked
@@ -35,10 +35,10 @@ A weak link in any layer can prevent operational use even when the technical SBA
 | Concept                          | Role in the knowledge base                                         | Editorial status                 |
 | -------------------------------- | ------------------------------------------------------------------ | -------------------------------- |
 | [[LPV-Approach-Procedure]]       | SBAS-enabled vertical guidance learning note                       | reviewed; source-scaffold-linked |
-| [[LNAV-VNAV-Approach-Procedure]] | vertical navigation context and comparison path                    | draft educational scaffold       |
-| [[RNAV-Approach-Procedure]]      | area-navigation context                                            | draft educational scaffold       |
-| [[RNP-Approach-Procedure]]       | performance-based navigation context                               | draft educational scaffold       |
-| [[GBAS-Approach-Procedure]]      | local-area augmentation comparison                                 | draft educational scaffold       |
+| [[LNAV-VNAV-Approach-Procedure]] | vertical navigation context and comparison path                    | reviewed; source-scaffold-linked |
+| [[RNAV-Approach-Procedure]]      | area-navigation context                                            | reviewed; source-scaffold-linked |
+| [[RNP-Approach-Procedure]]       | performance-based navigation context                               | reviewed; source-scaffold-linked |
+| [[GBAS-Approach-Procedure]]      | local-area augmentation comparison                                 | reviewed; source-scaffold-linked |
 | [[SBAS Integrity]]               | safety-relevant function connecting system monitoring to operation | reviewed; source-scaffold-linked |
 | [[Protection Levels]]            | bounded-error concept used in operational usability checks         | reviewed; source-scaffold-linked |
 | [[Alert Limits]]                 | operation-specific bounds and alerting interpretation              | reviewed; source-scaffold-linked |
@@ -106,11 +106,27 @@ Several earlier notes contain numerical values or operational examples that shou
 4. Tie any minima, alerting, or performance figures to specific standards, service definitions, or regulator material.
 5. Add country- or airport-level evidence only when the relevant AIP/AIS/procedure source is visible.
 
+## Source-routing notes
+
+The approach-procedure pages now route claims through distinct source families:
+
+| Source family                | Source note                                                                              | Safe role in this MOC                                 |
+| ---------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Airborne equipment MOPS      | [[Source - RTCA DO-229]]                                                                 | Receiver/equipment capability routing                 |
+| ICAO SARPs                   | [[Source - ICAO Annex 10 Volume I GNSS SBAS]]                                            | Technical-provisions routing                          |
+| ICAO implementation guidance | [[Source - ICAO Doc 9849]]                                                               | GNSS implementation context                           |
+| ICAO procedure design / PBN  | [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]]                              | Procedure-design and navigation specification routing |
+| FAA/EASA procedure design    | [[Source - FAA and EASA Procedure-Design and PBN Material]]                              | National regulator procedure-design routing           |
+| Article approval             | [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] | Equipment approval routing                            |
+
+See [[SBAS Standards Source Matrix]] for the full claim-routing matrix.
+
 ## See also
 
 - [[What is SBAS]]
 - [[SBAS Architecture]]
 - [[SBAS MOC]]
 - [[SBAS-Standards-Regulation]]
+- [[SBAS Standards Source Matrix]]
 - [[SBAS Source Backlog]]
 - [[ASEAN SBAS Source Backlog]]

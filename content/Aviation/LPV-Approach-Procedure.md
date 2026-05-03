@@ -103,12 +103,15 @@ For ASEAN implementation analysis, this connects LPV to [[ASEAN SBAS Operational
 
 Current source scaffolds relevant to this page include:
 
-- [[SBAS Standards Source Matrix]] — current claim-routing matrix for standards/source families.
-- [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment source-family anchor; public RTCA/FAA/EASA signals support equipment routing, not installation approval, operational approval, or procedure availability by themselves.
-- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
-- [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance source-family anchor.
-- [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — red-flag provenance notes retained because earlier drafts likely mis-scoped them for SBAS.
-- [[SBAS Source Backlog]] — active standards-source verification queue.
+- [[SBAS Standards Source Matrix]] -- current claim-routing matrix for standards/source families.
+- [[Source - RTCA DO-229]] -- current GPS/SBAS airborne-equipment source-family anchor; supports equipment routing, not installation approval, operational approval, or procedure availability.
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] -- current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
+- [[Source - ICAO Doc 9849]] -- current ICAO GNSS implementation-guidance source-family anchor.
+- [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] -- ICAO procedure-design and PBN navigation specification source family.
+- [[Source - FAA and EASA Procedure-Design and PBN Material]] -- FAA TERPS / PBN orders and EASA AMC/GM material.
+- [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] -- regulator/article-approval routing.
+- [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] -- red-flag provenance notes retained because earlier drafts likely mis-scoped them for SBAS.
+- [[SBAS Source Backlog]] -- active standards-source verification queue.
 
 This page is now `source-scaffold-linked`. It is a high-quality learning and navigation page, not a verified operational requirements table.
 
@@ -138,10 +141,13 @@ This page previously contained unsourced numerical performance values, generic w
 
 ## See also
 
+- [[LNAV-VNAV-Approach-Procedure]]
+- [[RNAV-Approach-Procedure]]
+- [[RNP-Approach-Procedure]]
+- [[GBAS-Approach-Procedure]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[Alert Limits]]
 - [[SBAS Architecture]]
 - [[SBAS in Civil Aviation MOC]]
-- [[What is SBAS]]
 - [[SBAS Source Backlog]]

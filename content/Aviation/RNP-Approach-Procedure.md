@@ -1,187 +1,130 @@
 ---
 title: RNP Approach Procedure and SBAS Integration
-description: Detailed procedure for Required Navigation Performance approaches using SBAS augmentation
-tags: [aviation, approach, rnp, sbas, cdm, performance]
+description: Institutional learning page explaining Required Navigation Performance as a PBN-supported aviation operation, with explicit source and approval caveats
+tags: [aviation, approach, rnp, sbas, pbn, integrity, procedure]
 category: aviation-operations
 created: 2026-04-19
-modified: 2026-04-19
-version: 1.0
+modified: 2026-05-03
+version: 2.0
+status: reviewed
+verification_status: source-scaffold-linked
 ---
 
-# ✈️ RNP Approach Procedure and SBAS Integration
+# RNP Approach Procedure and SBAS Integration
 
-## 📋 **Procedure Overview**
+## Scope and reader profile
 
-**RNP (Required Navigation Performance)** is a navigation specification that enables:
-- Performance-based navigation with specific accuracy requirements
-- SBAS-provided integrity monitoring
-- Reduced separation standards and increased capacity
-- Flexible flight paths and optimized routing
+This page explains RNP as a PBN-supported aviation concept and connects it to the integrity learning path. It is written for technical readers, researchers, aviation specialists, regulators, ANSP staff, and implementation teams who need a disciplined overview before consulting operational sources.
 
-## 📊 **Technical Specifications**
+This page is not an approach chart, flight manual, regulator approval, avionics manual, or procedure-design standard. Do not use it to determine minima, aircraft eligibility, crew authorization, or whether a specific airport/runway supports RNP approaches. Those determinations require official AIP/AIS data, procedure charts, regulator material, service-provider status, approved avionics documentation, and operator procedures.
 
-### **Performance Requirements**
-```
-NAVIGATION ACCURACY:
-  Required: RNP 0.3 (0.3 NM) for terminal operations
-  Alert Limit: 0.5 NM
-  Containment: 95% probability
+## Executive summary
 
-SBAS REQUIREMENTS:
-  Correction Update: 1-6 seconds
-  Position Accuracy: 0.8m horizontal (95%)
-  Integrity: Fault detection <6 seconds
-  Availability: 99.9% during approach
+**RNP** means **Required Navigation Performance**. In this knowledge base, RNP is treated as a performance-based navigation specification that extends RNAV by requiring onboard performance monitoring and alerting capability. RNP specifications are defined in ICAO Doc 9613 and related PBN material.
 
-RNP SPECIFICATIONS:
-  RNP 0.3: Terminal operations (0.3 NM accuracy)
-  RNP 1.0: En-route operations (1.0 NM accuracy)
-  RNP 2.0: Oceanic operations (2.0 NM accuracy)
+A simplified learning statement is:
+
+```text
+RNP is a navigation specification requiring onboard performance monitoring and alerting; SBAS can serve as one of several possible augmentation sources for approved RNP operations.
 ```
 
-### **SBAS Integration**
-- **Correction Data**: Differential corrections from ground network
-- **Integrity Monitoring**: Real-time fault detection
-- **Position Updates**: Continuous SBAS-enhanced positioning
-- **Alerting**: Visual and aural warnings for integrity issues
+RNP approach procedures are designed using PBN navigation specifications that incorporate self-contained onboard monitoring. If the aircraft determines it cannot maintain the required performance, it must alert the crew.
 
-## 🔧 **Procedure Phases**
+## What RNP depends on
 
-### **1. Initial Approach**
-- **Entry Point**: RNP initial approach fix (IAF)
-- **Configuration**: Aircraft in approach configuration
-- **Speed Management**: Target approach speed + wind correction
-- **SBAS Monitoring**: Verify correction lock and integrity
+An RNP operation depends on multiple layers working together:
 
-### **2. Intermediate Approach**
-- **Altitude**: 2,000 feet AGL minimum
-- **Track**: Follow RNP lateral path
-- **Configuration**: Flaps 15-20°, speed reduction
-- **Monitoring**: Lateral deviation ±150 feet
+| Layer                    | Required question                                                                                                       |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Navigation specification | Does the procedure meet the applicable RNP navigation specification (RNP 4, RNP 2, RNP 1, RNP APCH, RNP AR APCH, etc.)? |
+| Receiver and avionics    | Is the aircraft equipped and approved for the required RNP specification, including onboard monitoring/alerting?        |
+| Procedure publication    | Is an RNP approach procedure published for the runway and current cycle?                                                |
+| Integrity checks         | Are the relevant [[Protection Levels]] acceptable against the relevant [[Alert Limits]]?                                |
+| Crew/operator approval   | Is the operator and crew authorized for the specific RNP specification?                                                 |
+| Contingency logic        | Is the required response defined if performance monitoring alerts or integrity conditions degrade?                      |
 
-### **3. Final Approach**
-- **Decision Height**: Minimum 200 feet AGL
-- **Track**: Final course alignment
-- **Configuration**: Full flaps, landing checklist
-- **SBAS Alerting**: Monitor for integrity warnings
+A technical SBAS signal alone does not establish RNP operational availability. RNP operations require the aircraft to actively monitor and alert on navigation performance.
 
-### **4. Missed Approach**
-- **Trigger**: Loss of SBAS signal or altitude violation
-- **Initial Climb**: 250-500 feet AGL
-- **Turn**: Standard missed approach procedure
-- **SBAS Re-acquisition**: Re-establish correction lock
+## Relationship to SBAS integrity
 
-## 🛡️ **Safety Considerations**
+SBAS contributes to RNP by providing augmentation and integrity monitoring for GNSS-based RNP operations:
 
-### **Integrity Monitoring**
-- **Continuous Checks**: 1 Hz minimum
-- **Alert Levels**: Visual and aural warnings
-- **Fail-Safe**: Automatic missed approach trigger
-- **Backup Systems**: Traditional navigation aids
+1. [[SBAS Architecture]] provides the monitoring, correction, broadcast, and receiver-processing chain.
+2. [[SBAS Integrity]] explains why use-or-non-use logic is central.
+3. [[Protection Levels]] express bounded-error concepts used in usability checks.
+4. [[Alert Limits]] represent operation-specific acceptability thresholds.
+5. The approved procedure and avionics determine how the pilot and aircraft use the guidance.
 
-### **Weather Constraints**
-- **Minimums**: RNP requires 400 feet ceiling, 1 SM visibility
-- **Wind Limits**: Crosswind 30 knots maximum
-- **Precipitation**: Moderate rain acceptable
-- **Low Visibility**: Operations down to 200 feet possible
+This page intentionally avoids giving unsourced numerical thresholds. Earlier draft values have been removed from the narrative until they can be tied to specific standards or approved operational sources.
 
-### **Aircraft Requirements**
-- **SBAS Receiver**: Certified multi-constellation
-- **Display Capability**: Lateral deviation indicator
-- **Autopilot**: Coupled to SBAS guidance
-- **Backup Navigation**: Traditional radio navaids
+## RNP compared with nearby concepts
 
-## 📊 **Operational Benefits**
+| Concept   | Relationship to RNP                                       | Important distinction                                              |
+| --------- | --------------------------------------------------------- | ------------------------------------------------------------------ |
+| RNAV      | RNP extends RNAV with onboard monitoring/alerting         | RNAV does not require onboard performance monitoring               |
+| LPV       | LPV uses SBAS for vertical guidance with integrity        | LPV is a specific approach type; RNP is a navigation specification |
+| LNAV/VNAV | LNAV/VNAV uses lateral and vertical navigation            | LNAV/VNAV vertical source and approval logic may differ            |
+| SBAS      | SBAS can serve as an augmentation source for RNP          | SBAS is a system; RNP is a navigation specification                |
+| GBAS      | GBAS provides local augmentation for precision approaches | Different augmentation architecture from SBAS                      |
 
-### **Advantages Over Traditional Approaches**
-- **Reduced Weather Delays**: 25-30% improvement
-- **Fuel Savings**: 10-15% reduction via direct routing
-- **Capacity Increase**: 20% more approaches per hour
-- **Accessibility**: Remote airport capability
+See [[LPV-Approach-Procedure]], [[LNAV-VNAV-Approach-Procedure]], [[RNAV-Approach-Procedure]], and [[GBAS-Approach-Procedure]] for nearby aviation notes.
 
-### **Economic Impact**
-- **Infrastructure Savings**: No VOR/DME installation
-- **Operational Efficiency**: Reduced holding patterns
-- **Environmental**: Lower emissions via optimized routing
+## Operational interpretation
 
-## 🔧 **Implementation Requirements**
+For a public knowledge base, the safest institutional phrasing is:
 
-### **Ground Infrastructure**
-- **SBAS Coverage**: Continental or regional augmentation
-- **Reference Stations**: Within 500 km radius
-- **Communication Links**: Reliable data transmission
-- **Monitoring Systems**: 24/7 operational surveillance
+```text
+RNP may provide performance-based navigation capability where the navigation specification, aircraft equipment with onboard monitoring/alerting, procedure publication, operational approval, and real-time integrity conditions support it.
+```
 
-### **Aircraft Certification**
-- **Type Approval**: FAA/EASA SBAS RNP certification
-- **Pilot Training**: 10-hour simulator plus 5 hours dual instruction
-- **Equipment Check**: Pre-flight SBAS verification
-- **Documentation**: Updated flight manual procedures
+Avoid unsupported claims such as:
 
-## ⚠️ **Limitations and Constraints**
+- universal RNP minima or decision heights;
+- generic accuracy values detached from a standard or service definition;
+- aircraft cost figures or benefit percentages without a sourced case study;
+- pilot training hours without regulator/operator source support;
+- regional RNP availability inferred only from SBAS coverage.
 
-### **Operational Restrictions**
-- **Geographic**: Requires SBAS coverage area
-- **Temporal**: Sun interference during equinox periods
-- **Equipment**: Single-frequency receivers not approved
-- **Procedural**: Specific approach chart requirements
+## Benefits to evaluate
 
-### **Known Issues**
-- **Ionospheric Disturbances**: Solar activity impact
-- **Multipath Effects**: Urban canyon interference
-- **Receiver Sensitivity**: Cold start acquisition time
-- **Data Latency**: Correction transmission delays
+RNP can be valuable because it enables precise curved flight paths with integrity monitoring, particularly valuable in congested airspace and complex terrain. However, the actual benefit depends on local and regional conditions:
 
-## 🔄 **Integration with Other Systems**
+- airspace design and route structure;
+- terrain and obstacle environment;
+- aircraft equipage and onboard monitoring capability;
+- procedure-design capacity;
+- regulator/ANSP approval and oversight;
+- navigation service status and performance;
+- maintenance of AIS/AIM and charting processes.
 
-### **SBAS Architecture**
-- **Reference Network**: Local ground stations
-- **Satellite Links**: GEO broadcast correction data
-- **User Equipment**: Multi-constellation receivers
-- **Monitoring**: Real-time integrity verification
+For ASEAN implementation analysis, this connects RNP to [[ASEAN SBAS Operational Demand Drivers]], [[ASEAN SBAS Deployment Barriers]], and [[ASEAN SBAS Service-Model Options]].
 
-### **Air Traffic Management**
-- **Controller Procedures**: Standardized RNP approach vectors
-- **Separation Standards**: Reduced spacing possible
-- **Traffic Flow**: Optimized routing via SBAS
-- **Emergency Protocols**: Immediate failure procedures
+## Source anchors and current maturity
 
-## 📊 **Performance Metrics**
+Current source scaffolds relevant to this page include:
 
-### **Approach Success Rates**
-- **RNP vs Traditional**: 88% vs 85% (weather-dependent)
-- **Cancellation Rate**: 12% vs 15% (traditional)
-- **On-Time Performance**: 85% improvement
-- **Fuel Efficiency**: 12% savings average
+- [[SBAS Standards Source Matrix]] -- current claim-routing matrix for standards/source families.
+- [[Source - RTCA DO-229]] -- current GPS/SBAS airborne-equipment source-family anchor; supports equipment routing, not procedure-design or operational approval.
+- [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] -- ICAO procedure-design and PBN navigation specification source family; Doc 9613 defines RNP specifications.
+- [[Source - FAA and EASA Procedure-Design and PBN Material]] -- FAA TERPS / PBN orders and EASA AMC/GM material.
+- [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] -- regulator/article-approval routing.
+- [[SBAS Source Backlog]] -- active standards-source verification queue.
 
-### **Cost-Benefit Analysis**
-- **Implementation Cost**: $300K - $1.5M per airport
-- **Annual Savings**: $2-5M per major airport
-- **ROI Period**: 3-5 years
-- **Environmental Benefit**: 10,000 tons CO2 reduction annually
+This page is now `source-scaffold-linked`. It is a learning and navigation page, not a verified operational requirements table.
 
-## 🔗 **Related Knowledge Links**
-- [[SBAS-Terminology]](Concepts/SBAS-Terminology.md) - Core definitions and terminology
-- [[Safety-Terminology]] - Safety and integrity requirements
-- [[Communication-Terminology]] - Communication protocols and data formats
-- [[SBAS in Civil Aviation MOC]](MOCs/SBAS-in-Civil-Aviation-MOC.md) - Operational procedures and use cases
-- [[SBAS-Standards-Regulation]](Standards-Regulation/SBAS-Standards-Regulation.md) - Certification and regulatory requirements
-- [[LPV-Approach-Procedure]](Aviation/LPV-Approach-Procedure.md) - LPV approach procedures and integration
-- [[RNAV-Approach-Procedure]](Aviation/RNAV-Approach-Procedure.md) - RNAV approach procedures and integration
-- [[LNAV-VNAV-Approach-Procedure]](Aviation/LNAV-VNAV-Approach-Procedure.md) - LNAV/VNAV approach procedures and integration
+## Replaced draft material
 
-## 📝 **Research Notes**
+This page previously contained unsourced numerical performance values (accuracy figures, alert limits, detection times, decision heights, weather minima, wind limits, fuel savings percentages, cost figures, and pilot-training hours). Those have been removed from the main narrative because they were not tied to visible source anchors. Future values may be reintroduced only when each value is linked to a source, context, jurisdiction, procedure type, and revision/date.
 
-### **Open Questions**
-1. Urban canyon multipath mitigation effectiveness
-2. Solar activity impact on tropical regions
-3. Single-frequency receiver certification feasibility
-4. Cost optimization for small airports
+## See also
 
-### **Future Considerations**
-- **4D Trajectory**: Time-based procedures
-- **A2C2 Integration**: Aircraft-to-controller communication
-- **UAM Preparation**: Urban air mobility compatibility
-- **Hybrid Approaches**: RNP + RNAV integration
-
-*Document Status: Draft | Next Review: 2026-05-03 | Version: 1.0*
+- [[LPV-Approach-Procedure]]
+- [[LNAV-VNAV-Approach-Procedure]]
+- [[RNAV-Approach-Procedure]]
+- [[GBAS-Approach-Procedure]]
+- [[SBAS Integrity]]
+- [[Protection Levels]]
+- [[Alert Limits]]
+- [[SBAS Architecture]]
+- [[SBAS in Civil Aviation MOC]]
+- [[SBAS Source Backlog]]
