@@ -1,23 +1,24 @@
 ---
 title: SouthPAN
-description: Draft system note for the Southern Positioning Augmentation Network based on current in-vault references only
+description: System note for the Southern Positioning Augmentation Network, source-routed through official SouthPAN early Open Service and service-definition material
 tags: [system, southpan, sbas, aviation, regional-system, provisional, australia, new-zealand]
 created: 2026-05-03
 modified: 2026-05-03
-status: draft
-verification_status: in-vault-synthesis-only
+status: reviewed
+verification_status: source-routed-to-official-open-service-definition
 ---
 
 # SouthPAN
 
 ## Scope status
 
-This is a draft system note built from references already present in the vault.
+This is a source-routed system note. It is grounded in official Geoscience Australia / Toitū Te Whenua Land Information New Zealand public material for SouthPAN early Open Services and the Signal-In-Space Open Services service-definition document.
 
 Boundary:
 
-- This note does not verify regional performance figures, dates, coverage claims, or interoperability statements against external source material.
-- It consolidates what the vault currently says about SouthPAN and marks those statements as provisional where needed.
+- This page may describe SouthPAN identity, open-service types, PRN/signal context, open-service coverage, and open-service performance targets only through [[Source - SouthPAN]].
+- This page does not verify certified aviation Safety-of-Life availability, LPV procedure publication, aircraft eligibility, operator approval, or airport-specific minima.
+- SouthPAN early Open Services are explicitly not a Safety-of-Life aviation authorization source.
 
 ## Working definition
 
@@ -33,24 +34,29 @@ SouthPAN is currently referenced in:
 
 ## Official source signals
 
-| Field              | Current public signal                                                                                                                         |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| System             | Southern Positioning Augmentation Network (SouthPAN)                                                                                          |
-| Operating agency   | Geoscience Australia and Toitu Te Whenua Land Information New Zealand                                                                         |
-| Public source page | https://www.ga.gov.au/scientific-topics/positioning-navigation/positioning-australia/about-the-program/southpan                               |
-| Scope signal       | "SouthPAN delivers three services: L1 SBAS, Dual Frequency Multi-Constellation (DFMC) SBAS, and Precise Point Positioning Via SouthPAN (PVS)" |
-| Status signal      | Early Open Services available; 99.5% accuracy service milestone reported                                                                      |
+|| Field | Current official signal |
+||---|---|
+|| System | Southern Positioning Augmentation Network (SouthPAN) |
+|| Operating agencies | Geoscience Australia and Toitū Te Whenua Land Information New Zealand |
+|| Primary source note | [[Source - SouthPAN]] |
+|| Open Services start | September 2022 |
+|| Full Operating Capability target | 2028 |
+|| Safety-of-Life aviation status | Certified aviation Safety-of-Life service planned for 2028; not available from the extracted early Open Service material |
+|| Service families | L1 SBAS, Dual Frequency Multi-Constellation (DFMC) SBAS, PPP via SouthPAN (PVS), Data Access Services |
+|| PRN code | 122 |
+|| GEO broadcast signal | Inmarsat 4F2 at 143.5° East, per extracted service-definition material |
 
-## Provisional in-vault profile
+## Source-routed profile
 
-The current vault describes SouthPAN as having:
+SouthPAN can currently be described in this KB as:
 
-- Australian and New Zealand territory coverage
-- multiple service types including L1 SBAS, DFMC SBAS, and PVS
-- early Open Services availability
-- joint government initiative between Australia and New Zealand
+- a joint Australia–New Zealand SBAS capability;
+- an early Open Service system available since September 2022;
+- a multi-service augmentation program providing L1 SBAS, DFMC SBAS, PVS, and internet-delivered Data Access Services;
+- a future aviation Safety-of-Life service candidate with full operating capability target in 2028;
+- a system whose official service-definition material explicitly flags ionospheric activity north of 20°S as a limitation relevant to maintaining lock and localized gradients.
 
-These profile elements are still provisional until supported by dedicated source extraction.
+These statements are source-routed through [[Source - SouthPAN]].
 
 ## Relationship to civil aviation use
 
@@ -63,16 +69,20 @@ In current vault structure, SouthPAN matters because it represents:
 
 ## Source anchors
 
-Current source scaffolds relevant to this page include:
+Current source anchors relevant to this page include:
 
+- [[Source - SouthPAN]] -- dedicated official source note for SouthPAN early Open Services and Signal-In-Space Open Services service definition.
 - [[Source - SBAS Service Providers]] -- institutional source-family anchor for SBAS service-provider definitions and commitments.
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] -- ICAO SARPs routing for SBAS system-level provisions.
+- [[Source - ICAO Doc 9849]] -- GNSS implementation guidance and DFMC context.
 - [[SBAS Standards Source Matrix]] -- claim-routing matrix for standards/source families.
 
-This page remains `in-vault-synthesis-only`. Service-provider claims need direct extraction from official Geoscience Australia/LINZ documentation before being treated as verified.
+This page is `source-routed-to-official-open-service-definition`. It may support SouthPAN Open Service identity and service-definition claims. It must not be used as a certified aviation Safety-of-Life or LPV procedure source until official certified-service and AIP/procedure material is extracted.
 
 ## See also
 
 - [[SBAS-Systems-by-Region-MOC]]
+- [[Source - SouthPAN]]
 - [[Source - SBAS Service Providers]]
 - [[WAAS]]
 - [[EGNOS]]
