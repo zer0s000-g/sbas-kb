@@ -134,7 +134,7 @@ The following require additional source extraction:
 ## See also
 
 - [[GAGAN]] — in-vault system note (draft; requires source upgrade)
-- [[SBAS Service Providers]]
+- [[Source - SBAS Service Providers]]
 - [[SBAS Standards Source Matrix]]
 - [[SBAS Source Backlog]]
 - [[Source - ICAO APAC GBAS-SBAS Implementation Forums]]
