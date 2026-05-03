@@ -13,13 +13,14 @@ tags:
     bdsbas,
     kass,
     southpan,
+    sdcm,
     coverage,
     availability,
   ]
 source_type: service-definition
 status: active
-verification_status: partial-direct-extraction-for-gagan-msas-southpan-waas-egnos-kass-bdsbas
-last_service_provider_upgrade: "2026-05-03: dedicated source notes now exist for GAGAN, MSAS, SouthPAN, WAAS, EGNOS, KASS, and BDSBAS from official/public provider material"
+verification_status: partial-direct-extraction-for-gagan-msas-southpan-waas-egnos-kass-bdsbas-with-sdcm-development-context
+last_service_provider_upgrade: "2026-05-03: dedicated source notes now exist for GAGAN, MSAS, SouthPAN, WAAS, EGNOS, KASS, BDSBAS, and SDCM; SDCM is bounded to GLONASS/IAC plus historical ICAO development-context evidence"
 ---
 
 # Source - SBAS Service Providers
@@ -114,14 +115,25 @@ Important boundary:
 
 ### SouthPAN — Australia and New Zealand
 
-|| Field | Current public signal |
-||---|---|
-|| System | Southern Positioning Augmentation Network (SouthPAN) |
-|| Operating agency | Geoscience Australia and Toitū Te Whenua Land Information New Zealand |
-|| Dedicated source note | [[Source - SouthPAN]] |
-|| Verified extraction status | Official SouthPAN FAQ, early Open Services factsheet, and Signal-In-Space Open Services service-definition document extracted |
-|| Core verified signal | Early Open Services available since September 2022; service families L1 SBAS, DFMC SBAS, PVS, and Data Access Services; PRN 122; Safety-of-Life aviation service target 2028 |
-|| Boundary | Early Open Services are not certified aviation Safety-of-Life services; LPV/procedure/approval claims require later certified-service and AIP/regulator extraction |
+||| Field | Current public signal |
+|||---|---|
+||| System | Southern Positioning Augmentation Network (SouthPAN) |
+||| Operating agency | Geoscience Australia and Toitū Te Whenua Land Information New Zealand |
+||| Dedicated source note | [[Source - SouthPAN]] |
+||| Verified extraction status | Official SouthPAN FAQ, early Open Services factsheet, and Signal-In-Space Open Services service-definition document extracted |
+||| Core verified signal | Early Open Services available since September 2022; service families L1 SBAS, DFMC SBAS, PVS, and Data Access Services; PRN 122; Safety-of-Life aviation service target 2028 |
+||| Boundary | Early Open Services are not certified aviation Safety-of-Life services; LPV/procedure/approval claims require later certified-service and AIP/regulator extraction |
+
+### SDCM — Russia / GLONASS augmentation context
+
+||| Field | Current public signal |
+|||---|---|
+||| System | System of Differential Corrections and Monitoring (SDCM) |
+||| Operating agency / source family | Russian / GLONASS institutional context from GLONASS IAC and historical ICAO material |
+||| Dedicated source note | [[Source - SDCM]] |
+||| Verified extraction status | GLONASS IAC system-documents page, GLONASS OS PS Edition 2.2, ICAO A37-WP/195, and bounded public comparator material reviewed |
+||| Core verified signal | GLONASS OS PS material places SDCM in GLONASS-based-system certification context; ICAO A37-WP/195 identifies SDCM as a GLONASS SBAS development path |
+||| Boundary | Current aviation operational service, AIP procedure availability, service-volume commitments, and performance status remain unverified without current Russian service-provider/regulator/AIP evidence |
 
 ## What this source-family can currently anchor
 
@@ -163,10 +175,13 @@ Do not use this note alone to publish:
 - [[BDSBAS]]
 - [[KASS]]
 - [[SouthPAN]]
+- [[SDCM]]
 - [[Source - WAAS]]
 - [[Source - EGNOS]]
 - [[Source - BDSBAS]]
 - [[Source - KASS]]
+- [[Source - SDCM]]
+- [[SBAS Operational Validation Dashboard]]
 - [[WAAS vs EGNOS]]
 - [[MSAS vs GAGAN]]
 - [[SBAS-Systems-by-Region-MOC]]
@@ -195,3 +210,4 @@ Do not use this note alone to publish:
 - [x] BDSBAS: official BDSBAS-B1C ICD extracted into [[Source - BDSBAS]]; CAAC/service-declaration/procedure evidence still required before aviation-operational claims.
 - [x] KASS: KARI official page, ICAO APAC ITF/5 IP/09, and bounded contractor-public certification material extracted into [[Source - KASS]]; Korean regulator/AIP/service-performance sources still required before runway/procedure operational claims.
 - [x] SouthPAN: Geoscience Australia/LINZ open-service and Signal-In-Space service-definition material extracted into [[Source - SouthPAN]]; certified Safety-of-Life/AIP material still required before aviation-operational claims.
+- [x] SDCM: GLONASS IAC system-documents page, GLONASS OS PS Edition 2.2, ICAO A37-WP/195, and bounded public comparator material reviewed into [[Source - SDCM]]; current Russian SDCM service-definition, regulator/AIP, and performance evidence still required before operational aviation claims.

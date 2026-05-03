@@ -23,7 +23,7 @@ Use this page as the institutional navigation layer. Use [[index]] as the public
 | Beginner                    | [[What is SBAS]]                                    | [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS-Terminology]]                                      |
 | Aviation operations         | [[SBAS in Civil Aviation MOC]]                      | [[LPV-Approach-Procedure]], [[Protection Levels]], [[Alert Limits]]                                          |
 | Standards and source review | [[SBAS Standards Source Matrix]]                    | [[SBAS-Standards-Regulation]], [[SBAS Source Backlog]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]] |
-| Regional systems            | [[SBAS-Systems-by-Region-MOC]]                      | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]]                                                         |
+| Regional systems            | [[SBAS-Systems-by-Region-MOC]]                      | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]], [[KASS]], [[SouthPAN]], [[SDCM]]                       |
 | ASEAN implementation        | [[ASEAN SBAS Adoption Landscape]]                   | [[ASEAN SBAS Readiness Heuristic]], [[ASEAN SBAS Service-Model Options]]                                     |
 | GIPTA 2.0                   | [[GIPTA 2.0 MOC]]                                   | [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[ASEAN SBAS Testbed]]                                  |
 | Ionospheric research        | [[SBAS Ionospheric Threat — Empirical Evidence]]    | [[IRI-2020 vs GNSS-RO Indonesia]], [[GNSS Radio Occultation]]                                                |
@@ -59,6 +59,7 @@ Editorial boundary: procedure notes are educational scaffolds unless explicitly 
 - [[SBAS-vs-Other-Standards]]
 - [[SBAS Source Backlog]]
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
@@ -77,11 +78,14 @@ Priority source work is now direct extraction of the real SBAS standards backbon
 - [[MSAS]]
 - [[GAGAN]]
 - [[BDSBAS]]
+- [[KASS]]
+- [[SouthPAN]]
+- [[SDCM]]
 - [[WAAS vs EGNOS]]
 - [[MSAS vs GAGAN]]
 - [[Asia-Pacific SBAS Implementation Patterns]]
 
-Future regional notes may cover KASS, SDCM, SouthPAN, ASECNA, and other systems after source support is added.
+SDCM now exists as a source-routed development-context note. Future regional notes may cover ASECNA and other systems after source support is added.
 
 ## ASEAN implementation branch
 
@@ -121,9 +125,9 @@ Boundary: GNSS-RO and IRI-2020 work is valuable for threat discovery and researc
 ## Highest-value next-note targets
 
 1. Directly extract the official text behind [[Source - ICAO Annex 10 Volume I GNSS SBAS]].
-2. Directly extract the official [[Source - RTCA DO-229]] text and [[Source - ICAO Doc 9849]], then create FAA/EASA TSO/ETSO source notes for approval-context separation.
-3. Upgrade remaining aviation procedure notes only after procedure-design/PBN source anchors are established.
-4. Build service-provider source notes before comparative system-performance tables.
+2. Directly extract the official [[Source - RTCA DO-229]] text and [[Source - ICAO Doc 9849]].
+3. Use [[SBAS Operational Validation Dashboard]] to prioritize regulator/AIP/procedure extraction before publishing operational claims.
+4. Deepen service-provider source notes with current performance/service-volume material where official public sources exist.
 5. Continue ASEAN source-hardening through [[SBAS Source Backlog]] and [[ASEAN SBAS Source Backlog]].
 
 ## See also

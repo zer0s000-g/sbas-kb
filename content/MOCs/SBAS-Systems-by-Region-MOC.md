@@ -29,8 +29,9 @@ Exact system status, coverage, performance, service levels, satellite payloads, 
 | BDSBAS   | China / BeiDou-linked Asia-Pacific comparator              | [[BDSBAS]]   | [[Source - BDSBAS]]               | Official BDSBAS-B1C ICD extracted; CAAC aviation service/procedure evidence still required                                         |
 | KASS     | Republic of Korea / Northeast Asia comparator              | [[KASS]]     | [[Source - KASS]]                 | KARI, ICAO APAC ITF/5, and bounded contractor-public certification signals extracted; Korean regulator/AIP evidence still required |
 | SouthPAN | Australia and New Zealand / early Open Services comparator | [[SouthPAN]] | [[Source - SouthPAN]]             | Official GA/LINZ open-service and SIS Open Services material extracted; certified aviation SoL/AIP evidence still required         |
+| SDCM     | Russia / GLONASS augmentation research target              | [[SDCM]]     | [[Source - SDCM]]                 | GLONASS/IAC and historical ICAO development-context evidence extracted; current aviation operational evidence still required       |
 
-Future source-backed notes may cover SDCM, ASECNA, and other SBAS or SBAS-like programs. Until dedicated notes exist, those systems should be discussed as candidate research targets rather than as completed source-routed pages.
+Future source-backed notes may cover ASECNA and other SBAS or SBAS-like programs. Until dedicated notes exist, those systems should be discussed as candidate research targets rather than as completed source-routed pages.
 
 ## Comparison and synthesis notes
 
@@ -75,7 +76,9 @@ Regional SBAS systems should not be compared only by headline accuracy or covera
 
 ## Source posture
 
-The current major-system layer now has first-layer dedicated source notes for WAAS, EGNOS, MSAS, GAGAN, BDSBAS, KASS, and SouthPAN.
+The current major-system layer now has first-layer dedicated source notes for WAAS, EGNOS, MSAS, GAGAN, BDSBAS, KASS, SouthPAN, and SDCM. SDCM is intentionally marked as development-context / GLONASS-source-posture evidence, not current operational aviation evidence.
+
+Use [[SBAS Operational Validation Dashboard]] before upgrading any system page from service-provider/source-context evidence to operational aviation claims.
 
 That does not mean the systems are fully verified for operational use. Priority source families still include:
 
@@ -92,7 +95,7 @@ That does not mean the systems are fully verified for operational use. Priority 
 2. Verify each operational procedure claim against regulator/ANSP/AIP sources.
 3. Separate technical service availability from published aviation procedure availability.
 4. Deepen Asia-Pacific comparator evidence for ASEAN planning.
-5. Add candidate notes for SDCM and ASECNA only after source scaffolds exist.
+5. Use [[SBAS Operational Validation Dashboard]] before upgrading service-provider/source-context claims into operational aviation statements.
 
 ## See also
 
@@ -103,4 +106,5 @@ That does not mean the systems are fully verified for operational use. Priority 
 - [[SBAS-Standards-Regulation]]
 - [[SBAS Source Backlog]]
 - [[ASEAN SBAS Source Backlog]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - SBAS Service Providers]]

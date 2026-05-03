@@ -1,83 +1,64 @@
 ---
 title: MSAS vs GAGAN
-description: Draft comparison note between Japanese and Indian regional SBAS implementations using only current in-vault references
-tags: [comparison, msas, gagan, sbas, asia-pacific, provisional]
+description: Source-routed comparison note between Japanese MSAS/QZSS and Indian GAGAN, focused on evidence posture rather than unsupported operational ranking
+tags: [comparison, msas, gagan, sbas, asia-pacific, source-routed]
 created: 2026-04-23
 modified: 2026-05-03
-status: draft
-verification_status: in-vault-synthesis-only
+status: reviewed
+verification_status: source-routed-comparison-no-operational-ranking
 ---
 
 # MSAS vs GAGAN
 
 ## Scope status
 
-This is a draft comparison note built from references already present in the vault.
+This is a source-routed comparison note between [[MSAS]] and [[GAGAN]]. It compares what the knowledge base can safely say from current source notes. It does not rank the systems by performance, maturity, operational coverage, or procedure availability.
 
 Boundary:
 
-- It does not verify coverage, maturity, operational role, or implementation-status claims against external source material.
-- It organizes what the vault currently says about [[MSAS]] and [[GAGAN]] and marks broad claims as provisional.
+- It does not verify current airport/runway procedure availability.
+- It does not compare service performance numerically.
+- It does not infer that a historical plan, forum paper, or provider source proves current operational approval.
+- It does not transfer Japan or India implementation conclusions into ASEAN without ASEAN-specific evidence.
 
-## Why compare them
+## Current authenticated comparison posture
 
-Within the current vault, [[MSAS]] and [[GAGAN]] are the most developed Asia-focused regional SBAS examples.
+| Dimension                    | MSAS source-routed posture                                                                           | GAGAN source-routed posture                                                                                                      | Safe comparison rule                                                                |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Dedicated source note        | [[Source - MSAS]]                                                                                    | [[Source - GAGAN SBAS Operation]]                                                                                                | Compare source posture before comparing system capability                           |
+| Current public source basis  | Official QZSS SBAS Transmission Service material plus ICAO APAC CNS SG/24 IP15                       | ICAO APAC ITF/7 IP05b plus AAI GEO FAQ signals                                                                                   | Both have system-specific public evidence, but the evidence types are not identical |
+| Geographic role              | Japan / QZSS / Asia-Pacific comparator                                                               | India / low-latitude regional comparator                                                                                         | Geography is a source-context signal, not proof of transferable ASEAN feasibility   |
+| Operational-procedure status | Current post-2023 LPV operational status remains bounded pending later JCAB/MLIT/QZSS/AIP extraction | ITF/7 contains GAGAN procedure-count signals, but current procedure minima and operational details require DGCA/AAI/AIP evidence | Do not compare procedure inventories without current equivalent procedure sources   |
+| Standards layer              | Requires Annex 10 / DO-229 / procedure-design routing for technical claims                           | Requires Annex 10 / DO-229 / procedure-design routing for technical claims                                                       | Do not let service-provider notes replace standards or regulator sources            |
 
-They currently function as:
+## What can be said safely now
 
-- a Japan/Pacific regional SBAS example
-- an India-centered regional SBAS example
-- a first pair for cautious Asia-Pacific comparison before adding more regional systems
-
-## Current in-vault comparison pattern
-
-The vault currently suggests:
-
-- [[MSAS]] is associated with Japan, Pacific relevance, and oceanic/terminal operations
-- [[GAGAN]] is associated with India, surrounding-region relevance, and a growing/cost-effective implementation profile
-- both contribute to the broader Asia-Pacific regional rollout picture
-
-These statements are provisional until directly sourced.
-
-## Comparison dimensions currently present in the vault
-
-### Geographic emphasis
-
-- [[MSAS]]: Japan-centered with Pacific/oceanic relevance
-- [[GAGAN]]: India-centered with surrounding-region relevance
-
-### Operational framing
-
-- [[MSAS]]: stronger emphasis on oceanic and terminal operations
-- [[GAGAN]]: stronger emphasis on regional deployment and growth framing
-
-### Maturity framing
-
-- [[MSAS]] currently appears in the vault as one of the more mature regional systems
-- [[GAGAN]] currently appears as a growing regional implementation
-
-### Civil-aviation significance
-
-- [[MSAS]] currently appears in the civil-aviation MOC under high-capacity regional context
-- [[GAGAN]] is not yet surfaced there at the same level, which suggests a retrieval gap rather than a verified operational distinction
+- [[MSAS]] is source-routed through [[Source - MSAS]].
+- [[GAGAN]] is source-routed through [[Source - GAGAN SBAS Operation]].
+- Both are useful Asia-focused comparator systems in [[Asia-Pacific SBAS Implementation Patterns]].
+- Both require further regulator/AIP/procedure extraction before operational procedure availability is treated as verified.
 
 ## What remains uncertain
 
-- whether the current vault is comparing equivalent categories of evidence for MSAS and GAGAN
-- whether maturity, growth, and cost-effectiveness labels are being used consistently
-- which Asia-focused claims require regional program documentation rather than generic standards scaffolds
+- Whether current MSAS LPV/APV operational availability is documented by current official Japanese regulator/AIP sources.
+- Whether current GAGAN procedure inventories, minima, aircraft/operator eligibility, and approval conditions are fully represented by DGCA/AAI/AIP sources.
+- Whether both systems have equivalent official performance/service-volume reports suitable for a comparative table.
+- Whether ASEAN implementation analysis can use either system as more than a bounded comparator.
 
 ## Best next support targets
 
-- dedicated regional source notes for MSAS and GAGAN program documentation
-- cleanup of Asia-Pacific claims in [[SBAS-Systems-by-Region-MOC]]
-- future expansion toward [[BDSBAS]] for broader Asia comparison
+- Current JCAB/MLIT/QZSS and AIP evidence for MSAS procedure status.
+- Current DGCA/AAI/AIP evidence for GAGAN procedure publication and approval conditions.
+- Service-provider performance/service-volume reports for both systems.
+- [[SBAS Operational Validation Dashboard]] for deciding when a claim graduates from source-context to operational-use evidence.
 
 ## See also
 
 - [[MSAS]]
 - [[GAGAN]]
+- [[Source - MSAS]]
+- [[Source - GAGAN SBAS Operation]]
 - [[Asia-Pacific SBAS Implementation Patterns]]
-- [[WAAS vs EGNOS]]
 - [[SBAS-Systems-by-Region-MOC]]
+- [[SBAS Operational Validation Dashboard]]
 - [[SBAS Source Backlog]]
