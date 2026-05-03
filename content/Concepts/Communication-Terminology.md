@@ -18,4 +18,4 @@ version: 1.0
 - **Broadcast**: One-to-many communication without acknowledgment
 - **Polling**: Request-response communication pattern
 
-*Note: This is a stub document. For detailed specifications, see [[SBAS-Standards-Regulation]].*
+_Note: This is a stub document. For detailed specifications, see [[SBAS-Standards-Regulation]]._

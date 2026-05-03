@@ -20,24 +20,24 @@ Definitions here are concise and intentionally conservative. Exact operational t
 
 ## Core terms
 
-| Term | Working definition | Related notes |
-|---|---|---|
-| SBAS | Wide-area GNSS augmentation service that broadcasts correction and integrity information to users | [[What is SBAS]], [[SBAS Architecture]] |
-| GNSS | Satellite navigation constellations and signals used as the base positioning source | [[SBAS Architecture]] |
-| Reference station | Surveyed ground receiver used to monitor GNSS signal behavior for augmentation processing | [[SBAS Architecture]] |
-| Master or processing station | Facility/function that estimates corrections, integrity parameters, and broadcast messages | [[SBAS Architecture]] |
-| Uplink station | Ground element that sends SBAS messages to the broadcast satellite or payload | [[SBAS Architecture Flow]] |
-| SBAS broadcast | Signal carrying augmentation messages to user receivers | [[SBAS Architecture Flow]] |
-| SBAS-capable receiver | User equipment able to receive, decode, and apply SBAS information according to its approval basis | [[LPV-Approach-Procedure]] |
-| Integrity | Ability to support timely warning when navigation information should not be relied upon for the intended operation | [[SBAS Integrity]] |
-| Protection level | Receiver-computed or service-supported bound used to judge whether navigation error remains acceptable for an operation | [[Protection Levels]] |
-| Alert limit | Operation-specific bound that protection levels must satisfy for the operation to continue | [[Alert Limits]] |
-| Availability | Probability or proportion of time that service requirements are met in the relevant context | [[SBAS-Systems-by-Region-MOC]] |
-| Continuity | Probability that service remains available for the duration of a defined operation | [[SBAS in Civil Aviation MOC]] |
-| LPV | Localizer Performance with Vertical guidance; an SBAS-enabled approach concept where approved | [[LPV-Approach-Procedure]] |
-| APV | Approach with vertical guidance; operational family relevant to GNSS/SBAS implementation | [[SBAS in Civil Aviation MOC]] |
-| GBAS | Ground-Based Augmentation System; local-area augmentation, usually airport-centered | [[GBAS-Approach-Procedure]], [[SBAS-vs-Other-Augmentation-Methods]] |
-| ABAS | Aircraft-Based Augmentation System; receiver/aircraft-side monitoring rather than a regional broadcast service | [[SBAS-vs-Other-Augmentation-Methods]], [[ASEAN ABAS Concept]] |
+| Term                         | Working definition                                                                                                      | Related notes                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| SBAS                         | Wide-area GNSS augmentation service that broadcasts correction and integrity information to users                       | [[What is SBAS]], [[SBAS Architecture]]                             |
+| GNSS                         | Satellite navigation constellations and signals used as the base positioning source                                     | [[SBAS Architecture]]                                               |
+| Reference station            | Surveyed ground receiver used to monitor GNSS signal behavior for augmentation processing                               | [[SBAS Architecture]]                                               |
+| Master or processing station | Facility/function that estimates corrections, integrity parameters, and broadcast messages                              | [[SBAS Architecture]]                                               |
+| Uplink station               | Ground element that sends SBAS messages to the broadcast satellite or payload                                           | [[SBAS Architecture Flow]]                                          |
+| SBAS broadcast               | Signal carrying augmentation messages to user receivers                                                                 | [[SBAS Architecture Flow]]                                          |
+| SBAS-capable receiver        | User equipment able to receive, decode, and apply SBAS information according to its approval basis                      | [[LPV-Approach-Procedure]]                                          |
+| Integrity                    | Ability to support timely warning when navigation information should not be relied upon for the intended operation      | [[SBAS Integrity]]                                                  |
+| Protection level             | Receiver-computed or service-supported bound used to judge whether navigation error remains acceptable for an operation | [[Protection Levels]]                                               |
+| Alert limit                  | Operation-specific bound that protection levels must satisfy for the operation to continue                              | [[Alert Limits]]                                                    |
+| Availability                 | Probability or proportion of time that service requirements are met in the relevant context                             | [[SBAS-Systems-by-Region-MOC]]                                      |
+| Continuity                   | Probability that service remains available for the duration of a defined operation                                      | [[SBAS in Civil Aviation MOC]]                                      |
+| LPV                          | Localizer Performance with Vertical guidance; an SBAS-enabled approach concept where approved                           | [[LPV-Approach-Procedure]]                                          |
+| APV                          | Approach with vertical guidance; operational family relevant to GNSS/SBAS implementation                                | [[SBAS in Civil Aviation MOC]]                                      |
+| GBAS                         | Ground-Based Augmentation System; local-area augmentation, usually airport-centered                                     | [[GBAS-Approach-Procedure]], [[SBAS-vs-Other-Augmentation-Methods]] |
+| ABAS                         | Aircraft-Based Augmentation System; receiver/aircraft-side monitoring rather than a regional broadcast service          | [[SBAS-vs-Other-Augmentation-Methods]], [[ASEAN ABAS Concept]]      |
 
 ## Terms requiring careful source handling
 

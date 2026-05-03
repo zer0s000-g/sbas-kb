@@ -15,6 +15,7 @@ verification_status: empirical-study
 This note defines Total Electron Content (TEC) as the line integral of electron density along the signal path between a GNSS satellite and a receiver. It is measured in TEC units (TECU), where 1 TECU = 10¹⁶ electrons/m².
 
 Boundary:
+
 - This is an observable concept note, not a model or system-design note.
 - It does not cover algorithms for real-time SBAS ionospheric correction.
 - It links TEC to integrity, validation, and empirical studies in the vault.
@@ -27,14 +28,14 @@ TEC quantifies the total number of free electrons in a cylinder with a cross-sec
 
 At L1 frequency (1575.42 MHz):
 
-| TEC (TECU) | Equivalent L1 delay (m) |
-|------------|------------------------|
-| 1 | 0.162 |
-| 10 | 1.62 |
-| 50 | 8.10 |
-| 100 | 16.2 |
-| 200 | 32.4 |
-| 341 (p99: Indonesian RO) | 55.4 |
+| TEC (TECU)               | Equivalent L1 delay (m) |
+| ------------------------ | ----------------------- |
+| 1                        | 0.162                   |
+| 10                       | 1.62                    |
+| 50                       | 8.10                    |
+| 100                      | 16.2                    |
+| 200                      | 32.4                    |
+| 341 (p99: Indonesian RO) | 55.4                    |
 
 Conversion formula:  
 **delay_L1 = (40.3 × TEC) / f_L1²**
@@ -42,15 +43,18 @@ Conversion formula:
 ## Relationship to the vault
 
 ### Parent domain
+
 - [[GNSS Radio Occultation]] — TEC is the primary observable extracted from RO occultations
 - [[Ionospheric Model Validation]] — TEC is the variable used to compute model error metrics
 
 ### Sibling domains
+
 - [[SBAS Integrity]] — TEC uncertainty maps to ionospheric correction uncertainty, which impacts protection level and integrity risk
 - [[Protection Levels]] — large TEC gradients can inflate protection levels
 - [[Alert Limits]] — TEC anomalies may trigger integrity alerts
 
 ### Implementation connection
+
 - [[IRI-2020 vs GNSS-RO Indonesia]] — empirical TEC distributions from Indonesian GNSS-RO
 - [[SBAS Ionospheric Threat — Empirical Evidence]] — threat quantification from observed TEC tails and gradients
 - [[Source - GNSS-RO Indonesia Empirical Study]] — study-specific TEC statistics
@@ -58,6 +62,7 @@ Conversion formula:
 ## TEC in SBAS context
 
 ### Operational perspective
+
 SBAS ground segments estimate ionospheric delay using dual-frequency ground receiver observations and broadcast corrections as gridded ionospheric vertical delays (GIVDs) or equivalent. The quality of these estimates determines:
 
 - **User position accuracy** — corrected versus uncorrected delay
@@ -65,7 +70,9 @@ SBAS ground segments estimate ionospheric delay using dual-frequency ground rece
 - **System availability** — whether protection levels remain below alert limits
 
 ### Empirical perspective
+
 GNSS-RO provides an independent TEC measurement that can:
+
 1. Validate or invalidate empirical ionospheric models (e.g., IRI-2020)
 2. Quantify the tail of TEC delay distributions for threat-model design
 3. Characterize spatial TEC gradients that threaten differential correction accuracy

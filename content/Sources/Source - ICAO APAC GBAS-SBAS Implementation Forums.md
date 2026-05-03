@@ -81,11 +81,11 @@ Do not use this note alone to publish:
 
 ## Extraction targets for next cycle
 
-|| Meeting | URL | Verification needed |
-||---|---|
-|| ITF/7 (May 2025) | https://www.icao.int/sites/default/files/APAC/Meetings/2025/2025%20GBASSBAS%20ITF7/ | Full meeting page, all WPs/IPs, participant list |
-|| ITF/6 (previous) | Not yet extracted | Meeting page and document URLs |
-|| CNS SG meetings with SBAS agenda items | Not yet extracted | Meeting page, CNS SG SBAS-relevant WPs |
+| Meeting                                | URL                                                                                 | Verification needed                              |
+| -------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------ |
+| ITF/7 (May 2025)                       | https://www.icao.int/sites/default/files/APAC/Meetings/2025/2025%20GBASSBAS%20ITF7/ | Full meeting page, all WPs/IPs, participant list |
+| ITF/6 (previous)                       | Not yet extracted                                                                   | Meeting page and document URLs                   |
+| CNS SG meetings with SBAS agenda items | Not yet extracted                                                                   | Meeting page, CNS SG SBAS-relevant WPs           |
 
 ## Relationship to SBAS standards sources
 

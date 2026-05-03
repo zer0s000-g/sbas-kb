@@ -16,6 +16,7 @@ verification_status: metadata-pending
 This is a starter source scaffold for the International Reference Ionosphere (IRI) 2020 model.
 
 Boundary:
+
 - It is not a completed model evaluation.
 - It does not verify the model's formal specifications against the actual IRI codebase or documentation.
 - It exists to anchor model-related claims in the vault to an identifiable source.
@@ -33,11 +34,13 @@ The vault contains a systematic validation of IRI-2020 against GNSS-RO observati
 ## Current provisional usage in the vault
 
 At present, this scaffold supports the statement that:
+
 - IRI-2020 is an international standard empirical ionospheric model maintained by the IRI Working Group
 - It was validated against GNSS-RO data over Indonesia in the vault's empirical study
 - The model showed significant systematic underestimation of TEC in the Indonesian equatorial region
 
 It does not yet support:
+
 - Any claim that IRI-2020 is “wrong” in an absolute sense — the findings are regionally and conditionally specific
 - Any ranking of IRI-2020 against NeQuick, SAMI3, or physics-based models
 - Any claim that IRI-2020 is unsuitable for all SBAS applications globally
@@ -53,6 +56,7 @@ It does not yet support:
 ## Suggested downstream cleanup targets
 
 If this scaffold becomes source-backed, revisit and tighten claims in:
+
 - [[Ionospheric Model Validation]]
 - [[IRI-2020 vs GNSS-RO Indonesia]]
 - [[SBAS Ionospheric Threat — Empirical Evidence]]

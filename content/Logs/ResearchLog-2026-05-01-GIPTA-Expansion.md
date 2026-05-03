@@ -11,21 +11,26 @@ verification_status: implementation-log
 # ResearchLog 2026-05-01 GIPTA Expansion
 
 ## Scope
+
 Expanded the canonical Quartz content root using the GIPTA source document collection.
 
 ## Backup
+
 A private pre-change backup was created before implementation.
 
 ## Implementation boundary
+
 The published Quartz content root is the active canonical content root. The retired SBAS vault was not used as an implementation target.
 
 ## Non-overlap decisions
+
 - GIPTA was added as a program/source/testbed/governance layer, not as a duplicate SBAS explainer.
 - Existing ASEAN adoption, governance, barrier, demand, and service-model notes were patched rather than recreated.
 - Indonesia and Philippines country notes were strengthened with source-linked GIPTA evidence rather than duplicated.
 - Ambiguous “ASEAN-ABAS” material was isolated in [[ASEAN ABAS Concept]] with explicit metadata ambiguity.
 
 ## Files created
+
 - `Sources/Source - GIPTA 2.0 Timor-Leste Site Workshop.md`
 - `Sources/Source - GIPTA 2.0 Project Introduction.md`
 - `Sources/Source - ADB ASEAN SBAS Technical Assistance.md`
@@ -56,6 +61,7 @@ The published Quartz content root is the active canonical content root. The reti
 - `ASEAN/Countries/Timor-Leste.md`
 
 ## Files modified
+
 - `ASEAN/ASEAN SBAS Adoption Landscape.md`
 - `ASEAN/ASEAN SBAS Deployment Barriers.md`
 - `ASEAN/ASEAN SBAS Governance and Institutional Actors.md`
@@ -74,10 +80,12 @@ The published Quartz content root is the active canonical content root. The reti
 - `index.md`
 
 ## Documents skipped or limited
+
 - Registration forms: administrative/personal-data content; not used for technical claims.
 - `P1070573.JPG`: image not OCRed; no text evidence added.
 - Duplicate AirNav/BIG presentation copy: represented by one source note to avoid double-counting.
 - Workshop report variants: used cautiously because of date/venue inconsistencies.
 
 ## Next QA target
+
 Run link scan and Quartz build after this implementation pass.

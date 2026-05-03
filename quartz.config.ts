@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "zer0s000-g.github.io/sbas-kb",  // change this to your GitHub username for GitHub Pages
+    baseUrl: "zer0s000-g.github.io/sbas-kb", // change this to your GitHub username for GitHub Pages
     ignorePatterns: ["private", "templates", ".obsidian", "node_modules", "*.bak"],
     defaultDateType: "modified",
     theme: {
@@ -72,7 +72,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [],  // disabled RemoveDrafts so draft notes still appear
+    filters: [], // disabled RemoveDrafts so draft notes still appear
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
@@ -82,7 +82,7 @@ const config: QuartzConfig = {
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
-      }),     
+      }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),

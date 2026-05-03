@@ -18,4 +18,4 @@ version: 1.0
 - **Detection Time**: Time between fault occurrence and warning issuance
 - **Availability**: Percentage of time system is operational and providing valid information
 
-*Note: This is a stub document. See [[SBAS-Standards-Regulation]] for detailed safety requirements. Related concept notes: [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], [[WAAS]].*
+_Note: This is a stub document. See [[SBAS-Standards-Regulation]] for detailed safety requirements. Related concept notes: [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], [[WAAS]]._

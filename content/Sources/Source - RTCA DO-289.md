@@ -23,14 +23,14 @@ Important boundary:
 
 ## Public-catalog identity signal
 
-| Field | Current public-catalog signal |
-|---|---|
-| Issuing body | RTCA, Inc. |
-| Document | DO-289 |
-| Public title signal | Minimum Aviation System Performance Standards (MASPS) for Aircraft Surveillance Applications (ASA) |
-| Publication-date signal | 2006-12-13 for the cataloged current item |
-| Scope signal | ADS-B / aircraft-surveillance application parameter clarification and surveillance applications |
-| SBAS relevance signal | Not identified as an SBAS performance-testing standard in the reviewed public catalog material |
+| Field                   | Current public-catalog signal                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------- |
+| Issuing body            | RTCA, Inc.                                                                                         |
+| Document                | DO-289                                                                                             |
+| Public title signal     | Minimum Aviation System Performance Standards (MASPS) for Aircraft Surveillance Applications (ASA) |
+| Publication-date signal | 2006-12-13 for the cataloged current item                                                          |
+| Scope signal            | ADS-B / aircraft-surveillance application parameter clarification and surveillance applications    |
+| SBAS relevance signal   | Not identified as an SBAS performance-testing standard in the reviewed public catalog material     |
 
 ## Provenance correction
 

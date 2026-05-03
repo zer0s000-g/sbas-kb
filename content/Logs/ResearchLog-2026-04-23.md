@@ -1,26 +1,31 @@
 # Research Log - 2026-04-23
 
 ## Cycle
+
 - Time: 2026-04-23 08:30 WIB
 - Classification: review, retrieval, MOC maintenance
 - Focus: initialize top-level SBAS navigation and identify provenance gaps
 
 ## What changed
+
 - Created [[SBAS MOC]] as the new top-level navigation note for SBAS work.
 - Updated [[SBAS Research MOC]] with an initialization review and explicit provenance warning.
 - Updated [[SBAS in Civil Aviation MOC]] with an initialization review and next-step guidance.
 
 ## Files touched
+
 - MOCs/SBAS MOC.md
 - MOCs/SBAS-Research-MOC.md
 - MOCs/SBAS-in-Civil-Aviation-MOC.md
 
 ## Sourced vs synthesized vs uncertain
+
 - Sourced this cycle: none added; this was a structure-and-provenance review cycle.
 - Synthesized this cycle: assessment that the vault has promising structure but weak source-note coverage.
 - Flagged as uncertain/provisional: unsourced quantitative performance figures, standards scope statements, and cross-region interoperability claims in existing draft notes.
 
 ## Links added
+
 - [[SBAS MOC]] -> [[SBAS Research MOC]]
 - [[SBAS MOC]] -> [[SBAS in Civil Aviation MOC]]
 - [[SBAS MOC]] -> [[SBAS-Systems-by-Region-MOC]]
@@ -28,15 +33,18 @@
 - [[SBAS in Civil Aviation MOC]] -> [[SBAS MOC]]
 
 ## Next best research question
+
 Which foundational source note should be built first to stabilize the vault: an ICAO SBAS standards note, an RTCA airborne SBAS note, or an atomic concept note on [[SBAS Integrity]] and [[Protection Levels]]?
 
 ## Follow-on cycle — 2026-04-23 08:33 WIB
+
 - Classification: provenance management, retrieval, source backlog creation
 - Improvement: created [[SBAS Source Backlog]] to convert recurring standards references into an explicit verification queue.
 - Why this was chosen: the vault repeatedly cites ICAO/RTCA/EUROCAE documents without dedicated source notes, making many technical and regulatory claims hard to audit.
 - New recommendation: build [[Source - RTCA DO-229]] first, then use it to clean up airborne-equipment and operational-approval claims across the vault.
 
 ## Follow-on cycle — 2026-04-23 09:18 WIB
+
 - Classification: Asia-Pacific comparison expansion, regional broadening, retrieval strengthening
 - Improvement 1: created [[MSAS vs GAGAN]] as the first Asia-focused regional comparison note using in-vault references only.
 - Improvement 2: created [[BDSBAS]] to extend Asia coverage beyond Japan and India into a China/BeiDou-centered regional context.
@@ -44,6 +52,7 @@ Which foundational source note should be built first to stabilize the vault: an 
 - Result: the vault now has an Asia-focused regional comparison path spanning [[MSAS]], [[GAGAN]], and [[BDSBAS]], plus a dedicated [[MSAS vs GAGAN]] comparison note.
 
 ## Follow-on cycle — 2026-04-23 14:30 WIB
+
 - Classification: regional expansion, non-overlapping branch creation, retrieval strengthening
 - Focus: expand the vault into the missing ASEAN SBAS implementation layer without repeating generic SBAS basics already covered elsewhere.
 - New notes created:
@@ -65,9 +74,11 @@ Which foundational source note should be built first to stabilize the vault: an 
 - Result: the vault now has a dedicated Southeast Asia expansion layer that is structurally separated from generic standards, system overviews, and broad Asia-Pacific synthesis.
 
 ## Next best research question
+
 Which ASEAN-facing source stack should be built first: ICAO APAC regional meeting/source notes, country-level PBN readiness notes, or an equatorial-ionosphere evidence note for Southeast Asian SBAS feasibility?
 
 ## Follow-on cycle — 2026-04-23 14:48 WIB
+
 - Classification: regional continuation, country-layer expansion, retrieval strengthening
 - Focus: extend the ASEAN branch downward from heuristic grouping into dedicated country child notes without duplicating ASEAN-wide demand, barrier, governance, or service-model notes.
 - New notes created under `ASEAN/Countries/`:
@@ -92,6 +103,7 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
 - Result: the ASEAN branch now has a full country-note layer, making it possible to continue next into source-backed national evidence without rewriting the regional notes.
 
 ## Follow-on cycle — 2026-04-23 14:56 WIB
+
 - Classification: provenance continuation, ASEAN source-layer creation, governance verification support
 - Focus: add an ASEAN-specific source backbone so the new regional and country notes can later be tightened against identifiable source stacks.
 - New notes created:
@@ -107,6 +119,7 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
 - Result: the ASEAN branch now has both a thematic layer and an explicit provenance queue, which is the right base for future source-backed country or governance upgrades.
 
 ## Follow-on cycle — 2026-04-23 15:04 WIB
+
 - Classification: provenance continuation, source-stack expansion, barrier/governance support
 - Focus: expand the ASEAN provenance layer beyond the first ICAO APAC forum scaffold into adjacent regional planning and technical-feasibility source stacks.
 - New notes created:
@@ -122,6 +135,7 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
 - Result: the provenance layer is now deep enough to support a future source-backed tightening pass without collapsing back into generic ASEAN synthesis.
 
 ## Follow-on cycle — 2026-04-23 15:12 WIB
+
 - Classification: provenance continuation, country-readiness support, archipelagic-demand support
 - Focus: extend the ASEAN source layer into the first two scaffolds needed to upgrade country notes from heuristic placeholders toward evidence-backed differentiation.
 - New notes created:
@@ -138,6 +152,7 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
 - Result: the ASEAN branch now has enough provenance structure to support the next real evidence pass on [[Indonesia]], [[Philippines]], [[Singapore]], and [[ASEAN SBAS Readiness Heuristic]].
 
 ## Follow-on cycle — 2026-04-23 15:26 WIB
+
 - Classification: evidence-tightening, country-readiness refinement, cautious claim narrowing
 - Focus: use live institutional findings to tighten the highest-value ASEAN country notes without overstating unsupported conclusions.
 - Live evidence incorporated this cycle:
@@ -157,14 +172,17 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
 - Result: the ASEAN branch now contains its first evidence-aware country refinements rather than only source scaffolds and heuristics.
 
 ## Five-cycle continuation block — 2026-04-23 15:40 WIB
+
 - Classification: multi-cycle continuation, evidence tightening, country-readiness refinement, provenance synchronization
 - Scope: continue autonomously for five successive ASEAN-focused cycles without stopping.
 
 ### Cycle 1
+
 - Attempted deeper extraction from Singapore CAAS-linked PDFs and recorded a precise limit: direct PDF text extraction remains incomplete in the current environment.
 - Preserved the stronger live evidence already available from the CAAS site itself rather than over-claiming from unread PDFs.
 
 ### Cycle 2
+
 - Added live Malaysia readiness evidence through official CAAM pages.
 - Usable support captured for:
   - national/state safety-planning structures
@@ -172,14 +190,17 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
   - visible official PBN circular links
 
 ### Cycle 3
+
 - Added live Thailand readiness evidence through ICAO APAC PBN progress-report paths and a visible CAAT PBN guidance-material path.
 - Tightened Thailand only to the level of documented PBN-modernization activity, not SBAS adoption.
 
 ### Cycle 4
+
 - Improved the Philippines evidence base through CAAP references to "CAAP-operated airports" and "all CAAP-operated airports," strengthening the distributed-airport context.
 - Updated the Philippines note to reflect improved network-context support while keeping the archipelagic-demand claim cautious.
 
 ### Cycle 5
+
 - Synchronized the branch by updating:
   - [[Source - ASEAN Country PBN Readiness Signals]]
   - [[Source - Archipelagic Airport Network Context in ASEAN]]
@@ -210,21 +231,25 @@ Which ASEAN-facing source stack should be built first: ICAO APAC regional meetin
 - Result: the vault has now moved from ASEAN branch creation into sustained evidence-aware refinement.
 
 ## Three-cycle continuation block — 2026-04-23 15:55 WIB
+
 - Classification: multi-cycle continuation, targeted evidence tightening, branch synchronization
 - Scope: continue autonomously for three successive ASEAN-focused cycles without stopping.
 
 ### Cycle 1
+
 - Strengthened the Philippines evidence base beyond generic CAAP-operated-airports wording.
 - Added a stronger live CAAP signal supporting 44 commercially operating airports under CAAP and 48 commercially operated airports nationwide.
 - Tightened the Philippines note toward a nationwide commercial-airport-network framing while keeping the broader archipelagic-demand claim cautious.
 
 ### Cycle 2
+
 - Consolidated Malaysia and Thailand as evidence-aware readiness cases.
 - Malaysia remains supported by CAAM governance, AIS/AIP/AIRAC, and PBN circular signals.
 - Thailand remains supported by ICAO APAC PBN implementation-reporting paths and visible CAAT PBN guidance material.
 - Chose not to over-claim beyond those live source paths.
 
 ### Cycle 3
+
 - Synchronized the branch by updating:
   - [[Source - Archipelagic Airport Network Context in ASEAN]]
   - [[Philippines]]

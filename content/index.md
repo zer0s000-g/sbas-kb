@@ -16,17 +16,17 @@ The knowledge base is written for readers who need more than a glossary: enginee
 
 ## Start here
 
-| Reader need | Best entry point | What you will find |
-|---|---|---|
-| Learn SBAS from zero | [[What is SBAS]] | A plain-language but technically careful beginner gateway |
-| Understand the system chain | [[SBAS Architecture]] | How reference stations, processing, uplink, broadcast, and receivers fit together |
-| Navigate the whole site | [[SBAS MOC]] | Top-level map of concepts, operations, sources, regions, and research |
-| Understand aviation use | [[SBAS in Civil Aviation MOC]] | LPV/APV/RNAV context, operational caveats, and source needs |
-| Compare deployed systems | [[SBAS-Systems-by-Region-MOC]] | WAAS, EGNOS, MSAS, GAGAN, BDSBAS, and Asia-Pacific implementation patterns |
-| Follow ASEAN work | [[ASEAN SBAS Adoption Landscape]] | Regional adoption framing, governance, barriers, demand, and service-model options |
-| Review GIPTA 2.0 material | [[GIPTA 2.0 MOC]] | Source-linked ASEAN testbed and implementation pathway material |
-| Check source maturity | [[SBAS Source Backlog]] | Standards and evidence gaps that still need direct verification |
-| Explore ionospheric research | [[SBAS Ionospheric Threat — Empirical Evidence]] | GNSS-RO/IRI-2020 threat-screening work for Indonesia |
+| Reader need                  | Best entry point                                 | What you will find                                                                 |
+| ---------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| Learn SBAS from zero         | [[What is SBAS]]                                 | A plain-language but technically careful beginner gateway                          |
+| Understand the system chain  | [[SBAS Architecture]]                            | How reference stations, processing, uplink, broadcast, and receivers fit together  |
+| Navigate the whole site      | [[SBAS MOC]]                                     | Top-level map of concepts, operations, sources, regions, and research              |
+| Understand aviation use      | [[SBAS in Civil Aviation MOC]]                   | LPV/APV/RNAV context, operational caveats, and source needs                        |
+| Compare deployed systems     | [[SBAS-Systems-by-Region-MOC]]                   | WAAS, EGNOS, MSAS, GAGAN, BDSBAS, and Asia-Pacific implementation patterns         |
+| Follow ASEAN work            | [[ASEAN SBAS Adoption Landscape]]                | Regional adoption framing, governance, barriers, demand, and service-model options |
+| Review GIPTA 2.0 material    | [[GIPTA 2.0 MOC]]                                | Source-linked ASEAN testbed and implementation pathway material                    |
+| Check source maturity        | [[SBAS Source Backlog]]                          | Standards and evidence gaps that still need direct verification                    |
+| Explore ionospheric research | [[SBAS Ionospheric Threat — Empirical Evidence]] | GNSS-RO/IRI-2020 threat-screening work for Indonesia                               |
 
 ## What this site is — and is not
 
@@ -47,6 +47,7 @@ It is **not** an operational approval document, a certified design manual, or a 
 ## Research and implementation branches
 
 ### ASEAN and GIPTA implementation branch
+
 - [[ASEAN SBAS Adoption Landscape]]
 - [[ASEAN SBAS Readiness Heuristic]]
 - [[ASEAN SBAS Operational Demand Drivers]]
@@ -58,6 +59,7 @@ It is **not** an operational approval document, a certified design manual, or a 
 - [[ASEAN SBAS Testbed to Operational Service]]
 
 ### Ionospheric integrity and empirical research branch
+
 - [[GNSS Radio Occultation]]
 - [[Total Electron Content (TEC)]]
 - [[Ionospheric Model Validation]]
@@ -66,6 +68,7 @@ It is **not** an operational approval document, a certified design manual, or a 
 - [[Indonesian SBAS ION Paper Iterations]]
 
 ### Source and governance branch
+
 - [[SBAS Source Backlog]]
 - [[ASEAN SBAS Source Backlog]]
 - [[SBAS Knowledge Base Editorial and Source Policy]]
@@ -74,14 +77,14 @@ It is **not** an operational approval document, a certified design manual, or a 
 
 ## Current maturity snapshot
 
-| Area | Current maturity | Editorial handling |
-|---|---|---|
-| Core SBAS concepts | improving | being upgraded from terminology notes into institutional pillar pages |
-| Standards/source backbone | partial | source scaffolds exist; exact document scope must still be verified where noted |
-| Aviation operations | draft but useful | operational claims require source tightening before being treated as authoritative |
-| ASEAN implementation | strong synthesis layer | supported by GIPTA and regional source scaffolds, with country claims still caveated |
-| Ionospheric research | empirical internal stack | useful for threat discovery; not yet an operational correction or certification model |
-| Publication governance | active | privacy, frontmatter, source, and maturity rules are now explicit |
+| Area                      | Current maturity         | Editorial handling                                                                    |
+| ------------------------- | ------------------------ | ------------------------------------------------------------------------------------- |
+| Core SBAS concepts        | improving                | being upgraded from terminology notes into institutional pillar pages                 |
+| Standards/source backbone | partial                  | source scaffolds exist; exact document scope must still be verified where noted       |
+| Aviation operations       | draft but useful         | operational claims require source tightening before being treated as authoritative    |
+| ASEAN implementation      | strong synthesis layer   | supported by GIPTA and regional source scaffolds, with country claims still caveated  |
+| Ionospheric research      | empirical internal stack | useful for threat discovery; not yet an operational correction or certification model |
+| Publication governance    | active                   | privacy, frontmatter, source, and maturity rules are now explicit                     |
 
 ## Publication discipline
 

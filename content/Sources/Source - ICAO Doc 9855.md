@@ -23,13 +23,13 @@ Important boundary:
 
 ## Public-catalog identity signal
 
-| Field | Current ICAO Store signal |
-|---|---|
-| Issuing body | ICAO |
-| Document | Doc 9855 |
-| Title | Guidelines on the Use of the Public Internet for Aeronautical Applications |
-| Publication type | Manual |
-| Order/SKU signal | 9855 / DOC-09855-001-01 |
+| Field                 | Current ICAO Store signal                                                               |
+| --------------------- | --------------------------------------------------------------------------------------- |
+| Issuing body          | ICAO                                                                                    |
+| Document              | Doc 9855                                                                                |
+| Title                 | Guidelines on the Use of the Public Internet for Aeronautical Applications              |
+| Publication type      | Manual                                                                                  |
+| Order/SKU signal      | 9855 / DOC-09855-001-01                                                                 |
 | SBAS relevance signal | No SBAS technical-specification role identified in the reviewed public catalog material |
 
 ## Provenance correction

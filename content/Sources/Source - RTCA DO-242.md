@@ -23,14 +23,14 @@ Important boundary:
 
 ## Public-catalog identity signal
 
-| Field | Current public-catalog signal |
-|---|---|
-| Issuing body | RTCA, Inc. |
-| Document | DO-242 / change to DO-242A in the consulted catalog signal |
-| Public title signal | Minimum Aviation System Performance Standards for Automatic Dependent Surveillance Broadcast (ADS-B) |
-| Publication-date signal | 2006-12-13 for the cataloged current change item |
-| Scope signal | Clarifies ADS-B transmitted-position-quality parameters |
-| SBAS relevance signal | Not identified as an SBAS augmentation-system standard in the reviewed public catalog material |
+| Field                   | Current public-catalog signal                                                                        |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| Issuing body            | RTCA, Inc.                                                                                           |
+| Document                | DO-242 / change to DO-242A in the consulted catalog signal                                           |
+| Public title signal     | Minimum Aviation System Performance Standards for Automatic Dependent Surveillance Broadcast (ADS-B) |
+| Publication-date signal | 2006-12-13 for the cataloged current change item                                                     |
+| Scope signal            | Clarifies ADS-B transmitted-position-quality parameters                                              |
+| SBAS relevance signal   | Not identified as an SBAS augmentation-system standard in the reviewed public catalog material       |
 
 ## Provenance correction
 

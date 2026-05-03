@@ -20,7 +20,7 @@ The Aviation/ procedure pages (LNAV/VNAV, RNAV, RNP, GBAS) contained:
 - Unsourced numerical claims: accuracy values, alert limits, detection times, decision heights, weather minima, wind limits, fuel savings percentages, cost figures, and pilot-training hours
 - Emoji in titles (not institutional grade)
 - Broken or corrupted wikilinks (especially GBAS)
-- Mixed wikilink syntax (using `[[Note]](path)` instead of `[[Note]]`)
+- Mixed wikilink syntax (using Obsidian wikilink syntax plus an extra Markdown path, instead of a plain Obsidian wikilink)
 - No boundary statements distinguishing equipment capability from procedure design
 - No links to procedure-design source notes (which did not yet exist)
 - Missing frontmatter fields (verification_status, status)

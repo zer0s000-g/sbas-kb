@@ -15,6 +15,7 @@ verification_status: empirical-study
 This note defines GNSS Radio Occultation (GNSS-RO) as an empirical satellite-based technique for profiling the Earth's ionosphere using radio signals from Global Navigation Satellite System (GNSS) transmitters observed by low-Earth-orbiting (LEO) receivers.
 
 Boundary:
+
 - This is a technique concept note, not a system-design note.
 - It does not cover SBAS correction calculations, GBAS references, or avionics.
 - It links to empirical results from GNSS-RO applications in the vault.
@@ -25,26 +26,29 @@ GNSS-RO measures phase and amplitude changes of GNSS signals as they pass throug
 
 ### Key technique characteristics
 
-| Characteristic | Description |
-|----------------|-------------|
-| **Data source** | LEO constellations with GNSS receivers (e.g., COSMIC-2, Spire) |
-| **Observable** | Excess phase → bending angle → refractivity → electron density |
-| **Vertical resolution** | Typically 200 m – 1 km |
-| **Horizontal footprint** | Tangent-point region; hundreds of kilometres along ray path |
-| **Coverage** | Global; especially valuable over ocean and data-sparse regions |
-| **Limitation** | Spase temporal sampling; post-sunset gaps at low latitudes |
+| Characteristic           | Description                                                    |
+| ------------------------ | -------------------------------------------------------------- |
+| **Data source**          | LEO constellations with GNSS receivers (e.g., COSMIC-2, Spire) |
+| **Observable**           | Excess phase → bending angle → refractivity → electron density |
+| **Vertical resolution**  | Typically 200 m – 1 km                                         |
+| **Horizontal footprint** | Tangent-point region; hundreds of kilometres along ray path    |
+| **Coverage**             | Global; especially valuable over ocean and data-sparse regions |
+| **Limitation**           | Spase temporal sampling; post-sunset gaps at low latitudes     |
 
 ## Relationship to the vault
 
 ### Parent domain
+
 - [[Ionospheric Model Validation]] — GNSS-RO provides the empirical ground truth against which models are validated
 
 ### Sibling domains
+
 - [[Total Electron Content (TEC)]] — TEC is the primary observable extracted from GNSS-RO profiles
 - [[SBAS Integrity]] — GNSS-RO data informs ionospheric threat models that feed integrity design
 - [[Source - GNSS Radio Occultation Technique]] — source scaffold for literature and datasets
 
 ### Implementation connection
+
 - [[IRI-2020 vs GNSS-RO Indonesia]] — concrete empirical application to Indonesia using Spire/COSMIC-2 podTec data
 - [[Indonesian SBAS ION Paper Iterations]] — research paper series using GNSS-RO for SBAS threat screening
 

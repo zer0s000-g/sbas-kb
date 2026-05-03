@@ -11,14 +11,17 @@ verification_status: navigation
 # GIPTA 2.0 MOC
 
 ## Scope
+
 This map collects GIPTA-derived source notes, concepts, syntheses, and country updates. It is a navigation layer, not an authoritative source by itself.
 
 ## Start here
+
 - [[GIPTA 2.0]] — program concept and boundaries
 - [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]] — main synthesis
 - [[Source - GIPTA 2.0 Timor-Leste Site Workshop]] — event/source scaffold
 
 ## Source backbone
+
 - [[Source - GIPTA 2.0 Project Introduction]]
 - [[Source - ADB ASEAN SBAS Technical Assistance]]
 - [[Source - ASEAN SBAS Implementation Roadmap GIPTA]]
@@ -36,6 +39,7 @@ This map collects GIPTA-derived source notes, concepts, syntheses, and country u
 - [[Source - JRANSA Tokyo ASEAN SBAS Discussion]]
 
 ## Concepts added from GIPTA
+
 - [[ASEAN SBAS Testbed]]
 - [[GNSS Analyzer and SBAS Simulator]]
 - [[GNSS RFI and Spoofing in ASEAN SBAS Deployment]]
@@ -44,10 +48,12 @@ This map collects GIPTA-derived source notes, concepts, syntheses, and country u
 - [[ASEAN ABAS Concept]]
 
 ## Syntheses
+
 - [[ASEAN SBAS Testbed to Operational Service]]
 - [[Japan MSAS GBAS Lessons for ASEAN SBAS]]
 
 ## Country evidence touched
+
 - [[Indonesia]]
 - [[Philippines]]
 - [[Thailand]]
@@ -57,6 +63,7 @@ This map collects GIPTA-derived source notes, concepts, syntheses, and country u
 - [[Timor-Leste]]
 
 ## Related existing ASEAN branch
+
 - [[ASEAN SBAS Adoption Landscape]]
 - [[ASEAN SBAS Governance and Institutional Actors]]
 - [[ASEAN SBAS Service-Model Options]]

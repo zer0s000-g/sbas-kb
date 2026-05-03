@@ -23,14 +23,14 @@ Important boundary:
 
 ## Public-catalog identity signal
 
-| Field | Current ICAO Store signal |
-|---|---|
-| Issuing body | ICAO |
-| Document | Doc 9854 |
-| Title | Global Air Traffic Management Operational Concept |
-| Publication type | Manual |
-| Edition signal | 1st Edition, 2005 |
-| Purpose signal | Guide planning and implementation of global air traffic management by describing how the emerging and future ATM system should operate |
+| Field            | Current ICAO Store signal                                                                                                              |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Issuing body     | ICAO                                                                                                                                   |
+| Document         | Doc 9854                                                                                                                               |
+| Title            | Global Air Traffic Management Operational Concept                                                                                      |
+| Publication type | Manual                                                                                                                                 |
+| Edition signal   | 1st Edition, 2005                                                                                                                      |
+| Purpose signal   | Guide planning and implementation of global air traffic management by describing how the emerging and future ATM system should operate |
 
 ## Provenance correction
 

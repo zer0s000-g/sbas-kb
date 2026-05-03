@@ -11,43 +11,53 @@ verification_status: mixed-external-scouting-and-synthesis
 # Indonesia
 
 ## Scope status
+
 This note is a country-level child note under [[ASEAN SBAS Readiness Heuristic]] as an archipelagic network state.
 
 Boundary:
+
 - It does not claim certified SBAS implementation status for the country.
 - It does not repeat generic ASEAN-wide demand, barrier, governance, or service-model analysis except where needed to localize the case.
 - It captures the country's role in the ASEAN SBAS storyline and the main evidence gaps still to be closed.
 
 ## Current role in the ASEAN SBAS branch
+
 Indonesia currently functions as the strongest archipelagic demand anchor in the ASEAN SBAS branch.
 
 Evidence-aware refinement:
+
 - a live World Bank country page explicitly describes Indonesia as being made up of over 17,000 islands
 - this strengthens the archipelagic-demand framing more than it strengthens any direct readiness or implementation claim
 
 ## Why this country matters in the ASEAN storyline
+
 - very large island geography creates a broad airport-network access problem
 - the country helps explain why ASEAN cannot be reduced to hub-airport modernization alone
 - it provides one of the clearest cases for evaluating whether SBAS could improve regional and remote-airport access
 
 ## Dominant demand pattern
+
 - distributed airport geography
 - domestic network connectivity across islands
 - access resilience outside a few primary gateways
 
 ## Likely strategic significance
+
 - important in any ASEAN storyline centered on access-driven demand
 - useful counterweight to Singapore-style hub logic
 - likely central if the vault later explores coalition models involving archipelagic states
 
 ## Main caution
+
 - strong need does not automatically imply easiest implementation pathway
 - program status, PBN maturity, and approval posture still need direct source support
 - this note should not be read as evidence that Indonesia already anchors an SBAS program
 - current live evidence is stronger for archipelagic context than for airport-network metrics or SBAS-specific planning
 
 ## GIPTA 2.0 source-linked update
+
 GIPTA material now strengthens Indonesia beyond the earlier archipelagic-demand heuristic:
+
 - AirNav Indonesia / BIG material identifies BIG as Indonesia's national geospatial authority and national-scale Ina-CORS infrastructure manager.
 - The presentation reports 476 active Ina-CORS stations by end-2025, 24/7 operation, uneven regional coverage, and major coverage gaps in Kalimantan and Papua.
 - It also reports Indonesian PBN/GNSS procedure counts and states needs around spectrum protection/RFI monitoring, regional cooperation for ASEAN SBAS, and ATC/pilot capacity building.
@@ -56,11 +66,13 @@ GIPTA material now strengthens Indonesia beyond the earlier archipelagic-demand 
 Source anchors: [[Source - Indonesia InaCORS PBN GIPTA Presentation]], [[Source - ASEAN SBAS Testbed Development Proposal]].
 
 ## Best comparison links
+
 - [[Philippines]]
 - [[Singapore]]
 - [[ASEAN SBAS Operational Demand Drivers]]
 
 ## Best next evidence to collect
+
 - country-level PBN and procedure-design maturity
 - airport-network distribution and remote-access priorities
 - any ICAO APAC or national references to SBAS-relevant modernization
@@ -68,6 +80,7 @@ Source anchors: [[Source - Indonesia InaCORS PBN GIPTA Presentation]], [[Source 
 - empirical ionospheric anchor: [[IRI-2020 vs GNSS-RO Indonesia]], [[SBAS Ionospheric Threat — Empirical Evidence]]
 
 ## Relationship to the wider ASEAN branch
+
 - Parent regional framing: [[ASEAN SBAS Adoption Landscape]]
 - Country grouping logic: [[ASEAN SBAS Readiness Heuristic]]
 - Operational need: [[ASEAN SBAS Operational Demand Drivers]]
@@ -76,6 +89,7 @@ Source anchors: [[Source - Indonesia InaCORS PBN GIPTA Presentation]], [[Source 
 - Pathway choice: [[ASEAN SBAS Service-Model Options]]
 
 ## See also
+
 - [[ASEAN SBAS Adoption Landscape]]
 - [[ASEAN SBAS Readiness Heuristic]]
 - [[ASEAN SBAS Operational Demand Drivers]]

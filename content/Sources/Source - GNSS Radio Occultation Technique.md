@@ -16,6 +16,7 @@ verification_status: metadata-pending
 This is a starter source scaffold for GNSS Radio Occultation as an ionospheric observational technique.
 
 Boundary:
+
 - It is not a completed literature review.
 - It does not verify the accuracy, calibration, or operational readiness of any specific RO constellation.
 - It exists to anchor technique claims in the vault to identifiable datasets and literature.
@@ -34,11 +35,13 @@ The vault contains empirical ionospheric analysis derived from GNSS-RO data. Wit
 ## Current provisional usage in the vault
 
 At present, this scaffold supports only the statement that:
+
 - GNSS Radio Occultation provides an independent empirical measurement of ionospheric TEC from low-Earth-orbiting satellites
 - Spire/COSMIC-2 podTec data from UCAR CDAAC was used for the Indonesian empirical study
 - RO-based TEC is a threat-discovery proxy, not a certified SBAS correction source
 
 It does not yet support:
+
 - Any claim that RO TEC is interchangeable with ground GNSS IPP TEC
 - Any quantified accuracy specification for Spire podTec vs other datasets
 - Any operational readiness assessment for RO-based SBAS service
@@ -53,6 +56,7 @@ It does not yet support:
 ## Suggested downstream cleanup targets
 
 If this scaffold becomes source-backed, revisit and tighten claims in:
+
 - [[GNSS Radio Occultation]]
 - [[Source - GNSS-RO Indonesia Empirical Study]]
 - [[SBAS Ionospheric Threat — Empirical Evidence]]
