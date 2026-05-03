@@ -4,7 +4,7 @@ description: Source note for RTCA DO-229 as the GPS/SBAS airborne-equipment MOPS
 tags: [source, rtca, do-229, sbas, gps, aviation, airborne-equipment, mops, receiver]
 source_type: standard
 created: 2026-04-23
-modified: 2026-05-02
+modified: 2026-05-03
 status: active
 verification_status: public-product-and-regulatory-signal-reviewed-not-official-text-extracted
 ---
@@ -26,22 +26,61 @@ Important boundary:
 
 ## Public identity and revision signals
 
-| Field                                        | Current public signal                                                                                                                                                          |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Issuing body                                 | RTCA, Inc.                                                                                                                                                                     |
-| Committee signal                             | RTCA SC-159 on public RTCA product pages                                                                                                                                       |
-| Document family                              | DO-229                                                                                                                                                                         |
-| Current RTCA product signal reviewed         | DO-229F, issued 2020-06-11                                                                                                                                                     |
-| DO-229F public title signal                  | MOPS for Global Positioning System/Satellite-Based Augmentation System Airborne Equipment                                                                                      |
-| Prior revision signal reviewed               | DO-229E, issued 2016-12-15, superseding DO-229D and incorporating Change 1 per public RTCA product metadata                                                                    |
-| Public standards-catalog signal              | DO-229 active/current item; 2020-06-11 publication-date signal; page-count signal of 540 pages in one consulted catalog                                                        |
-| Broad scope signal                           | Airborne navigation equipment using GPS augmented by SBAS                                                                                                                      |
-| Important frequency boundary                 | Public RTCA/standards-catalog text states DO-229 provides standards for single-frequency airborne navigation equipment; dual-frequency equipment is to be addressed separately |
-| U.S. SBAS example in public title/scope text | WAAS as the U.S. SBAS example                                                                                                                                                  |
+|| Field | Current public signal |
+|| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|| Issuing body | RTCA, Inc. |
+|| Committee signal | RTCA SC-159 on public RTCA product pages |
+|| Document family | DO-229 |
+|| Current RTCA product signal reviewed | DO-229F, issued 2020-06-11 |
+|| DO-229F public title signal | MOPS for Global Positioning System/Satellite-Based Augmentation System Airborne Equipment |
+|| Prior revision signal reviewed | DO-229E, issued 2016-12-15, superseding DO-229D and incorporating Change 1 per public RTCA product metadata |
+|| Public standards-catalog signal | DO-229 active/current item; 2020-06-11 publication-date signal; page-count signal of 540 pages in one consulted catalog |
+|| Broad scope signal | Airborne navigation equipment using GPS augmented by SBAS |
+|| Important frequency boundary | Public RTCA/standards-catalog text states DO-229 provides standards for single-frequency airborne navigation equipment; dual-frequency equipment is to be addressed separately |
+|| Relevant ICAO SARPs reference | Annex 10 Volume I Chapter 3, Section 3.5 (SBAS provisions); Section 3.6 (GBAS provisions); Appendix B (GNSS technical specifications) |
+
+## Section and structure signals (from public sources)
+
+Public ICAO SBAS implementation guidance and regulator AIP/Navigation documentation reference the following DO-229 structural elements:
+
+|| Structural element | Signal source | Content signal |
+|| -------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+|| Section 1 | Public RTCA/EASA ETSO cross-references | General requirements applicable to all GPS/SBAS airborne equipment classes |
+|| Section 2 | EASA ETSO-C145e/C146e public PDFs | Class Beta, Gamma, Delta equipment minimum performance standards as modified by EASA appendices |
+|| Appendix | FAA/ETSO cross-signals | Environmental and test procedure provisions |
+|| Equipment Class Beta | EASA ETSO-C145e public PDF | Airborne navigation sensors using GPS augmented by SBAS; functional equipment per EASA class framework |
+|| Equipment Class Gamma | EASA/FAA cross-signals | Stand-alone airborne navigation equipment with higher integrity/performance class |
+|| Equipment Class Delta | EASA/FAA cross-signals | Highest integrity/performance class for stand-alone GPS/SBAS equipment; Delta-4 associated with LPV operations |
+|| DFMC boundary | RTCA SC-159 public meeting summaries | DO-229F adds requirements tags for future DFMC development; DO-229F scope remains single-frequency L1/L5 (not yet DFMC) |
+|| PRN expansion context | ICAO APAC SBAS implementation guide | DO-229E added new SBAS PRN codes (120–138 original; expanded to 139–158 in May 2017); receiver compatibility issues |
+
+### SBAS avionics Class 1–4 capability structure
+
+Public AIP and ICAO SBAS implementation guidance documents identify the following operational capability classes used in SBAS airborne equipment context:
+
+|| Avionics class | Capability signal | Operational type |
+|| -------------- | ---------------------------------------------------------- | ------------------------ |
+|| Class 1 | Oceanic, domestic en-route, terminal, LNAV | Lateral guidance only |
+|| Class 2 | Class 1 + LNAV/VNAV | 3D with vertical guidance |
+|| Class 3 | Class 2 + LP and LPV | LPV precision approach |
+|| Class 4 | Final approach segment only; LP/LPV with fail-down to LNAV | ILS alternative |
+
+Important: These avionics classes describe equipment capability, not operational approval. A Class 3 or Class 4 receiver does not, by itself, mean a specific runway, procedure, operator, or region supports LPV operations. Operational approval requires separate procedure-design, regulator, operator, and AIP chart sources.
+
+### DFMC and future multi-constellation boundary
+
+The RTCA SC-159 public meeting summaries confirm that DO-229F remains a single-frequency L1/L5 GPS/SBAS MOPS. DFMC SBAS requirements are under active development in SC-159 and will be addressed in a separate document. DO-229F requirements tags signal future DFMC integration but are not themselves DFMC requirements. The knowledge base editorial rule is:
+
+```text
+DO-229F is the single-frequency GPS/SBAS airborne-equipment MOPS anchor.
+DFMC SBAS equipment requires a separate MOPS document or version, not yet published in DO-229F scope.
+```
 
 ## Publicly visible scope signal
 
 Public RTCA and standards-catalog descriptions identify DO-229 as a MOPS document for airborne navigation equipment using GPS augmented by SBAS. Public product text for DO-229F states that DO-229 is limited to **single-frequency** airborne navigation equipment and that a separate document is expected for dual-frequency equipment.
+
+The ICAO APAC SBAS implementation guidance identifies WAAS as the reference U.S. SBAS example within the DO-229 context. The PRN code expansion (original 120–138; expanded to 139–158 in May 2017) was introduced in DO-229E and affects receiver compatibility with newer GEO satellites.
 
 For this knowledge base, that supports a narrow but important editorial decision:
 
@@ -153,24 +192,54 @@ When editing downstream pages:
 
 ### Bibliographic metadata
 
-- issuing body:
-- exact title:
-- document number:
-- revision / change number:
-- publication date:
-- official access path / institutional library record:
-- applicable FAA TSO / EASA ETSO / other regulator references, including [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] where relevant:
+- issuing body: RTCA, Inc.
+- exact title: Minimum Operational Performance Standards (MOPS) for Global Positioning System/Satellite-Based Augmentation System Airborne Equipment
+- document number: DO-229
+- revision / change number: DO-229F (current); DO-229E (prior); DO-229D (superseded)
+- publication date: DO-229F issued 2020-06-11; DO-229E issued 2016-12-15
+- committee: RTCA SC-159 (GPS)
+- official access path: RTCA Community Hub (rtca.org)
+- related ICAO SARPs: Annex 10 Volume I Chapter 3, Section 3.5 (SBAS); Section 3.6 (GBAS); Appendix B (GNSS)
+- applicable FAA TSO: TSO-C145e (Class Beta sensors), TSO-C146e (Class Delta-4 stand-alone); referenced by [[Source - FAA TSO-C145e and TSO-C146e]]
+- applicable EASA ETSO: ETSO-C145e (Class Beta), ETSO-C146e A1 (Class Gamma/Delta CCA); referenced by [[Source - EASA ETSO-C145e and ETSO-C146e]]
 
 ### Sections to extract cautiously
 
-- equipment classes and intended functions;
-- receiver performance requirements;
-- SBAS signal and message assumptions;
-- LP, LPV, LNAV, LNAV/VNAV, and RNAV-related equipment capability language;
-- integrity, alerting, protection-level, and receiver usability language;
-- test methods, environmental assumptions, and verification conditions;
-- revision-specific exclusions, assumptions, and applicability limits;
-- any explicit DFMC boundary or transition material.
+**From Section 1 (general requirements — all classes):**
+
+- general MOPS applicability and scope
+- definitions and terminology
+- minimum performance categories and pass/fail criteria
+- environmental and interference conditions
+
+**From Section 2 (equipment-class-specific minimum performance standards):**
+
+- Class Beta equipment requirements (sensors; as referenced in EASA ETSO-C145e)
+- Class Gamma equipment requirements (stand-alone, intermediate integrity)
+- Class Delta equipment requirements (stand-alone, highest integrity; Delta-4 associated with LPV capability)
+- LP/LPV/LNAV/VNAV/LNAV equipment capability language and alert-limit behavior
+- protection-level and integrity-related receiver behavior
+- SBAS signal reception, message decoding, and ionospheric correction assumptions
+- receiver annunciation and alerting logic
+- test methods, tolerances, and environmental conditions
+
+**From appendices:**
+
+- environmental test provisions
+- antenna requirements (related to DO-228/DO-301 context)
+- DFMC transition and boundary material (if present in DO-229F)
+
+**Revision-specific material:**
+
+- DO-229E PRN code expansion (120–138 original; 139–158 expanded) and receiver compatibility implications
+- DO-229F requirements tags for future DFMC development (not yet DFMC requirements)
+- navigation message correction table restrictions
+
+**Explicit boundaries (do not extract as requirements):**
+
+- DFMC SBAS requirements (out of scope of DO-229F)
+- Ground-system certification requirements (Annex 10 / service-provider domain)
+- Procedure minima and operational approval claims
 
 ### Downstream mapping questions
 
@@ -184,6 +253,7 @@ When editing downstream pages:
 
 - RTCA Community Hub, DO-229F product page: `https://my.rtca.org/productdetails?id=a1B1R0000092ubbUAA`
 - RTCA Community Hub, DO-229E product page: `https://my.rtca.org/NC__Product?id=a1B3600000211rIEAQ`
+- RTCA list of available documents (September 2020): `https://www.rtca.org/wp-content/uploads/2020/12/LIST-OF-AVAILABLE-DOCS-AS-OF-SETEMBER-2020-.pdf`
 - GlobalSpec standards catalog page for RTCA DO-229: `https://standards.globalspec.com/std/14281994/rtca-do-229`
 - FAA Technical Standard Orders page: `https://www.faa.gov/aircraft/air_cert/design_approvals/tso`
 - FAA DRS record for TSO-C145e: `https://drs.faa.gov/browse/excelExternalWindow/EFE54F1E6272A7068625811D0064B679.0001`
@@ -191,6 +261,8 @@ When editing downstream pages:
 - EASA ETSO-C145e public PDF: `https://www.easa.europa.eu/download/etso/ETSO-C145e_CS-ETSO_13.pdf`
 - EASA ETSO-C146e A1 public PDF: `https://www.easa.europa.eu/download/etso/ETSO-C146e_A1.pdf`
 - ESA Navipedia SBAS Standards page, used only as secondary orientation: `https://gssc.esa.int/navipedia/index.php/SBAS_Standards`
+- ICAO APAC GBAS/SBAS ITF7 preliminary draft SBAS implementation guidance document (May 2025 rev3), used as structural signal only: `https://www.icao.int/sites/default/files/APAC/Meetings/2025/2025%20GBASSBAS%20ITF7/3-Working%20Papers/A3-WP05-ATTM-Co-Chairs-Prelimary-Draft-SBAS-Implementation-Guidance-Document.pdf`
+- GAGAN ENR 4.3 India AIM page (SBAS avionics class structure): `https://aim-india.aai.aero/eaip-v2-07-2023/eAIP/IN-ENR%204.3-en-GB.html`
 
 ## See also
 

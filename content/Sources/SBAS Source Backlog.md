@@ -53,6 +53,7 @@ Public catalog review produced several corrections:
 - Why this matters: it is currently the strongest public-product-and-regulatory-signal-reviewed source-family anchor for GPS/SBAS airborne equipment.
 - Verification need: direct extraction of official revision-specific equipment classes, intended functions, alerting/integrity language, test methods, exclusions, and the relationship between DO-229F, DO-229E, [[Source - FAA TSO-C145e and TSO-C146e]], and [[Source - EASA ETSO-C145e and ETSO-C146e]].
 - Current editorial rule: use DO-229 for receiver/equipment routing only; do not infer installation approval, operational approval, procedure minima, service status, or DFMC requirements.
+- Current status: Chapter/section structure added to source note (Section 1 general requirements, Section 2 Class Beta/Gamma/Delta equipment standards, avionics Class 1–4 capability table, DFMC boundary, PRN code expansion context, ICAO Annex 10 cross-reference). Direct extraction of official RTCA DO-229F text still required.
 
 ### 3. FAA/EASA TSO/ETSO approval-source notes
 
