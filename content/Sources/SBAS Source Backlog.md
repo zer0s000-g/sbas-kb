@@ -67,6 +67,7 @@ Public catalog review produced several corrections:
 - Current vault usage: newly added GNSS implementation-guidance anchor.
 - Why this matters: it appears to be the appropriate ICAO manual for state GNSS implementation context, replacing several earlier mis-scoped draft references.
 - Verification need: direct extraction of SBAS implementation, monitoring/assessment/reporting, DFMC GNSS, RFI mitigation, and Annex 10 relationship language.
+- Current status: Chapter structure added from 5 public ICAO sources (Chapter 1–7 from 2nd Ed.; confirmed/revised for 4th Ed./5th Ed.; Chapter 5 GNSS Vulnerability confirmed in 5th Ed.; S1–S7 spoofing classification confirmed; GALILEO/BDS confirmed operational in 4th Ed. Chapter 3). Direct extraction of official 5th Edition text still required.
 
 ### 5. Procedure-design and PBN source family
 
