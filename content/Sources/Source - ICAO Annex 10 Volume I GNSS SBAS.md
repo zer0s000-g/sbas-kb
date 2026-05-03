@@ -8,7 +8,7 @@ aliases:
 tags: [source, icao, annex-10, volume-i, gnss, sbas, sarps, standards]
 source_type: annex
 created: 2026-05-02
-modified: 2026-05-02
+modified: 2026-05-03
 status: active
 verification_status: public-catalog-reviewed-not-source-extracted
 ---
@@ -58,6 +58,24 @@ The public description identifies the volume as containing SARPs and guidance ma
 The same public description identifies technical-parameter areas such as power requirements, frequency, modulation, signal characteristics, and monitoring.
 
 For this knowledge base, the institutional implication is narrow but important: Annex 10, Volume I is the correct ICAO source family to route GNSS/SBAS SARPs and technical-provisions questions. It is not, by itself, a visible public source for any specific numerical SBAS claim until the official text is extracted and classified.
+
+## Chapter structure (from public sources)
+
+Public ICAO presentations and working papers indicate the following chapter structure for Annex 10, Volume I:
+
+| Chapter/Appendix       | Content (public signal)                                                   |
+| ---------------------- | ------------------------------------------------------------------------- |
+| Chapter 1              | Definitions                                                               |
+| Chapter 2              | General provisions for radio navigation aids                              |
+| Chapter 3              | Specifications for ILS, PAR, VOR, NDB, DME, marker beacons, MLS, and GNSS |
+| Chapter 3, Section 3.5 | SBAS provisions (per ICAO APAC working papers)                            |
+| Chapter 3, Section 3.6 | GBAS provisions (per ICAO APAC working papers)                            |
+| Appendix A             | MLS characteristics                                                       |
+| Appendix B             | GNSS technical specifications                                             |
+
+The same public sources identify the GNSS sections as covering GPS, GLONASS, ABAS (airborne-based augmentation systems), SBAS, and GBAS/GRAS (ground-based augmentation systems / ground-based regional augmentation systems).
+
+Important boundary: This chapter structure is derived from public ICAO presentations and working papers, not from direct extraction of the official Annex text. The exact section numbering, content, and amendment baseline must be verified against the official 8th Edition with Amendment 94 before publishing detailed claims.
 
 ## Why this source matters for SBAS
 
@@ -137,13 +155,11 @@ When editing downstream SBAS pages:
 
 ### Sections to extract cautiously
 
-- GNSS system-level provisions;
-- SBAS-specific provisions and definitions;
-- signal and message characteristics;
-- integrity, monitoring, alerting, and performance language;
-- compatibility/interoperability provisions;
-- DFMC GNSS/SBAS material, if present in the applicable amendment baseline;
-- notes distinguishing SARPs, guidance material, and explanatory text.
+- Chapter 3, Section 3.5: SBAS provisions (system-level SARPs, signal/message characteristics, integrity/monitoring/alerting)
+- Chapter 3, Section 3.6: GBAS provisions (system-level SARPs, signal characteristics, integrity/monitoring)
+- Appendix B: GNSS technical specifications (GPS, GLONASS, SBAS, GBAS parameters)
+- DFMC GNSS/SBAS material, if present in the applicable amendment baseline (Amendment 94 context)
+- Notes distinguishing SARPs (white pages), guidance material (green pages), and explanatory text
 
 ### Downstream mapping questions
 

@@ -44,6 +44,7 @@ Public catalog review produced several corrections:
 - Current vault usage: now represented by [[Source - ICAO Annex 10 Volume I GNSS SBAS]] as a public-catalog-reviewed source-family anchor.
 - Why this matters: Annex 10, Volume I is the necessary ICAO technical/SARPs source family to investigate for many GNSS/SBAS claims.
 - Verification need: move beyond public catalog metadata by extracting the official Annex text, exact edition/amendment baseline, GNSS/SBAS sections, and downstream claim boundaries.
+- Current status: Chapter structure from public ICAO presentations added to source note (Chapter 3, Section 3.5 SBAS, Section 3.6 GBAS, Appendix B GNSS technical specifications). Direct extraction of official 8th Edition with Amendment 94 still required.
 - Current editorial rule: use the source note for routing only; do not publish detailed Annex-derived requirements until direct extraction is complete.
 
 ### 2. [[Source - RTCA DO-229]]
