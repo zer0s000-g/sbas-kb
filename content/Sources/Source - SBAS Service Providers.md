@@ -10,7 +10,7 @@ tags:
     egnos,
     msas,
     gagan,
-    bdbsas,
+    bdsbas,
     kass,
     southpan,
     coverage,
@@ -18,8 +18,8 @@ tags:
   ]
 source_type: service-definition
 status: active
-verification_status: partial-direct-extraction-for-gagan-msas-southpan
-last_service_provider_upgrade: "2026-05-03: dedicated source notes created for GAGAN, MSAS, and SouthPAN from official/ICAO APAC material"
+verification_status: partial-direct-extraction-for-gagan-msas-southpan-waas-egnos-kass-bdsbas
+last_service_provider_upgrade: "2026-05-03: dedicated source notes now exist for GAGAN, MSAS, SouthPAN, WAAS, EGNOS, KASS, and BDSBAS from official/public provider material"
 ---
 
 # Source - SBAS Service Providers
@@ -48,27 +48,25 @@ Important boundary:
 
 ### WAAS — United States
 
-| Field              | Current public signal                                                                                                                                 |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| System             | Wide Area Augmentation System (WAAS)                                                                                                                  |
-| Operating agency   | Federal Aviation Administration (FAA), U.S. Department of Transportation                                                                              |
-| Service type       | SBAS for aviation safety-of-life                                                                                                                      |
-| Public source page | https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/waas                                             |
-| Scope signal       | "WAAS provides service for all classes of aircraft in all phases of flight — including en-route navigation, airport departures, and airport arrivals" |
-| Real-time status   | https://www.nstb.tc.faa.gov/rt_waassatellitestatus.htm                                                                                                |
-| Important signal   | WAAS is the U.S. implementation of SBAS; the term "WAAS" appears in FAA TSO and DO-229 scope text as the U.S. SBAS example                            |
+||| Field | Current public signal |
+|||---|---|
+||| System | Wide Area Augmentation System (WAAS) |
+||| Operating agency | Federal Aviation Administration (FAA), U.S. Department of Transportation |
+||| Dedicated source note | [[Source - WAAS]] |
+||| Verified extraction status | Official FAA WAAS public page and FAA August 2025 WAAS quick-facts PDF extracted |
+||| Core verified signal | FAA public material describes WAAS as serving all classes of aircraft in all phases of flight and supporting vertically guided approaches at qualified NAS locations |
+||| Boundary | Real-time status, service-volume limits, aircraft/operator authorization, and runway-specific procedure minima require FAA status/performance/AIP/procedure sources |
 
 ### EGNOS — Europe
 
-| Field              | Current public signal                                                                                                                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| System             | European Geostationary Navigation Overlay Service (EGNOS)                                                                                                     |
-| Operating agency   | European Union Agency for the Space Programme (EUSPA); developed by European Space Agency (ESA)                                                               |
-| Service type       | SBAS for aviation safety-of-life and other applications                                                                                                       |
-| Public source page | https://egnos.gsc-europa.eu/egnos-system/about-egnos                                                                                                          |
-| Scope signal       | "EGNOS is Europe's regional satellite-based augmentation system (SBAS). It is used to improve the performance of global navigation satellite systems (GNSSs)" |
-| Additional signal  | EGNOS Safety of Life service declared available for aviation on 2 March 2011 (per ESA)                                                                        |
-| Important signal   | EGNOS is the European SBAS implementation; it is referenced in EASA ETSO context                                                                              |
+||| Field | Current public signal |
+|||---|---|
+||| System | European Geostationary Navigation Overlay Service (EGNOS) |
+||| Operating agency | European Union / EUSPA context; ESSP SAS service-provider signal in extracted SDD summary |
+||| Dedicated source note | [[Source - EGNOS]] |
+||| Verified extraction status | Official EGNOS Safety of Life Service Definition Document page and in-force Issue 3.6 PDF extracted |
+||| Core verified signal | Official EGNOS material describes the aviation SoL service as openly provided, freely accessible without direct charge, tailored to safety-critical aviation applications, and compliant with APV-I/CAT-I precision-approach requirements as defined by ICAO Annex 10 |
+||| Boundary | Country-specific authorization, AIP procedure publication, receiver approval, Open Service/EDAS/ESMAS claims, and live performance values require separate official sources |
 
 ### MSAS — Japan
 
@@ -94,26 +92,25 @@ Important boundary:
 
 ### BDSBAS — China
 
-| Field                 | Current public signal                                                                                              |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| System                | BeiDou Satellite-Based Augmentation System (BDSBAS)                                                                |
-| Operating agency      | China Satellite Navigation Office                                                                                  |
-| Service type          | SBAS integrated with BeiDou Navigation Satellite System (BDS)                                                      |
-| Public source signals | BeiDou official site (en.beidou.gov.cn); ION Navigation journal; ICG presentations                                 |
-| Scope signal          | BDSBAS provides SBAS services as part of the BeiDou system; initially single-frequency, developing DFMC capability |
-| Important signal      | BDSBAS is the Chinese SBAS implementation; formerly known as Satellite Navigation Augmentation System (SNAS)       |
+||| Field | Current public signal |
+|||---|---|
+||| System | BeiDou Satellite-Based Augmentation System (BDSBAS) |
+||| Operating agency | China Satellite Navigation Office / BeiDou system context for the official BDSBAS-B1C ICD |
+||| Dedicated source note | [[Source - BDSBAS]] |
+||| Verified extraction status | Official BDSBAS-B1C Signal In Space Interface Control Document extracted; NAVIGATION 2021 article used only as secondary technical-public context |
+||| Core verified signal | Official ICD defines BDSBAS-B1C Single Frequency service signal/interface characteristics and identifies GEO PRNs 144, 143, and 130 |
+||| Boundary | Current CAAC aviation operational approval, service declaration, APV/CAT procedure availability, and approach minima remain unverified without aviation-regulator/service-definition sources |
 
 ### KASS — South Korea
 
-| Field              | Current public signal                                                                                                         |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| System             | Korea Augmentation Satellite System (KASS)                                                                                    |
-| Operating agency   | Korea Aerospace Research Institute (KARI)                                                                                     |
-| Service type       | SBAS for aviation                                                                                                             |
-| Public source page | https://www.kari.re.kr/eng/contents/200                                                                                       |
-| Scope signal       | "KASS utilizes Satellite-Based Augmentation System (SBAS) technology to reduce GPS positioning errors to within three meters" |
-| Additional signal  | KASS certified by Korean national authorities and declared operational (per Thales Alenia Space and GPS World reporting)      |
-| Important signal   | KASS is the Korean SBAS implementation; developed with Thales Alenia Space as prime contractor                                |
+||| Field | Current public signal |
+|||---|---|
+||| System | Korea Augmentation Satellite System (KASS) |
+||| Operating agency | MOLIT/KARI/KANSC context from KARI and ICAO APAC ITF/5 material |
+||| Dedicated source note | [[Source - KASS]] |
+||| Verified extraction status | Official KARI KASS page, ICAO APAC ITF/5 IP/09, and bounded contractor-public certification announcement extracted |
+||| Core verified signal | ICAO APAC material identifies Service Provider ID 6, PRN 134, MOLIT/KARI/KANSC roles, and GPS L1/APV-I/Incheon FIR planning context; KARI material gives current Korean system/architecture context |
+||| Boundary | Korean AIP procedure availability, runway minima, current second-GEO status, and final operational authorization require Korean regulator/provider/AIP extraction |
 
 ### SouthPAN — Australia and New Zealand
 
@@ -166,6 +163,10 @@ Do not use this note alone to publish:
 - [[BDSBAS]]
 - [[KASS]]
 - [[SouthPAN]]
+- [[Source - WAAS]]
+- [[Source - EGNOS]]
+- [[Source - BDSBAS]]
+- [[Source - KASS]]
 - [[WAAS vs EGNOS]]
 - [[MSAS vs GAGAN]]
 - [[SBAS-Systems-by-Region-MOC]]
@@ -187,8 +188,10 @@ Do not use this note alone to publish:
 
 ### Other systems required
 
+- [x] WAAS: FAA WAAS public page and FAA August 2025 quick-facts PDF extracted into [[Source - WAAS]]; real-time status, service-volume boundaries, runway-specific procedure availability, and operational authorization still require FAA status/performance/AIP/procedure sources.
+- [x] EGNOS: official EGNOS Safety of Life Service Definition Document page and Issue 3.6 PDF extracted into [[Source - EGNOS]]; country-specific authorization, AIP publication, and live performance/status evidence still require additional EGNOS/ANSP/regulator sources.
 - [x] MSAS: QZSS service page and ICAO APAC CNS SG/24 IP15 extracted into [[Source - MSAS]]; current post-2023 LPV operational status still needs later JCAB/MLIT/QZSS/AIP extraction.
 - [x] GAGAN: ICAO APAC ITF/7 IP05b and AAI GEO-satellite FAQ extracted into [[Source - GAGAN SBAS Operation]]; exact service performance and procedure minima still need DGCA/AAI/AIP extraction.
-- [ ] BDSBAS: BeiDou official SBAS service signal and DFMC development status
-- [ ] KASS: KARI service definition and certification basis
+- [x] BDSBAS: official BDSBAS-B1C ICD extracted into [[Source - BDSBAS]]; CAAC/service-declaration/procedure evidence still required before aviation-operational claims.
+- [x] KASS: KARI official page, ICAO APAC ITF/5 IP/09, and bounded contractor-public certification material extracted into [[Source - KASS]]; Korean regulator/AIP/service-performance sources still required before runway/procedure operational claims.
 - [x] SouthPAN: Geoscience Australia/LINZ open-service and Signal-In-Space service-definition material extracted into [[Source - SouthPAN]]; certified Safety-of-Life/AIP material still required before aviation-operational claims.

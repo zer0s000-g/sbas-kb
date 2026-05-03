@@ -1,106 +1,77 @@
 ---
 title: WAAS
-description: Draft system note for the Wide Area Augmentation System based on current in-vault references only
-tags: [system, waas, sbas, aviation, regional-system, provisional]
+description: Source-routed system note for the FAA Wide Area Augmentation System, grounded in official FAA public WAAS material and separated from MOPS, TSO, procedure-design, and aircraft/operator-approval sources
+tags: [system, waas, sbas, aviation, regional-system, united-states]
 created: 2026-04-23
 modified: 2026-05-03
-status: draft
-verification_status: in-vault-synthesis-only
+status: reviewed
+verification_status: source-routed-to-official-faa-waas-material
 ---
 
 # WAAS
 
 ## Scope status
 
-This is a draft system note built from references already present in the vault.
+This page is a source-routed system note for WAAS, the U.S. SBAS implementation operated in the FAA civil-aviation context.
+
+The verified WAAS-specific claims on this page route to [[Source - WAAS]]. Cross-system provider context routes to [[Source - SBAS Service Providers]]. Equipment and article-approval claims are kept separate and route to [[Source - RTCA DO-229]] and [[Source - FAA TSO-C145e and TSO-C146e]].
 
 Boundary:
 
-- This note does not verify regional performance figures, dates, coverage claims, or interoperability statements against external source material.
-- It consolidates what the vault currently says about WAAS and marks those statements as provisional where needed.
+- This page does not publish real-time WAAS status, service-volume boundaries, or availability statistics.
+- This page does not approve a particular aircraft, receiver, operator, route, runway, or procedure.
+- This page does not compare WAAS performance against other SBAS systems unless matched official provider evidence exists.
 
 ## Working definition
 
-Within the current vault, WAAS is treated as the United States regional implementation of satellite-based augmentation used to support aviation operations, especially SBAS-enabled approach capability.
+WAAS is the Wide Area Augmentation System, the FAA/U.S. satellite-based augmentation implementation for civil aviation. FAA public material describes WAAS as supporting all classes of aircraft and all phases of flight, including en-route navigation, departures, arrivals, and vertically guided landing approaches at qualified locations in the U.S. National Airspace System context.
 
-## Current in-vault references
+## Official source signals
 
-WAAS is currently referenced in:
-
-- [[SBAS-Systems-by-Region-MOC]]
-- [[SBAS in Civil Aviation MOC]]
-- [[SBAS-Research-MOC]]
-- [[Source - RTCA DO-229]]
-- [[SBAS MOC]]
-
-## Provisional in-vault profile
-
-The current vault describes WAAS as having:
-
-- continental-scale coverage centered on the United States
-- operational maturity relative to other regional SBAS systems
-- strong association with LPV capability
-- importance for civil-aviation operational access and approach support
-
-These profile elements are still provisional until supported by dedicated source extraction.
-
-## Current claims already present elsewhere in the vault
-
-The following claims appear in existing notes and should be treated as provisional until verified:
-
-- WAAS provides full LPV approach coverage in the USA
-- WAAS has continental coverage including Alaska, Hawaii, and parts of Canada/Mexico
-- WAAS has mature uptime and strong interoperability positioning relative to other systems
-- WAAS is a key regional reference point in multi-system SBAS comparison
+| Signal type            | Current authenticated source-routed statement                                                                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| System identity        | WAAS = Wide Area Augmentation System; routed to [[Source - WAAS]]                                                                                           |
+| Operating authority    | Federal Aviation Administration, U.S. Department of Transportation                                                                                          |
+| Service role           | FAA public material describes WAAS as developed for civil aviation and supporting all classes of aircraft in all phases of flight                           |
+| Approach context       | FAA material connects WAAS to vertically guided landing approaches in instrument meteorological conditions at qualified locations                           |
+| LPV/LP public snapshot | FAA August 2025 quick-facts material reports LPV and LP procedure-count snapshots; keep those counts in [[Source - WAAS]] rather than duplicating them here |
 
 ## Relationship to civil aviation use
 
-In current vault structure, WAAS matters because it appears to be the main regional example used to connect:
+WAAS is relevant to the KB because it is a major operational SBAS reference point for civil aviation. It connects service-provider commitments to:
 
-- [[SBAS Integrity]]
-- [[Protection Levels]]
-- [[Alert Limits]]
-- [[LPV-Approach-Procedure]]
-- [[SBAS in Civil Aviation MOC]]
+- airborne SBAS equipment standards in [[Source - RTCA DO-229]];
+- FAA article approval in [[Source - FAA TSO-C145e and TSO-C146e]];
+- procedure-design and PBN context in [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]];
+- civil-aviation navigation and approach topics in [[SBAS in Civil Aviation MOC]].
 
-## Relationship to standards and source scaffolds
+## Claims intentionally not duplicated here
 
-Current source scaffolds that may later support a verified WAAS note include:
-
-- [[Source - RTCA DO-229]]
-- [[Source - RTCA DO-242]]
-- [[Source - ICAO Doc 9855]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - RTCA DO-289]]
-
-These are only indirect anchors at present; the vault still lacks a dedicated WAAS source note.
-
-## Open provenance questions
-
-- Which current WAAS claims in [[SBAS-Systems-by-Region-MOC]] are descriptive placeholders versus source-grounded facts?
-- Which parts of the current WAAS profile depend on airborne-equipment standards versus regional system documentation?
-- Should a future WAAS source stack distinguish system architecture, operational performance, and civil-aviation procedure deployment?
+To prevent overlapping knowledge, this page does not copy the full FAA LPV/LP counts, equipment caveats, or source excerpts. Those belong in [[Source - WAAS]]. This page only states the system-level meaning and routes readers to the source note.
 
 ## Source anchors
 
-Current source scaffolds relevant to this page include:
-
-- [[Source - SBAS Service Providers]] -- institutional source-family anchor for SBAS service-provider definitions and commitments.
-- [[Source - RTCA DO-229]] -- GPS/SBAS airborne-equipment MOPS anchor.
+- [[Source - WAAS]] -- dedicated WAAS child source note for official FAA WAAS material.
+- [[Source - SBAS Service Providers]] -- service-provider family router for system identity and source-maturity tracking.
+- [[Source - RTCA DO-229]] -- SBAS airborne-equipment MOPS routing.
 - [[Source - FAA TSO-C145e and TSO-C146e]] -- FAA article-approval routing.
 - [[SBAS Standards Source Matrix]] -- claim-routing matrix for standards/source families.
 
-This page remains `in-vault-synthesis-only`. Service-provider claims need direct extraction from official WAAS documentation before being treated as verified.
+## Open verification questions
+
+- Which FAA source should be treated as the canonical WAAS service-definition/performance standard for service-volume and availability claims?
+- Which FAA procedure-publication source should be used if runway-specific LPV/LP procedure availability enters the KB?
+- Which FAA operational guidance should be used for aircraft/operator authorization questions?
 
 ## See also
 
+- [[Source - WAAS]]
+- [[Source - SBAS Service Providers]]
 - [[WAAS vs EGNOS]]
 - [[EGNOS]]
 - [[SBAS-Systems-by-Region-MOC]]
 - [[SBAS in Civil Aviation MOC]]
-- [[SBAS-Terminology]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[Alert Limits]]
-- [[Source - RTCA DO-229]]
 - [[SBAS Source Backlog]]

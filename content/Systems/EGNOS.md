@@ -1,114 +1,76 @@
 ---
 title: EGNOS
-description: Draft system note for the European Geostationary Navigation Overlay Service based on current in-vault references only
-tags: [system, egnos, sbas, aviation, regional-system, provisional]
+description: Source-routed system note for the European Geostationary Navigation Overlay Service, grounded in official EGNOS Safety of Life Service Definition material and separated from ETSO, procedure-design, AIP, and operational-authorization sources
+tags: [system, egnos, sbas, aviation, regional-system, europe]
 created: 2026-04-23
 modified: 2026-05-03
-status: draft
-verification_status: in-vault-synthesis-only
+status: reviewed
+verification_status: source-routed-to-official-egnos-sol-sdd
 ---
 
 # EGNOS
 
 ## Scope status
 
-This is a draft system note built from references already present in the vault.
+This page is a source-routed system note for EGNOS, Europe's SBAS implementation and aviation Safety of Life service family.
+
+The verified EGNOS-specific claims on this page route to [[Source - EGNOS]]. Cross-system provider context routes to [[Source - SBAS Service Providers]]. Article approval, procedure design, and operational authorization are intentionally separated.
 
 Boundary:
 
-- This note does not verify regional performance figures, dates, coverage claims, or interoperability statements against external source material.
-- It consolidates what the vault currently says about EGNOS and marks those statements as provisional where needed.
+- This page does not publish country/runway-specific EGNOS procedure availability or minima.
+- This page does not treat EGNOS SoL service definition as aircraft, receiver, operator, or national operational authorization.
+- This page does not duplicate detailed SDD excerpts; those belong in [[Source - EGNOS]].
 
 ## Working definition
 
-Within the current vault, EGNOS is treated as the European regional implementation of satellite-based augmentation used to support civil-aviation operations and SBAS-enabled approach capability.
+EGNOS is the European Geostationary Navigation Overlay Service, Europe's satellite-based augmentation system. Official EGNOS Safety of Life Service Definition material describes the aviation SoL service as augmenting GPS L1 C/A through correction data and integrity information for safety-critical aviation applications.
 
-## Current in-vault references
+## Official source signals
 
-EGNOS is currently referenced in:
-
-- [[SBAS-Systems-by-Region-MOC]]
-- [[SBAS in Civil Aviation MOC]]
-- [[SBAS-Research-MOC]]
-- [[SBAS MOC]]
-- [[SBAS-Standards-Regulation]]
-- [[SBAS Source Backlog]]
-
-## Provisional in-vault profile
-
-The current vault describes EGNOS as having:
-
-- European territory and surrounding-region coverage
-- operational maturity within the regional SBAS landscape
-- strong relevance to LPV and terminal-area aviation use
-- comparative importance in interoperability discussions, especially relative to [[WAAS]]
-
-These profile elements are still provisional until supported by dedicated source extraction.
-
-## Current claims already present elsewhere in the vault
-
-The following claims appear in existing notes and should be treated as provisional until verified:
-
-- EGNOS provides extensive terminal area coverage in Europe
-- EGNOS is certified for LPV-related operational use
-- EGNOS is interoperable with [[WAAS]] in at least some transatlantic operational framing
-- EGNOS is used in the vault as a key European counterpart to [[WAAS]]
+| Signal type              | Current authenticated source-routed statement                                                                                                                                     |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| System identity          | EGNOS = European Geostationary Navigation Overlay Service; routed to [[Source - EGNOS]]                                                                                           |
+| Service document         | EGNOS Safety of Life Service Definition Document, Version 03-06 / Issue 3.6, published 2024-09-09 and marked In Force                                                             |
+| Service scope            | Official EGNOS material describes the SoL Service for Aviation as openly provided, freely accessible without direct charge, and tailored to safety-critical aviation applications |
+| ICAO requirement context | Official EGNOS material states that the service is compliant with APV-I and Category I precision-approach requirements as defined by ICAO Annex 10                                |
+| Authorization boundary   | Official EGNOS material states that operational use may require specific authorization by relevant authorities                                                                    |
 
 ## Relationship to civil aviation use
 
-In current vault structure, EGNOS matters because it appears to connect:
+EGNOS matters in this KB because it connects European service-provider material to:
 
-- [[SBAS Integrity]]
-- [[Protection Levels]]
-- [[Alert Limits]]
-- [[LPV-Approach-Procedure]]
-- [[SBAS in Civil Aviation MOC]]
-- [[WAAS]]
+- EASA article-approval routing in [[Source - EASA ETSO-C145e and ETSO-C146e]];
+- ICAO SARPs routing in [[Source - ICAO Annex 10 Volume I GNSS SBAS]];
+- PBN/procedure-design routing in [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]];
+- operational deployment questions that must later be resolved through regulator, ANSP, and AIP material.
 
-## Relationship to standards and source scaffolds
+## Claims intentionally not duplicated here
 
-Current source scaffolds that may later support a verified EGNOS note include:
-
-- [[Source - ICAO Doc 9855]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[SBAS Source Backlog]]
-
-The current vault also points to European standards context through EGNOS-related references in [[SBAS-Standards-Regulation]], but those references are not yet extracted into dedicated source notes.
-
-## Comparison context with WAAS
-
-Current in-vault comparison pattern:
-
-- [[WAAS]] is treated as the principal U.S. regional SBAS example
-- [[EGNOS]] is treated as the principal European regional SBAS example
-- interoperability and maturity comparisons between them are present in draft form and still need direct source support
-
-## Open provenance questions
-
-- Which EGNOS claims in [[SBAS-Systems-by-Region-MOC]] are descriptive placeholders versus source-grounded facts?
-- Which interoperability statements about [[WAAS]] and [[EGNOS]] require dedicated source support before being treated as conclusions?
-- Should a future EGNOS source stack distinguish system architecture, certification framework, and operational deployment?
+To prevent overlapping knowledge, this page does not reproduce the EGNOS SDD's service-area, architecture, performance, liability, or user-obligation detail. Those details belong in [[Source - EGNOS]] and any later direct-extraction child notes.
 
 ## Source anchors
 
-Current source scaffolds relevant to this page include:
-
-- [[Source - SBAS Service Providers]] -- institutional source-family anchor for SBAS service-provider definitions and commitments.
+- [[Source - EGNOS]] -- dedicated EGNOS child source note for official EGNOS SoL Service Definition material.
+- [[Source - SBAS Service Providers]] -- service-provider family router for system identity and source-maturity tracking.
 - [[Source - EASA ETSO-C145e and ETSO-C146e]] -- EASA article-approval routing.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] -- ICAO SARPs routing.
 - [[SBAS Standards Source Matrix]] -- claim-routing matrix for standards/source families.
 
-This page remains `in-vault-synthesis-only`. Service-provider claims need direct extraction from official EGNOS/EUSPA documentation before being treated as verified.
+## Open verification questions
+
+- Which current official EGNOS/ESSP source should be used for live performance/status claims?
+- Which national AIP/ANSP sources should be used for country-specific EGNOS procedure deployment?
+- Which EGNOS service documents should be extracted if Open Service, EDAS, or maritime ESMAS enters the KB scope?
 
 ## See also
 
+- [[Source - EGNOS]]
+- [[Source - SBAS Service Providers]]
 - [[WAAS vs EGNOS]]
 - [[WAAS]]
 - [[SBAS-Systems-by-Region-MOC]]
 - [[SBAS in Civil Aviation MOC]]
-- [[SBAS-Terminology]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[Alert Limits]]

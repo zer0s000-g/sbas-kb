@@ -80,9 +80,9 @@ Use [[GIPTA 2.0 MOC]] as the navigation hub for this source stack.
 
 - Why this matters: the vault currently uses [[MSAS]], [[GAGAN]], and [[SouthPAN]] as comparators; this now has partial source backing but still needs boundary discipline.
 - Current vault usage: [[Asia-Pacific SBAS Implementation Patterns]], [[ASEAN SBAS Service-Model Options]]
-- Current source anchors: [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], [[Source - SouthPAN]], and [[Source - ICAO APAC GBAS-SBAS Implementation Forums]]
-- Verification need: separate deployed-system descriptions from documents that actually inform ASEAN service-model thinking; do not transfer operational claims from India/Japan/Australia-New Zealand to ASEAN without ASEAN-specific implementation evidence.
-- Current status: partial source extraction complete for three Asia-Pacific comparator systems: GAGAN (ITF/7 IP05b), MSAS (QZSS + CNS SG/24 IP15), and SouthPAN (GA/LINZ Open Service definitions).
+- Current source anchors: [[Source - WAAS]], [[Source - EGNOS]], [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], [[Source - BDSBAS]], [[Source - KASS]], [[Source - SouthPAN]], and [[Source - ICAO APAC GBAS-SBAS Implementation Forums]]
+- Verification need: separate deployed-system descriptions from documents that actually inform ASEAN service-model thinking; do not transfer operational claims from India/Japan/Australia-New Zealand/Europe/United States/Korea/China to ASEAN without ASEAN-specific implementation evidence.
+- Current status: partial source extraction now exists for seven comparator/provider systems: WAAS (FAA WAAS public material), EGNOS (official SoL SDD), GAGAN (ITF/7 IP05b), MSAS (QZSS + CNS SG/24 IP15), SouthPAN (GA/LINZ Open Service definitions), KASS (KARI + ICAO APAC ITF/5), and BDSBAS (official BDSBAS-B1C ICD + bounded technical-public context).
 
 ## Priority 3 — country-level evidence stacks
 
@@ -116,6 +116,8 @@ Use [[GIPTA 2.0 MOC]] as the navigation hub for this source stack.
 - whether neighboring or comparator systems offer directly transferable lessons
 - whether SouthPAN's explicit north-of-20°S ionospheric limitation language should become a cautionary comparator for ASEAN low-latitude service-definition analysis
 - whether GAGAN's Indian ionosphere monitoring/DFO/DFMC-ready upgrade path provides a source-backed comparator for equatorial/low-latitude infrastructure planning without implying transferability
+- whether KASS and BDSBAS provide useful Northeast Asian comparator signals for governance, certification, and signal-interface maturity without implying suitability for Southeast Asian service provision
+- whether mature WAAS/EGNOS source material is useful mainly as service-definition/authorization-pattern evidence rather than as geographic or operational comparators for ASEAN
 
 ### Country-readiness claims
 
@@ -152,6 +154,10 @@ Use [[GIPTA 2.0 MOC]] as the navigation hub for this source stack.
 - [[Source - SouthPAN]]
 - [[Source - MSAS]]
 - [[Source - GAGAN SBAS Operation]]
+- [[Source - WAAS]]
+- [[Source - EGNOS]]
+- [[Source - BDSBAS]]
+- [[Source - KASS]]
 - [[SBAS MOC]]
 - [[SBAS-Research-MOC]]
 

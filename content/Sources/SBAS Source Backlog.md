@@ -78,11 +78,11 @@ Public catalog review produced several corrections:
 
 ### 6. Service-provider source family
 
-- Current vault usage: WAAS, EGNOS, MSAS, GAGAN, BDSBAS regional system pages now link to [[Source - SBAS Service Providers]]. Dedicated source notes now exist for [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], and [[Source - SouthPAN]].
+- Current vault usage: WAAS, EGNOS, MSAS, GAGAN, BDSBAS, KASS, and SouthPAN regional system pages now link to [[Source - SBAS Service Providers]]. Dedicated child source notes now exist for [[Source - WAAS]], [[Source - EGNOS]], [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], [[Source - BDSBAS]], [[Source - KASS]], and [[Source - SouthPAN]].
 - Why this matters: service commitments, coverage, availability, and system status are provider-specific.
-- Verification need: continue direct extraction of official service-provider documents for each SBAS system before publishing comparative tables.
-- Current status: Partial direct extraction completed for GAGAN (ICAO APAC ITF/7 IP05b + AAI GEO FAQ), MSAS (QZSS service page + ICAO APAC CNS SG/24 IP15), and SouthPAN (official FAQ, early Open Services factsheet, Signal-In-Space service definition). WAAS, EGNOS, BDSBAS, and KASS still need dedicated direct-source extraction cycles.
-- Current editorial rule: use [[Source - SBAS Service Providers]] for service-provider routing; use dedicated child source notes only within their stated boundaries; do not infer comparative performance, availability percentages, interoperability, or operational approval without official service-provider/regulator/AIP extraction.
+- Verification need: continue deeper official service-provider/regulator/AIP extraction before publishing comparative tables, service-volume boundaries, procedure availability, or operational-approval claims.
+- Current status: Partial direct extraction completed for WAAS (FAA WAAS page + August 2025 quick facts), EGNOS (official SoL SDD page + Issue 3.6 PDF), GAGAN (ICAO APAC ITF/7 IP05b + AAI GEO FAQ), MSAS (QZSS service page + ICAO APAC CNS SG/24 IP15), SouthPAN (official FAQ, early Open Services factsheet, Signal-In-Space service definition), BDSBAS (official BDSBAS-B1C ICD + bounded technical-public context), and KASS (KARI official page + ICAO APAC ITF/5 IP/09 + bounded contractor-public certification signal).
+- Current editorial rule: use [[Source - SBAS Service Providers]] for service-provider routing; use dedicated child source notes only within their stated boundaries; do not infer comparative performance, availability percentages, interoperability, operational approval, or procedure minima without official service-provider/regulator/AIP extraction.
 
 ## Priority 2 — regional and European framework references
 
@@ -120,7 +120,7 @@ Public catalog review produced several corrections:
 2. Directly extract the official [[Source - RTCA DO-229]] text and direct FAA TSO-C145e/C146e text; deepen [[Source - EASA ETSO-C145e and ETSO-C146e]] section mapping before publishing class-specific approval statements.
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. ~~Build procedure-design/PBN source notes.~~ **Completed 2026-05-03**: [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]] now exist as routing anchors; direct text extraction still required.
-5. ~~Build service-provider source notes for major SBAS systems.~~ **Partially completed 2026-05-03**: [[Source - SBAS Service Providers]] exists as the family routing anchor; direct child-source extraction now exists for [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], and [[Source - SouthPAN]]. Remaining high-value direct extraction targets: WAAS, EGNOS, BDSBAS, and KASS.
+5. ~~Build service-provider source notes for major SBAS systems.~~ **Substantially completed 2026-05-03 for the current major-system set**: [[Source - SBAS Service Providers]] exists as the family routing anchor; direct child-source extraction now exists for [[Source - WAAS]], [[Source - EGNOS]], [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], [[Source - BDSBAS]], [[Source - KASS]], and [[Source - SouthPAN]]. Remaining work is deeper service-provider/regulator/AIP extraction, not first-layer child-source creation.
 6. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and procedure pages with numerical values only after the above source anchors are directly extracted.
 7. Continue ASEAN/regional source hardening through [[ASEAN SBAS Source Backlog]].
 
@@ -130,6 +130,10 @@ Public catalog review produced several corrections:
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - FAA TSO-C145e and TSO-C146e]]
 - [[Source - EASA ETSO-C145e and ETSO-C146e]]
+- [[Source - WAAS]]
+- [[Source - EGNOS]]
+- [[Source - BDSBAS]]
+- [[Source - KASS]]
 - [[SBAS MOC]]
 - [[SBAS-Research-MOC]]
 - [[SBAS-Standards-Regulation]]

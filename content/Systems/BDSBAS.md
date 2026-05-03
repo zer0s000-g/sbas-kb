@@ -1,109 +1,78 @@
 ---
 title: BDSBAS
-description: Draft system note for the BeiDou Satellite-Based Augmentation System based on current in-vault references only
-tags: [system, bdsbas, sbas, aviation, regional-system, provisional]
+description: Source-routed system note for the BeiDou Satellite-Based Augmentation System, grounded in the official BDSBAS-B1C ICD and bounded technical-public evidence without overstating aviation operational approval
+tags: [system, bdsbas, sbas, aviation, regional-system, beidou, china]
 created: 2026-04-23
 modified: 2026-05-03
-status: draft
-verification_status: in-vault-synthesis-only
+status: reviewed
+verification_status: source-routed-to-official-bdsbas-icd
 ---
 
 # BDSBAS
 
 ## Scope status
 
-This is a draft system note built from references already present in the vault.
+This page is a source-routed system note for BDSBAS, the BeiDou Satellite-Based Augmentation System.
+
+The verified BDSBAS-specific claims on this page route to [[Source - BDSBAS]]. Cross-system provider context routes to [[Source - SBAS Service Providers]]. ICAO SARPs and equipment/MOPS claims remain separated through [[Source - ICAO Annex 10 Volume I GNSS SBAS]] and [[Source - RTCA DO-229]].
 
 Boundary:
 
-- This note does not verify performance figures, dates, coverage claims, or implementation-status statements against external source material.
-- It consolidates what the vault currently says about BDSBAS and marks those statements as provisional where needed.
+- This page does not publish current CAAC operational approval, airport/runway procedure availability, or approach minima.
+- This page does not treat a signal-interface ICD as a service declaration.
+- This page does not convert technical-development targets into operational claims.
 
 ## Working definition
 
-Within the current vault, BDSBAS is treated as the China-centered regional implementation of satellite-based augmentation with Asia-Pacific relevance and integration with the BeiDou context.
+BDSBAS is the BeiDou Satellite-Based Augmentation System. The official China Satellite Navigation Office BDSBAS-B1C ICD identifies BDSBAS as part of the BeiDou system and defines the Single Frequency BDSBAS-B1C signal interface.
 
-## Current in-vault references
+## Official source signals
 
-BDSBAS is currently referenced in:
-
-- [[SBAS-Systems-by-Region-MOC]]
-- [[SBAS-Research-MOC]]
-- [[SBAS MOC]]
-- [[WorkLog-2026-04-19]]
-
-## Provisional in-vault profile
-
-The current vault describes BDSBAS as having:
-
-- China-centered coverage with broader Asia-Pacific relevance
-- a growing role in the regional SBAS landscape
-- integration with the BeiDou constellation context
-- importance for future Asia-focused comparison work alongside [[MSAS]] and [[GAGAN]]
-
-These profile elements are still provisional until supported by dedicated source extraction.
-
-## Current claims already present elsewhere in the vault
-
-The following claims appear in existing notes and should be treated as provisional until verified:
-
-- BDSBAS covers China and the Asia-Pacific region
-- BDSBAS is operational from 2012 and enhanced in 2020
-- BDSBAS has integrated BeiDou-constellation framing
-- BDSBAS belongs in the growing Asia-regional SBAS comparison layer
+| Signal type                   | Current authenticated source-routed statement                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| System identity               | BDSBAS = BeiDou Satellite-Based Augmentation System; routed to [[Source - BDSBAS]]                                                   |
+| Official source               | BDSBAS-B1C Signal In Space Interface Control Document, Version 1.0, July 2020                                                        |
+| Issuing authority             | China Satellite Navigation Office                                                                                                    |
+| Signal-interface role         | The official ICD defines BDSBAS-B1C Single Frequency service signal characteristics and message structure                            |
+| GEO/PRN signal                | The official ICD identifies GEO slots and PRNs for BDSBAS-B1C; details are kept in [[Source - BDSBAS]]                               |
+| Technical-development context | NAVIGATION 2021 article supports bounded development context for SF/DFMC and APV-I/CAT-I targets, but not final operational approval |
 
 ## Relationship to civil aviation use
 
-In current vault structure, BDSBAS matters because it expands the Asia-focused regional picture beyond Japan and India and may later support broader implementation-pattern analysis relevant to civil aviation and regional deployment strategy.
+BDSBAS matters in this KB because it is a China/BeiDou-centered SBAS implementation relevant to Asia-Pacific SBAS comparison and future regional interoperability questions. Its current authenticated layer in this vault is strongest for official signal-interface evidence, not for aviation-operational procedure deployment.
 
-Related notes:
+Use BDSBAS as:
 
-- [[Asia-Pacific SBAS Implementation Patterns]]
-- [[MSAS]]
-- [[GAGAN]]
-- [[SBAS in Civil Aviation MOC]]
-- [[SBAS Integrity]]
-- [[Protection Levels]]
-- [[Alert Limits]]
+- a system identity and signal-interface source-routed page;
+- an Asia-Pacific comparator in [[ASEAN SBAS Source Backlog]] only with explicit boundaries;
+- a future extraction target for CAAC/service-declaration/procedure-publication evidence.
 
-## Relationship to standards and source scaffolds
+## Claims intentionally not duplicated here
 
-Current source scaffolds that may later support a verified BDSBAS note include:
-
-- [[Source - ICAO Doc 9855]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[SBAS Source Backlog]]
-
-These are only indirect anchors at present; the vault still lacks a dedicated BDSBAS source note.
-
-## Open provenance questions
-
-- Which BDSBAS claims in [[SBAS-Systems-by-Region-MOC]] are descriptive placeholders versus source-grounded facts?
-- Which Asia-Pacific regional comparisons should eventually include BDSBAS once source support improves?
-- Should a future BDSBAS source stack distinguish constellation integration, service area, and civil-aviation use separately?
+To prevent overlapping knowledge, this page does not copy the ICD's PRN, timing, modulation, or message-structure details. Those details belong in [[Source - BDSBAS]]. This page only states the system-level meaning and source boundaries.
 
 ## Source anchors
 
-Current source scaffolds relevant to this page include:
-
-- [[Source - SBAS Service Providers]] -- institutional source-family anchor for SBAS service-provider definitions and commitments.
+- [[Source - BDSBAS]] -- dedicated BDSBAS child source note for official BDSBAS-B1C ICD signals and bounded technical-public context.
+- [[Source - SBAS Service Providers]] -- service-provider family router for system identity and source-maturity tracking.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] -- ICAO SARPs routing.
+- [[Source - RTCA DO-229]] -- SBAS MOPS routing.
 - [[SBAS Standards Source Matrix]] -- claim-routing matrix for standards/source families.
 
-This page remains `in-vault-synthesis-only`. Service-provider claims need direct extraction from official BeiDou/BDSBAS documentation before being treated as verified.
+## Open verification questions
+
+- Which CAAC or official Chinese civil-aviation source declares BDSBAS operational aviation service, if publicly available?
+- Which current BeiDou/CSNO source defines BDSBAS service area, performance commitment, and status beyond the B1C ICD?
+- Which source should be used for DFMC/B2a operational maturity if that branch enters the KB?
 
 ## See also
 
+- [[Source - BDSBAS]]
+- [[Source - SBAS Service Providers]]
 - [[Asia-Pacific SBAS Implementation Patterns]]
-- [[MSAS vs GAGAN]]
 - [[MSAS]]
 - [[GAGAN]]
+- [[KASS]]
+- [[SouthPAN]]
 - [[SBAS-Systems-by-Region-MOC]]
-- [[SBAS in Civil Aviation MOC]]
-- [[SBAS-Terminology]]
-- [[SBAS Integrity]]
-- [[Protection Levels]]
-- [[Alert Limits]]
 - [[SBAS Source Backlog]]
