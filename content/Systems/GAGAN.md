@@ -5,7 +5,7 @@ tags: [system, gagan, sbas, aviation, regional-system, provisional]
 created: 2026-04-23
 modified: 2026-05-03
 status: draft
-verification_status: in-vault-synthesis-only
+verification_status: in-vault-synthesis-only-upgraded-with-gagan-source-note
 ---
 
 # GAGAN
@@ -66,15 +66,13 @@ Related notes:
 
 ## Relationship to standards and source scaffolds
 
-Current source scaffolds that may later support a verified GAGAN note include:
+Current source anchors that support a verified GAGAN note:
 
-- [[Source - ICAO Doc 9855]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[SBAS Source Backlog]]
-
-These are only indirect anchors at present; the vault still lacks a dedicated GAGAN source note.
+- [[Source - GAGAN SBAS Operation]] — primary dedicated source anchor; verified signals from ICAO APAC ITF/7 IP05b (May 2025), AAI public documentation
+- [[Source - SBAS Service Providers]] — service-provider family anchor
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — ICAO SARPs routing
+- [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — regional coordination context; ITF/7 IP05b is the source
+- [[SBAS Standards Source Matrix]] — claim-routing matrix for standards/source families
 
 ## Open provenance questions
 
