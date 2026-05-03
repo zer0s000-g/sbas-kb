@@ -6,6 +6,7 @@ created: 2026-04-23
 modified: 2026-05-02
 status: reviewed
 verification_status: source-scaffold-linked
+last_itf7_signal: "ITF/7 preliminary guidance (May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as SBAS operational types; confirms SBAS Class 3 (LP+LPV) and Class 4 (fail-down to LNAV) avionics terminology"
 ---
 
 # SBAS Integrity
@@ -111,11 +112,19 @@ Current source scaffolds relevant to this page include:
 - [[Source - RTCA DO-229]] — airborne equipment and receiver-related source-family anchor; official-text extraction still needed before using detailed receiver-integrity or alerting language.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — ICAO SARPs/technical-provisions source-family routing scaffold.
 - [[Source - ICAO Doc 9849]] — ICAO GNSS implementation-guidance scaffold.
+- [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper confirms LP/LPV/LNAV/VNAV/LNAV operational types and Class 3/4 SBAS avionics as of May 2025; primary regional coordination forum anchor.
 - [[Source - RTCA DO-242]] — red-flag provenance note; no longer used as an SBAS integrity anchor pending contrary direct-source evidence.
 - [[Source - RTCA DO-289]] — testing/monitoring provenance scaffold.
 - [[Source - ICAO Doc 9854]] — red-flag provenance note; no longer used as an SBAS performance-testing anchor.
 - [[Source - ICAO Doc 9855]] — red-flag provenance note; no longer used as an SBAS technical-specification anchor.
 - [[SBAS Source Backlog]] — active standards-source verification queue.
+
+> **Institutional grounding note (2026-05-03):** The ICAO APAC ITF/7 Preliminary Draft SBAS Implementation Guidance Document (A3-WP05, rev3, 14 May 2025) confirms the following verified SBAS operational terminology as of its publication date:
+>
+> - Operational types: LP, LPV, LNAV/VNAV, LNAV
+> - SBAS avionics classes: Class 3 (LP+LPV capability), Class 4 (fail-down to LNAV)
+> - These confirm that the integrity-critical LPV operation and Class 3 avionics capability are recognized in the current ICAO APAC guidance framework.
+>   This signal is consistent with but does not replace the DO-229F MOPS and Annex 10 SARPs definitions, which remain the primary authoritative source.
 
 The source notes above are still scaffolds unless explicitly marked otherwise. This integrity page therefore remains `source-scaffold-linked`: it is suitable as a structured learning page, but not yet as a fully source-verified normative page.
 

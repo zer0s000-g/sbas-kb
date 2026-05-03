@@ -6,6 +6,7 @@ created: 2026-04-23
 modified: 2026-05-02
 status: reviewed
 verification_status: source-scaffold-linked
+last_itf7_signal: "ITF/7 preliminary guidance (May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as SBAS operational types; confirms SBAS Class 3 (LP+LPV) and Class 4 (fail-down to LNAV) avionics terminology"
 ---
 
 # Alert Limits
@@ -95,11 +96,14 @@ Relevant current source scaffolds include:
 - [[Source - RTCA DO-229]] — receiver/equipment source-family anchor for future official extraction of alerting and usability-check language
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
+- [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper confirms LP/LPV/LNAV/VNAV/LNAV operational types and Class 3/4 SBAS avionics as of May 2025; primary regional coordination forum anchor.
 - [[Source - RTCA DO-242]]
 - [[Source - ICAO Doc 9855]]
 - [[Source - ICAO Doc 9854]]
 - [[Source - RTCA DO-289]]
 - [[SBAS Source Backlog]]
+
+> **Institutional grounding note (2026-05-03):** The ICAO APAC ITF/7 Preliminary Draft SBAS Implementation Guidance Document (A3-WP05, rev3, 14 May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as recognized SBAS operational types and Class 3/4 as SBAS avionics classifications as of May 2025. Alert-limit values are operation-specific and must be sourced from the applicable service definition, DO-229F MOPS, and regulator material before operational use.
 
 This page remains `source-scaffold-linked`. It provides a careful conceptual framework, but not yet a verified table of alert-limit values. Any future values must be tied to exact source family, operation type, revision/date, and applicability conditions; DO-229 alone is not enough to publish operational minima or procedure-specific thresholds.
 

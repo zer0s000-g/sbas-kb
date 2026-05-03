@@ -8,6 +8,7 @@ modified: 2026-05-03
 version: 2.0
 status: reviewed
 verification_status: source-scaffold-linked
+last_itf7_signal: "ITF/7 preliminary guidance confirms LP/LPV/LNAV/VNAV/LNAV operational types; confirms SBAS Class 3/4 avionics; confirms six-year advance-notice requirement per Annex 10"
 ---
 
 # SBAS in Civil Aviation MOC
@@ -91,6 +92,7 @@ Current source scaffolds relevant to aviation operations include:
 
 - [[SBAS Standards Source Matrix]]
 - [[Source - RTCA DO-229]] — current GPS/SBAS airborne-equipment MOPS anchor.
+- [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper (May 2025) confirms LP/LPV/LNAV/VNAV operational types, Class 3/4 SBAS avionics, and six-year advance-notice requirement; primary regional coordination anchor.
 - [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] — FAA/EASA article-approval routing; not aircraft installation or operational approval.
 - [[Source - ICAO Doc 9849]] — current ICAO GNSS implementation-guidance anchor.
 - [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] — retained as red-flag provenance notes because earlier drafts likely mis-scoped them for SBAS.

@@ -6,6 +6,7 @@ created: 2026-04-23
 modified: 2026-05-02
 status: reviewed
 verification_status: source-scaffold-linked
+last_itf7_signal: "ITF/7 preliminary guidance (May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as SBAS operational types; confirms SBAS Class 3 (LP+LPV) and Class 4 (fail-down to LNAV) avionics terminology"
 ---
 
 # Protection Levels
@@ -90,11 +91,19 @@ Current source scaffolds relevant to protection-level work include:
 - [[Source - RTCA DO-229]] — receiver/equipment source-family anchor for future official extraction of protection-level and usability-check language
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
+- [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper confirms LP/LPV/LNAV/VNAV/LNAV operational types and Class 3/4 SBAS avionics as of May 2025; primary regional coordination forum anchor.
 - [[Source - RTCA DO-242]]
 - [[Source - ICAO Doc 9855]]
 - [[Source - ICAO Doc 9854]]
 - [[Source - RTCA DO-289]]
 - [[SBAS Source Backlog]]
+
+> **Institutional grounding note (2026-05-03):** The ICAO APAC ITF/7 Preliminary Draft SBAS Implementation Guidance Document (A3-WP05, rev3, 14 May 2025) confirms the following verified SBAS operational terminology as of its publication date:
+>
+> - Operational types: LP, LPV, LNAV/VNAV, LNAV
+> - SBAS avionics classes: Class 3 (LP+LPV capability), Class 4 (fail-down to LNAV)
+> - These confirm that LPV and Class 3 avionics are recognized SBAS operations within the current ICAO APAC guidance framework.
+>   Protection-level definitions and alert-limit thresholds must still be sourced from DO-229F, Annex 10, and the applicable service-provider documentation.
 
 The page is `source-scaffold-linked`, not fully source-verified. It should be used as a structured conceptual reference until Annex 10, DO-229 receiver-standard, and operational-source scaffolds are deepened through direct official-text extraction.
 
