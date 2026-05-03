@@ -75,9 +75,10 @@ Public catalog review produced several corrections:
 
 ### 6. Service-provider source family
 
-- Current vault usage: WAAS, EGNOS, MSAS, GAGAN, BDSBAS, regional comparison pages.
+- Current vault usage: WAAS, EGNOS, MSAS, GAGAN, BDSBAS regional system pages now link to [[Source - SBAS Service Providers]].
 - Why this matters: service commitments, coverage, availability, and system status are provider-specific.
-- Verification need: create dedicated service-definition/performance source notes before publishing comparative tables.
+- Verification need: direct extraction of official service-provider documents for each SBAS system before publishing comparative tables.
+- Current editorial rule: use [[Source - SBAS Service Providers]] for service-provider routing only; do not infer comparative performance, availability percentages, or interoperability without official service-provider extraction.
 
 ## Priority 2 — regional and European framework references
 
@@ -115,7 +116,7 @@ Public catalog review produced several corrections:
 2. Directly extract the official [[Source - RTCA DO-229]] text and direct FAA TSO-C145e/C146e text; deepen [[Source - EASA ETSO-C145e and ETSO-C146e]] section mapping before publishing class-specific approval statements.
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. ~~Build procedure-design/PBN source notes.~~ **Completed 2026-05-03**: [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]] now exist as routing anchors; direct text extraction still required.
-5. Build service-provider source notes for major SBAS systems.
+5. ~~Build service-provider source notes for major SBAS systems.~~ **Completed 2026-05-03**: [[Source - SBAS Service Providers]] now exists as a routing anchor; direct extraction of WAAS, EGNOS, MSAS, GAGAN, BDSBAS, KASS, SouthPAN service definitions still required.
 6. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and procedure pages with numerical values only after the above source anchors are directly extracted.
 7. Continue ASEAN/regional source hardening through [[ASEAN SBAS Source Backlog]].
 

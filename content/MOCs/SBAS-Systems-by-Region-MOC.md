@@ -4,7 +4,7 @@ description: Institutional navigation map for regional SBAS implementations, com
 tags: [MOC, regional, sbas, comparison, systems]
 category: mocs
 created: 2026-04-19
-modified: 2026-05-02
+modified: 2026-05-03
 version: 2.0
 status: reviewed
 verification_status: synthesis-with-caveats
@@ -20,13 +20,13 @@ Exact system status, coverage, performance, service levels, satellite payloads, 
 
 ## Primary regional system notes
 
-| System | Region / role | Current note |
-|---|---|---|
-| WAAS | United States / North America reference system | [[WAAS]] |
-| EGNOS | Europe reference system | [[EGNOS]] |
-| MSAS | Japan / Asia-Pacific comparator | [[MSAS]] |
-| GAGAN | India / low-latitude regional comparator | [[GAGAN]] |
-| BDSBAS | China / BeiDou-linked Asia-Pacific comparator | [[BDSBAS]] |
+| System | Region / role                                  | Current note |
+| ------ | ---------------------------------------------- | ------------ |
+| WAAS   | United States / North America reference system | [[WAAS]]     |
+| EGNOS  | Europe reference system                        | [[EGNOS]]    |
+| MSAS   | Japan / Asia-Pacific comparator                | [[MSAS]]     |
+| GAGAN  | India / low-latitude regional comparator       | [[GAGAN]]    |
+| BDSBAS | China / BeiDou-linked Asia-Pacific comparator  | [[BDSBAS]]   |
 
 Future source-backed notes may cover KASS, SDCM, SouthPAN, ASECNA, and other SBAS or SBAS-like programs. Until dedicated notes exist, those systems should be discussed as candidate research targets rather than linked as completed pages.
 
@@ -56,17 +56,17 @@ Start with:
 
 Regional SBAS systems should not be compared only by headline accuracy or coverage numbers. A high-quality comparison should separate:
 
-| Dimension | Why it matters |
-|---|---|
-| Service definition | Defines what the provider claims and for which users |
-| Aviation approval status | Determines whether signals support actual operations |
-| Coverage and geometry | Indicates where service may be usable, not necessarily where procedures exist |
-| Integrity concept | Determines safety-relevant usability |
-| Procedure inventory | Shows where operational benefits are actually available |
-| Aircraft equipage | Determines who can use the procedures |
-| Regulatory environment | Determines approval and oversight pathway |
-| Ionospheric environment | Especially important for low-latitude and equatorial regions |
-| Institutional model | Determines who operates, funds, monitors, and governs the service |
+| Dimension                | Why it matters                                                                |
+| ------------------------ | ----------------------------------------------------------------------------- |
+| Service definition       | Defines what the provider claims and for which users                          |
+| Aviation approval status | Determines whether signals support actual operations                          |
+| Coverage and geometry    | Indicates where service may be usable, not necessarily where procedures exist |
+| Integrity concept        | Determines safety-relevant usability                                          |
+| Procedure inventory      | Shows where operational benefits are actually available                       |
+| Aircraft equipage        | Determines who can use the procedures                                         |
+| Regulatory environment   | Determines approval and oversight pathway                                     |
+| Ionospheric environment  | Especially important for low-latitude and equatorial regions                  |
+| Institutional model      | Determines who operates, funds, monitors, and governs the service             |
 
 ## Source posture
 

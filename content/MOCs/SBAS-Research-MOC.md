@@ -4,7 +4,7 @@ description: Top-level map of SBAS research knowledge base for civil aviation ap
 tags: [MOC, research, sbas, navigation, aviation]
 category: mocs
 created: 2026-04-19
-modified: 2026-05-01
+modified: 2026-05-03
 version: 1.0
 status: research
 ---
