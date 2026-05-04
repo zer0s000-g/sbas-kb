@@ -3,9 +3,9 @@ title: SBAS Architecture
 description: Institutional explanation of the end-to-end Satellite-Based Augmentation System architecture, from GNSS monitoring to aviation receiver use
 tags: [sbas, architecture, gnss, integrity, aviation, systems]
 created: 2026-05-02
-modified: 2026-05-02
+modified: 2026-05-03
 status: institutional
-verification_status: synthesis-with-caveats
+verification_status: source-routed-core-concept
 ---
 
 # SBAS Architecture
@@ -54,7 +54,7 @@ The core architecture can be read as a safety-relevant data path:
 7. The receiver applies SBAS messages and computes whether the navigation solution is usable.
 8. The operation proceeds only if the receiver, procedure, aircraft, crew, and approval basis support the intended use.
 
-See [[SBAS Architecture Flow]] for a compact diagram.
+See [[SBAS Architecture Flow]] for a compact diagram, [[SBAS Signal and Message Flow]] for the message chain, and [[SBAS Ground Segment and Airborne Receiver Responsibilities]] for responsibility separation.
 
 ## Correction and integrity products
 
@@ -72,7 +72,7 @@ This page intentionally avoids assigning exact message numbers or performance th
 
 The defining architectural difference between a casual correction service and aviation-grade augmentation is integrity.
 
-Within this knowledge base, [[SBAS Integrity]] is the bridge between system architecture and operational use. Integrity links:
+Within this knowledge base, [[SBAS Integrity]] is the bridge between system architecture and operational use. [[SBAS Corrections and Integrity Separation]] owns the distinction between accuracy-improving corrections and safety-relevant use-or-non-use logic. Integrity links:
 
 - monitoring of GNSS and augmentation behavior
 - conservative bounding of residual errors
@@ -126,14 +126,14 @@ The central distinction is scale and accountability: SBAS provides wide-area cor
 
 Relevant source scaffolds include:
 
+- [[SBAS Core Claim Routing]]
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - ICAO Doc 9855]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]]
+- [[Source - SBAS Service Providers]]
 
 These source notes should be strengthened before this architecture page is promoted from synthesis-based institutional guidance to fully standards-linked reference material. Annex 10 is now represented for source-family routing, but detailed SBAS architecture claims still require direct official-text extraction and, where relevant, service-provider architecture evidence.
 
@@ -141,6 +141,9 @@ These source notes should be strengthened before this architecture page is promo
 
 - [[What is SBAS]]
 - [[SBAS Architecture Flow]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
 - [[SBAS-Terminology]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]

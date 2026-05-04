@@ -3,9 +3,9 @@ title: SBAS Architecture Flow
 description: Compact flow diagram of the SBAS observation, processing, broadcast, receiver, and operational-use chain
 tags: [sbas, architecture, diagram, flow, gnss]
 created: 2026-05-02
-modified: 2026-05-02
+modified: 2026-05-03
 status: reviewed
-verification_status: synthesis-with-caveats
+verification_status: source-routed-core-diagram
 ---
 
 # SBAS Architecture Flow
@@ -49,11 +49,19 @@ For aviation, the integrity path is not optional. SBAS-supported operations depe
 - Regional coverage does not guarantee local runway minima.
 - Research or testbed results do not automatically become certified operational service.
 - Ionospheric threat discovery supports service design and validation; it is not itself an operational SBAS correction model.
+- Message reception does not prove receiver approval, procedure publication, aircraft eligibility, or operator authorization.
+
+## Source routing
+
+Use [[SBAS Core Claim Routing]] to decide which source family can support each claim. Use [[SBAS Signal and Message Flow]] for the message chain and [[SBAS Ground Segment and Airborne Receiver Responsibilities]] for responsibility boundaries.
 
 ## See also
 
 - [[What is SBAS]]
 - [[SBAS Architecture]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Corrections and Integrity Separation]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[Alert Limits]]

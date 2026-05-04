@@ -3,9 +3,9 @@ title: Alert Limits
 description: Institutional concept page explaining alert limits as operation-specific thresholds in SBAS integrity and aviation usability decisions
 tags: [concept, alert-limits, sbas, integrity, aviation, protection-levels]
 created: 2026-04-23
-modified: 2026-05-02
+modified: 2026-05-03
 status: reviewed
-verification_status: source-scaffold-linked
+verification_status: source-scaffold-linked-core-integrity
 last_itf7_signal: "ITF/7 preliminary guidance (May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as SBAS operational types; confirms SBAS Class 3 (LP+LPV) and Class 4 (fail-down to LNAV) avionics terminology"
 ---
 
@@ -32,7 +32,7 @@ The alert limit is not a generic warning preference. It is tied to the operation
 
 ## Relationship to protection levels
 
-Alert limits and protection levels are paired concepts:
+Alert limits and protection levels are paired concepts. Use [[SBAS Core Claim Routing]] for source-family routing and [[SBAS Operational Validation Dashboard]] before treating any alert-limit discussion as operational approval evidence.
 
 | Concept               | Role                                                           |
 | --------------------- | -------------------------------------------------------------- |
@@ -93,14 +93,13 @@ If it does not, the operation must transition according to the approved procedur
 Relevant current source scaffolds include:
 
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Core Claim Routing]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]] — receiver/equipment source-family anchor for future official extraction of alerting and usability-check language
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper confirms LP/LPV/LNAV/VNAV/LNAV operational types and Class 3/4 SBAS avionics as of May 2025; primary regional coordination forum anchor.
-- [[Source - RTCA DO-242]]
-- [[Source - ICAO Doc 9855]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - RTCA DO-289]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]] — public article-approval source family for ETSO receiver approval context
 - [[SBAS Source Backlog]]
 
 > **Institutional grounding note (2026-05-03):** The ICAO APAC ITF/7 Preliminary Draft SBAS Implementation Guidance Document (A3-WP05, rev3, 14 May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as recognized SBAS operational types and Class 3/4 as SBAS avionics classifications as of May 2025. Alert-limit values are operation-specific and must be sourced from the applicable service definition, DO-229F MOPS, and regulator material before operational use.
@@ -147,6 +146,11 @@ For regional SBAS planning, they highlight why a signal or coverage footprint is
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[LPV-Approach-Procedure]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Core Claim Routing]]
+- [[SBAS Operational Validation Dashboard]]
 - [[SBAS Architecture]]
 - [[SBAS in Civil Aviation MOC]]
 - [[SBAS Source Backlog]]

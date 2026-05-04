@@ -3,9 +3,9 @@ title: What is SBAS?
 description: Institutional beginner gateway explaining Satellite-Based Augmentation Systems for aviation, integrity, architecture, standards, and implementation planning
 tags: [sbas, gnss, beginner, aviation, integrity, architecture]
 created: 2026-05-02
-modified: 2026-05-02
+modified: 2026-05-03
 status: institutional
-verification_status: synthesis-with-caveats
+verification_status: source-routed-core-concept
 ---
 
 # What is SBAS?
@@ -45,7 +45,7 @@ At a high level, SBAS works through the following chain:
 5. **SBAS broadcast signals** deliver correction and integrity data to users.
 6. **SBAS-capable receivers** apply the messages and determine whether the resulting navigation solution is usable for the intended operation.
 
-See [[SBAS Architecture]] for a fuller explanation and [[SBAS Architecture Flow]] for a compact flow diagram.
+See [[SBAS Architecture]] for a fuller explanation, [[SBAS Architecture Flow]] for a compact flow diagram, [[SBAS Signal and Message Flow]] for the signal/message path, and [[SBAS Corrections and Integrity Separation]] for the correction-versus-integrity boundary.
 
 ## What SBAS adds to GNSS
 
@@ -94,13 +94,11 @@ See [[SBAS-vs-Other-Augmentation-Methods]] for augmentation comparisons.
 This site currently has source scaffolds for several high-value standards and guidance references, including:
 
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Core Claim Routing]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - ICAO Doc 9855]]
 
 These source notes are useful anchors, but several still require direct official-text extraction or verification of exact title, edition, scope, and downstream claim support. Use [[SBAS Source Backlog]] as the active queue for source-hardening work.
 
@@ -120,6 +118,10 @@ The ASEAN branch applies this logic to Southeast Asia through [[ASEAN SBAS Adopt
 
 - [[SBAS Architecture]]
 - [[SBAS Architecture Flow]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Core Claim Routing]]
 - [[SBAS-Terminology]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]

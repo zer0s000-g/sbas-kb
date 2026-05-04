@@ -3,9 +3,9 @@ title: Protection Levels
 description: Institutional concept page explaining protection levels as bounded-error measures used in SBAS integrity and aviation usability decisions
 tags: [concept, protection-levels, sbas, integrity, aviation, alert-limits]
 created: 2026-04-23
-modified: 2026-05-02
+modified: 2026-05-03
 status: reviewed
-verification_status: source-scaffold-linked
+verification_status: source-scaffold-linked-core-integrity
 last_itf7_signal: "ITF/7 preliminary guidance (May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as SBAS operational types; confirms SBAS Class 3 (LP+LPV) and Class 4 (fail-down to LNAV) avionics terminology"
 ---
 
@@ -31,7 +31,7 @@ The protection level is not the same as the actual position error. It is a safet
 
 ## Relationship to integrity and alert limits
 
-Protection levels sit between the broader integrity function and the operational alert-limit decision:
+Protection levels sit between the broader integrity function and the operational alert-limit decision. Use [[SBAS Corrections and Integrity Separation]] to keep the correction/integrity distinction clear and [[SBAS Core Claim Routing]] to route detailed standards claims.
 
 ```text
 SBAS integrity provides monitored, bounded-error information.
@@ -88,14 +88,13 @@ The operational question is not “is the actual error small right now?” but �
 Current source scaffolds relevant to protection-level work include:
 
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Core Claim Routing]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]] — receiver/equipment source-family anchor for future official extraction of protection-level and usability-check language
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
 - [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper confirms LP/LPV/LNAV/VNAV/LNAV operational types and Class 3/4 SBAS avionics as of May 2025; primary regional coordination forum anchor.
-- [[Source - RTCA DO-242]]
-- [[Source - ICAO Doc 9855]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - RTCA DO-289]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]] — public article-approval source family for ETSO receiver approval context
 - [[SBAS Source Backlog]]
 
 > **Institutional grounding note (2026-05-03):** The ICAO APAC ITF/7 Preliminary Draft SBAS Implementation Guidance Document (A3-WP05, rev3, 14 May 2025) confirms the following verified SBAS operational terminology as of its publication date:
@@ -146,6 +145,10 @@ For low-latitude regions, protection-level design and validation are linked to t
 - [[SBAS Integrity]]
 - [[Alert Limits]]
 - [[LPV-Approach-Procedure]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Core Claim Routing]]
 - [[SBAS Architecture]]
 - [[SBAS in Civil Aviation MOC]]
 - [[SBAS Source Backlog]]

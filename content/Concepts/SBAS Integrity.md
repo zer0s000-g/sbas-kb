@@ -3,9 +3,9 @@ title: SBAS Integrity
 description: Institutional concept page explaining SBAS integrity, use-or-non-use logic, source boundaries, and its relationship to protection levels, alert limits, and LPV operations
 tags: [concept, sbas, integrity, aviation, protection-levels, alert-limits]
 created: 2026-04-23
-modified: 2026-05-02
+modified: 2026-05-03
 status: reviewed
-verification_status: source-scaffold-linked
+verification_status: source-scaffold-linked-core-integrity
 last_itf7_signal: "ITF/7 preliminary guidance (May 2025) confirms LP, LPV, LNAV/VNAV, LNAV as SBAS operational types; confirms SBAS Class 3 (LP+LPV) and Class 4 (fail-down to LNAV) avionics terminology"
 ---
 
@@ -66,6 +66,19 @@ Related pages:
 - [[LPV-Approach-Procedure]] — aviation use case where integrity discipline is critical.
 - [[SBAS in Civil Aviation MOC]] — operational navigation map.
 
+## Accuracy, correction, and integrity boundaries
+
+Use [[SBAS Corrections and Integrity Separation]] for the source-of-truth distinction between correction and integrity.
+
+This page owns the use-or-non-use concept. It does not own detailed message definitions, protection-level equations, alert-limit values, or procedure approval evidence.
+
+| Boundary                                | Correct routing                                                |
+| --------------------------------------- | -------------------------------------------------------------- |
+| Signal/message details                  | [[SBAS Signal and Message Flow]]                               |
+| Correction versus integrity distinction | [[SBAS Corrections and Integrity Separation]]                  |
+| Receiver versus ground responsibility   | [[SBAS Ground Segment and Airborne Receiver Responsibilities]] |
+| Operational approval escalation         | [[SBAS Operational Validation Dashboard]]                      |
+
 ## Integrity is not the same as accuracy
 
 A common mistake is to treat high accuracy as sufficient for aviation use. In an institutional SBAS context, that is not adequate.
@@ -109,14 +122,13 @@ This statement is conceptual. It must not be used to infer actual minima, alert 
 Current source scaffolds relevant to this page include:
 
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Core Claim Routing]]
+- [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]] — airborne equipment and receiver-related source-family anchor; official-text extraction still needed before using detailed receiver-integrity or alerting language.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — ICAO SARPs/technical-provisions source-family routing scaffold.
 - [[Source - ICAO Doc 9849]] — ICAO GNSS implementation-guidance scaffold.
 - [[Source - ICAO APAC GBAS-SBAS Implementation Forums]] — verified ITF/7 working paper confirms LP/LPV/LNAV/VNAV/LNAV operational types and Class 3/4 SBAS avionics as of May 2025; primary regional coordination forum anchor.
-- [[Source - RTCA DO-242]] — red-flag provenance note; no longer used as an SBAS integrity anchor pending contrary direct-source evidence.
-- [[Source - RTCA DO-289]] — testing/monitoring provenance scaffold.
-- [[Source - ICAO Doc 9854]] — red-flag provenance note; no longer used as an SBAS performance-testing anchor.
-- [[Source - ICAO Doc 9855]] — red-flag provenance note; no longer used as an SBAS technical-specification anchor.
+- [[Source - EASA ETSO-C145e and ETSO-C146e]] — public article-approval source family for ETSO receiver approval context.
 - [[SBAS Source Backlog]] — active standards-source verification queue.
 
 > **Institutional grounding note (2026-05-03):** The ICAO APAC ITF/7 Preliminary Draft SBAS Implementation Guidance Document (A3-WP05, rev3, 14 May 2025) confirms the following verified SBAS operational terminology as of its publication date:
@@ -163,6 +175,10 @@ For ASEAN-focused planning, these issues connect directly to [[ASEAN SBAS Deploy
 - [[Protection Levels]]
 - [[Alert Limits]]
 - [[LPV-Approach-Procedure]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Core Claim Routing]]
 - [[SBAS Architecture]]
 - [[SBAS in Civil Aviation MOC]]
 - [[SBAS-Standards-Regulation]]

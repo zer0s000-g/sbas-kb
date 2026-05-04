@@ -4,10 +4,10 @@ description: Controlled terminology page for core SBAS concepts used throughout 
 tags: [terminology, sbas, gnss, corrections, integrity]
 category: core-terminology
 created: 2026-04-19
-modified: 2026-05-02
-version: 3.0
+modified: 2026-05-03
+version: 3.1
 status: reviewed
-verification_status: synthesis-with-caveats
+verification_status: source-routed-core-terminology
 ---
 
 # Satellite-Based Augmentation System (SBAS) Terminology
@@ -28,7 +28,9 @@ Definitions here are concise and intentionally conservative. Exact operational t
 | Master or processing station | Facility/function that estimates corrections, integrity parameters, and broadcast messages                              | [[SBAS Architecture]]                                               |
 | Uplink station               | Ground element that sends SBAS messages to the broadcast satellite or payload                                           | [[SBAS Architecture Flow]]                                          |
 | SBAS broadcast               | Signal carrying augmentation messages to user receivers                                                                 | [[SBAS Architecture Flow]]                                          |
-| SBAS-capable receiver        | User equipment able to receive, decode, and apply SBAS information according to its approval basis                      | [[LPV-Approach-Procedure]]                                          |
+| SBAS-capable receiver        | User equipment able to receive, decode, and apply SBAS information according to its approval basis                      | [[SBAS Ground Segment and Airborne Receiver Responsibilities]]      |
+| SBAS message flow            | Functional path from monitored observations through augmentation messages to receiver processing                        | [[SBAS Signal and Message Flow]]                                    |
+| Correction                   | Information used to reduce modeled navigation errors where applicable                                                   | [[SBAS Corrections and Integrity Separation]]                       |
 | Integrity                    | Ability to support timely warning when navigation information should not be relied upon for the intended operation      | [[SBAS Integrity]]                                                  |
 | Protection level             | Receiver-computed or service-supported bound used to judge whether navigation error remains acceptable for an operation | [[Protection Levels]]                                               |
 | Alert limit                  | Operation-specific bound that protection levels must satisfy for the operation to continue                              | [[Alert Limits]]                                                    |
@@ -55,19 +57,22 @@ The following terms are frequently misused or over-generalized:
 Terminology in this page is aligned with the site’s current synthesis and source scaffolds. High-priority source anchors include:
 
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Core Claim Routing]]
 - [[Source - RTCA DO-229]]
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - ICAO Doc 9849]]
-- [[Source - RTCA DO-242]]
-- [[Source - RTCA DO-289]]
-- [[Source - ICAO Doc 9854]]
-- [[Source - ICAO Doc 9855]]
-- [[SBAS Source Backlog]]
+- [[Source - EASA ETSO-C145e and ETSO-C146e]]
+- [[SBAS Operational Validation Dashboard]]
 
 ## See also
 
 - [[What is SBAS]]
 - [[SBAS Architecture]]
 - [[SBAS Architecture Flow]]
+- [[SBAS Signal and Message Flow]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Core Claim Routing]]
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[Alert Limits]]

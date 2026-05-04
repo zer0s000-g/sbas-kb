@@ -3,9 +3,9 @@ title: Total Electron Content (TEC)
 description: Atomic concept note on TEC as the primary ionospheric observable in SBAS integrity and GNSS-RO studies
 tags: [tec, ionosphere, sbas, integrity, observable, empirical]
 created: 2026-04-26
-modified: 2026-04-26
-status: draft
-verification_status: empirical-study
+modified: 2026-05-03
+status: reviewed
+verification_status: empirical-study-with-operational-boundary
 ---
 
 # Total Electron Content (TEC)
@@ -19,6 +19,7 @@ Boundary:
 - This is an observable concept note, not a model or system-design note.
 - It does not cover algorithms for real-time SBAS ionospheric correction.
 - It links TEC to integrity, validation, and empirical studies in the vault.
+- It must not be used to publish operational GIVE, service-volume, availability, alerting, or procedure-eligibility claims without standards and service-provider evidence.
 
 ## Working definition
 
@@ -81,8 +82,12 @@ GNSS-RO provides an independent TEC measurement that can:
 
 ## Current source anchors
 
+- [[SBAS Core Claim Routing]] — core claim-family routing
+- [[SBAS Corrections and Integrity Separation]] — prevents TEC research claims from becoming operational correction claims
 - [[Source - GNSS-RO Indonesia Empirical Study]] — empirical TEC distribution from Indonesian RO data
 - [[Source - IRI-2020 Ionosphere Model]] — model-predicted TEC for comparison
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — future standards-family routing for operational ionospheric requirements
+- [[Source - RTCA DO-229]] — future receiver/equipment extraction target
 
 ## Open provenance questions
 
@@ -95,6 +100,8 @@ GNSS-RO provides an independent TEC measurement that can:
 - [[GNSS Radio Occultation]]
 - [[Ionospheric Model Validation]]
 - [[SBAS Integrity]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Core Claim Routing]]
 - [[Protection Levels]]
 - [[Alert Limits]]
 - [[IRI-2020 vs GNSS-RO Indonesia]]

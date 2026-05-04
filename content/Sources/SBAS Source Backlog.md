@@ -5,7 +5,7 @@ tags: [sources, backlog, provenance, sbas, research]
 created: 2026-04-23
 modified: 2026-05-03
 status: active
-verification_status: internal-backlog-with-public-catalog-corrections
+verification_status: internal-backlog-with-public-catalog-corrections-and-core-routing
 ---
 
 # SBAS Source Backlog
@@ -36,6 +36,23 @@ Public catalog review produced several corrections:
 | [[Source - RTCA DO-289]]                    | Red-flag as aircraft-surveillance related; do not use for SBAS performance-testing or monitoring claims                                                |
 | [[Source - ICAO Doc 9854]]                  | Red-flag as Global ATM Operational Concept; do not use for SBAS performance-testing claims                                                             |
 | [[Source - ICAO Doc 9855]]                  | Red-flag as public-internet guidance for aeronautical applications; do not use for SBAS technical specifications                                       |
+
+## 2026-05-03 core-knowledge routing update
+
+The core SBAS layer now has a dedicated routing note: [[SBAS Core Claim Routing]].
+
+This update intentionally skipped new FAA-specific extraction per user instruction. Existing FAA-related source notes remain in the vault as historical/routing anchors where already present, but the current core-solidification block did not deepen FAA procedure, TSO, NFDC, or service-provider evidence.
+
+Core concept pages should now use this ownership model:
+
+| Claim family                             | Owner note                                                     | Editorial boundary                                                                    |
+| ---------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| SBAS definition and beginner orientation | [[What is SBAS]]                                               | High-level explanation only; no numerical operational requirements                    |
+| Architecture                             | [[SBAS Architecture]] and [[SBAS Architecture Flow]]           | System chain only; standards/service-provider details stay in source notes            |
+| Signal/message flow                      | [[SBAS Signal and Message Flow]]                               | Flow explanation only; no message-number or bit-field claims without Annex extraction |
+| Correction versus integrity              | [[SBAS Corrections and Integrity Separation]]                  | Accuracy-improvement claims must not be treated as safety/approval claims             |
+| Ground versus airborne responsibility    | [[SBAS Ground Segment and Airborne Receiver Responsibilities]] | Separate service, receiver, procedure, aircraft, and operator layers                  |
+| Protection and alerting                  | [[Protection Levels]], [[Alert Limits]], [[SBAS Integrity]]    | Explain relationships without unsupported numerical thresholds                        |
 
 ## Priority 1 — build the real standards backbone
 
@@ -84,6 +101,14 @@ Public catalog review produced several corrections:
 - Current status: Partial direct extraction completed for WAAS (FAA WAAS page + August 2025 quick facts), EGNOS (official SoL SDD page + Issue 3.6 PDF), GAGAN (ICAO APAC ITF/7 IP05b + AAI GEO FAQ), MSAS (QZSS service page + ICAO APAC CNS SG/24 IP15), SouthPAN (official FAQ, early Open Services factsheet, Signal-In-Space service definition), BDSBAS (official BDSBAS-B1C ICD + bounded technical-public context), KASS (KARI official page + ICAO APAC ITF/5 IP/09 + bounded contractor-public certification signal), and SDCM (GLONASS IAC / OS PS source posture plus historical ICAO development-context evidence).
 - Current editorial rule: use [[Source - SBAS Service Providers]] for service-provider routing; use dedicated child source notes only within their stated boundaries; do not infer comparative performance, availability percentages, interoperability, operational approval, or procedure minima without official service-provider/regulator/AIP extraction.
 
+### 7. Core SBAS concept routing
+
+- Current vault usage: [[What is SBAS]], [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS Signal and Message Flow]], [[SBAS Corrections and Integrity Separation]], [[SBAS Ground Segment and Airborne Receiver Responsibilities]], [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], [[Ionospheric Model Validation]], and [[Total Electron Content (TEC)]].
+- Why this matters: core concept pages are high-traffic entry points; if they duplicate standards, service-provider, procedure, or operational claims, the KB will accumulate overlapping and stale knowledge.
+- Verification need: direct Annex 10 / DO-229 / Doc 9849 extraction before adding exact message, integrity, alerting, protection-level, or operational threshold values.
+- Current status: [[SBAS Core Claim Routing]] now owns the editorial routing model for core claims. New core notes were added for message flow, correction/integrity separation, and ground/airborne responsibility separation.
+- Current editorial rule: keep concept pages explanatory and source-routed; never promote a concept explanation into procedure availability, aircraft eligibility, service commitment, or numerical requirement without the primary source family.
+
 ## Priority 2 — regional and European framework references
 
 - EUROCAE ED references remain candidates but need exact title/scope verification before being used for EGNOS/SBAS claims.
@@ -117,16 +142,18 @@ Public catalog review produced several corrections:
 ## Suggested execution order
 
 1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] from the official Annex text and classify GNSS/SBAS claims by section and amendment baseline.
-2. Directly extract the official [[Source - RTCA DO-229]] text and direct FAA TSO-C145e/C146e text; deepen [[Source - EASA ETSO-C145e and ETSO-C146e]] section mapping before publishing class-specific approval statements.
+2. Directly extract the official [[Source - RTCA DO-229]] text and deepen non-FAA article-approval routing where needed; direct FAA extraction is skipped in the current core-solidification scope.
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. ~~Build procedure-design/PBN source notes.~~ **Completed 2026-05-03**: [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]] now exist as routing anchors; direct text extraction still required.
 5. ~~Build service-provider source notes for major SBAS systems.~~ **Substantially completed 2026-05-03 for the current major-system set**: [[Source - SBAS Service Providers]] exists as the family routing anchor; direct child-source extraction/source-posture notes now exist for [[Source - WAAS]], [[Source - EGNOS]], [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], [[Source - BDSBAS]], [[Source - KASS]], [[Source - SouthPAN]], and [[Source - SDCM]]. Remaining work is deeper service-provider/regulator/AIP extraction, not first-layer child-source creation. Use [[SBAS Operational Validation Dashboard]] to prevent child source notes from being misused as operational approval evidence.
-6. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and procedure pages with numerical values only after the above source anchors are directly extracted.
-7. Continue ASEAN/regional source hardening through [[ASEAN SBAS Source Backlog]].
+6. Use [[SBAS Core Claim Routing]] before editing core concept pages; keep architecture, signal/message flow, correction/integrity separation, ground/airborne responsibility, protection-level, and alert-limit claims atomic and non-overlapping.
+7. Revisit [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], and procedure pages with numerical values only after the above source anchors are directly extracted.
+8. Continue ASEAN/regional source hardening through [[ASEAN SBAS Source Backlog]].
 
 ## Related notes
 
 - [[SBAS Standards Source Matrix]]
+- [[SBAS Core Claim Routing]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
 - [[Source - FAA TSO-C145e and TSO-C146e]]
 - [[Source - EASA ETSO-C145e and ETSO-C146e]]

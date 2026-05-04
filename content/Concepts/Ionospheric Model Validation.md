@@ -3,9 +3,9 @@ title: Ionospheric Model Validation
 description: Atomic concept note on the methodology for validating empirical ionospheric models against independent observations
 tags: [ionosphere, validation, model, iri-2020, empirical, gnss-ro, methodology]
 created: 2026-04-26
-modified: 2026-04-26
-status: draft
-verification_status: empirical-study
+modified: 2026-05-03
+status: reviewed
+verification_status: empirical-study-with-operational-boundary
 ---
 
 # Ionospheric Model Validation
@@ -19,6 +19,7 @@ Boundary:
 - This is a methodology concept note, not a specific model evaluation.
 - It does not advocate for one model over another.
 - It captures the generic validation framework applied in the Indonesian GNSS-RO study.
+- It does not define operational SBAS ionospheric correction, GIVE, service-volume, or integrity-monitoring requirements. Route those claims through [[SBAS Corrections and Integrity Separation]], [[SBAS Integrity]], and standards/service-provider source notes.
 
 ## Working definition
 
@@ -82,8 +83,12 @@ IRI is a monthly-median empirical model. It does not predict day-to-day variabil
 
 ## Current source anchors
 
-- [[Source - IRI-2020 Ionosphere Model]] — model provenance scaffold
+- [[SBAS Core Claim Routing]] — core claim-family routing
+- [[SBAS Corrections and Integrity Separation]] — boundary between research correction concepts and operational integrity use
 - [[Source - GNSS-RO Indonesia Empirical Study]] — validation data provenance scaffold
+- [[Source - IRI-2020 Ionosphere Model]] — model provenance scaffold
+- [[Source - ICAO Annex 10 Volume I GNSS SBAS]] — future standards-family routing for operational ionospheric requirements
+- [[Source - RTCA DO-229]] — future receiver/equipment extraction target
 
 ## Open provenance questions
 
@@ -96,6 +101,8 @@ IRI is a monthly-median empirical model. It does not predict day-to-day variabil
 - [[GNSS Radio Occultation]]
 - [[Total Electron Content (TEC)]]
 - [[SBAS Integrity]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Core Claim Routing]]
 - [[IRI-2020 vs GNSS-RO Indonesia]]
 - [[Indonesian SBAS ION Paper Iterations]]
 - [[SBAS Ionospheric Threat — Empirical Evidence]]
