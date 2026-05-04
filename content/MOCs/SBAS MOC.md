@@ -3,7 +3,7 @@ title: SBAS MOC
 description: Top-level institutional navigation map for the SBAS research and implementation knowledge base
 tags: [MOC, SBAS, GNSS, aviation, research, navigation]
 created: 2026-04-23
-modified: 2026-05-03
+modified: 2026-05-04
 status: active
 verification_status: source-routed-institutional-navigation
 ---
@@ -18,17 +18,17 @@ Use this page as the institutional navigation layer. Use [[index]] as the public
 
 ## Recommended reader paths
 
-| Reader path                 | Start here                                          | Continue to                                                                                                                  |
-| --------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Beginner                    | [[What is SBAS]]                                    | [[SBAS Architecture]], [[SBAS Signal and Message Flow]], [[SBAS Corrections and Integrity Separation]], [[SBAS-Terminology]] |
-| Core source routing         | [[SBAS Core Claim Routing]]                         | [[SBAS Standards Source Matrix]], [[SBAS Operational Validation Dashboard]]                                                  |
-| Aviation operations         | [[SBAS in Civil Aviation MOC]]                      | [[LPV-Approach-Procedure]], [[Protection Levels]], [[Alert Limits]]                                                          |
-| Standards and source review | [[SBAS Standards Source Matrix]]                    | [[SBAS-Standards-Regulation]], [[SBAS Source Backlog]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]]                 |
-| Regional systems            | [[SBAS-Systems-by-Region-MOC]]                      | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]], [[KASS]], [[SouthPAN]], [[SDCM]]                                       |
-| ASEAN implementation        | [[ASEAN SBAS Adoption Landscape]]                   | [[ASEAN SBAS Readiness Heuristic]], [[ASEAN SBAS Service-Model Options]]                                                     |
-| GIPTA 2.0                   | [[GIPTA 2.0 MOC]]                                   | [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[ASEAN SBAS Testbed]]                                                  |
-| Ionospheric research        | [[SBAS Ionospheric Threat — Empirical Evidence]]    | [[IRI-2020 vs GNSS-RO Indonesia]], [[GNSS Radio Occultation]]                                                                |
-| Site governance             | [[SBAS Knowledge Base Editorial and Source Policy]] | [[Institutional Upgrade Audit 2026-05-01]], [[Institutional SBAS Knowledge Base Upgrade Roadmap]]                            |
+| Reader path                 | Start here                                          | Continue to                                                                                                                                                         |
+| --------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Beginner                    | [[What is SBAS]]                                    | [[SBAS Architecture]], [[SBAS Signal and Message Flow]], [[SBAS Corrections and Integrity Separation]], [[SBAS Service Performance Concepts]], [[SBAS-Terminology]] |
+| Core source routing         | [[SBAS Core Claim Routing]]                         | [[SBAS Standards Source Matrix]], [[SBAS Standards to Operations Evidence Ladder]], [[SBAS Operational Validation Dashboard]]                                       |
+| Aviation operations         | [[SBAS in Civil Aviation MOC]]                      | [[LPV-Approach-Procedure]], [[Protection Levels]], [[Alert Limits]]                                                                                                 |
+| Standards and source review | [[SBAS Standards Source Matrix]]                    | [[SBAS-Standards-Regulation]], [[SBAS Source Backlog]], [[Source - RTCA DO-229]], [[Source - ICAO Doc 9849]]                                                        |
+| Regional systems            | [[SBAS-Systems-by-Region-MOC]]                      | [[WAAS]], [[EGNOS]], [[MSAS]], [[GAGAN]], [[BDSBAS]], [[KASS]], [[SouthPAN]], [[SDCM]]                                                                              |
+| ASEAN implementation        | [[ASEAN SBAS Adoption Landscape]]                   | [[ASEAN SBAS Readiness Heuristic]], [[ASEAN SBAS Service-Model Options]]                                                                                            |
+| GIPTA 2.0                   | [[GIPTA 2.0 MOC]]                                   | [[GIPTA 2.0 and ASEAN SBAS Implementation Pathway]], [[ASEAN SBAS Testbed]]                                                                                         |
+| Ionospheric research        | [[SBAS Ionospheric Threat — Empirical Evidence]]    | [[IRI-2020 vs GNSS-RO Indonesia]], [[GNSS Radio Occultation]]                                                                                                       |
+| Site governance             | [[SBAS Knowledge Base Editorial and Source Policy]] | [[Institutional Upgrade Audit 2026-05-01]], [[Institutional SBAS Knowledge Base Upgrade Roadmap]]                                                                   |
 
 ## Core concept branch
 
@@ -38,6 +38,10 @@ Use this page as the institutional navigation layer. Use [[index]] as the public
 - [[SBAS Signal and Message Flow]] — observation-to-message-to-receiver chain without unsourced message-number details.
 - [[SBAS Corrections and Integrity Separation]] — correction, integrity, availability, and continuity boundary note.
 - [[SBAS Ground Segment and Airborne Receiver Responsibilities]] — responsibility split between service, receiver, procedure, and operation layers.
+- [[SBAS Service Performance Concepts]] — accuracy, integrity, availability, continuity, coverage, and service-commitment boundaries.
+- [[SBAS Service Volume and Coverage]] — coverage claims without procedure or approval overreach.
+- [[SBAS Approach Capability Taxonomy]] — LP/LPV/LNAV/VNAV capability-label routing.
+- [[SBAS Receiver Modes and Annunciation]] — receiver-mode and alert/annunciation routing without detailed MOPS claims.
 - [[SBAS Core Claim Routing]] — source-family routing rules for core claims.
 - [[SBAS-Terminology]] — controlled terminology.
 - [[SBAS Integrity]] — integrity as the safety-relevant SBAS function.
@@ -65,6 +69,7 @@ Editorial boundary: procedure notes are educational scaffolds unless explicitly 
 - [[SBAS Source Backlog]]
 - [[SBAS Standards Source Matrix]]
 - [[SBAS Core Claim Routing]]
+- [[SBAS Standards to Operations Evidence Ladder]]
 - [[SBAS Operational Validation Dashboard]]
 - [[Source - RTCA DO-229]]
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]]
@@ -133,7 +138,7 @@ Boundary: GNSS-RO and IRI-2020 work is valuable for threat discovery and researc
 1. Directly extract the official text behind [[Source - ICAO Annex 10 Volume I GNSS SBAS]].
 2. Directly extract the official [[Source - RTCA DO-229]] text and [[Source - ICAO Doc 9849]].
 3. Deepen EASA ETSO/public article-approval routing where receiver approval context is needed; keep FAA-specific extraction out of this cycle unless explicitly requested later.
-4. Use [[SBAS Core Claim Routing]] and [[SBAS Operational Validation Dashboard]] to prevent core concept pages from drifting into operational claims.
+4. Use [[SBAS Core Claim Routing]], [[SBAS Service Performance Concepts]], and [[SBAS Operational Validation Dashboard]] to prevent core concept pages from drifting into operational claims.
 5. Deepen service-provider source notes with current performance/service-volume material where official public sources exist.
 6. Continue ASEAN source-hardening through [[SBAS Source Backlog]] and [[ASEAN SBAS Source Backlog]].
 

@@ -3,9 +3,9 @@ title: SBAS Source Backlog
 description: Prioritized source-building backlog for source-disciplined SBAS knowledge-base claims
 tags: [sources, backlog, provenance, sbas, research]
 created: 2026-04-23
-modified: 2026-05-03
+modified: 2026-05-04
 status: active
-verification_status: internal-backlog-with-public-catalog-corrections-and-core-routing
+verification_status: internal-backlog-with-public-catalog-corrections-and-second-layer-core-routing
 ---
 
 # SBAS Source Backlog
@@ -53,6 +53,25 @@ Core concept pages should now use this ownership model:
 | Correction versus integrity              | [[SBAS Corrections and Integrity Separation]]                  | Accuracy-improvement claims must not be treated as safety/approval claims             |
 | Ground versus airborne responsibility    | [[SBAS Ground Segment and Airborne Receiver Responsibilities]] | Separate service, receiver, procedure, aircraft, and operator layers                  |
 | Protection and alerting                  | [[Protection Levels]], [[Alert Limits]], [[SBAS Integrity]]    | Explain relationships without unsupported numerical thresholds                        |
+| Service performance concepts             | [[SBAS Service Performance Concepts]]                          | Separate accuracy, integrity, availability, continuity, coverage, and commitments     |
+| Service volume and coverage              | [[SBAS Service Volume and Coverage]]                           | Coverage is not procedure publication, aircraft eligibility, or operator approval     |
+| Approach capability labels               | [[SBAS Approach Capability Taxonomy]]                          | LP/LPV/LNAV/VNAV labels are not operational proof by themselves                       |
+| Standards-to-operations escalation       | [[SBAS Standards to Operations Evidence Ladder]]               | Each evidence layer must be sourced before moving upward                              |
+| Receiver modes and annunciation          | [[SBAS Receiver Modes and Annunciation]]                       | No cockpit, MOPS, timing, or pilot-action details without direct source extraction    |
+
+## 2026-05-04 second-layer core-routing update
+
+The second core-solidification pass added five routing notes to close remaining conceptual gaps without using long reference-website expansion:
+
+- [[SBAS Service Performance Concepts]]
+- [[SBAS Service Volume and Coverage]]
+- [[SBAS Approach Capability Taxonomy]]
+- [[SBAS Standards to Operations Evidence Ladder]]
+- [[SBAS Receiver Modes and Annunciation]]
+
+This update intentionally keeps the new pages at concept/routing level. It does not add numerical service-performance values, message tables, alerting timing, cockpit actions, receiver algorithms, procedure minima, or state-specific operational claims.
+
+The pass also hardened [[SBAS Ionospheric Threat — Empirical Evidence]] so empirical GNSS-RO/TEC evidence remains threat-discovery evidence rather than operational correction, GIVE, service-volume, or approval evidence.
 
 ## Priority 1 — build the real standards backbone
 
@@ -103,10 +122,10 @@ Core concept pages should now use this ownership model:
 
 ### 7. Core SBAS concept routing
 
-- Current vault usage: [[What is SBAS]], [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS Signal and Message Flow]], [[SBAS Corrections and Integrity Separation]], [[SBAS Ground Segment and Airborne Receiver Responsibilities]], [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], [[Ionospheric Model Validation]], and [[Total Electron Content (TEC)]].
+- Current vault usage: [[What is SBAS]], [[SBAS Architecture]], [[SBAS Architecture Flow]], [[SBAS Signal and Message Flow]], [[SBAS Corrections and Integrity Separation]], [[SBAS Ground Segment and Airborne Receiver Responsibilities]], [[SBAS Service Performance Concepts]], [[SBAS Service Volume and Coverage]], [[SBAS Approach Capability Taxonomy]], [[SBAS Standards to Operations Evidence Ladder]], [[SBAS Receiver Modes and Annunciation]], [[SBAS Integrity]], [[Protection Levels]], [[Alert Limits]], [[Ionospheric Model Validation]], [[Total Electron Content (TEC)]], and [[SBAS Ionospheric Threat — Empirical Evidence]].
 - Why this matters: core concept pages are high-traffic entry points; if they duplicate standards, service-provider, procedure, or operational claims, the KB will accumulate overlapping and stale knowledge.
 - Verification need: direct Annex 10 / DO-229 / Doc 9849 extraction before adding exact message, integrity, alerting, protection-level, or operational threshold values.
-- Current status: [[SBAS Core Claim Routing]] now owns the editorial routing model for core claims. New core notes were added for message flow, correction/integrity separation, and ground/airborne responsibility separation.
+- Current status: [[SBAS Core Claim Routing]] now owns the editorial routing model for core claims. Core notes now cover message flow, correction/integrity separation, ground/airborne responsibility separation, service-performance concepts, service volume/coverage, approach-capability taxonomy, standards-to-operations escalation, and receiver modes/annunciation.
 - Current editorial rule: keep concept pages explanatory and source-routed; never promote a concept explanation into procedure availability, aircraft eligibility, service commitment, or numerical requirement without the primary source family.
 
 ## Priority 2 — regional and European framework references
@@ -142,7 +161,7 @@ Core concept pages should now use this ownership model:
 ## Suggested execution order
 
 1. Directly extract [[Source - ICAO Annex 10 Volume I GNSS SBAS]] from the official Annex text and classify GNSS/SBAS claims by section and amendment baseline.
-2. Directly extract the official [[Source - RTCA DO-229]] text and deepen non-FAA article-approval routing where needed; direct FAA extraction is skipped in the current core-solidification scope.
+2. Directly extract the official [[Source - RTCA DO-229]] text and deepen non-FAA article-approval routing where needed; direct FAA extraction and long reference-website expansion are skipped in the current core-solidification scope.
 3. Directly extract [[Source - ICAO Doc 9849]].
 4. ~~Build procedure-design/PBN source notes.~~ **Completed 2026-05-03**: [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] and [[Source - FAA and EASA Procedure-Design and PBN Material]] now exist as routing anchors; direct text extraction still required.
 5. ~~Build service-provider source notes for major SBAS systems.~~ **Substantially completed 2026-05-03 for the current major-system set**: [[Source - SBAS Service Providers]] exists as the family routing anchor; direct child-source extraction/source-posture notes now exist for [[Source - WAAS]], [[Source - EGNOS]], [[Source - GAGAN SBAS Operation]], [[Source - MSAS]], [[Source - BDSBAS]], [[Source - KASS]], [[Source - SouthPAN]], and [[Source - SDCM]]. Remaining work is deeper service-provider/regulator/AIP extraction, not first-layer child-source creation. Use [[SBAS Operational Validation Dashboard]] to prevent child source notes from being misused as operational approval evidence.

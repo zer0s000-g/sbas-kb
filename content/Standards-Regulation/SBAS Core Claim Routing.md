@@ -38,6 +38,11 @@ Do not duplicate detailed standards, service-provider, or operational claims her
 | Alert-limit concept                             | [[Alert Limits]]                                               | [[Source - RTCA DO-229]], [[Source - ICAO Annex 10 Volume I GNSS SBAS]], regulator/procedure evidence when operational                                  | free-floating numerical tables                            |
 | Ground segment responsibility                   | [[SBAS Ground Segment and Airborne Receiver Responsibilities]] | [[Source - ICAO Annex 10 Volume I GNSS SBAS]], [[Source - ICAO Doc 9849]], service-provider source notes                                                | receiver MOPS alone                                       |
 | Airborne receiver responsibility                | [[SBAS Ground Segment and Airborne Receiver Responsibilities]] | [[Source - RTCA DO-229]], [[Source - EASA ETSO-C145e and ETSO-C146e]]                                                                                   | service-provider status pages alone                       |
+| Service performance concepts                    | [[SBAS Service Performance Concepts]]                          | standards, service definitions, performance reports, operational-validation evidence when operational                                                   | accuracy claims alone                                     |
+| Service volume and coverage                     | [[SBAS Service Volume and Coverage]]                           | service-provider service definitions and child source notes                                                                                             | procedure, aircraft, or operator evidence                 |
+| Approach capability labels                      | [[SBAS Approach Capability Taxonomy]]                          | DO-229 / ETSO / procedure-design / AIP evidence depending on claim layer                                                                                | capability labels as operational proof                    |
+| Standards-to-operations escalation              | [[SBAS Standards to Operations Evidence Ladder]]               | standards, service-provider, receiver, procedure, AIP, aircraft, operator, and regulator evidence                                                       | a single source family for the whole chain                |
+| Receiver modes and annunciation                 | [[SBAS Receiver Modes and Annunciation]]                       | DO-229, ETSO, avionics/aircraft/operator evidence when detailed                                                                                         | service-provider coverage or generic receiver mentions    |
 | Service availability or coverage                | [[Source - SBAS Service Providers]] and child source notes     | system-specific service-provider documentation                                                                                                          | Annex 10 or DO-229 alone                                  |
 | Procedure availability and operational approval | [[SBAS Operational Validation Dashboard]]                      | regulator, ANSP, AIP, aircraft, avionics, and operator evidence                                                                                         | service-provider source notes alone                       |
 
@@ -52,6 +57,7 @@ The source posture is:
 - DO-229 is represented as the airborne equipment MOPS routing note; detailed direct official-text extraction remains a high-value future target.
 - EASA ETSO-C145e/C146e is the preferred public article-approval source family for this skip-FAA cycle.
 - Service-provider child notes exist for major systems, but those notes do not prove procedure availability or operator approval.
+- The second core-solidification pass added service-performance, coverage, approach-capability, evidence-ladder, and receiver-mode routing notes without adding new detailed normative claims or long-reference website extraction.
 
 ## Blocked claim patterns
 
@@ -74,4 +80,9 @@ Do not publish these patterns unless the relevant source family is extracted and
 - [[SBAS Signal and Message Flow]]
 - [[SBAS Corrections and Integrity Separation]]
 - [[SBAS Ground Segment and Airborne Receiver Responsibilities]]
+- [[SBAS Service Performance Concepts]]
+- [[SBAS Service Volume and Coverage]]
+- [[SBAS Approach Capability Taxonomy]]
+- [[SBAS Standards to Operations Evidence Ladder]]
+- [[SBAS Receiver Modes and Annunciation]]
 - [[SBAS Source Backlog]]

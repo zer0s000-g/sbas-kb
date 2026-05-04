@@ -3,9 +3,9 @@ title: SBAS Ionospheric Threat — Empirical Evidence
 description: Synthesis note reframing GNSS-RO Indonesian empirical results into SBAS ionospheric threat-modeling language
 tags: [synthesis, sbas, ionosphere, threat, integrity, indonesia, empirical, gnss-ro]
 created: 2026-04-26
-modified: 2026-04-26
-status: draft
-verification_status: empirical-study
+modified: 2026-05-04
+status: reviewed
+verification_status: empirical-study-with-operational-boundary
 ---
 
 # SBAS Ionospheric Threat — Empirical Evidence
@@ -16,9 +16,10 @@ This note translates GNSS-RO empirical findings over Indonesia into SBAS ionosph
 
 Boundary:
 
-- It does not prescribe operational GIVE values or protection levels.
-- It does not claim that the sampled data is sufficient for certification.
+- It does not prescribe operational GIVE values, protection-level equations, or alert-limit values.
+- It does not claim that the sampled data is sufficient for certification or service definition.
 - It frames empirical observations as threat-discovery inputs for pre-operational SBAS assessment.
+- It must be read through [[SBAS Corrections and Integrity Separation]], [[SBAS Service Performance Concepts]], and [[SBAS Operational Validation Dashboard]] before being used in implementation planning.
 
 ## Threat categories from Indonesian GNSS-RO data
 
@@ -31,7 +32,7 @@ Boundary:
 | p99              | 341.1 | 55.4              |
 | Maximum observed | 468.4 | 76.1              |
 
-**SBAS interpretation:** Delays of 55+ m at the 99th percentile exceed typical mid-latitude SBAS ionospheric assumptions. Any ASEAN SBAS must account for heavier tails than WAAS/EGNOS mid-latitude experience.
+**SBAS interpretation:** The observed upper-tail delays are important threat-discovery signals for low-latitude SBAS research. This page does not compare them with any specific operational SBAS assumption unless a directly extracted service-design source is added.
 
 ### Threat 2: Spatial gradients
 
@@ -42,7 +43,7 @@ Boundary:
 | p99       | 81.9                           |
 | Maximum   | 208.3                          |
 
-**SBAS interpretation:** Gradient events at the 99th percentile (~82 mm/km) challenge the differential-correction assumption that ionospheric delay varies smoothly over SBAS grid cell scales. Large gradients are known threats to WAAS integrity in convective weather and storm conditions; equatorial post-sunset plasma bubbles may produce comparable or larger gradients.
+**SBAS interpretation:** Large-gradient observations are threat-discovery signals for differential-correction and integrity analysis. Any comparison with an operational service must be sourced from that service's own design, performance, or validation evidence.
 
 ### Threat 3: Undersampled risk windows
 
@@ -102,19 +103,41 @@ The V3 paper introduced a pre-operational SBAS threat-budget separation:
 - That Indonesia is "worse" than other equatorial regions (no comparative data)
 - That the threat budget is ready for operational use
 
+## Source-routing boundary
+
+Use this note only as empirical threat-discovery evidence. Do not use it as:
+
+- an operational SBAS ionospheric correction model;
+- an approved GIVE or grid-definition source;
+- a service-volume or availability source;
+- a procedure-approval source;
+- a replacement for ground-monitoring, service-design, or regulator evidence.
+
+Routing path:
+
+```text
+Empirical ionosphere evidence
+  -> threat discovery / research prioritization
+  -> service-design validation question
+  -> operational validation only after official service/regulator evidence
+```
+
 ## Recommended operational-design implications
 
-1. **Do not inherit mid-latitude SBAS ionospheric assumptions** for Indonesia or ASEAN.
+1. **Do not import another region's ionospheric assumptions without source support** for Indonesia or ASEAN.
 2. **Stratify threat assessment** by IGRF dip-latitude region, local-time window, and space-weather state.
-3. **Combine RO with ground GNSS/scintillation** for operational design — RO alone is insufficient.
-4. **Deliberately acquire post-sunset and storm data** before deriving GIVE-like bins.
-5. **Use RO as threat-discovery, ground monitoring as operational validation**.
+3. **Combine RO with ground GNSS/scintillation** before attempting service-design validation; RO alone is insufficient.
+4. **Deliberately acquire post-sunset and storm data** before deriving operational candidate bins.
+5. **Use RO as threat-discovery evidence and ground/service/regulator sources for operational validation**.
 
 ## See also
 
 - [[IRI-2020 vs GNSS-RO Indonesia]]
 - [[ASEAN SBAS Deployment Barriers]]
 - [[SBAS Integrity]]
+- [[SBAS Corrections and Integrity Separation]]
+- [[SBAS Service Performance Concepts]]
+- [[SBAS Operational Validation Dashboard]]
 - [[GNSS Radio Occultation]]
 - [[Total Electron Content (TEC)]]
 - [[Ionospheric Model Validation]]

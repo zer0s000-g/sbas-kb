@@ -4,8 +4,8 @@ description: Institutional learning page explaining Localizer Performance with V
 tags: [aviation, approach, lpv, sbas, integrity, procedure]
 category: aviation-operations
 created: 2026-04-19
-modified: 2026-05-02
-version: 2.0
+modified: 2026-05-04
+version: 2.1
 status: reviewed
 verification_status: source-scaffold-linked
 ---
@@ -104,12 +104,15 @@ For ASEAN implementation analysis, this connects LPV to [[ASEAN SBAS Operational
 Current source scaffolds relevant to this page include:
 
 - [[SBAS Standards Source Matrix]] -- current claim-routing matrix for standards/source families.
+- [[SBAS Approach Capability Taxonomy]] -- capability-label routing for LP/LPV/LNAV/VNAV-type terms.
+- [[SBAS Standards to Operations Evidence Ladder]] -- escalation path from standards language to operational evidence.
+- [[SBAS Receiver Modes and Annunciation]] -- receiver-mode and alert/annunciation routing without detailed MOPS claims.
 - [[Source - RTCA DO-229]] -- current GPS/SBAS airborne-equipment source-family anchor; supports equipment routing, not installation approval, operational approval, or procedure availability.
 - [[Source - ICAO Annex 10 Volume I GNSS SBAS]] -- current ICAO SARPs/technical-provisions source-family routing anchor for GNSS/SBAS.
 - [[Source - ICAO Doc 9849]] -- current ICAO GNSS implementation-guidance source-family anchor.
 - [[Source - ICAO PANS-OPS Doc 8168 and Doc 9613 PBN Manual]] -- ICAO procedure-design and PBN navigation specification source family.
-- [[Source - FAA and EASA Procedure-Design and PBN Material]] -- FAA TERPS / PBN orders and EASA AMC/GM material.
-- [[Source - FAA TSO-C145e and TSO-C146e]] and [[Source - EASA ETSO-C145e and ETSO-C146e]] -- regulator/article-approval routing.
+- [[Source - FAA and EASA Procedure-Design and PBN Material]] -- existing mixed procedure-design routing note; no new FAA-specific extraction was added in this cycle.
+- [[Source - EASA ETSO-C145e and ETSO-C146e]] -- preferred public article-approval routing for this non-FAA-focused core pass; existing FAA source notes remain historical/routing anchors only.
 - [[Source - RTCA DO-242]], [[Source - RTCA DO-289]], [[Source - ICAO Doc 9854]], and [[Source - ICAO Doc 9855]] -- red-flag provenance notes retained because earlier drafts likely mis-scoped them for SBAS.
 - [[SBAS Source Backlog]] -- active standards-source verification queue.
 
@@ -149,5 +152,8 @@ This page previously contained unsourced numerical performance values, generic w
 - [[Protection Levels]]
 - [[Alert Limits]]
 - [[SBAS Architecture]]
+- [[SBAS Approach Capability Taxonomy]]
+- [[SBAS Standards to Operations Evidence Ladder]]
+- [[SBAS Receiver Modes and Annunciation]]
 - [[SBAS in Civil Aviation MOC]]
 - [[SBAS Source Backlog]]
