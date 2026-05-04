@@ -3,7 +3,7 @@ title: SBAS Corrections and Integrity Separation
 description: Core concept note separating SBAS accuracy-improvement corrections from integrity and use-or-non-use decision support
 tags: [sbas, corrections, integrity, accuracy, safety, core]
 created: 2026-05-03
-modified: 2026-05-03
+modified: 2026-05-04
 status: active
 verification_status: source-routed-concept-no-numerical-claims
 ---
@@ -29,7 +29,7 @@ Accuracy improvement is not sufficient for aviation operational use unless the s
 
 ## Correction families
 
-At concept level, SBAS corrections may address several GNSS error contributors, including satellite-related errors and ionospheric delay. Exact categories, definitions, and applicability must be extracted from standards and service-provider documents before use in authoritative tables.
+At concept level, SBAS corrections may address several GNSS error contributors, including satellite-related errors and ionospheric delay. Use [[SBAS Satellite Orbit and Clock Corrections]], [[SBAS Ionospheric Grid Correction Concept]], and [[SBAS Correction Timescale Taxonomy]] for mechanism/category routing. Exact categories, definitions, and applicability must be extracted from standards and service-provider documents before use in authoritative tables.
 
 This note may say that corrections are part of the SBAS architecture. It must not say that a specific system, region, airport, aircraft, or procedure receives a particular correction unless the relevant source exists.
 
@@ -92,3 +92,7 @@ For ASEAN or any other regional implementation analysis, this separation matters
 - [[Total Electron Content (TEC)]]
 - [[Ionospheric Model Validation]]
 - [[SBAS Ionospheric Threat — Empirical Evidence]]
+- [[SBAS Satellite Orbit and Clock Corrections]]
+- [[SBAS Ionospheric Grid Correction Concept]]
+- [[SBAS Correction Timescale Taxonomy]]
+- [[SBAS Integrity Data and User Bounds]]

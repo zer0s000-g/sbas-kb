@@ -68,6 +68,7 @@ The integrity path connects this note to:
 - [[SBAS Integrity]]
 - [[Protection Levels]]
 - [[Alert Limits]]
+- [[SBAS Ranging Sources and Time Reference]]
 - [[SBAS Corrections and Integrity Separation]]
 
 ## Current source anchors

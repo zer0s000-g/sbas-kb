@@ -5,7 +5,7 @@ tags: [sources, backlog, provenance, sbas, research]
 created: 2026-04-23
 modified: 2026-05-04
 status: active
-verification_status: internal-backlog-with-public-catalog-corrections-and-second-layer-core-routing
+verification_status: internal-backlog-with-public-catalog-corrections-and-third-layer-core-routing
 ---
 
 # SBAS Source Backlog
@@ -72,6 +72,30 @@ The second core-solidification pass added five routing notes to close remaining 
 This update intentionally keeps the new pages at concept/routing level. It does not add numerical service-performance values, message tables, alerting timing, cockpit actions, receiver algorithms, procedure minima, or state-specific operational claims.
 
 The pass also hardened [[SBAS Ionospheric Threat — Empirical Evidence]] so empirical GNSS-RO/TEC evidence remains threat-discovery evidence rather than operational correction, GIVE, service-volume, or approval evidence.
+
+## 2026-05-04 third-layer core-mechanism routing update
+
+The third core-solidification pass added six mechanism-routing notes without long reference-website expansion:
+
+- [[SBAS Ranging Sources and Time Reference]]
+- [[SBAS Satellite Orbit and Clock Corrections]]
+- [[SBAS Ionospheric Grid Correction Concept]]
+- [[SBAS Correction Timescale Taxonomy]]
+- [[SBAS Integrity Data and User Bounds]]
+- [[SBAS Service Status and Operational Notices]]
+
+These notes are concept/routing notes only. They do not add message numbers, bit fields, timing tolerances, correction equations, GIVE values, service-volume commitments, current outage/NOTAM data, cockpit procedures, or operational approval claims.
+
+Mechanism ownership is now:
+
+| Mechanism claim family              | Owner note                                      | Editorial boundary                                                                                   |
+| ----------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| ranging / time-reference context    | [[SBAS Ranging Sources and Time Reference]]     | no timing tolerances, receiver approvals, or GEO-ranging claims without direct source support        |
+| orbit / clock correction context    | [[SBAS Satellite Orbit and Clock Corrections]]  | no equations, validity periods, update intervals, or integrity claims from correction language alone |
+| ionospheric grid correction context | [[SBAS Ionospheric Grid Correction Concept]]    | no GIVE/grid/model/certification claims from TEC research alone                                      |
+| correction-category language        | [[SBAS Correction Timescale Taxonomy]]          | no message/update/degradation tables without source extraction                                       |
+| integrity data and user bounds      | [[SBAS Integrity Data and User Bounds]]         | no numerical bounds, alert timing, or operational approval without the applicable evidence layer     |
+| service status and notices          | [[SBAS Service Status and Operational Notices]] | no stale current-status or NOTAM duplication in generic concept notes                                |
 
 ## Priority 1 — build the real standards backbone
 
